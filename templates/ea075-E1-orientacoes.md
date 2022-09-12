@@ -18,4 +18,4 @@ Caso não tenha experiência com edição em Markdown, vide referência: [Master
 
 Para a entrega E1, o README.md do repositório deve ser formatado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E1-template.md).
 
-> Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. 
+> Tudo o que aparecer neste modo de citação se refere a algo que deve ser substituído pelo indicado. 
