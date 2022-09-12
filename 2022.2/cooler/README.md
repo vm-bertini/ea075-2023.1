@@ -7,10 +7,10 @@ O presente projeto foi originado no contexto das atividades da disciplina de gra
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
-> |Nome  | RA | Curso|
-> |--|--|--|
-> | Nome1  | 123456  | Eng. Elétrica|
-> | Nome2  | 123456  | Eng. Elétrica|
+|Nome  | RA | Curso|
+|--|--|--|
+| David Daminelli  | 123456  | Eng. Elétrica|
+| Giovanna Presta  | 123456  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
