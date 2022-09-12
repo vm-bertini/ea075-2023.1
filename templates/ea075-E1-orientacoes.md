@@ -15,6 +15,7 @@ Nesta primeira entrega, siga as seguintes instruções atentamente:
 ## Orientações para edição do arquivo README.md do projeto
 
 Caso não tenha experiência com edição em Markdown, vide referência: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+Existem também múltiplas ferramentas para edição de Markdown como, por exemplo, [StackEdit](https://stackedit.io/).
 
 Para a entrega E1, o README.md do repositório deve ser formatado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E1-template.md).
 
