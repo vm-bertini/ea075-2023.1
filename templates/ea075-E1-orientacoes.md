@@ -19,8 +19,6 @@ Nesta primeira entrega, siga as seguintes instruções atentamente:
 
 Caso não tenha experiência com edição em Markdown, vide referência: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
-Para a entrega E1, o README.md do repositório deve ser formatado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/teaching-ea979/blob/main/templates/E1-template.md).
+Para a entrega E1, o README.md do repositório deve ser formatado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E1-template.md).
 
-Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-> Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
+> Tudo o que aparecer neste modo de citação se refere algo que deve ser substituído pelo indicado. 
