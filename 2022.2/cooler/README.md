@@ -20,6 +20,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Quem são os potenciais usuários?
 > É possível estabelecer um valor econômico associado?
 
+Com o avanaço da tecnologia, computadores com maiores capacidades de processamento foram desenvolvidos para resolver os problemas mais complexos. No entanto, essa capacidade de processamento faz com que os componentes eletrônicos dissepem altas quantidades de calor. Para que os computadores operem da maneira desejada e, principalmente, que no sejam danificados, é necessário um sistema de resfriamento que mantenha sua temperatura em um limiar especificado pelo fabricante. 
+
+Uma das formas mais simples de realizar essa função é utilizando ventilação forçada por meio de coolers. Porém, essa soluço é custosa e inconveniente por conta da energia gasta e pelo ruído emitido. Nosso sistema resolve essas limitaçes ao acionar os ventiladores apenas quando a temperatura dos computadores é elevada, mantendo a simplicidade e diminuindo os custos associados à ela.    
 
 ## Descrição Funcional
 > A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
@@ -28,16 +31,31 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
 
+- Medir a temperatura;
+- Comparar temperatura medida com valor ajustado;
+- Ajustar setpoints de temperatura;
+- Acionar/desacionar ventiladores;
+- Exibir valor da temperatura medida.
+
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+
+- Ajustar setpoints de liga/desliga dos ventiladores
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)?
 
+- Ligar/Desligar coolers com base na temperatura medida.
+
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+
+- Se cooler estiver desligado e temperatura for menor que temperatura ajustada, manter desligado;
+- Se cooler estiver desligado e temperatura for maior que temperatura ajustada, ligar cooler;
+- Se cooler estiver ligado e temperatura for maior que temperatura ajustada, manter ligado;
+- Se cooler estiver ligado e temperatura for menor que temperatura ajustada, desligar.
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
