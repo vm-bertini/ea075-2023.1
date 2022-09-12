@@ -12,9 +12,6 @@ Nesta primeira entrega, siga as seguintes instruções atentamente:
  * Quando tudo estiver pronto para entrega, crie uma tag de release no repositório identificada como `2022.2_EA075_E1`.
  * Até a data de submissão estabelecida, crie um pull request para este repositório.
 
-### Observação importante: Não altere nenhum arquivo que não permita o merge automático do pull request a esse repositório. Pull requests conflitantes não serão aceitos.
-
-
 ## Orientações para edição do arquivo README.md do projeto
 
 Caso não tenha experiência com edição em Markdown, vide referência: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
