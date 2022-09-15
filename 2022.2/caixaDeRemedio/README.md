@@ -9,7 +9,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
 > |Nome  | RA | Curso|
 > |--|--|--|
-> | Nome1  | 123456  | Eng. Elétrica|
+> | Gabriel Dante Ferreira Roque  | 197242  | Eng. Elétrica|
 > | Nome2  | 123456  | Eng. Elétrica|
 
 
