@@ -6,31 +6,21 @@
 O presente projeto foi originado no contexto das atividades da disciplina de graduação *EA075 - Sistemas Embarcados*, 
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
-
 |Nome  | RA | Curso|
 |--|--|--|
-| David Daminelli  | 123456  | Eng. Elétrica|
-| Giovanna Presta  | 123456  | Eng. Elétrica|
+| David Daminelli  | 169774  | Eng. Elétrica|
+| Giovanna Presta  | 173275  | Eng. Elétrica|
 
 
-## Descrição do Projeto
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> Qual problema vocês pretendem solucionar?
-> Quem são os potenciais usuários?
-> É possível estabelecer um valor econômico associado?
+## Descrição do Projeto 
 
 Com o avanço da tecnologia, computadores com maiores capacidades de processamento foram desenvolvidos para resolver os problemas mais complexos. No entanto, essa capacidade de processamento faz com que os componentes eletrônicos dissepem altas quantidades de calor. Para que os computadores operem da maneira desejada e, principalmente, que no sejam danificados, é necessário um sistema de resfriamento que mantenha sua temperatura em um limiar especificado pelo fabricante. 
 
 Uma das formas mais simples de realizar essa função é utilizando ventilação forçada por meio de coolers. Porém, essa solução é custosa e inconveniente por conta da energia gasta e pelo ruído emitido. Nosso sistema resolve essas limitações ao acionar os ventiladores apenas quando a temperatura dos computadores é elevada, desligando caso contrário, mantendo a simplicidade e diminuindo os custos associados à ela.    
 
 ## Descrição Funcional
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
 
 - Medir a temperatura;
 - Comparar temperatura medida com valor ajustado;
@@ -39,19 +29,14 @@ Uma das formas mais simples de realizar essa função é utilizando ventilação
 - Exibir valor da temperatura medida.
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
 
 - Ajustar setpoints de liga/desliga dos ventiladores
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
 
 - Ligar/Desligar coolers com base na temperatura medida.
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 
 - Se cooler estiver desligado e temperatura for menor que temperatura ajustada, manter desligado;
 - Se cooler estiver desligado e temperatura for maior que temperatura ajustada, ligar cooler;
