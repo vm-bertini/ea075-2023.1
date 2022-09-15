@@ -1,5 +1,5 @@
-# `<Caixa de Remédio>`
-# `<Medicine Box>`
+# <Caixa de Remédio>
+# <Medicine Box>
 
 ## Apresentação
 
