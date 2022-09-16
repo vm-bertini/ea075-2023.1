@@ -56,4 +56,5 @@ Uma das formas mais simples de realizar essa função é utilizando ventilação
 > 
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+
+Nesta primeira etapa não utilizamos nenhuma referência.
