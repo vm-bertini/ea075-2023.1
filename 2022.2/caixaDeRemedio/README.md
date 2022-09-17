@@ -26,15 +26,31 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
+
+> Setar os horários dos alarmes para cada repositório;
+> Abrir automaticamente o repositório quando chegar o horário para qual está setado, através de um atuador;
+> Soar o alarme sonoro e o visual na interface nos horários programados;
+> Possibilidade de abrir o repositório para colocar os remédios e setar o alarme em qualquer horário;
+> Possibilidade de escolher qual o alarme sonoro que vai soar;
+> Relógio para determinar o horário atual e comparar com os alarmes setados.
+
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+
+> O circuito precisará de: 
+> uma memória para salvar os horários dos alarmes, os repositórios e os alarmes sonoros; 
+> um microcontrolador para gerir as relações entre cada parte do circuito; 
+> 14 atuadores para poder abrir e fechar os repositórios; 
+> uma interface para o usuário programar os alarmes; 
+> um alto-falante para emitir os alarmes sonoros; 
+> um relógio; 
+> e uma fonte conectada à rede elétrica para energizar o sistema.
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
+
+> Cada alarme setado é um evento;
+> Outro evento aperiódico é a programação dos horários de cada alarme;
+> Definir o alarme sonoro também é um evento não-periódio.
 
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
@@ -49,7 +65,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
+
+> Precisa-se de uma memória para salvar os horários e o respectivo repositório dos alarmes. Na memória também ficarão salvos os possíveis toques dos alarmes, que podem ser selecionados na interface.
+> O microcontrolador será responsável por toda a lógica realizada, como comparar o horário atual com os horários setados para os alarmes. O microcontrolador também será utilizado para escrever na memória os horários e os respectivos repositórios setados na interface.
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
