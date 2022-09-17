@@ -10,7 +10,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > |Nome  | RA | Curso|
 > |--|--|--|
 > | Gabriel Dante Ferreira Roque  | 197242  | Eng. Elétrica|
-> | Nome2  | 123456  | Eng. Elétrica|
+> | Fernando Teodoro de Cillo | 197029  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
