@@ -1,12 +1,11 @@
-# `<Caixa de Remédio>` 	
-# `<Medicine Box>`
+# `Caixa de Remédio` 	
+# `Medicine Box`
 
 ## Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de graduação *EA075 - Sistemas Embarcados*, 
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
 > |Nome  | RA | Curso|
 > |--|--|--|
 > | Gabriel Dante Ferreira Roque  | 197242  | Eng. Elétrica|
@@ -19,7 +18,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > Nesse projeto é possível estabelecer um valor econômico visto que muitas pessoas possuem alguém do público alvo do produto na família e se preocupam com seus cuidados. Além disso, acreditamos que o valor de produção seja baixo, o que permite altas margens de lucro para os investidores.
 
-Diagrama.drawio.png
 
 ## Descrição Funcional
  
@@ -44,8 +42,8 @@ Diagrama.drawio.png
 
 
 ### Configurabilidade
-
 > O circuito precisará de: 
+
 > uma memória para salvar os horários dos alarmes, os repositórios e os alarmes sonoros; 
 
 > um microcontrolador para gerir as relações entre cada parte do circuito; 
@@ -58,7 +56,8 @@ Diagrama.drawio.png
 
 > um relógio; 
 
-> e uma fonte conectada à rede elétrica para energizar o sistema.
+> uma fonte conectada à rede elétrica para energizar o sistema.
+
 
 ### Eventos
 
@@ -68,14 +67,13 @@ Diagrama.drawio.png
 
 > Abrir repositório para colocar remédio.
 
-> Quando der o horário do alarme o repositório deve abrir e soar alarme sonoro.
+> Quando der o horário do alarme o repositório deve abrir e soar o alarme sonoro.
 
 > Entender que o repositório ja foi fechado depois do usuário pegar os remédios e assim para de tocar o alarme sonoro.
 
 > Programar o Horário do Relógio (Evento não-periódico).
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 
 > Como o evento de programar horários de alarme e repositório é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
 
@@ -93,18 +91,18 @@ Diagrama.drawio.png
 ## Descrição Estrutural do Sistema
 ![Diagrama Caixa de Remédio](https://github.com/danteroque/ea075/blob/e8cf4e6888c433116a8870814cff056a95bfb77b/2022.2/caixaDeRemedio/Diagrama.drawio.png)
 
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
+> Precisa-se de uma memória para salvar os horários e o respectivo repositório dos alarmes. Na memória também ficarão salvos os possíveis toques dos alarmes, que podem ser selecionados na interface, e qual deles deve ser soado.
 
-> Precisa-se de uma memória para salvar os horários e o respectivo repositório dos alarmes. Na memória também ficarão salvos os possíveis toques dos alarmes, que podem ser selecionados na interface.
-> O microcontrolador será responsável por toda a lógica realizada, como comparar o horário atual com os horários setados para os alarmes. O microcontrolador também será utilizado para escrever na memória os horários e os respectivos repositórios setados na interface.
+> O microcontrolador será responsável por toda a lógica realizada, como comparar o horário atual do relógio com os horários setados para os alarmes. O microcontrolador também será utilizado para escrever na memória os horários e os respectivos repositórios setados na interface e por informar ao relógio qual o horário atual na inicialização do sistema. Quando a interrupção do alarme tocar, o microcontrolador ativa o alto-falante e dispara uma mensagem na interface, além de ativar o atuador do repositório respectivo àquele alarme.
+
+> O relógio marca a hora atual.
+
+> Os atuadores abrem o seu respectivo repositório durante o tratamento da interrupção de alarme ou podem ser abertos pela interface para colocar os remédios na caixa.
+
+> O alto-falante soa durante a interrupção de alarme e para de tocar quando o usuário informar na interface que já tomou os remédios. O toque do alto-falante é informado pelo microcontrolador e guardado na memória.
+
+> A interface permite ao usuário configurar os horários de alarme de cada repositório, selecionar o toque do alarme sonoro e desativá-lo quando o repositório for fechado. A programação do relógio após a inicialização do sistema também é feita pela interface.
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+[1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
+[2] https://tecnosenior.com/dispensador-de-medicamentos-automatico/
