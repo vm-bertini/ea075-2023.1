@@ -14,36 +14,43 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> O objetico deste projeto é ajudar na procura de pets quando ocorre a perda dos mesmos. Há mais de 139 milhões de pets pelo Brasil, e a perda desses animais ocorre com determinada frequência, e com o desenvolvimento desse projeto podemos amenizar este problema.
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> É um produto com alta chance de escala, o que pode implicar a venda de grandes lotes, produto com custo fixo rasoável, com venda do produto a um preço acessível a maioria do público.
-> Qual problema vocês pretendem solucionar?
-> Encontrar pets que se perderam longe de seus domicílios.
-> Quem são os potenciais usuários?
-> Donos de pets.
-> É possível estabelecer um valor econômico associado?
-> Sim, pois além de grande escala de venda, pode ser vendido em qualquer petshop, o que contribui para fluxo de caixa desse negócios.
+> O objetico deste projeto é ajudar na procura de pets quando ocorre a perda dos mesmos. 
+> Há mais de 139 milhões de pets pelo Brasil, e a perda desses animais ocorre com determinada frequência, 
+> e com o desenvolvimento desse projeto podemos amenizar este problema.
+> 
+> É um produto com alta chance de escala, o que pode implicar a venda de grandes lotes, produto com custo fixo rasoável, 
+> com venda do produto a um preço acessível a maioria do público.
+> 
+> Com essa coleira com uma tecnologia embarcada, o dono pode encontrar seu pet que se perdeu em um momento importúno.
+> 
+> O público-alvo são amantes de pets, ao qual ao adquirir nosso produto, pode dar mais segurança aos mesmos.
+> 
+> Além disso, pode agregar um valor econômico, pela grande escala de venda, ao qual pode ser vendido em qualquer petshop, 
+> o que contribui para fluxo de caixa desse negócios.
 
 
 ## Descrição Funcional
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
 > 
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
-
+> Caso o pet esteja na condição de perdido, a coleira envia a localização ao dono.
+> Nesse mesma condição, a coleira aciona uma iluminação, para identificar que o pet está perdido.
+> Tem a opção sonora, para mais uma identificação do pet perdido, caso o dono queira acionar.
+> Opção do dono enviar uma informação de voz, caso queira.
+> Opção de registrar trajeto que o pet percorreu.
+> 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
-
+> Não aplicável.
+> 
 ### Eventos
 > Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
+> Localização em tempo real, caso necessário.
+> Ao qual pode ser periódica, enviar a informação da localização a cada 30s. 
+> Além disso, pode ter a opção não periódica, ao qual envia a localização apenas quando o dono solicita.
 
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+> Para leitura real do pet, é preciso enviar a informação da localização e ir registrando de forma que fique um trajeto armazenado.
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
