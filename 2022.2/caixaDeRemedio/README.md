@@ -48,12 +48,23 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Eventos
 
-> Cada alarme setado é um evento;
-> Outro evento aperiódico é a programação dos horários de cada alarme;
-> Definir o alarme sonoro também é um evento não-periódio.
+> Um evento aperiódico é a programação dos horários de cada alarme.
+> Definir o alarme sonoro também é um evento não-periódico.
+> Abrir repositório para colocar remédio.
+> Quando der o horário do alarme o repositório deve abrir e soar alarme sonoro.
+> Entender que o repositório ja foi fechado depois do usuário pegar os remédios e assim para de tocar o alarme sonoro.
+> Programar o Horário do Relógio (Evento não-periódico).
 
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+
+> Como o evento de programar horários de alarme e repositório é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
+> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fazer a seleção do alarme sonoro pela interface o som deve ser tocado e quando selecionado a interrupção irá salvar na memória qual alarme sonoro irá tocar quando o evento de alarme para tomar remédio chegar.
+> Como o evento de abrir o repositório para colocar o remédio é aperiódico, a interface irá mandar uma interrução para abrir o repositório indicado pelo usuário. Após o fechamento o usuário irá selecionar na interface que o repositório ja foi fechado.
+> Para tratar o evento de alarme para tomar o remédio o sistema irá ficar em pooling comparando o horário e o dia do relógio atual com os horários e dias configurados na memória, dessa forma, quando o horario e dia forem iguais ao da memória, o atuador irá abrir o repositório selecionado para o alarme e irá tocar o alarme sonoro escolhido.
+> Depois que a pessoa pegar o remédio ela irá fechar o respositório. Dessa forma, a pessoa clicará na interface que ja tomou o remédio, assim os sistema irá parar de tocar o alarme sonoro e voltará para estado de pooling.
+> Como o evento de programar o horário do relógio é não-periódico a sistema irá fazer uma interupção para configurar o horário do relógio.
+ 
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
