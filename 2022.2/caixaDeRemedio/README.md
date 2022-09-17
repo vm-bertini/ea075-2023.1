@@ -77,21 +77,21 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > Como o evento de programar horários de alarme e repositório é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
 
-> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fazer a seleção do alarme sonoro pela interface o som deve ser tocado e quando selecionado a interrupção irá salvar na memória qual alarme sonoro irá tocar quando o evento de alarme para tomar remédio chegar.
+> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fizer a seleção do alarme sonoro pela interface uma prévia do som deve ser tocado e, quando selecionado, a interrupção irá salvar na memória qual toque alarme sonoro irá tocar no evento de alarme.
 
-> Como o evento de abrir o repositório para colocar o remédio é aperiódico, a interface irá mandar uma interrução para abrir o repositório indicado pelo usuário. Após o fechamento o usuário irá selecionar na interface que o repositório ja foi fechado.
+> Como o evento de abrir o repositório para colocar o remédio é aperiódico, a interface irá mandar uma interrupção para abrir o repositório indicado pelo usuário. Após o fechamento o usuário irá selecionar na interface que o repositório já foi fechado.
 
-> Para tratar o evento de alarme para tomar o remédio o sistema irá ficar em pooling comparando o horário e o dia do relógio atual com os horários e dias configurados na memória, dessa forma, quando o horario e dia forem iguais ao da memória, o atuador irá abrir o repositório selecionado para o alarme e irá tocar o alarme sonoro escolhido.
+> Para tratar o evento de alarme para tomar o remédio o sistema irá ficar em pooling comparando o horário e o dia do relógio atual com os horários e dias configurados na memória. Dessa forma, quando o horário e dia forem iguais ao da memória, o atuador irá abrir o repositório selecionado para o alarme e irá tocar o alarme sonoro escolhido.
 
-> Depois que a pessoa pegar o remédio ela irá fechar o respositório. Dessa forma, a pessoa clicará na interface que ja tomou o remédio, assim os sistema irá parar de tocar o alarme sonoro e voltará para estado de pooling.
+> Depois que a pessoa pegar o remédio ela irá fechar o repositório. Dessa forma, a pessoa clicará na interface que já tomou o remédio, assim os sistema irá parar de tocar o alarme sonoro e voltará para estado de pooling.
 
-> Como o evento de programar o horário do relógio é não-periódico a sistema irá fazer uma interupção para configurar o horário do relógio.
+> Como o evento de programar o horário do relógio é não-periódico, o sistema irá fazer uma interrupção para configurar o horário do relógio.
  
 
 ## Descrição Estrutural do Sistema
 ![Diagrama Caixa de Remédio](https://github.com/danteroque/ea075/blob/e8cf4e6888c433116a8870814cff056a95bfb77b/2022.2/caixaDeRemedio/Diagrama.drawio.png)
 
-> Precisa-se de uma memória para salvar os horários e o respectivo repositório dos alarmes. Na memória também ficarão salvos os possíveis toques dos alarmes, que podem ser selecionados na interface, e qual deles deve ser soado.
+> Precisa-se de uma memória para salvar os horários e os respectivos repositórios dos alarmes. Na memória também ficarão salvos os possíveis toques dos alarmes, que podem ser selecionados na interface, e qual deles deve ser soado.
 
 > O microcontrolador será responsável por toda a lógica realizada, como comparar o horário atual do relógio com os horários setados para os alarmes. O microcontrolador também será utilizado para escrever na memória os horários e os respectivos repositórios setados na interface e por informar ao relógio qual o horário atual na inicialização do sistema. Quando a interrupção do alarme tocar, o microcontrolador ativa o alto-falante e dispara uma mensagem na interface, além de ativar o atuador do repositório respectivo àquele alarme.
 
@@ -105,4 +105,5 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Referências
 [1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
+
 [2] https://tecnosenior.com/dispensador-de-medicamentos-automatico/
