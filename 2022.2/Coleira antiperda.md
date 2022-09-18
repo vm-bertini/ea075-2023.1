@@ -1,5 +1,5 @@
-# `Coleira antiperda avançada para cachorros e gatos`
-# `Advanced anti-loss collar for dogs and cats`
+# `Coleira antiperda avançada para animais domésticos`
+# `Advanced anti-loss collar for pets`
 
 ## Apresentação
 
@@ -31,22 +31,62 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição Funcional
 > 
-
 ### Funcionalidades
-> Caso o pet esteja na condição de perdido, a coleira envia a localização ao dono.
-> Nesse mesma condição, a coleira aciona uma iluminação, para identificar que o pet está perdido.
-> Tem a opção sonora, para mais uma identificação do pet perdido, caso o dono queira acionar.
-> Opção do dono enviar uma informação de voz, caso queira.
-> Opção de registrar trajeto que o pet percorreu.
+
+> Comunicação sem fio: O dono pode solicitar a localização pela comunicação via rádio frequência entre a central e a coleira com o auxílio de uma antena portátil,
+> caso o pet esteja na condição de perdido.
 > 
+> Acionar LED: Nesse mesma condição, a coleira aciona uma iluminação, para identificar que o pet está perdido.
+> 
+> Transmissão de áudio/voz: Opção do dono enviar uma informação de voz ou áudio, caso queira.
+> 
+> Histórico de trajeto: Opção de registrar trajeto que o pet percorreu.
+> 
+> Resistência ao grau de IP contra poeira e sólidos IP66: Caso o pet esteja em ambientes externos com muita poeira ou chuva.
+> 
+> Bateria de duração longa com mini-placa fotovoltáica: Para evitar que o dono sempre fique carregando. 
+> 
+> QR Code: Caso alguém encontre o pet, pode ler um QR Code para identificação e contato com o dono.
+
 ### Configurabilidade
-> Não aplicável.
+> Antena: Sistema de entrada de dados via rádio frequência, com faixa de banda eespecífica.
 > 
+> Led's para sinalização: Led's de cor vermelha ao qual podem piscar quando o pet estiver perdido.
+> 
+> Auto-falante: Para envio do sinal sonoro quando o animal estiver perdido.
+> 
+> Mini-placa fotovoltaíca: Com capacidade de carregar a bateria, quando o animal estiver perdido.
+> 
+> Bateria: Com capacidade suficiente de durar 24h, mesmo com todos periféricos estejam consumindo.
+> Microcontrolador: Utilizado para processar as informações recebidas, e possa transmitir sua localização e acione os atuadores, caso necessário.
+> 
+> Circuito fonte de alimentação com entrada para carregador.
+> 
+> Circuito para codificar e decodificar as informações recebidas e transmitidas.
+> 
+
 ### Eventos
 > Quais eventos o sistema deve tratar?
-> Localização em tempo real, caso necessário.
-> Ao qual pode ser periódica, enviar a informação da localização a cada 30s. 
-> Além disso, pode ter a opção não periódica, ao qual envia a localização apenas quando o dono solicita.
+> 
+> 1º Transmissão de localização e duração da bateria:
+> 
+> Periodicidade: Pode ser periódica, enviando a informação da localização a cada 30s. 
+> 
+> Prioridade: Alta.
+>
+> 2º Atuadores quando animal perdido:
+> 
+> Periodicidade: Fica ligado apenas se o dono quiser, caso queira, é acionado constantemente, leds e sinalizações sonoras.
+> 
+> Prioridade: Média.
+
+> 3º Coleira carregando:
+> 
+> Periodicidade: Baixa, apenas quando descarregar a coleira.
+> 
+> Prioridade: Média.
+>
+> 
 
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
