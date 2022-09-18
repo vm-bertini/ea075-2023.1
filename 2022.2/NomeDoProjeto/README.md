@@ -20,7 +20,10 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 ## Descrição Funcional
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
+- Conexão à internet via wi-fi para verificação do horário e comunicação com atuadores;
+- Medição de temperatura;
+- Acender/apagar luzes conforme horário via wi-fi;
+- Ligar/desligar ar-condicionado/aquecedor conforme temperatura via wi-fi;
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
