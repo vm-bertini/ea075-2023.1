@@ -66,8 +66,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-> 
+>
 > 1º Transmissão de localização e duração da bateria:
 > 
 > Periodicidade: Pode ser periódica, enviando a informação da localização a cada 30s. 
@@ -84,13 +83,21 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 > Periodicidade: Baixa, apenas quando descarregar a coleira.
 > 
-> Prioridade: Média.
->
+> Prioridade: Alta.
 > 
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
-> Para leitura real do pet, é preciso enviar a informação da localização e ir registrando de forma que fique um trajeto armazenado.
+> Stand by: Nesse modo, o consumo é infimo, apenas alimentando o circuito sem fio de radio frequência, ao qual fica aguardando o comando, caso o pet se perda.
+> 
+> Comunicação caso animal se perca: O dono envia um sinal externo, a coleira decodifica o sinal recebido e atua de acordo o solicitado.
+> 
+> LED's: Pisca, caso o dono queira, para ajuda na encontra do pet.
+> 
+> Auto-falante: Emite sinal sonoro, caso o dono queira, para ajuda na encontra do pet. 
+> 
+> Transmissão de localização e duração da bateria: É enviado o sinal toda vez que o dono solicita, ou envia a cada 30s, conforme o que for melhor para o dono do pet.
+>
+> Estado de carregamento: Quando alimentado ao carregador, é gerado uma interrupção e a coleira fica no estado de carregando.
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
