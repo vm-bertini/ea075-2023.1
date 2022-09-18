@@ -66,3 +66,21 @@ Tanto a leitura dos níveis de concentração de gás quanto a contagem de pesso
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+
+https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf
+
+https://www.filipeflop.com/img/files/download/DOC_SIM900_Hardware%20Design_V2.00.pdf
+
+https://www.filipeflop.com/img/files/download/SIM808_Hardware+Design_V1.00.pdf
+
+https://www.filipeflop.com/produto/sensor-de-proximidade-infravermelho/
+
+https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
+
+https://www.ti.com/microcontrollers-mcus-processors/microcontrollers/overview.html
+
+https://www.st.com/en/microcontrollers-microprocessors
+
+https://www.renesas.com/us/en/products/microcontrollers-microprocessors
+
+https://www.microcontrollertips.com/key-factors-consider-choosing-microcontroller/
