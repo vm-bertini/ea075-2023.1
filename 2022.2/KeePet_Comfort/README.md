@@ -1,5 +1,5 @@
-# `<Título em Português do Projeto>`
-# `<Project Title in in English>`
+# `<KeePet Comfort - Conforto Animal>`
+# `<KeePet Comfort - Animal Comfort>` 
 
 ## Apresentação
 
@@ -26,30 +26,27 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 - Ligar/desligar ar-condicionado/aquecedor via wi-ficonforme temperatura.
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
-
 O usuário poderá configurar os seguintes parâmetros para a operação do circuito:
-- setpoint de temperatura
-- desvio de temperatura
-- horário em que as luzes devem ser acesas/apagadas
+- Setpoint de temperatura;
+- Horário em que as luzes devem ser acesas/apagadas.
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-
-- Tempetura ambiente igual a ideal
-- Tempetura ambiente abaixo da ideal
-- Tempetura ambiente acima da ideal
-- Hora para acender as luzes atingida
-- Hora para apagar as luzes atingida
-- Sincronização do horário do relógio
+- Tempetura ambiente igual a ideal;
+- Tempetura ambiente abaixo da ideal;
+- Tempetura ambiente acima da ideal;
+- Hora para acender as luzes atingida;
+- Hora para apagar as luzes atingida;
+- Sincronização do horário do relógio;
 
 Todos os eventos considerados são periódicos e diários, a temperatura ambiente deverá ser aferida em intervalos de meia hora e o acender/apagar das luzes deverá ser executado uma vez ao dia. Além disso, o relógio deverá ser sincronizado diariamente.
 
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
-
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+- **Tempetura ambiente igual a ideal:** aguarda o próximo aferimento de temperatura;
+- **Tempetura ambiente abaixo da ideal:** aciona via wi-fi o aquecedor, passando o valor de setpoint determinado;
+- **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado, passando o valor de setpoint determinado;
+- **Hora para acender as luzes atingida:** acende via wi-fi as luzes do cômodo;
+- **Hora para apagar as luzes atingida:** apaga via wi-fi as luzes do cômodo;
+- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [1](#Referências).
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
@@ -64,4 +61,4 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 > 
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+[1] https://ntp.br/ - Acessado em 18 set. 2022.
