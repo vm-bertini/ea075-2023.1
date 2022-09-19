@@ -46,10 +46,12 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 - **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado, passando o valor de setpoint determinado;
 - **Hora para acender as luzes atingida:** acende via wi-fi as luzes do cômodo;
 - **Hora para apagar as luzes atingida:** apaga via wi-fi as luzes do cômodo;
-- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi[[1]](#Referências).
+- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
 
 ## Descrição Estrutural do Sistema
 ![Alt](KeePet_Comfort_Block_Diagram.drawio.png)
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
+
+[2] https://ww1.microchip.com/downloads/en/Appnotes/00929a.pdf - Acessado em 18 set. 2022.
