@@ -26,7 +26,7 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 - Ligar/desligar ar-condicionado/aquecedor via wi-ficonforme temperatura.
 
 ### Configurabilidade
-O usuário poderá configurar os seguintes parâmetros para a operação do circuito:
+O usuário poderá configurar via Interface Homem-Máquina (IHM) os seguintes parâmetros para a operação do circuito:
 - Setpoint de temperatura;
 - Horário em que as luzes devem ser acesas/apagadas.
 
