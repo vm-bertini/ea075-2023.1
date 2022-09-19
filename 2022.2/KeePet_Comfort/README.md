@@ -49,7 +49,7 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 - **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
 
 ## Descrição Estrutural do Sistema
-![Alt](KeePet_Comfort_Block_Diagram.drawio.png)
+![Alt](KeePet_Comfort_Block_Diagram.png)
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
