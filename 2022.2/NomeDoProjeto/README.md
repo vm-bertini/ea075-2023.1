@@ -35,6 +35,16 @@ O usuário poderá configurar os seguintes parâmetros para a operação do circ
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
+
+- Tempetura ambiente igual a ideal
+- Tempetura ambiente abaixo da ideal
+- Tempetura ambiente acima da ideal
+- Hora para acender as luzes atingida
+- Hora para apagar as luzes atingida
+- Sincronização do horário do relógio
+
+Todos os eventos considerados são periódicos e diários, a temperatura ambiente deverá ser aferida em intervalos de meia hora e o acender/apagar das luzes deverá ser executado uma vez ao dia. Além disso, o relógio deverá ser sincronizado diariamente.
+
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)?
 
