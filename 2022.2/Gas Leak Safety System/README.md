@@ -89,3 +89,5 @@ https://www.renesas.com/us/en/products/microcontrollers-microprocessors
 https://www.microcontrollertips.com/key-factors-consider-choosing-microcontroller/
 
 https://www.filipeflop.com/produto/display-lcd-shield-com-teclado-para-arduino/
+
+https://www.researchgate.net/publication/266869911_Embedded_system_for_Hazardous_Gas_detection_and_Alerting
