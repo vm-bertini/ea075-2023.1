@@ -55,3 +55,5 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
 
 [2] https://ww1.microchip.com/downloads/en/Appnotes/00929a.pdf - Acessado em 18 set. 2022.
+
+[3] https://idc-online.com/technical_references/pdfs/electronic_engineering/Design%20of%20An%20Embedded%20System%20For%20Monitoring%20and%20Controlling%20Temperature%20and%20Light.pdf - Acessado em 18 set. 2022.
