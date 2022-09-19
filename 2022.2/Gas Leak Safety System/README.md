@@ -1,5 +1,5 @@
-# `<Sistema de Segurança para Vazamento de Gases>`
-# `<Gas Leak Safety System>`
+# `Sistema de Segurança para Vazamento de Gases`
+# `Gas Leak Safety System`
 
 ## Apresentação
 
@@ -7,10 +7,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de gra
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
->|Nome  | RA | Curso|
-> |--|--|--|
-> | Matheus Pionório Calcanha  | 203556  | Eng. Elétrica|
-> | Vitor Semenzato do Amaral  | 207054  | Eng. Elétrica|
+
+ |Nome  | RA | Curso|
+ |--|--|--|
+ | Matheus Pionório Calcanha  | 203556  | Eng. Elétrica|
+ | Vitor Semenzato do Amaral  | 207054  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
@@ -32,8 +33,8 @@ O nosso produto visa atender principalmente indústrias e laboratórios químico
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
 
-- Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local
-- Configuração dos números de telefone cujo o sistema ficará responsável de enviar SMSs ao indentificar uma concentração de gás acima da especificada. 
+- Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local;
+- configuração dos números de telefone cujo o sistema ficará responsável de enviar SMSs ao indentificar uma concentração de gás acima da especificada; 
 - monitoramento dos níveis de concentração de determinado gás de interesse em um ambiente desejado;
 - registro do número de pessoas presentes em determinado local;
 - acionar indicador sonoro para alerta de perigo;
@@ -71,7 +72,7 @@ O nosso projeto tem a detecção de diferentes tipo de gases como a sua função
 
 Ainda por meio do display LCD o usuário poderá configurar quais os números que deverão receber SMSs em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. Vale ressaltar que quando ocorrer a ocorrência, além do microcontrolador enviar um sinal para o módulo SMS indicando quais os números que devem receber a mensagem, ele também irá acionar um buzzer acoplado ao próprio sensor por meio de uma saída digital por volta 1 minuto, indicando que a região não deve ser acessada.
 
-![Alt](Gas_Safety_Sys.drawio.svg)
+![Alt](Gas_Safety_Sys.drawio.png)
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
