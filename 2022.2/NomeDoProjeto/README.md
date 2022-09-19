@@ -22,11 +22,16 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 ### Funcionalidades
 - Conexão à internet via wi-fi para verificação do horário e comunicação com atuadores;
 - Medição de temperatura;
-- Acender/apagar luzes conforme horário via wi-fi;
-- Ligar/desligar ar-condicionado/aquecedor conforme temperatura via wi-fi;
+- Acender/apagar luzes via wi-fi conforme horário ;
+- Ligar/desligar ar-condicionado/aquecedor via wi-ficonforme temperatura.
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+
+O usuário poderá configurar os seguintes parâmetros para a operação do circuito:
+- setpoint de temperatura
+- desvio de temperatura
+- horário em que as luzes devem ser acesas/apagadas
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
