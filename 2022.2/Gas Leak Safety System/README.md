@@ -68,6 +68,14 @@ O diagrama a seguir ilustra o comportamento do sistema frente aos eventos que de
 
 ![Alt](Gas_Safety_Sys.drawio.png)
 
+O fluxograma a seguir exemplifica a parte de configuração do dispositivo:
+
+![Alt](Gas_Safety_Sys-Page-3.drawio.png)
+
+Este, exemplifica as rotinas de operação do dispositivo:
+
+![Alt](Gas_Safety_Sys-Página-2.drawio.png)
+
 ## Referências
 
 https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf
