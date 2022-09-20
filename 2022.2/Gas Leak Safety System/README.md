@@ -72,7 +72,7 @@ Ao detectar níveis de concentração acima do especificado com pessoas na sala,
 
 ## Descrição Estrutural do Sistema
 
-O diagrama a seguir ilustra o comportamento do sistema frente aos eventos que deverão ser tratados.
+O diagrama a seguir ilustra os blocos funcionais do sistema frente aos eventos que deverão ser tratados.
 
 ![Alt](Gas_Safety_Sys.drawio.png)
 
