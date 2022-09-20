@@ -26,8 +26,13 @@ A idealização do projeto possui como público alvo qualquer pessoa que deseje 
 Um valor seria melhor definido quando o projeto estiver em uma etapa de desenvolvimento mais avançada, por conta de não conseguirmos estipular os custos inicialmente. 
 
 ## Descrição Funcional
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
+Para demonstrar e funcionalidade no sistema podemos apresentar isoladamente cada sensor e com qual parte do sistema o seu atuador vai reagir dependendo do sinal de entrada, então segue a descrição de cada comportamento:
+
+Controle da temperatura: Ao definir uma faixa de temperatura o sensor de temperatura vai mandar sinais para os ar-condicionados quando: Atingir temperatura limite inferior -> Ligar aquecedor. Atingir temperatura limite superior -> Ligar resfriamento. Esse sinal de ligar será único e outro sinal de desligamento será enviado quando o sensor de temperatura detectar a temperatura ideal atingida (geralmente leva-se a faixa de temperatura com a temperatura ideal posicionada exatamente no meio dessa faixa).
+Para a parte manual, o cliente terá a informação da temperatura atual da sala e poderá acionar o resfriamento ou o aquecimento do ambiente manualmente, tendo em vista que os limites da faixa devem ser respeitados, mesmo que no modo manual.
+Controle de umidade: Ao definir a faixa de umidade desejada o sensor de umidade vai mandar sinais para os irrigadores quando: Atingir umidade limite inferior -> Ligar os irrigadores. Porém o controle para diminuir a umidade do ambiente não será necessária, pois a umidade dentro da estufa terá que ser maior que a umidade externa. Para desligar os irrigadores, um sinal será enviado do sensor de umidade quando a umidade ideal for atingida, com o tempo a umidade tende a cair e o ciclo se repete.
+Para o controle manual, o cliente terá a informação coletada pelo sensor de umidade do momento presente da umidade, e poderá acionar o irrigador, tendo em vista que os limites da faixa devem ser respeitados, mesmo que no modo manual.
+Controle de irrigação: Com uma periodicidade programada os irrigadores irão acionar, porém isso será programado pelo cliente, pois os sensores de umidade também irão acionar os irrigadores, então temos que pensar em um intervalo padronizado para não irrigar em excesso as plantas, isso vai ser variável para cada tipo de planta, conforme o desejo do cliente.
 
 ### Funcionalidades
 Como funcionalidades do projeto, podemos listar:
@@ -40,12 +45,21 @@ Como funcionalidades do projeto, podemos listar:
 Em nosso projeto, vamos definir dois modos de configuração: automático e manual. Dessa forma, permitimos a autonomia de tomadas de decisões e o proprietário poderá alternar os modos via APP, sendo necessário apenas possuir acesso à rede de internet para se comunicar com o sistema da estufa.
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
+Ditamos como evento periódico o controle de irrigação, que ocorre uma vez ao dia em situações normais. Dependendo do plantio e da configuração do cliente, é possível ajustar tornando-o mais/menos frequente. É possível configurar também o tempo de duração da irrigação para cada vez que ela for ativada, buscando um melhor aproveitamento e economia de água.
+
+Como eventos não-periódicos listamos o controle de temperatura e umidade, que vão ocorrer com base nos dados recebidos pelos sensores. Portanto, os ajustes de temperatura e umidade terão definidos pontos limites mínimos e pontos limites máximos para cada um, para que esses parâmetros fiquem dentro de uma faixa ideal definida pelo cliente e que consiga ser eficiente para não ocorrer gasto desnecessário de energia.
+
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+Modo automático ligado:
+Se temperatura for superior à Xº - acionamento dos ares condicionados por 1 hora
+Se temperatura for inferior à Xº - desligamento dos ares condicionados por 30 minutos
+Se umidade for superior à Y% - acionamento dos aspersores por 30 minutos
+Se umidade for inferior à Y% - desligamento dos aspersores por 2 horas
+
+Observação: A temperatura X e a umidade Y serão definidos pelo usuário do app mobile.
+
+Modo automático desligado: Sistema ficará em espera aguardando um novo comando do usuário via app mobile.
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
