@@ -1,5 +1,5 @@
-# `Irrigador Automático`
-# `Automated Irrigator`
+# `Sistema de Irrigação Automático`
+# `Automated Irrigation System`
 
 ## Apresentação
 
@@ -14,17 +14,15 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> Um sistema que irriga e deposita adubo em plantas de uma horta caseira por gotejamento. Ele é baseado em uma central onde fica armazenado o adubo líquido
-> ou fertilizante e a água para irrigação.
-> Dessa central saem canos para a horta, e ele possui um injetor pra colocar fertilizante ou adubo na água. 
-> Além disso, o sistema possuí dois sensores de pressão para monitorar a capacidade de água e
-> adubo líquido restante. Nos canos existem furos intermediários que podem ser acionados de maneira independentes para irrigar partes específicas da horta.
-> 
 > Com o crescimento da procura por uma alimentação saudável com vegetais orgânicos e livres de pesticidas, este projeto tem o seu público alvo para pessoas que
 > gostariam de desenvolver sua própria horta caseira como um hobby, mas não possuem tanto tempo para poder tomar conta. Além de ser automático, a irrigação por
-> gotejamento é uma boa forma de gastar menos água por evaporação, o que diminui o custo da conta de água.
+> gotejamento é uma boa forma de gastar menos água por evaporação, o que diminui o custo da conta de água. 
+> Esse sistema irriga e deposita adubo em plantas de uma horta caseira por gotejamento. Ele é baseado em uma central onde fica armazenado o adubo líquido
+> ou fertilizante e a água para irrigação. Nesta central, o usuário pode setar as configurações da irrigação.
+> Dessa central saem canos para a horta, e ele possui um injetor pra colocar fertilizante ou adubo na água. 
+> Além disso, o sistema possuí dois sensores de pressão para monitorar a capacidade de água e
+> adubo líquido restante (caso não seja possível deixar uma torneira conectada no sistema). Nos canos existem furos intermediários que podem ser acionados de maneira independentes para irrigar partes específicas da horta.
 > 
-> O sistema ajuda a gastar menos água, portanto, pode-se vende-lô à um custo maior.
 
 ## Descrição Funcional
 
@@ -33,6 +31,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Manter o solo com um certo nível de umidade para a raiz do vegetal
 > Adubação ou fertilização líquida do solo automático
 > Medidor de água e adubo líquido/fertilizante restante
+> Medidor do nível de bateria
 
 ### Configurabilidade
 > Volume de água
@@ -47,23 +46,17 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > da temperatura e umidade ambiente)
 > Irrigação da horta (periódico, setado pelo usuário)
 > Aplicação de adubo líquido (periódico, setado pelo usuário)
+> Bateria baixa (não-periódico)
 
 ### Tratamento de Eventos
-> Nível baixo de água ou de adubo/fertilizante: Enviar uma mensagem via Wi-Fi para o usuário e acender um led (led vermelho para água e led amarelo para adubo)
+> Nível baixo de água ou de adubo/fertilizante: Enviar uma mensagem via Wi-Fi para o usuário e acender um led (led azul para água e led amarelo para adubo)
 > Umidade do solo menor do que o configurado: Gotejar água no solo até atingir o valor setado pelo usuário
 > Irrigação da horta: Irrigar a horta com o volume de água no horário determinado pelo usuário
-> Aplicação de adubo/fertilizante: Aplicar na água que será gotejada na horta 
+> Aplicação de adubo/fertilizante: Aplicar na água que será gotejada na horta
+> Bateria baixa: Enviar uma mensagem via Wi-Fi para o usuário e acender um led (led vermelho)
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
+> A descrição estrutural do sistema foi feita por diagrama de blocos e se encontra neste link:
 > 
 
 ## Referências
@@ -71,4 +64,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
  
 > Como cultivar uma horta caseira [Estadão](https://revistacasaejardim.globo.com/Casa-e-Jardim/Paisagismo/noticia/2022/08/10-dicas-simples-e-certeiras-para-ter-uma-horta-caseira-saudavel.html)
 
+> Irrigation Systems - Automatic Watering Systems [Irrigation Systems](https://www.gardeners.com/how-to/about-snip-n-drip/7886.html)
 
+> DripWorks - How to choose a garden irrigation system [DripWorks](https://www.dripworks.com/blog/how-to-choose-a-garden-irrigation-system)
+
+> DripWorks - Fertilizer Injectors [DripWorks](https://www.dripworks.com/drip-irrigation/fertilizer-injectors)
+
+> Gardena - Automatic Irrigation [Gardena](https://www.gardena.com/int/products/guidance/automatic-irrigation/)
