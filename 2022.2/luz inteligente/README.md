@@ -28,3 +28,7 @@ Será um sistema que ligará ou desligará a luz de um cômodo da casa, a partir
 - Caso o sistema não detecte nenhuma presença após 5 minutos, desligará a luz.
 
 ## Estrutura do Sistema
+
+![diagrama](https://user-images.githubusercontent.com/73912017/191380649-05f83f75-f9b9-4dfc-a7c6-20d8a283a7ea.png)
+
+
