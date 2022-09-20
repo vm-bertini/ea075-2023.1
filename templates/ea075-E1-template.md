@@ -58,6 +58,5 @@ Em nosso projeto, vamos definir dois modos de configuração: automático e manu
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
 > 
-
 ## Referências
 [1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
