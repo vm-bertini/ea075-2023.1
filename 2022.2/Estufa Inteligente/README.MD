@@ -1,5 +1,5 @@
 # `Estufa Inteligente`
-# `Eco Greenhouse`
+# `Smart Eco Greenhouse`
 
 ## Apresentação
 
@@ -19,7 +19,7 @@ Foi pensando nisso que o projeto Estufa Inteligente surgiu. A intenção é poss
 
 Além disso, as possibilidades de rotatividade do plantio são infinitas, já que o proprietário consegue configurar faixas de temperatura, umidade e ciclos de irrigação manualmente, permitindo assim a economia energia conforme o clima local. E no quesito sustentabilidade, a eficácia é garantida: além da economia energética, há também a economia de água.
 
-Com o sistema Estufa Inteligente, além de garantir a qualidade do produto na colheira, você evita a proliferação de pragas, automatiza todos os processos de plantio e controla todas as funções à distância.
+Com o sistema Estufa Inteligente, além de garantir a qualidade do produto na colheita, você evita a proliferação de pragas, automatiza todos os processos de plantio e controla todas as funções à distância.
 
 A idealização do projeto possui como público alvo qualquer pessoa que deseje automatizar suas estufas e manter um controle manual quando necessário, somente tendo um celular e conexão com a internet.
 
@@ -28,8 +28,8 @@ Um valor seria melhor definido quando o projeto estiver em uma etapa de desenvol
 ## Descrição Funcional
 Para demonstrar e funcionalidade no sistema podemos apresentar isoladamente cada sensor e com qual parte do sistema o seu atuador vai reagir dependendo do sinal de entrada, então segue a descrição de cada comportamento:
 
-Controle da temperatura: Ao definir uma faixa de temperatura o sensor de temperatura vai mandar sinais para os ar-condicionados quando: Atingir temperatura limite inferior -> Ligar aquecedor. Atingir temperatura limite superior -> Ligar resfriamento. Esse sinal de ligar será único e outro sinal de desligamento será enviado quando o sensor de temperatura detectar a temperatura ideal atingida (geralmente leva-se a faixa de temperatura com a temperatura ideal posicionada exatamente no meio dessa faixa).
-Para a parte manual, o cliente terá a informação da temperatura atual da sala e poderá acionar o resfriamento ou o aquecimento do ambiente manualmente, tendo em vista que os limites da faixa devem ser respeitados, mesmo que no modo manual.
+Controle da temperatura: Ao definir uma faixa de temperatura o sensor de temperatura vai mandar sinais para os ar-condicionados quando:  Atingir temperatura limite superior -> Ligar resfriamento. Esse sinal de ligar será único e outro sinal de desligamento será enviado quando o sensor de temperatura detectar a temperatura ideal atingida (geralmente leva-se a faixa de temperatura com a temperatura ideal posicionada exatamente no meio dessa faixa).
+Para a parte manual, o cliente terá a informação da temperatura atual da sala e poderá acionar o resfriamento do ambiente manualmente, tendo em vista que os limites da faixa devem ser respeitados, mesmo que no modo manual.
 
 Controle de umidade: Ao definir a faixa de umidade desejada o sensor de umidade vai mandar sinais para os irrigadores quando: Atingir umidade limite inferior -> Ligar os irrigadores. Porém o controle para diminuir a umidade do ambiente não será necessária, pois a umidade dentro da estufa terá que ser maior que a umidade externa. Para desligar os irrigadores, um sinal será enviado do sensor de umidade quando a umidade ideal for atingida, com o tempo a umidade tende a cair e o ciclo se repete.
 Para o controle manual, o cliente terá a informação coletada pelo sensor de umidade do momento presente da umidade, e poderá acionar o irrigador, tendo em vista que os limites da faixa devem ser respeitados, mesmo que no modo manual.
@@ -40,7 +40,7 @@ Controle de irrigação: Com uma periodicidade programada os irrigadores irão a
 ### Funcionalidades
 Como funcionalidades do projeto, podemos listar:
 - Controle de temperatura através de ares condicionados;
-- Controle de irrigação através de aspersores¹;  
+- Controle de irrigação através de irrigadores aspersores¹;  
 - Controle de umidade através de aspersores (os mesmos utilizados no controle da irrigação);
 - Interação manual com os controles por meio de aplicativo, porém o foco é a automação deste trabalho por meio de uma fácil programação feita pelo cliente.
 
@@ -55,10 +55,14 @@ Como eventos não-periódicos listamos o controle de temperatura e umidade, que 
 
 ### Tratamento de Eventos
 Modo automático ligado:
-  -Se temperatura for superior à Xº - acionamento dos ares condicionados por 1 hora
-  -Se temperatura for inferior à Xº - desligamento dos ares condicionados por 30 minutos
-  -Se umidade for superior à Y% - acionamento dos aspersores por 30 minutos
-  -Se umidade for inferior à Y% - desligamento dos aspersores por 2 horas
+
+  - Se temperatura for superior à Xº - acionamento dos ares condicionados por 1 hora
+  
+  - Se temperatura for inferior à Xº - desligamento dos ares condicionados por 30 minutos
+  
+  - Se umidade for superior à Y% - acionamento dos aspersores por 30 minutos
+  
+  - Se umidade for inferior à Y% - desligamento dos aspersores por 2 horas
 
 Observação: A temperatura X e a umidade Y serão definidos pelo usuário do app mobile.
 
@@ -70,7 +74,12 @@ Estruturalmente o projeto foi divido em três partes, sendo elas: a entrada, o m
 
 ![diagramaprincipal](https://user-images.githubusercontent.com/113607245/191366997-67bf3240-c23d-4b10-90c9-e71ffb440ee0.png)
 
+O bloco "acionamento manual" contido na etapa "Entrada" do diagrama será o responsável por captar as configurações de temperatura máxima e umidade mínima realizadas dentro do App de interface com o usuário. Ele também será o responsável por enviar ao módulo de controle acionamento/desligamento de ares condicionados e aspersores quando o modo manual estiver ativo.
+
+Além disso, foram desenvolvidos dois fluxogramas que determinam o comportamento do sistema quando o modo automático estiver habilitado, tanto para o controle de temperatura como para o controle de umidade.
+
 ![diagramacontroletemperatura](https://user-images.githubusercontent.com/113607245/191367051-de9a27ac-5c74-43c3-bffc-4759951f76da.png)
+
 ![diagramacontroleumidade](https://user-images.githubusercontent.com/113607245/191367053-6f095790-2c18-4e20-9bbc-e61497113d34.png)
 
 
