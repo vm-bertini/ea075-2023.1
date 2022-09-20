@@ -63,15 +63,14 @@ Observação: A temperatura X e a umidade Y serão definidos pelo usuário do ap
 Modo automático desligado: Sistema ficará em espera aguardando um novo comando do usuário via app mobile.
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
+Estruturalmente o projeto foi divido em três partes, sendo elas: a entrada, o módulo de controle, e a saída. Em cada uma das partes, foram inseridos os dispositivos principais para o funcionamento da estufa, conforme ilustrado na imagem abaixo.
+
+![diagramaprincipal](https://user-images.githubusercontent.com/113607245/191366997-67bf3240-c23d-4b10-90c9-e71ffb440ee0.png)
+
+![diagramacontroletemperatura](https://user-images.githubusercontent.com/113607245/191367051-de9a27ac-5c74-43c3-bffc-4759951f76da.png)
+![diagramacontroleumidade](https://user-images.githubusercontent.com/113607245/191367053-6f095790-2c18-4e20-9bbc-e61497113d34.png)
+
+
+
 ## Referências
 [1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
