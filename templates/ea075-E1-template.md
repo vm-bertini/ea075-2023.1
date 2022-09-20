@@ -32,7 +32,7 @@ Um valor seria melhor definido quando o projeto estiver em uma etapa de desenvol
 ### Funcionalidades
 Como funcionalidades do projeto, podemos listar:
 - Controle de temperatura através de ares condicionados;
-- Controle de irrigação através de aspersores;  
+- Controle de irrigação através de aspersores¹;  
 - Controle de umidade através de aspersores (os mesmos utilizados no controle da irrigação);
 - Interação manual com os controles por meio de aplicativo, porém o foco é a automação deste trabalho por meio de uma fácil programação feita pelo cliente.
 
@@ -60,4 +60,4 @@ Em nosso projeto, vamos definir dois modos de configuração: automático e manu
 > 
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+[1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
