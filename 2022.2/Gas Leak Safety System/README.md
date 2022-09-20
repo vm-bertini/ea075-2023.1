@@ -23,6 +23,14 @@ O nosso projeto tem a detecção de diferentes tipos de gases como a sua funçã
 
 Ainda por meio do display LCD o usuário poderá configurar quais os números que deverão receber SMS em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. Vale ressaltar que ao se detectar uma ocorrência de risco, além do microcontrolador enviar um sinal para o módulo SMS indicando quais os números que devem receber a mensagem, ele também irá acionar um buzzer acoplado ao próprio sensor por meio de uma saída digital por volta de 1 minuto, indicando que a região não deve ser acessada.
 
+O fluxograma a seguir exemplifica a configuração do dispositivo:
+
+![Alt](Gas_Safety_Sys-Page-3.drawio.png)
+
+Este, exemplifica as rotinas de operação citadas acima:
+
+![Alt](Gas_Safety_Sys-Página-2.drawio.png)
+
 ### Funcionalidades
 
 - Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local;
@@ -67,14 +75,6 @@ Ao detectar níveis de concentração acima do especificado com pessoas na sala,
 O diagrama a seguir ilustra o comportamento do sistema frente aos eventos que deverão ser tratados.
 
 ![Alt](Gas_Safety_Sys.drawio.png)
-
-O fluxograma a seguir exemplifica a parte de configuração do dispositivo:
-
-![Alt](Gas_Safety_Sys-Page-3.drawio.png)
-
-Este, exemplifica as rotinas de operação do dispositivo:
-
-![Alt](Gas_Safety_Sys-Página-2.drawio.png)
 
 ## Referências
 
