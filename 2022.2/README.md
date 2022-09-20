@@ -38,7 +38,6 @@ Como funcionalidades do projeto, podemos listar:
 
 ### Configurabilidade
 Em nosso projeto, vamos definir dois modos de configuração: automático e manual. Dessa forma, permitimos a autonomia de tomadas de decisões e o proprietário poderá alternar os modos via APP, sendo necessário apenas possuir acesso à rede de internet para se comunicar com o sistema da estufa.
-teste
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
