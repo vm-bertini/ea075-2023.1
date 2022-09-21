@@ -105,4 +105,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+> https://www.electronica-pt.com/radio-frequencia
+
+> https://appinventor.mit.edu/
+
+> https://blog.novaeletronica.com.br/circuito-receptor-e-transmissor-de-dados-de-baixo-custo/
