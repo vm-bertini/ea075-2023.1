@@ -100,8 +100,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Estado de carregamento: Quando alimentado ao carregador, é gerado uma interrupção e a coleira fica no estado de carregando.
 
 ## Descrição Estrutural do Sistema
-![image](https://user-images.githubusercontent.com/91965153/191382894-e539e19c-24c4-4c82-833c-3d37f01608b9.png)
-
+![image](https://user-images.githubusercontent.com/91965153/191393909-73d0100b-3478-4997-ba36-f900adaf8eab.png)
 > 
 
 ## Referências
@@ -110,3 +109,5 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > https://appinventor.mit.edu/
 
 > https://blog.novaeletronica.com.br/circuito-receptor-e-transmissor-de-dados-de-baixo-custo/
+
+
