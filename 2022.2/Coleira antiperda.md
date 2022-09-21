@@ -110,4 +110,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > https://blog.novaeletronica.com.br/circuito-receptor-e-transmissor-de-dados-de-baixo-custo/
 
+> https://www.youtube.com/watch?v=6l2XSbG7_Gg&ab_channel=YourWildLifeProject
+
+> https://makezine.com/projects/gps-cat-tracker-2/
 
