@@ -56,8 +56,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Bateria baixa: Enviar uma mensagem via Wi-Fi para o usuário e acender um led (led vermelho)
 
 ## Descrição Estrutural do Sistema
-> A descrição estrutural do sistema foi feita por diagrama de blocos e se encontra neste link:
-> 
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/Lobato-B3313/ea075/1669fc1ca83abd8f34cf037b9d73f4315930ea1e/2022.2/irrigador-horta/images/diagram.svg">
 
 ## Referências
 > Expansão do mercado de produtos organicos [Valor](https://valor.globo.com/empresas/esg/noticia/2022/09/09/de-cosmeticos-a-alimentos-mercado-de-produtos-verdes-esta-em-franca.ghtml)
