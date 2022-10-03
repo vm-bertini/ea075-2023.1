@@ -25,18 +25,18 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
-### Funcionalidades (ATUALIZAR SE NECESSÁRIO)
+### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
 
-### Configurabilidade (ATUALIZAR SE NECESSÁRIO)
+### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
 
-### Eventos (ATUALIZAR SE NECESSÁRIO)
+### Eventos
 > Quais eventos o sistema deve tratar?
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)?
 
-### Tratamento de Eventos (ATUALIZAR SE NECESSÁRIO)
+### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 
 ## Descrição Estrutural do Sistema (ATUALIZAR SE NECESSÁRIO)
@@ -52,9 +52,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Especificações (NOVO)
 
-### Especificação Estrutural (NOVO)
+### Especificação Estrutural
 
 > (Se preferir, adicione um link para o documento de especificação estrutural)
+> 
 > Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
 > Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
 > para implementação do sistema embarcado proposto.
@@ -77,9 +78,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
 
-### Especificação de Algoritmos (NOVO)
+### Especificação de Algoritmos 
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
+> 
 > Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
 > tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
 > os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
