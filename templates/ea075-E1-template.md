@@ -1,6 +1,6 @@
-# `<Jardim Doméstico Automatizado>`
+# Jardim Doméstico Automatizado
 
-# `<Automated Home Garden>`
+# Automated Home Garden
 
 ## Apresentação
 
