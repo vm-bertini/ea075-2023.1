@@ -15,8 +15,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição do Projeto
 Dado o aumento da integração dos dispositivos eletrodomésticos e eletroportáteis para serem utilizados de forma remota, através de comandos de voz ou qualquer outro evento que os acione de forma autônoma, um outro questionamento vem surgindo: o quanto é possível automatizar também itens relacionados a alvenaria de uma residência, como por exemplo, uma porta ou uma janela dado alguns eventos? E como fazer isso de forma elegante e também com um bom custo?  
-Com esses questionamentos em mente, propor-se o projeto de controle de abertura e fechamento de uma janela chamado de SmartWin.   
-SmartWin foi pensado para auxiliar em uma tarefa simples do cotidiano, que é o abrir e fechar uma janela, mas que se esquecida pode ocasionar o alagamento de um comodo, ou até mesmo de todo o apartamento.  
+Com esses questionamentos em mente, propõe-se o projeto de controle de abertura e fechamento de uma janela chamado de SmartWin.   
+SmartWin foi pensado para auxiliar em uma tarefa simples do cotidiano, que é o abrir e fechar uma janela, mas que se esquecida pode ocasionar o alagamento de um cmodo, ou até mesmo de todo o apartamento.  
 Entretanto, não é apenas um controlador para janelas qualquer. Com o SmartWin é possível ficar despreocupado com a previsão do tempo, pois ele mesmo consulta para você e realiza o fechamento da sua janela se houver previsão de chuva para 1:00PM, por exemplo. Mas sabe-se que a previsão do tempo pode mudar sem qualquer aviso. Mesmo nesse caso, o SmartWin não te deixará na mão, pois ele conta com um sistema de umidade que conseguirá detectar a chuva em instantes e protegerá sua casa.  
 Com o SmartWin você também tem o controle das sua janela, podendo abri-la, fechá-la em tempos pré-determinados ou com apenas um clique na tela do seu celular, ou um comando da sua Alexa ou Google Home. 
 
