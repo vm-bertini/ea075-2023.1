@@ -62,6 +62,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Especificação Estrutural
 
+> Micro-controlador: [STM32F103c8](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html)
+> Modulo-wifi: [ESP8266](https://www.robocore.net/wifi/modulo-wifi-esp8266)
+> Sensor-umidade solo: [392-EDUPON-SENLG](https://www.mouser.com/ProductDetail/STEMinds/EDUPON-SENLG?qs=QNEnbhJQKvaVLsRNVVZeYw%3D%3D)
+> Regulador de Tensão Linear: [KF33BDT-TR](https://www.st.com/en/power-management/kfxx.html)
+
 > (Se preferir, adicione um link para o documento de especificação estrutural)
 > 
 > Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
