@@ -32,7 +32,7 @@ Quem nunca saiu de casa e esqueceu de recolher as roupas do varal? Para resolver
 - Quando o sensor de chuva detectar presença de água, irá acionar os atuadores para recolher o varal e comunicar o proprietário
 - Quando diminuir o nível de umidade do sensor e a probabilidade de chuva estiver baixa, irá acionar os atuadores para estender o varal novamente
 ## Descrição Estrutural do Sistema
-![Alt](Micro Controlador.png)
+![Micro Controlador](https://github.com/OtavioSoares1997/ea075/blob/main/2022.2/Micro%20Controlador.png)
 ## Referências
 - https://blog.bidu.com.br/sensor-de-chuva/#:~:text=O%20que%20%C3%A9%20Sensor%20de,de%20interven%C3%A7%C3%A3o%20instant%C3%A2nea%20do%20motorista.
 - [https://sigmasensors.com.br/sensor-temperatura-umidade#:~:text=Sensor%20de%20Temperatura%20e%20Umidade%20%C3%A9%20um%20equipamento%20que%20pode,(temperatura%20e%20umidade%20foliar)](https://sigmasensors.com.br/sensor-temperatura-umidade#:~:text=Sensor%20de%20Temperatura%20e%20Umidade%20%C3%A9%20um%20equipamento%20que%20pode,(temperatura%20e%20umidade%20foliar)).
