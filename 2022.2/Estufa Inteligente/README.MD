@@ -79,6 +79,12 @@ Além disso, foram desenvolvidos dois fluxogramas que determinam o comportamento
 ![diagramacontroleumidade](https://user-images.githubusercontent.com/113607245/191367053-6f095790-2c18-4e20-9bbc-e61497113d34.png)
 
 
+## Especificações
+
+### Especificação Estrutural
+
+### Especificação de Algoritmos 
+
 
 ## Referências
 [1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
