@@ -51,9 +51,19 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 ## Descrição Estrutural do Sistema
 ![Alt](KeePet_Comfort_Block_Diagram.png)
 
+## Especificações 
+
+Com base no diagrama de blocos apresentado na seção *Descrição Estrutural do Sistema*, identificou-se a necessidade de um sensor de temperatura como periférico de entrada. A partir dessa necessidade, foi feito o levantamento dos sensores que poderiam suprir a necessidade do projeto, entre eles o *DS18B20*  [[4]](#Referências). O DS18B20 é um termômetro digital que se comunica através do protocolo *1-Wire* [[5,6]](#Referências) que é utilizado para comunicações a baixas velocidades, 8.33 kbit/s no modo padrão, e tem a vantagem utilizar uma única linha, que é utilizada para alimentação e para realizar a transmissão de dados entre dispositivos. Para as condições ambientais requeridas esse termômetro atende as demandas de forma satisfatória, pois seu range de operação é de -55°C a +125°C, permitindo medir a temperatura ambiente de diferentes localidades. Além disso, para a faixa de -10°C a +85°C a precisão do periférico é de ±0.5°C, atendendo o propósito do projeto que não requer controle fino da temperatura. Como o DS18B20 é um termômetro digital, sua resolução pode ser configurada como 9, 10, 11, ou 12 bits, que corresponde a incrementos de 0.5°C, 0.25°C, 0.125°C e 0.0625°C, respectivamente.
+
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
 
 [2] https://ww1.microchip.com/downloads/en/Appnotes/00929a.pdf - Acessado em 18 set. 2022.
 
 [3] https://idc-online.com/technical_references/pdfs/electronic_engineering/Design%20of%20An%20Embedded%20System%20For%20Monitoring%20and%20Controlling%20Temperature%20and%20Light.pdf - Acessado em 18 set. 2022.
+
+[4] https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf - Acessado em 17 nov. 2022.
+
+[5] https://www.ti.com/lit/an/spma057d/spma057d.pdf?ts=1666904477627&ref_url=https%253A%252F%252Fwww.google.com%252F - Acessado em 27 nov. 2022.
+
+[6] https://pdfserv.maximintegrated.com/en/an/Overview_1wire_Technology_use.pdf - Acessado em 27 nov. 2022.
