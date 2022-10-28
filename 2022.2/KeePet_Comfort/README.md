@@ -55,16 +55,16 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 
 ### Sensor de Temperatura
 
-Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), identificou-se a necessidade de um sensor de temperatura como periférico de entrada. A partir dessa necessidade, foi feito o levantamento dos sensores que poderiam suprir a demanda do projeto, entre eles o *DS18B20*  [[4]](#Referências). O DS18B20 é um termômetro digital que se comunica através do protocolo *1-Wire* [[5,6]](#Referências) que é utilizado para comunicações a baixas velocidades, 8.33 kbit/s no modo padrão, e tem a vantagem utilizar uma única linha, que é utilizada para alimentação e para realizar a transmissão de dados entre dispositivos. Para as condições ambientais requeridas, esse termômetro atende as necessidades de forma satisfatória, pois seu range de operação é de -55°C a +125°C, permitindo medir a temperatura ambiente de diferentes localidades. Além disso, para a faixa de -10°C a +85°C a precisão do periférico é de ±0.5°C, atendendo o propósito do projeto que não requer controle fino da temperatura. Como o DS18B20 é um termômetro digital, sua resolução pode ser configurada como 9, 10, 11, ou 12 bits, que corresponde a incrementos de 0.5°C, 0.25°C, 0.125°C e 0.0625°C, respectivamente.
+Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), identificou-se a necessidade de um sensor de temperatura como periférico de entrada. A partir dessa necessidade, foi feito o levantamento dos sensores que poderiam suprir a demanda do projeto, entre eles o *DS18B20*  [[4]](#Referências). O *DS18B20* é um termômetro digital que se comunica através do protocolo *1-Wire* [[5,6]](#Referências) que é utilizado para comunicações a baixas velocidades, 8.33 kbit/s no modo padrão, e tem a vantagem utilizar uma única linha, que é utilizada para alimentação e para realizar a transmissão de dados entre dispositivos. Para as condições ambientais requeridas, esse termômetro atende as necessidades de forma satisfatória, pois seu range de operação é de -55°C a +125°C, permitindo medir a temperatura ambiente de diferentes localidades. Além disso, para a faixa de -10°C a +85°C a precisão do periférico é de ±0.5°C, atendendo o propósito do projeto que não requer controle fino da temperatura. Como o DS18B20 é um termômetro digital, sua resolução pode ser configurada como 9, 10, 11, ou 12 bits, que corresponde a incrementos de 0.5°C, 0.25°C, 0.125°C e 0.0625°C, respectivamente.
 
 ### Módulo de Comunicação
 
-Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que está contido no intervalo em que a precisão do DS18B20 é conhecida. Além disso, ele é compatível com as interfaces SPI, UART, e I2C.
+Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que pode ser utilizado em aplicações no intervalo em que a precisão do *DS18B20* é conhecida. Além disso, ele é compatível com as interfaces SPI, UART, e I2C.
 
 
 ### Real-Time-Clock (RTC)
 
-Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário 
+Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS1307* [[8]](#Referências) que permite contar horas, minutos, segundos, que atende a aplicação desejada. O *DS1307* comunica-se com o microcontrolador por meio da interface serial I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do *DS18B20* 
 
 ### Microcontrolador
 
@@ -87,3 +87,6 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 [6] https://pdfserv.maximintegrated.com/en/an/Overview_1wire_Technology_use.pdf - Acessado em 27 nov. 2022.
 
 [7] https://ww1.microchip.com/downloads/en/devicedoc/atmel-42376-smartconnect-winc1500-mr210pa_datasheet.pdf - Acessado em 17 nov. 2022.
+
+[8] https://datasheets.maximintegrated.com/en/ds/DS1307.pdf - Acessado em 17 nov. 2022.
+
