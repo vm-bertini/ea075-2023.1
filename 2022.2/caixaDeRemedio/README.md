@@ -131,6 +131,12 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
 
+> Os atuadores serão eletroímãs cilíndricos de sucção de 8mm, operando em tensão de 3 V, ativo (fechado) em nível lógico alto.
+> A interface será  composta por um display LCD e um teclado. O display LCD 16x2 é compatível com o padrão Hitachi HD44780U e será conectado a um adaptador I2C para se comunicar com o microcontrolador. O teclado utilizado será um teclado matricial de 3 colunas e 4 linhas, com um pino controlando cada linha e um para cada coluna, totalizando 7.
+> O alarme sonoro será um buzzer DA03 de 3.3 V ativo alto da marca CDR01, que suporta correntes menores que 25 mA.
+> O microcontrolador utilizado será um ATmega328P.
+> Será utilizado um multiplexador 16x4 para que os todos os módulos possam ser conectados ao microcontrolador.
+
 ### Especificação de Algoritmos 
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
