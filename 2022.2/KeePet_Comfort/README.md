@@ -59,11 +59,12 @@ Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural d
 
 ### Módulo de Comunicação
 
-Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois.... 
+Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que está contido no intervalo em que a precisão do DS18B20 é conhecida. Além disso, ele é compatível com as interfaces SPI, UART, e I2C.
 
 
 ### Real-Time-Clock (RTC)
 
+Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário 
 
 ### Microcontrolador
 
