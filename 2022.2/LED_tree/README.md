@@ -94,6 +94,14 @@ O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 > sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
 > Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
 
+#### Charlieplexing
+
+Os LEDs serão ligados com a configuração Charlieplexing, que permite um controle de um grupo de LEDs com poucas portas I/O. Essa técnica permite que n portas controlem n<sup>2</sup> - n LEDs [4],[5]. 
+  
+O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configuração proposta. Nesse caso, para que o LED 1 seja aceso, precisamos que IO 3 esteja em nível alto, IO 0 em nível baixo e IO 1 e IO 2 como _input_.
+  
+ <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-charlieplexing.drawio.png" width="450" />
+  
 > Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
 > Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
 > que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
@@ -133,3 +141,7 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 [2] https://github.com/Ozonised/LED-Tree-V3
 
 [3] https://www.instructables.com/Mini-8x8-LED-matrix-Christmas-display-with-built-i/
+  
+[4] https://en.wikipedia.org/wiki/Charlieplexing
+  
+[5] https://www.arrow.com/en/research-and-events/articles/charlieplexing-an-led-matrix
