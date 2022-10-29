@@ -77,7 +77,7 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 ## Especificação de Algoritmos
 
-| ![Alt](Tempetura_ambiente_igual_a_ideal.png) |
+| ![Alt](Evento_1.png) |
 |:--:| 
 | *Tempetura ambiente igual a ideal* |
 
