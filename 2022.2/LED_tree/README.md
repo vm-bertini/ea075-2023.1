@@ -67,7 +67,7 @@ O sistema deverá identificar o pressionamento de um botão. Assim, será necess
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github. -->
 
-O projeto é composto por 3 blocos: interface com usuário, processamento e execução. O primeiro deles permite o usuário interagir com a decoração, ao pressionando um botão. Essa interação será então processada pelo microcontrolador, e então a árvore irá executar uma rotina de piscar os LEDs, alterando os padrões, enquanto toca uma música.
+O projeto é composto por 3 blocos: interface com usuário, processamento e execução. O primeiro deles permite o usuário interagir com a decoração, ao pressionar um botão. Essa interação será então processada pelo microcontrolador, e então a árvore irá executar uma rotina de piscar os LEDs, alterando os padrões, enquanto toca uma música.
 
 O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 
@@ -76,23 +76,38 @@ O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 ## Especificações
 
 ### Especificação Estrutural
-
+<!--- > 
 > (Se preferir, adicione um link para o documento de especificação estrutural)
 > 
 > Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
 > Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
-> para implementação do sistema embarcado proposto.
+> para implementação do sistema embarcado proposto.-->
 
-|Componente | Funcionalidade para o Circuito | Datasheet |
-|--|--|--|
-| Microcrontrolador PIC 16F8X| Unidade micro-controladora | [link](https://pdf1.alldatasheet.com/datasheet-pdf/view/75016/MICROCHIP/PIC16F877.html) |
-| Botão | Mudar padrão de LEDs e música | [link](https://www.hdk.co.jp/pdf/eng/e291702.pdf) |
-| Buzzer | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) |
-| Bateria | Alimentação do circuito | entre 2 e 6V|
+A seguir os principais componentes para o desenvolvimento do projeto.
 
+|Componente | Quantidade | Funcionalidade para o Circuito | Datasheet | Preço |
+|--|--|--|--|--|
+| Microcrontrolador PIC 16F689 | 1 | Unidade micro-controladora | [link](https://pdf1.alldatasheet.com/datasheet-pdf/view/75016/MICROCHIP/PIC16F877.html) | R$ 15 a R$ 20 [link](https://www.multcomercial.com.br/microcontrolador-pic16f689-i-p-dip-20-microchip.html)|
+| Botão | 1 | Mudar padrão de LEDs e música | [link](https://www.hdk.co.jp/pdf/eng/e291702.pdf) | R$ 1,50 [link](https://www.multcomercial.com.br/chave-tactil-com-bot-o-diversas-cores.html) |
+| Buzzer | 1 | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) | |
+| LEDs | 12 | Decoração da arvore | - | Almoxarifado FEEC |
+| Pilhas AAA | 3 | Alimentação do circuito | entre 2 e 6V| R$ 7,49 [link](https://www.amazon.com.br/Rayovac-Amarelinhas-10307-Amarelo-Palito/dp/B01L9KVYDG/ref=asc_df_B01L9KVYDG/?tag=googleshopp00-20&linkCode=df0&hvadid=379794911936&hvpos=&hvnetw=g&hvrand=16238180961664777646&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-939070999438&psc=1) |
+| Suporte para pilha | 1 | Alimentação do circuito | - | R$ 7 [link](https://www.multcomercial.com.br/suporte-para-3-pilhas-aaa-com-tampa-e-rabicho-de-15cm-jd15-6039a-jinda.html)|
+
+<!--- > 
 > Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
 > sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
-> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.-->
+
+
+Inicialmente para a decoração luminosa da árvore de natal estimou-se um total de 12 LEDs. No entanto, para reduzir o número de portas e aprender sobre a construção de matrizes a técnica Charlieplexing será utilizada, diminuindo, assim, a quantidade de portas necessárias para o controle dos LEDs para quatro. Além disso, um botão (atuador) será usado como forma de interrupção para controlar o acionamento das músicas natalinas que serão geradas através de um piezo buzzer (atuador).
+
+Para o controle do projeto definiu-se como unidade micro-controladora o PIC 16F89 da família 16F, que possui 20 pinos, 4K de memória e funciona com alimentação entre 2V e 5,5V. Tal escolha se deu devido a quantidade de memória razoável disponível, pinos de interrupção e de PWM, que serão utilizados na implementação de rotinas, e o alto custo benefício quando comparado ao Atmega328p (outro microcontrolador candidato para o desenvolvimento do projeto visto que as alunas já tinham familiaridade), muito mais caro e com uma capacidade de memória excessiva para o trabalho. Assim, a escolha final do PIC 16F se deu pelo valor através da análise desse site de componentes [link](https://www.multcomercial.com.br/). Note que um PIC com uma quantidade menor de portas não foi escolhido, devido ao baixo valor de memória e ausência de pinos de interrupção. 
+
+Por fim, para a alimentação do microcontrolador serão utilizados 3 pilhas AAA de 1,5V cada totalizando uma tensão de 4,5V.
+
+Em sequência serão tratadas a técnica de Charlieplexing, para a matriz de LEDs, e o problema de debounce proveniente do acionamento do botão.
+
 
 #### Charlieplexing
 
@@ -101,7 +116,16 @@ Os LEDs serão ligados com a configuração Charlieplexing, que permite um contr
 O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configuração proposta. Nesse caso, para que o LED 1 seja aceso, precisamos que IO 3 esteja em nível alto, IO 0 em nível baixo e IO 1 e IO 2 como _input_.
   
  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-charlieplexing.drawio.png" width="450" />
-  
+ 
+ #### Debounce
+ 
+ Para evitar o efeito de repique ao acionar o botão, ou seja, oscilações indesejadas que podem causar mal funcionamento no circuito, será implementado, via hardware, um capacitor em pararelo com o botão de modo a suavizar a transição de níveis (nível lógico baixo para o alto e vice versa) e com isso impedir interpretações erradas de acionamento de botão [6]. A Figura abaixo mostra o esquemático para o circuito de debounce.
+ 
+![image](https://user-images.githubusercontent.com/40005866/198850561-d335bd71-75dd-4621-9129-399d8d179642.png)
+
+ Note que o valor da resistência e do capacitor estão associados com o tempo de carregamento do capacitor, ou seja, o atraso nas transições de nível.
+
+<!--- > 
 > Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
 > Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
 > que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
@@ -111,11 +135,12 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
 > Assim, devem ser incluídos na especificação, se necessário:
 > - conversores AD e DA;
 > - padrões de comunicação a serem adotados;
-> - circuitos de sincronização de sinais temporais.
+> - circuitos de sincronização de sinais temporais.-->
 
 #### Especificações físicas
+<!--- > 
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
-> (altura, largura, profundidade) e limites de dissipação térmica.
+> (altura, largura, profundidade) e limites de dissipação térmica.-->
 
 A árvore de Natal será feita em forma de bordado, em um quadro circular de cerca de ~18cm de diâmetro. Teremos 12 LEDs ligados na configuração Charlieplexing como explicado acima e a placa com o microcontrolador PIC será fixada no quadro do bordado, de forma a deixar o botão e o buzzer à vista. O desenho a seguir ilustra o que foi pensado para a estrutura física do projeto.
 
@@ -133,6 +158,8 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
+
+
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
 
@@ -145,3 +172,5 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 [4] https://en.wikipedia.org/wiki/Charlieplexing
   
 [5] https://www.arrow.com/en/research-and-events/articles/charlieplexing-an-led-matrix
+
+[6] https://www.newtoncbraga.com.br/index.php/microcontrolador/143-tecnologia/16303-problemas-de-repique-como-resolver-mic202
