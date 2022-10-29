@@ -42,11 +42,11 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 
 ### Tratamento de Eventos
 - **Tempetura ambiente igual a ideal:** aguarda o próximo aferimento de temperatura;
-- **Tempetura ambiente abaixo da ideal:** aciona via wi-fi o aquecedor, passando o valor de setpoint determinado;
-- **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado, passando o valor de setpoint determinado;
+- **Tempetura ambiente abaixo da ideal:** aciona via wi-fi o aquecedor;
+- **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado;
 - **Hora para acender as luzes atingida:** acende via wi-fi as luzes do cômodo;
 - **Hora para apagar as luzes atingida:** apaga via wi-fi as luzes do cômodo;
-- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
+************- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
 
 ## Descrição Estrutural do Sistema
 ![Alt](KeePet_Comfort_Block_Diagram.png)
@@ -55,25 +55,29 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 
 ### Sensor de Temperatura
 
-Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), identificou-se a necessidade de um sensor de temperatura como periférico de entrada. A partir dessa necessidade, foi feito o levantamento dos sensores que poderiam suprir a demanda do projeto, entre eles o *DS18B20*  [[4]](#Referências). O *DS18B20* é um termômetro digital que se comunica através do protocolo *1-Wire* [[5,6]](#Referências) que é utilizado para comunicações a baixas velocidades, 8.33 kbit/s no modo padrão, e tem a vantagem utilizar uma única linha, que é utilizada para alimentação e para realizar a transmissão de dados entre dispositivos. Para implementação da comunicação *1-Wire*, é necessário conectar um resistor, tipicamente de 4k7, entre a fonte de alimentação de +3,3V a +5,5V e o pino DQ. Para as condições ambientais requeridas, esse termômetro atende as necessidades de forma satisfatória, pois seu range de operação é de -55°C a +125°C, permitindo medir a temperatura ambiente de diferentes localidades. Além disso, para a faixa de -10°C a +85°C a precisão do periférico é de ±0.5°C, atendendo o propósito do projeto que não requer controle fino da temperatura. Como o DS18B20 é um termômetro digital, sua resolução pode ser configurada como 9, 10, 11, ou 12 bits, que corresponde a incrementos de 0.5°C, 0.25°C, 0.125°C e 0.0625°C, respectivamente.
+Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), identificou-se a necessidade de um sensor de temperatura como periférico de entrada. A partir dessa necessidade, foi feito o levantamento dos sensores que poderiam suprir a demanda do projeto, entre eles o *DS18B20*  [[4]](#Referências). O DS18B20 é um termômetro digital que se comunica através do protocolo *1-Wire* [[5,6]](#Referências) que é utilizado para comunicações a baixas velocidades, 8.33 kbit/s no modo padrão, e tem a vantagem de utilizar uma única linha, que é empregada para alimentação e para realizar a transmissão de dados entre dispositivos. Para implementação da comunicação *1-Wire*, é necessário conectar um resistor, tipicamente de 4k7, entre a fonte de alimentação de +3,3V a +5,5V e o pino DQ. Para as condições ambientais requeridas, esse termômetro atende as necessidades de forma satisfatória, pois seu range de operação é de -55°C a +125°C, permitindo medir a temperatura ambiente de diferentes localidades. Além disso, para a faixa de -10°C a +85°C a precisão do periférico é de ±0.5°C, atendendo o propósito do projeto que não requer controle fino da temperatura. Como o DS18B20 é um termômetro digital, sua resolução pode ser configurada como 9, 10, 11, ou 12 bits, que corresponde a incrementos de 0.5°C, 0.25°C, 0.125°C e 0.0625°C, respectivamente.
 
 ### Módulo de Comunicação
 
-Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que pode ser utilizado em aplicações no intervalo em que a precisão do *DS18B20* é conhecida. Além disso, ele é compatível com as interfaces SPI, UART, e I2C.
+Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que pode ser utilizado em aplicações no intervalo em que a precisão do DS18B20 é conhecida. Além disso, ele é compatível com as interfaces SPI, UART e I2C.
 
-Em conformidade com a seção [*Discussão*](#discussão), foi optada pela não utilização de um módulo de comunicação externo, visto que o microcontrolador escolhido, o *ESP8266*, possui módulo Wi-Fi interno, simplificando o projeto.
+Em conformidade com a seção [*Discussão*](#discussão), foi optada pela não utilização de um módulo de comunicação externo, visto que o microcontrolador escolhido, o *ESP8285H16*, possui módulo Wi-Fi interno, simplificando o projeto.
 
 ### Real-Time-Clock (RTC)
 
-Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, que atende a aplicação desejada. O *DS3231* comunica-se com o microcontrolador por meio da interface serial I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do *DS18B20*.
+Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, atendendo a aplicação desejada. O DS3231 comunica-se com o microcontrolador por meio da interface serial I2C  e possui alimentação de +3,3V. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do DS18B20.
 
 ### Microcontrolador
 
-Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8266*, capaz de realizar comunicação I2C
+Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8285H16* [[10]](#Referências), capaz de realizar comunicação através de protocólos I2C, SPI***** e 1-Wire, possui comunicação Wi-Fi integrada ao chip e suas portas GPIO operam em +3,3V. Exibe temperatura de operação entre –40 °C e 105 °C, também atendendo ao intervalo do DS18B20, indicando ser capaz de satisfazer as condições físicas do projeto. 
+
+Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias, considerando os periféricos já mencionados, , número de GPIOs utilizados (SPI pro touch screen)
 
 ### Discussão
 
-O Módulo de Comunicação já está presente nos microcontroladores selecionados....
+Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocólos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna, foi escolhido o ESP8285H16.
+
+Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V.
 
 ## Especificação de Algoritmos
 
@@ -91,7 +95,7 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 | ![Alt](Evento_4.png) |
 |:--:| 
-| *Não acender e não apagar luzes* |
+| *Apagar luzes* |
 
 | ![Alt](Evento_5.png) |
 |:--:| 
@@ -99,7 +103,7 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 | ![Alt](Evento_6.png) |
 |:--:| 
-| *Apagar luzes* |
+| *Não acender e não apagar luzes* |
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
@@ -118,3 +122,10 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 [8] https://datasheets.maximintegrated.com/en/ds/DS3231.pdf - Acessado em 28 out. 2022.
 
+[9] https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf - Acessado em 28 out. 2022.
+
+[10] https://www.espressif.com/sites/default/files/documentation/0a-esp8285_datasheet_en.pdf - Acessado em 29 out. 2022.
+
+[11] https://br.mouser.com/datasheet/2/268/PIC24FJ64GP205_GU205_Family_Data_Sheet_DS30010221D-2933213.pdf - Acessado em 17 out. 2022.
+
+[12] https://datasheets.maximintegrated.com/en/ds/DS1307.pdf - Acessado em 17. out. 2022.
