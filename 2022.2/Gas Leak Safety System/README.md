@@ -76,7 +76,76 @@ O diagrama a seguir ilustra os blocos funcionais do sistema frente aos eventos q
 
 ![Alt](Gas_Safety_Sys.drawio.png)
 
+## Especificações
+
+### Especificação Estrutural
+
+**Sensores para detecção de gás**
+
+Estes sensores, de modo geral, apresentam um material sensível ao gás que precisa ser detectado. Em contato com o ar puro sua condutividade elétrica é baixa enquanto na presença do gás desejado sua condutividade aumenta com a concentração. Desta forma, essa diferença de condutividade é explorada para obtenção de um sinal indicador da presença da substância desejada. 
+
+Os sensores utilizados nesta aplicação serão o MQ-8, MQ-2 e MQ-4, responsáveis pela detecção de gás hidrogênio, gás inflamável (GLP) e gás metano, respectivamente. 
+
+O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-2 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-8 será conectado diretamente à porta analógica do microcontrolador. 
+
+Os limites físicos dos sensores são listados em seus respectivos datasheets, mas de modo geral para operarem de maneira adequada deve-se evitar:
+
+- exposição prolongada a ambientes adversos (umidade alta, temperaturas altas, alto índice de poluição…); 
+- vibrações contínuas;
+- contato com água;
+- formação de gelo ou água condensada na superfície do sensor;
+- tensão de alimentação acima da nominal.
+
+**Sensor Infravermelho Reflexivo**
+
+O sensor infravermelho que será implementado é o E18-D80NK-N. Este sensor com saída digital possui um emissor e um detector de sinal infravermelho. Caso haja algum objeto na frente deste dispositivo, o sinal infravermelho é refletido pela superfície do objeto e retorna ao detector, ocasionando um sinal de nível lógico baixo na saída, sendo assim, o sensor apresenta saída em nível baixo quando detecta algo e apresenta saída em nível alto quando não está sendo obstruído.
+
+Este sensor opera com 5V e pode ser ajustado para detectar um objeto entre 6cm e 80cm. De acordo com o datasheet, este dispositivo pode apresentar ligeiras variações no range de detecção frente a cor e composição do objeto, assim, recomenda-se que seja feita a calibração antes do uso final.  
+
+A conexão do sensor com o microcontrolador será feita via porta digital.
+
+
+**Buzzer**
+
+Caso um gás seja detectado acima do nível de concentração especificado um alerta sonoro será emitido por meio de um buzzer ativo de 5V conectado ao microcontrolador por meio de uma porta digital. A corrente necessária para suprir o buzzer será fornecida por meio de um transistor, evitando, assim, danos na porta do microcontrolador.
+
+
+
+
+### Especificação de Algoritmos
+
+
+
+
+
+
+
+
+
+
+
 ## Referências
+
+https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-8%20Ver1.3%20-%20Manual.pdf  Acessado em 28/10/2022
+
+https://www.filipeflop.com/produto/sensor-de-gas-mq-2-inflamavel-e-fumaca/  Acessado em 28/10/2022
+
+https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf Acessado em 28/10/2022
+
+https://www.filipeflop.com/produto/sensor-de-gas-mq-4-metano/ Acessado em 28/10/2022
+
+https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ4.pdf Acessado em 28/10/2022
+
+https://www.arducore.com.br/sensor-infravermelho-reflexivo-industrial-e18-d80nk Acessado em 28/10/2022
+
+https://datasheetspdf.com/pdf-file/1311838/ETT/E18-D80NK-N/1 Acessado em 28/10/2022
+
+https://www.filipeflop.com/produto/buzzer-ativo-5v/ Acessado em 28/10/2022
+
+
+
+
+
 
 https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf
 
