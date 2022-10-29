@@ -65,13 +65,17 @@ Em conformidade com a seção [*Discussão*](#discussão), foi optada pela não 
 
 ### Real-Time-Clock (RTC)
 
-Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, atendendo a aplicação desejada. O DS3231 comunica-se com o microcontrolador por meio da interface serial I2C  e possui alimentação de +3,3V. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do DS18B20.
+Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, atendendo a aplicação desejada. O DS3231 comunica-se com o microcontrolador por meio da interface serial I2C, exigindo o uso de 2 pinos para alimentação de 3,3V e 2 pinos para o protocólo I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do DS18B20.
+
+### Interface IHM
+
+
 
 ### Microcontrolador
 
-Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8285H16* [[10]](#Referências), capaz de realizar comunicação através de protocólos I2C, SPI***** e 1-Wire, possui comunicação Wi-Fi integrada ao chip e suas portas GPIO operam em +3,3V. Exibe temperatura de operação entre –40 °C e 105 °C, também atendendo ao intervalo do DS18B20, indicando ser capaz de satisfazer as condições físicas do projeto. 
+Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8285H16* [[10]](#Referências), capaz de realizar comunicação através de protocólos I2C, SPI***** e 1-Wire, possui comunicação Wi-Fi integrada ao chip e suas portas GPIO operam em +3,3V. Exibe temperatura de operação entre –40 °C e 105 °C, também atendendo ao intervalo do DS18B20, indicando ser capaz de satisfazer as condições físicas e ambientais do projeto. 
 
-Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias, considerando os periféricos já mencionados, , número de GPIOs utilizados (SPI pro touch screen)
+Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias considerando os periféricos já mencionados, na qual o DS18B20 necessita de duas portas de alimentação e uma GPIO, o DS3231 necessita de duas portas para alimentação e as duas portas I2C do chip (pinos 9 e 14), enquanto o ILI9341 irá precisar número de GPIOs utilizados (SPI pro touch screen)
 
 ### Discussão
 
