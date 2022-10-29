@@ -33,10 +33,13 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 ### Funcionalidades
 
+> Dentre todas funcionalidades, o nosso projeto inicial terá como uma ideia simples, ao qual, caso ocorra perda de comunicação via bluetooth aciona um alarme para o > > dono.
+> Acionar LED: Nesse mesma condição, a coleira aciona uma iluminação, para identificar que o pet está perdido.
+> 
+> Ademais, tendo-se a condição que o projeto incial está funcionando, será implementado, novas funcionalidades, como:
+> 
 > Comunicação sem fio: O dono pode solicitar a localização pela comunicação via rádio frequência entre a central e a coleira com o auxílio de uma antena portátil,
 > caso o pet esteja na condição de perdido.
-> 
-> Acionar LED: Nesse mesma condição, a coleira aciona uma iluminação, para identificar que o pet está perdido.
 > 
 > Transmissão de áudio/voz: Opção do dono enviar uma informação de voz ou áudio, caso queira.
 > 
@@ -49,6 +52,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > QR Code: Caso alguém encontre o pet, pode ler um QR Code para identificação e contato com o dono.
 
 ### Configurabilidade
+
+> Módulos de comunicação Bluetooth.
+> 
+> Microcontrolador principal ATMEGA328P
+> 
 > Antena: Sistema de entrada de dados via rádio frequência, com faixa de banda eespecífica.
 > 
 > Led's para sinalização: Led's de cor vermelha ao qual podem piscar quando o pet estiver perdido.
@@ -67,19 +75,31 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Eventos
 >
-> 1º Transmissão de localização e duração da bateria:
+> 1º Transmissão e recepção com comunicação em conformidade (Animal dentro da distância permitida)
+>
+> Periodicidade: Periódica, enviando enviando um ping a cada 30s. 
+> 
+> Prioridade: Alta.
+> 
+> 2º Transmissão e recepção sem comunicação (Animal fora da distância permitida)
+>
+> Periodicidade: Único, para apenas com reset pelo dono.
+>
+> Prioridade: Alta.
+> 
+> 3º Transmissão de localização e duração da bateria:
 > 
 > Periodicidade: Pode ser periódica, enviando a informação da localização a cada 30s. 
 > 
 > Prioridade: Alta.
 >
-> 2º Atuadores quando animal perdido:
+> 4º Atuadores quando animal perdido:
 > 
 > Periodicidade: Fica ligado apenas se o dono quiser, caso queira, é acionado constantemente, leds e sinalizações sonoras.
 > 
 > Prioridade: Média.
 
-> 3º Coleira carregando:
+> 5º Coleira carregando:
 > 
 > Periodicidade: Baixa, apenas quando descarregar a coleira.
 > 
@@ -87,6 +107,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 
 ### Tratamento de Eventos
+>
+> Ping na transmissão e recepção da comunicação Bluetooth, caso ocorra a perda da comunicação ( Animal fora da distância permitada) o alarme toca até o dono resetar.
+>
 > Stand by: Nesse modo, o consumo é infimo, apenas alimentando o circuito sem fio de radio frequência, ao qual fica aguardando o comando, caso o pet se perda.
 > 
 > Comunicação caso animal se perca: O dono envia um sinal externo, a coleira decodifica o sinal recebido e atua de acordo o solicitado.
@@ -102,7 +125,46 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ## Descrição Estrutural do Sistema
 ![image](https://user-images.githubusercontent.com/91965153/191393909-73d0100b-3478-4997-ba36-f900adaf8eab.png)
 > 
+## Especificações
 
+### Especificação Estrutural
+
+> (Se preferir, adicione um link para o documento de especificação estrutural)
+> 
+> Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
+> Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
+> para implementação do sistema embarcado proposto.
+> 
+> Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
+> sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
+> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+
+> Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
+> Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
+> que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
+> correspondente, habilitando-o para realizar um ciclo de leitura ou de escrita.
+> 
+> Nesta etapa do projeto espera-se que sejam identificada também a eventual necessidade do projeto de circuitos de interface para os periféricos do projeto.
+> Assim, devem ser incluídos na especificação, se necessário:
+> - conversores AD e DA;
+> - padrões de comunicação a serem adotados;
+> - circuitos de sincronização de sinais temporais.
+> 
+> Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
+> (altura, largura, profundidade) e limites de dissipação térmica.
+
+### Especificação de Algoritmos 
+
+> (Se preferir, adicione um link para o documento de especificação de algoritmos).
+> 
+> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
+> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
+> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
+> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
+> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
+> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+>
+>
 ## Referências
 > https://www.electronica-pt.com/radio-frequencia
 
