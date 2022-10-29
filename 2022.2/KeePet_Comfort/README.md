@@ -75,7 +75,8 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 ## Especificação de Algoritmos
 
-
+**Tempetura ambiente igual a ideal**
+![Alt](Tempetura_ambiente_igual_a_ideal.png)
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
