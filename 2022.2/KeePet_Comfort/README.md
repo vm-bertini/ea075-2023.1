@@ -81,6 +81,26 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 |:--:| 
 | *Tempetura ambiente igual a ideal* |
 
+| ![Alt](Evento_2.png) |
+|:--:| 
+| *Tempetura ambiente igual a ideal* |
+
+| ![Alt](Evento_3.png) |
+|:--:| 
+| *Tempetura ambiente igual a ideal* |
+
+| ![Alt](Evento_4.png) |
+|:--:| 
+| *Tempetura ambiente igual a ideal* |
+
+| ![Alt](Evento_5.png) |
+|:--:| 
+| *Tempetura ambiente igual a ideal* |
+
+| ![Alt](Evento_6.png) |
+|:--:| 
+| *Tempetura ambiente igual a ideal* |
+
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
 
