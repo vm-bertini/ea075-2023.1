@@ -131,15 +131,35 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
 
+### Atuadores
+
+> Será utilizado um multiplexador 16x4 para que processador possa controlar os atuadores utilizando menos pinos, vale ressaltar que o multiplexador tem 16 saidas e temos 14 atuadores. Dessa forma, um estado do multiplexador vai ser utilizado como modo espera até que relamente o processador comande a abertura de algum atuador. 
 > Os atuadores serão eletroímãs cilíndricos de sucção de 8mm, operando em tensão de 3 V, ativo (fechado) em nível lógico alto.
->
+
+### Interface
+
 > A interface será  composta por um display LCD e um teclado. O display LCD 16x2 é compatível com o padrão Hitachi HD44780U e será conectado a um adaptador I2C para se comunicar com o microcontrolador. O teclado utilizado será um teclado matricial de 3 colunas e 4 linhas, com um pino controlando cada linha e um para cada coluna, totalizando 7.
->
+
+### Auto-falante/Buzzer
+
 > O alarme sonoro será um buzzer DA03 de 3.3 V ativo alto da marca CDR01, que suporta correntes menores que 25 mA.
+
+### Microcontrolador e Relógio
+
+> O microcontrolador utilizado será um ATmega328P. O relógio será implementado por código, dessa forma, vamos utilizar o próprio software para a realização dessa estrutura no sistema.
+
+### Memória
+
+> A memória será uma memória de 2GB, sabemos que podemos colocar na memória os valores de tensão representando as notas que queremos utilizar no buzzer, dessa forma, a música será implementado via código. Assim, para as demais funções e para a implementação da música em código uma memória de 2GB é mais do que suficiente. A memória de 2GB nos possibilita ainda colocar mais músicas em possível atualização de software.
+
+### Especificação das restrições físicas e ambientais de funcionamento do circuito
+
+> Imaginamos que para esse projeto devemos ter uma caixa com quatorze divisões possuindo um tamanho de 10cmx35cmx10cm, sendo suficientes para caber os remédios e os atuadores em cima de cada repositório. Cada repositório terá um tamanho de 5cmx5xm.
 >
-> O microcontrolador utilizado será um ATmega328P.
+> Sobre restrições ambientais recomendamos que a caixa de remédio fique em um lugar com temperatura e umidade boas para a locação dos remédios.
 >
-> Será utilizado um multiplexador 16x4 para que os todos os módulos possam ser conectados ao microcontrolador.
+> Vale ressaltar, que não precisamos nos preocupar muito com dissipação de calor, visto que os componenentes utilizados não possuem grandes potências, além disso, os atuadores são metálicos ajudando assim na dissipação da calor.
+
 
 ### Especificação de Algoritmos 
 
@@ -156,3 +176,17 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 [1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
 
 [2] https://tecnosenior.com/dispensador-de-medicamentos-automatico/
+
+[3] https://pt.aliexpress.com/item/1005002526116294.html?_randl_currency=BRL&_randl_shipto=BR&src=google&memo1=freelisting&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265477163&albag=&trgt=&crea=pt1005002526116294&netw=x&device=c&albpg=&albpd=pt1005002526116294&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4oTJup-ydCaw2diEELgPGDvRBtyEBimibqhp1baVVk-Xh9FCBimTMxoCXz4QAvD_BwE&gclsrc=aw.ds&aff_fcid=7b7e5419c9414cc6825a88104a62eaba-1666053734208-00625-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=7b7e5419c9414cc6825a88104a62eaba-1666053734208-00625-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&afSmartRedirect=y
+
+[4] https://www.eletrogate.com/display-lcd-16x2-com-backlight-verde?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant
+
+[5] https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
+
+[6] https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
+
+[7] https://www.casadarobotica.com/robotica/atuadores/outros/3x-buzzer-5v-ativo
+
+[8] https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
+
+[9] https://pt.aliexpress.com/item/32652790510.html?UTABTest=aliabtest343279_484914&_randl_currency=BRL&_randl_shipto=BR&src=google&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265403963&albag=&trgt=&crea=pt32652790510&netw=x&device=c&albpg=&albpd=pt32652790510&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOsHYZP6gvAff69Z34DvzMRyWPaaTfNbtYgujTt67OWACp4CXFOQ2waAqfDEALw_wcB&gclsrc=aw.ds&aff_fcid=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&OLP=1084400108_f_group0&o_s_id=1084400108&afSmartRedirect=y
