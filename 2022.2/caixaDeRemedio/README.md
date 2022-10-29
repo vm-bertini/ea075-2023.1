@@ -156,7 +156,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > Imaginamos que para esse projeto devemos ter uma caixa com quatorze divisões possuindo um tamanho de 10cmx35cmx10cm, sendo suficientes para caber os remédios e os atuadores em cima de cada repositório. Cada repositório terá um tamanho de 5cmx5xm.
 >
-> Sobre restrições ambientais recomendamos que a caixa de remédio fique em um lugar com temperatura e umidade boas para a locação dos remédios.
+> Sobre restrições ambientais, recomendamos que a caixa de remédio fique em um lugar com temperatura e umidade boas para a locação dos remédios.
 >
 > Vale ressaltar, que não precisamos nos preocupar muito com dissipação de calor, visto que os componenentes utilizados não possuem grandes potências, além disso, os atuadores são metálicos ajudando assim na dissipação da calor.
 
