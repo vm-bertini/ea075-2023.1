@@ -61,13 +61,15 @@ Com base no diagrama de blocos apresentado na seção [*Descrição Estrutural d
 
 Ainda com base na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), para a implementação do sistema embarcado há a necessidade de comunicação com a internet. Ao buscar módulos de comunicação, o módulo Wi-Fi ATWINC1500-MR210PA [[7]](#Referências) surgiu como uma alternativa viável, pois o seu range de temperatura de operação é de -40°C a +85°C, que pode ser utilizado em aplicações no intervalo em que a precisão do *DS18B20* é conhecida. Além disso, ele é compatível com as interfaces SPI, UART, e I2C.
 
+Em conformidade com a seção [*Discussão*](#discussão), foi optada pela não utilização de um módulo de comunicação externo, visto que o microcontrolador escolhido, o *ESP8266*, possui módulo Wi-Fi interno, simplificando o projeto.
 
 ### Real-Time-Clock (RTC)
 
-Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS1307* [[8]](#Referências) que permite contar horas, minutos, segundos, que atende a aplicação desejada. O *DS1307* comunica-se com o microcontrolador por meio da interface serial I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do *DS18B20*.
+Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, que atende a aplicação desejada. O *DS3231* comunica-se com o microcontrolador por meio da interface serial I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do *DS18B20*.
 
 ### Microcontrolador
 
+Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8266*, capaz de realizar comunicação I2C
 
 ### Discussão
 
@@ -85,13 +87,13 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 [3] https://idc-online.com/technical_references/pdfs/electronic_engineering/Design%20of%20An%20Embedded%20System%20For%20Monitoring%20and%20Controlling%20Temperature%20and%20Light.pdf - Acessado em 18 set. 2022.
 
-[4] https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf - Acessado em 17 nov. 2022.
+[4] https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf - Acessado em 17 out. 2022.
 
-[5] https://www.ti.com/lit/an/spma057d/spma057d.pdf?ts=1666904477627&ref_url=https%253A%252F%252Fwww.google.com%252F - Acessado em 27 nov. 2022.
+[5] https://www.ti.com/lit/an/spma057d/spma057d.pdf?ts=1666904477627&ref_url=https%253A%252F%252Fwww.google.com%252F - Acessado em 27 out. 2022.
 
-[6] https://pdfserv.maximintegrated.com/en/an/Overview_1wire_Technology_use.pdf - Acessado em 27 nov. 2022.
+[6] https://pdfserv.maximintegrated.com/en/an/Overview_1wire_Technology_use.pdf - Acessado em 27 out. 2022.
 
-[7] https://ww1.microchip.com/downloads/en/devicedoc/atmel-42376-smartconnect-winc1500-mr210pa_datasheet.pdf - Acessado em 17 nov. 2022.
+[7] https://ww1.microchip.com/downloads/en/devicedoc/atmel-42376-smartconnect-winc1500-mr210pa_datasheet.pdf - Acessado em 17 out. 2022.
 
-[8] https://datasheets.maximintegrated.com/en/ds/DS1307.pdf - Acessado em 17 nov. 2022.
+[8] https://datasheets.maximintegrated.com/en/ds/DS3231.pdf - Acessado em 28 out. 2022.
 
