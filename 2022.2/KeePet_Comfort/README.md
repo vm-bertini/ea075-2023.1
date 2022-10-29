@@ -83,23 +83,23 @@ O Módulo de Comunicação já está presente nos microcontroladores selecionado
 
 | ![Alt](Evento_2.png) |
 |:--:| 
-| *Tempetura ambiente igual a ideal* |
+| *Tempetura ambiente abaixo do ideal* |
 
 | ![Alt](Evento_3.png) |
 |:--:| 
-| *Tempetura ambiente igual a ideal* |
+| *Tempetura ambiente acima do ideal* |
 
 | ![Alt](Evento_4.png) |
 |:--:| 
-| *Tempetura ambiente igual a ideal* |
+| *Não acender e não apagar luzes* |
 
 | ![Alt](Evento_5.png) |
 |:--:| 
-| *Tempetura ambiente igual a ideal* |
+| *Acender luzes* |
 
 | ![Alt](Evento_6.png) |
 |:--:| 
-| *Tempetura ambiente igual a ideal* |
+| *Apagar luzes* |
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
