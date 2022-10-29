@@ -36,26 +36,25 @@ Outros projetos semelhantes serão usados como inspiração para o desenvolvimen
 ### Funcionalidades
 <!--- > Detalhe todas as tarefas que o sistema será capaz de executar -->
 
-Como é esperado de todo enfeite natalino, em especial de uma árvore de natal, o projeto terá como funcionalidade explorar diferentes padrões para acender os LEDs dispostos na árvore e ainda tocar musicas típicas de tal época festiva. Assim, inicialmente o sistema contará com botões que estarão associados as músicas natalinas (o usuário decide se quer ou não acionar a música) e um sensor de movimento para captar a passagem de pessoas e com isso mudar o padrão que os LEDs piscam.
+Como é esperado de todo enfeite natalino, em especial de uma árvore de natal, o projeto terá como funcionalidade explorar diferentes padrões para acender os LEDs dispostos na árvore e ainda tocar musicas típicas de tal época festiva. Assim, o sistema contará com um botão que, ao ser pressionado, irá dar início a uma música natalina e a um padrão para os LEDs piscarem. 
 
 ### Configurabilidade
 <!--- > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração. -->
 
-O projeto contará com dois tipos de interrupção: uma por botão e a outra pelo sensor de movimento. A interrupção proveniente do botão será responsável pela escolha da música natalina que estará associada a um padrão já determinado. Além disso, através dos botões será possível também fixar os LEDs em um único padrão desabilitando, com isso, o sensor de movimento. Ademais a interrupção gerada pelo sensor de movimento mudará o padrão de acender os LEDs a cada vez que um novo movimento for identificado.
-
-Ainda não foi definido como serão os padrões para acender os LEDs, mas estima-se no mínimo três padrões.
+O projeto contará com uma interrupção, pelo botão. Ela será responsável por trocar a música natalina e o padrão dos LEDs. Teremos no mínimo três padrões para os LEDs, cada um associado a uma música natalina.
 
 ### Eventos
 <!--- > Quais eventos o sistema deve tratar?
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)? -->
 
-O sistema deverá tratar as interrupções provenientes do botão e do sensor de movimento. Ambas as interrupções são vistas como não-periódicas, visto que irá depender do usuário para que a interrupção ocorra. Em relação as interrupções do botão, não haverá um tempo mínimo entre dois eventos sucessivos podendo o usuário trocar o padrão a qualquer momento. No entanto, para o sensor de movimento um tempo será estipulado (cerca de 30 segundos) entre um movimento e outro para evitar a identificação de movimentos sequênciais. Note que a interrupção do botão terá prioridade em relação a interrupção do sensor de movimento.
+O sistema deverá tratar as interrupções provenientes do botão. Essa interrupção é não-periódica, visto que irá depender do usuário para acionar o botão. 
+Haverá um tempo mínimo de cerca de 30 segundos para que uma nova interrupção seja tratada.
 
 ### Tratamento de Eventos
 <!--- > Qual comportamento o sistema deve ter para tratar corretamente cada evento? -->
 
-O sistema deverá identificar o pressionamento de um botão, bem como captar movimentos para tratar corretamente os eventos. Assim, será necessário tratar o problema de debounce associado aos botões e estipular um tempo razoável para que o sensor de movimento pegue apenas a passagem de pessoas e não pessoas paradas na frente do sensor.
+O sistema deverá identificar o pressionamento de um botão. Assim, será necessário tratar o problema de debounce associado aos botões e estipular um tempo razoável para que uma nova interrupção possa ser tratada.
 
 ## Descrição Estrutural do Sistema
 <!--- > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
@@ -68,11 +67,11 @@ O sistema deverá identificar o pressionamento de um botão, bem como captar mov
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github. -->
 
-O projeto é composto por 3 blocos: interface com usuário, processamento e execução. O primeiro deles permite o usuário interagir com a decoração, seja apenas com movimento ou pressionando um botão. Essa interação será então processada pelo microcontrolador: caso o sinal venha do botão, a árvore irá executar uma rotina de piscar os LEDs e alterar os padrões enquanto toca uma música; caso o sinal venha do sensor de movimento, apenas a rotina dos LEDs será executada. 
+O projeto é composto por 3 blocos: interface com usuário, processamento e execução. O primeiro deles permite o usuário interagir com a decoração, ao pressionando um botão. Essa interação será então processada pelo microcontrolador, e então a árvore irá executar uma rotina de piscar os LEDs, alterando os padrões, enquanto toca uma música.
 
 O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 
-<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/diagrama_estrutural.png" width="450" />
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-diagrama_estrutural.drawio.png" width="450" />
 
 ## Especificações
 
@@ -83,7 +82,14 @@ O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 > Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
 > Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
 > para implementação do sistema embarcado proposto.
-> 
+
+|Componente | Funcionalidade para o Circuito | Datasheet |
+|--|--|--|
+| Microcrontrolador PIC 16F8X| Unidade micro-controladora | [link](https://pdf1.alldatasheet.com/datasheet-pdf/view/75016/MICROCHIP/PIC16F877.html) |
+| Botão | Mudar padrão de LEDs e música | [link](https://www.hdk.co.jp/pdf/eng/e291702.pdf) |
+| Buzzer | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) |
+| Bateria | Alimentação do circuito | entre 2 e 6V|
+
 > Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
 > sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
 > Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
@@ -98,9 +104,15 @@ O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 > - conversores AD e DA;
 > - padrões de comunicação a serem adotados;
 > - circuitos de sincronização de sinais temporais.
-> 
+
+#### Especificações físicas
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
+
+A árvore de Natal será feita em forma de bordado, em um quadro circular de cerca de ~18cm de diâmetro. Teremos 12 LEDs ligados na configuração Charlieplexing como explicado acima e a placa com o microcontrolador PIC será fixada no quadro do bordado, de forma a deixar o botão e o buzzer à vista. O desenho a seguir ilustra o que foi pensado para a estrutura física do projeto.
+
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-estrutura_física.drawio.png" width="450" />
+
 
 ### Especificação de Algoritmos 
 
