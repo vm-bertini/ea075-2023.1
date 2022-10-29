@@ -73,8 +73,10 @@ Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tra
 
 O Módulo de Comunicação já está presente nos microcontroladores selecionados....
 
+## Especificação de Algoritmos
 
 ![Alt](Tempetura ambiente igual a ideal.png)
+
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
 
