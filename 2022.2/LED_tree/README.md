@@ -161,12 +161,9 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 
 A seguir o algoritmo de tratamento dos eventos representado através de um fluxograma.
 
-<!---[colcar a imagem aqui]-->
-
-Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
-
 <img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/algoritmo.drawio.png width="450" />
 
+Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
 
 
 ## Referências
