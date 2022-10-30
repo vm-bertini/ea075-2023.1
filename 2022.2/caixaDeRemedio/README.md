@@ -75,9 +75,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Tratamento de Eventos
 
-> Como o evento de programar horários de alarme e repositório é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
+> Como o evento de programar horários de alarme e data é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
 
-> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fizer a seleção do alarme sonoro pela interface uma prévia do som deve ser tocado e, quando selecionado, a interrupção irá salvar na memória qual toque alarme sonoro irá tocar no evento de alarme.
+> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fizer a seleção do alarme sonoro pela interface a interrupção irá salvar na memória qual toque alarme sonoro irá tocar no evento de alarme.
 
 > Como o evento de abrir o repositório para colocar o remédio é aperiódico, a interface irá mandar uma interrupção para abrir o repositório indicado pelo usuário. Após o fechamento o usuário irá selecionar na interface que o repositório já foi fechado.
 
@@ -173,6 +173,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 ### Diagrama Main
 ![Diagrama Main](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/Diagrama_main.drawio.png)
+
+## Interrupções
+![Diagrama Interrupções](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/dia_int.drawio.png)
 
 ## Referências
 [1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
