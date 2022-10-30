@@ -14,7 +14,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> O objetico deste projeto é ajudar na procura de pets quando ocorre a perda dos mesmos. 
+> O objetiVo deste projeto é ajudar na procura de pets quando ocorre a perda dos mesmos. 
 > Há mais de 139 milhões de pets pelo Brasil, e a perda desses animais ocorre com determinada frequência, 
 > e com o desenvolvimento desse projeto podemos amenizar este problema.
 > 
