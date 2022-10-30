@@ -133,7 +133,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Atuadores
 
-> Será utilizado um multiplexador 16x4 para que processador possa controlar os atuadores utilizando menos pinos, vale ressaltar que o multiplexador tem 16 saidas e temos 14 atuadores. Dessa forma, um estado do multiplexador vai ser utilizado como modo espera até que relamente o processador comande a abertura de algum atuador. 
+> Será utilizado um multiplexador 16x4 para que o processador possa controlar os atuadores utilizando menos pinos. Vale ressaltar que o multiplexador tem 16 saidas e temos 14 atuadores. Dessa forma, um estado do multiplexador vai ser utilizado como modo espera até que realmente o processador comande a abertura de algum atuador. 
 > Os atuadores serão eletroímãs cilíndricos de sucção de 8mm, operando em tensão de 3 V, ativo (fechado) em nível lógico alto.
 
 ### Interface
@@ -150,15 +150,15 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Memória
 
-> A memória será uma memória de 2GB, sabemos que podemos colocar na memória os valores de tensão representando as notas que queremos utilizar no buzzer, dessa forma, a música será implementado via código. Assim, para as demais funções e para a implementação da música em código uma memória de 2GB é mais do que suficiente. A memória de 2GB nos possibilita ainda colocar mais músicas em possível atualização de software.
+> A memória será uma memória de 2GB. Sabemos que podemos colocar na memória os valores de tensão representando as notas que queremos utilizar no buzzer, dessa forma, a música será implementado via código. Assim, para as demais funções e para a implementação da música em código uma memória de 2GB é mais do que suficiente. A memória de 2GB nos possibilitaria ainda colocar mais músicas em uma possível atualização de software.
 
 ### Especificação das restrições físicas e ambientais de funcionamento do circuito
 
-> Imaginamos que para esse projeto devemos ter uma caixa com quatorze divisões possuindo um tamanho de 10cmx35cmx10cm, sendo suficientes para caber os remédios e os atuadores em cima de cada repositório. Cada repositório terá um tamanho de 5cmx5xm.
+> Imaginamos que para esse projeto devemos ter uma caixa com quatorze divisões possuindo um tamanho de 10cmx35cmx10cm, sendo suficientes para colocar os remédios e os atuadores em cima de cada repositório. Cada repositório terá um tamanho de 5cmx5xm.
 >
-> Sobre restrições ambientais, recomendamos que a caixa de remédio fique em um lugar com temperatura e umidade boas para a locação dos remédios.
+> Sobre restrições ambientais, recomendamos que a caixa de remédio fique em locais frescos e arejados, com baixa incidência solar e, de preferência, com baixa umidade, para preservar os remédios.
 >
-> Vale ressaltar, que não precisamos nos preocupar muito com dissipação de calor, visto que os componenentes utilizados não possuem grandes potências, além disso, os atuadores são metálicos ajudando assim na dissipação da calor.
+> Vale ressaltar que não precisamos nos preocupar muito com dissipação de calor, visto que os componenentes utilizados não possuem grandes potências, além disso, os atuadores são metálicos, ajudando assim na dissipação do calor.
 
 
 ### Especificação de Algoritmos 
