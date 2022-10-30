@@ -124,7 +124,7 @@ Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudan
 
 Partindo das especificações técnicas dos sensores e atuadores selecionados para o projeto e dos fluxogramas acima, definimos que os seguintes pinos do controlador ATMEGA328P que serão usados para o nosso projeto:
 
-
+![Alt](Gas_Safety_Sys-ATMEGA328P.png)
 
 
 ## Referências
