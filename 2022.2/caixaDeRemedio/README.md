@@ -150,7 +150,12 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Memória
 
-> A memória será uma memória de 2GB. Sabemos que podemos colocar na memória os valores de tensão representando as notas que queremos utilizar no buzzer, dessa forma, a música será implementado via código. Assim, para as demais funções e para a implementação da música em código uma memória de 2GB é mais do que suficiente. A memória de 2GB nos possibilitaria ainda colocar mais músicas em uma possível atualização de software.
+>
+> O tamanho da memória necessária pode ser estimado por comparação com um projeto similar, um alarme programável projetado para o microcontrolador Kinetis KL25Z128, da Freescale, disponível em https://github.com/fernandocillo/EA871/blob/main/alarme-final.zip. Este projeto de alarme consome 17 Kbytes de memória flash e 2Kbytes de memória RAM. 
+>
+> Como a Caixa de Remédios tem algumas intruções adicionais relativas à abertura dos compartimentos e as músicas selecionáveis para o alarme serão armazenadas na memória (em forma de sequências de notas associadas à frequência, que pode ser controlada através da tensão enviada por PWM ao buzzer), serão necessários em torno de 20 Kbytes de memória flash. Um módulo de memória flash de 32 Kbytes concede uma larga margem para a aplicação.
+> 
+> Além disso, há a necessidade de, durante a execução do programa, registrar o dia e horário atual, o dia e horário de cada um dos 14 compartimentos e a música selecionada para o alarme. Isso significa que o consumo de memória RAM será bem maior que do projeto de alarme, que deve ser suprida com tranquilidade por um módulo de memória RAM de 4 Kbytes.
 
 ### Especificação das restrições físicas e ambientais de funcionamento do circuito
 
