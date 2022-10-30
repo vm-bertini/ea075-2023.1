@@ -171,6 +171,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+### Diagrama Main
+![Diagrama Main](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/Diagrama_main.drawio.png)
 
 ## Referências
 [1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
