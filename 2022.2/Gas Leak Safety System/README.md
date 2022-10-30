@@ -14,39 +14,35 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição do Projeto
 
-O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer, poderá configurar a máxima concentração permitida do gás no local e informar os números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada e ainda acionar um buzzer no local. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo versátil que além de permitir ao usuário escolher o gás que irá ser analisado, ele ainda sozinho, consegue enviar mensagens SMS, sem precisar que seja integrado a um sistema de segurança do local. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
+O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer, *poderá configurar a máxima concentração permitida do gás no local e informar os números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada e ainda acionar um buzzer no local* **sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada irá acionar um buzzer no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição não segura**. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo *versátil que além de permitir ao usuário escolher o gás que irá ser analisado, ele ainda sozinho, consegue enviar mensagens SMS, sem precisar que seja integrado a um sistema de segurança do local* **que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil**. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
 O nosso produto visa atender principalmente indústrias e laboratórios químicos. Não temos um valor para nosso produto, porém, a ideia é que seu custo seja competitivo com o dos sensores de leituras específicas do mercado, de forma que como o nosso produto consegue ler diferentes tipos de gases, ele seja mais atrativo do que os demais sensores.
 
 ## Descrição Funcional
 
-O nosso projeto tem a detecção de diferentes tipos de gases como a sua função principal, para isso, iremos utilizar um microcontrolador com memória embutida que será responsável por armazenar as informações enviadas por 2 sensores infravermelhos que irão indicar quantas pessoas estão no local em que o sensor de gás está instalado, conseguindo nos dizer quando uma pessoa entra/sai da instalação. Além dessa informação, o microcontrolador deverá receber um sinal digital informando se a concentração de gás excedeu o limite permitido ou então um sinal analógico que deverá ser tratado internamente verificando se o valor enviado pelo sensor excedeu o limite de concentração configurado pelo usuário por meio de um display LCD e um teclado embutido no mesmo. Por meio do display LCD, o usuário ainda poderá escolher o tipo de gás que o sistema irá detectar baseado numa lista de opções que será mostrada no display e estará armazenada na memória interna do microcontrolador e em seguida, caso o sensor associado ao gás escolhido seja analógico, o usuário terá que informar qual o valor que o sistema deverá tratar como limite de concentração.
+O nosso projeto tem a detecção de diferentes tipos de gases como a sua função principal, para isso, iremos utilizar um microcontrolador com memória embutida que será responsável por armazenar as informações enviadas por 2 sensores infravermelhos que irão indicar quantas pessoas estão no local em que o sensor de gás está instalado, conseguindo nos dizer quando uma pessoa entra/sai da instalação. Além dessa informação, o microcontrolador deverá receber um sinal digital informando se a concentração de gás excedeu o limite permitido ou então um sinal analógico que deverá ser tratado internamente verificando se o valor enviado pelo sensor excedeu o limite de concentração *configurado pelo usuário por meio de um display LCD e um teclado embutido no mesmo* **que foi configurado baseado nas normas de seguranças regentes no país em que o dispositivo foi instalado**. Por meio do display LCD, o usuário ainda poderá escolher o tipo de gás que o sistema irá detectar baseado numa lista de opções que será mostrada no display e estará armazenada na memória interna do microcontrolador. *e em seguida, caso o sensor associado ao gás escolhido seja analógico, o usuário terá que informar qual o valor que o sistema deverá tratar como limite de concentração.*
 
-Ainda por meio do display LCD o usuário poderá configurar quais os números que deverão receber SMS em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. Vale ressaltar que ao se detectar uma ocorrência de risco, além do microcontrolador enviar um sinal para o módulo SMS indicando quais os números que devem receber a mensagem, ele também irá acionar um buzzer acoplado ao próprio sensor por meio de uma saída digital por volta de 1 minuto, indicando que a região não deve ser acessada.
+**No futuro,** o usuário poderá configurar quais os números que deverão receber SMS em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. 
 
-O fluxograma a seguir exemplifica a configuração do dispositivo:
-
-![Alt](Gas_Safety_Sys-Page-3.drawio.png)
-
-Este, exemplifica as rotinas de operação citadas acima:
-
-![Alt](Gas_Safety_Sys-Página-2.drawio.png)
+**Enquanto que o primeiro protótipo ao detectar uma ocorrência de risco, irá acionar um buzzer acoplado ao dispositivo por meio de uma saída digital que ficará emitindo som até que uma pessoa autorizada pressione o botão de reset após a concentração do gás normalizar novamente.**
 
 ### Funcionalidades
 
-- Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local;
-- Configuração dos números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada; 
-- Monitoramento dos níveis de concentração de determinado gás de interesse em um ambiente desejado;
+- *Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local*;
+- **Configuração de quais gases o sistema irá ser responsável de realizar o monitoramento;**
+- Configuração dos números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada **(Futuro)**; 
+- Monitoramento dos níveis de concentração de determinados gases de interesse em um ambiente desejado;
 - Registro do número de pessoas presentes em determinado local;
 - Acionar indicador sonoro para alerta de perigo;
-- Envio de mensagem SMS para números predeterminados;
+- Envio de mensagem SMS para números predeterminados **(Futuro)**;
    
 ### Configurabilidade
 
 Sendo o objetivo primário do sistema o monitoramento da concentração de gases potencialmente nocivos em um ambiente, o circuito terá margem para as seguintes configurações:
 
-- Modelo do sensor de gás integrado ao sistema;
-- Determinação do nível de concentração máxima do gás permitida no local;
-- Determinação dos números de telefone para envio de SMS.
+- *Modelo do sensor de gás integrado ao sistema*;
+- *Determinação do nível de concentração máxima do gás permitida no local*;
+- Determinação dos números de telefone para envio de SMS **(Futuro)**.
+- **Determinação de quais gases o sistema irá ser responsável de realizar o monitoramento;**
  
 ### Eventos
 
@@ -66,9 +62,9 @@ A leitura dos níveis de concentração é periódica, ocorrendo a cada segundo,
 
 Ao detectar níveis de concentração abaixo do especificado independente de quantas pessoas estejam presentes, o sistema deverá apenas armazenar as informações coletadas pelos sensores, nenhuma ação será necessária;
 
-Ao detectar níveis de concentração acima do especificado sem pessoas na sala, o sistema deverá enviar um SMS para o número da equipe de segurança cadastrado no dispositivo e emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado;
+Ao detectar níveis de concentração acima do especificado sem pessoas na sala, o sistema deverá *enviar um SMS para o número da equipe de segurança cadastrado no dispositivo e* emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado **, para o alerta sonoro ser desligado, é necessário pressionar o botão de reset do sistema. A pessoa que deverá realizar essa atividade, deve possuir treinamento e estar com os equipamento de proteção individual (EPI), pois caso a concentração ainda esteja elevada, o buzzer não será desligado**;
 
-Ao detectar níveis de concentração acima do especificado com pessoas na sala, o sistema deverá enviar um SMS tanto para o número da equipe de segurança quanto para o da equipe de resgate, e emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado;
+*Ao detectar níveis de concentração acima do especificado com pessoas na sala, o sistema deverá enviar um SMS tanto para o número da equipe de segurança quanto para o da equipe de resgate, e emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado;*
 
 ## Descrição Estrutural do Sistema
 
@@ -114,12 +110,17 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 ### Especificação de Algoritmos
 
+A seguir, teremos os fluxogramas que detalham o funcionamento do nosso dispositivo, o primeiro mostra em detalhe a rotina de inicialização do sistema, que é por meio dela que o usuário define quais gases ele quer que seja lido pelo sistema:
 
+![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
 
+O fluxograma a seguir exemplifica o funcionamento do sistema, detalhando as rotinas de operação descritas acima:
 
+![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
 
+Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudanças na rotina principal e que haveria uma rotina para cadastro dos números das equipes de segurança e resgate.
 
-
+![Alt](Gas_Safety_Sys-FluxogramaSMS.png)
 
 
 
