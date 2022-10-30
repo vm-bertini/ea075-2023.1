@@ -105,7 +105,10 @@ A conexão do sensor com o microcontrolador será feita via porta digital.
 
 Caso um gás seja detectado acima do nível de concentração especificado um alerta sonoro será emitido por meio de um buzzer ativo de 5V conectado ao microcontrolador por meio de uma porta digital. A corrente necessária para suprir o buzzer será fornecida por meio de um transistor, evitando, assim, danos na porta do microcontrolador.
 
+**Display LCD**
 
+
+**Microcontrolador**
 
 
 ### Especificação de Algoritmos
