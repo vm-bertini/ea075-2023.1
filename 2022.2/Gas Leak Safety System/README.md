@@ -110,17 +110,19 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 ### Especificação de Algoritmos
 
-A seguir, teremos os fluxogramas que detalham o funcionamento do nosso dispositivo, o primeiro mostra em detalhe a rotina de inicialização do sistema, que é por meio dela que o usuário define quais gases ele quer que seja lido pelo sistema:
+A seguir, será apresentado os fluxogramas que detalham o funcionamento do nosso dispositivo, o primeiro mostra em detalhe a rotina de inicialização do sistema, que é por meio dela que o usuário define quais gases ele quer que seja lido pelo sistema:
 
-![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
+![Alt](Gas_Safety_Sys-FluxogramaInicializacao.png)
 
-O fluxograma a seguir exemplifica o funcionamento do sistema, detalhando as rotinas de operação descritas acima:
+O fluxograma a seguir exemplifica o funcionamento normal do sistema, detalhando as rotinas de operação descritas nos tópicos acima:
 
 ![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
 
 Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudanças na rotina principal e que haveria uma rotina para cadastro dos números das equipes de segurança e resgate.
 
 ![Alt](Gas_Safety_Sys-FluxogramaSMS.png)
+
+Partindo das especificações técnicas dos sensores e atuadores selecionados para o projeto e dos fluxogramas acima, definimos que os seguintes pinos do controlador ATMEGA328P que serão usados para o nosso projeto:
 
 
 
