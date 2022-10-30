@@ -14,7 +14,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição do Projeto
 
-O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer, *poderá configurar a máxima concentração permitida do gás no local e informar os números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada e ainda acionar um buzzer no local* **sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada irá acionar um buzzer no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição não segura**. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo *versátil que além de permitir ao usuário escolher o gás que irá ser analisado, ele ainda sozinho, consegue enviar mensagens SMS, sem precisar que seja integrado a um sistema de segurança do local* **que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil**. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
+O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer, *poderá configurar a máxima concentração permitida do gás no local e informar os números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada e ainda acionar um buzzer no local* **sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco (não segura)**. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo *versátil que além de permitir ao usuário escolher o gás que irá ser analisado, ele ainda sozinho, consegue enviar mensagens SMS, sem precisar que seja integrado a um sistema de segurança do local* **que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil**. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
 O nosso produto visa atender principalmente indústrias e laboratórios químicos. Não temos um valor para nosso produto, porém, a ideia é que seu custo seja competitivo com o dos sensores de leituras específicas do mercado, de forma que como o nosso produto consegue ler diferentes tipos de gases, ele seja mais atrativo do que os demais sensores.
 
 ## Descrição Funcional
@@ -29,6 +29,7 @@ O nosso projeto tem a detecção de diferentes tipos de gases como a sua funçã
 
 - *Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local*;
 - **Configuração de quais gases o sistema irá ser responsável de realizar o monitoramento;**
+- **Exibição das concentrações atuais dos gases no display LCD**
 - Configuração dos números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada **(Futuro)**; 
 - Monitoramento dos níveis de concentração de determinados gases de interesse em um ambiente desejado;
 - Registro do número de pessoas presentes em determinado local;
@@ -107,9 +108,15 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 **Display LCD**
 
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desablitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma entrada analógica do microcontrolador através de resistores de valores diferentes. Portanto o botão pressionado pode ser determinado através da tensão medida pelo ADC, onde como cada botão estará associado a um resistor diferente, cada botão enviará um valor de tensão distinto para a entrada analógica.
+
+No projeto, os botões serão usados para navegar pelo display,auxiliando o usuário a verificar a concentração dos gases em tempo real no display e no futuro irá ser disponível configurar números de telefone
 
 **Microcontrolador**
 
+Após listarmos todos os sinais que iremos precisar a partir dos sensores e atuadores citados acima. Foi adotado o microcontrolador ATMEGA328P para ser o responsável por tratar e gerenciar as rotinas do nosso dispositivo. O ATMEGA328P possui como características principais o fato de possuir 3 memórias internas, sendo elas uma memória Flash (32 KB), uma SRAM (2 KB) e uma EEPROM (1 KB), possui também 23 I/Os, opera com uma tensão de 5V e as suas saídas fornecem uma corrente de 40 mA, além disso, consegue operar com um clock de 0 à 20 MHz.
+
+Um dos grandes motivos que nos fez utilizar o ATMEGA328P foi o fato dele ser o microcontrolador utilizado na grande maioria dos arduinos, sendo assim , possui uma gama de bibliotecas e informações na internet, facilitando o desenvolvimento e execução do projeto.
 
 ### Especificação de Algoritmos
 
@@ -127,7 +134,7 @@ Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudan
 
 Partindo das especificações técnicas dos sensores e atuadores selecionados para o projeto e dos fluxogramas acima, definimos que os seguintes pinos do controlador ATMEGA328P que serão usados para o nosso projeto:
 
-![Alt](Gas_Safety_Sys-ATMEGA328P.png)
+![Alt](Gas_Safety_Sys-Microcontrolador.png)
 
 
 ## Referências
@@ -172,3 +179,5 @@ https://www.renesas.com/us/en/products/microcontrollers-microprocessors
 https://www.microcontrollertips.com/key-factors-consider-choosing-microcontroller/
 
 https://www.filipeflop.com/produto/display-lcd-shield-com-teclado-para-arduino/
+
+https://datasheetspdf.com/pdf-file/746588/D-Robotics/DFR0009/1
