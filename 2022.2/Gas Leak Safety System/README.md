@@ -110,13 +110,13 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desablitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma entrada analógica do microcontrolador através de resistores de valores diferentes. Portanto o botão pressionado pode ser determinado através da tensão medida pelo ADC, onde como cada botão estará associado a um resistor diferente, cada botão enviará um valor de tensão distinto para a entrada analógica.
 
-No projeto, os botões serão usados para navegar pelo display,auxiliando o usuário a verificar a concentração dos gases em tempo real no display e no futuro irá ser disponível configurar números de telefone
+No projeto, os botões serão usados para navegar pelo display,auxiliando o usuário a verificar a concentração dos gases em tempo rea. No futuro, também será possível usar o display para configurar números de telefone para envio de SMS.
 
 **Microcontrolador**
 
-Após listarmos todos os sinais que iremos precisar a partir dos sensores e atuadores citados acima. Foi adotado o microcontrolador ATMEGA328P para ser o responsável por tratar e gerenciar as rotinas do nosso dispositivo. O ATMEGA328P possui como características principais o fato de possuir 3 memórias internas, sendo elas uma memória Flash (32 KB), uma SRAM (2 KB) e uma EEPROM (1 KB), possui também 23 I/Os, opera com uma tensão de 5V e as suas saídas fornecem uma corrente de 40 mA, além disso, consegue operar com um clock de 0 à 20 MHz.
+Após listarmos todos os sinais que iremos precisar a partir dos sensores e atuadores citados acima. Foi adotado o microcontrolador ATMEGA328P para ser o responsável por tratar e gerenciar as rotinas do nosso dispositivo. O ATMEGA328P possui como características principais o fato de possuir 3 memórias internas, sendo elas uma memória Flash (32 KB), uma SRAM (2 KB) e uma EEPROM (1 KB), possui também 23 I/Os, opera com uma tensão de 5V e as suas saídas fornecem uma corrente de 40 mA, além disso, consegue operar com um clock entre 0 à 20 MHz.
 
-Um dos grandes motivos que nos fez utilizar o ATMEGA328P foi o fato dele ser o microcontrolador utilizado na grande maioria dos arduinos, sendo assim , possui uma gama de bibliotecas e informações na internet, facilitando o desenvolvimento e execução do projeto.
+Um dos grandes motivos que nos fez utilizar o ATMEGA328P foi o fato dele ser o microcontrolador utilizado na grande maioria dos arduinos, e por isso , possui uma gama de bibliotecas e informações na internet que facilitam o desenvolvimento e execução do projeto.
 
 ### Especificação de Algoritmos
 
