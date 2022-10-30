@@ -87,12 +87,12 @@ A seguir os principais componentes para o desenvolvimento do projeto.
 
 |Componente | Quantidade | Funcionalidade para o Circuito | Datasheet | Preço |
 |--|--|--|--|--|
-| Microcrontrolador PIC 16F689 | 1 | Unidade micro-controladora | [link](https://pdf1.alldatasheet.com/datasheet-pdf/view/75016/MICROCHIP/PIC16F877.html) | R$ 15 a R$ 20 [link](https://www.multcomercial.com.br/microcontrolador-pic16f689-i-p-dip-20-microchip.html)|
+| Microcrontrolador PIC 16F689 | 1 | Unidade micro-controladora | [link](https://ww1.microchip.com/downloads/en/DeviceDoc/40001262F.pdf) | R$ 15 a R$ 20 [link](https://www.multcomercial.com.br/microcontrolador-pic16f689-i-p-dip-20-microchip.html)|
 | Botão | 1 | Mudar padrão de LEDs e música | [link](https://www.hdk.co.jp/pdf/eng/e291702.pdf) | R$ 1,50 [link](https://www.multcomercial.com.br/chave-tactil-com-bot-o-diversas-cores.html) |
-| Buzzer | 1 | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) | R$5,00 [link](https://www.eletrogate.com/buzzer-passivo-5v?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNBsW76Lb3EhztLNXDjKSmbud-RP60JCydtFhrbsoX0LYYNhAoNAGAaAp8WEALw_wcB)|
+| Buzzer | 1 | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) | R$4,28 [link](https://www.eletrogate.com/buzzer-passivo-5v?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNBsW76Lb3EhztLNXDjKSmbud-RP60JCydtFhrbsoX0LYYNhAoNAGAaAp8WEALw_wcB)| R$ 4,50 + frete [link](https://www.eletrogate.com/buzzer-passivo-5v?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNBsW76Lb3EhztLNXDjKSmbud-RP60JCydtFhrbsoX0LYYNhAoNAGAaAp8WEALw_wcB) |
 | LEDs | 12 | Decoração da arvore | - | Almoxarifado FEEC |
 | Pilhas AAA | 3 | Alimentação do circuito | entre 2 e 6V| R$ 7,49 [link](https://www.amazon.com.br/Rayovac-Amarelinhas-10307-Amarelo-Palito/dp/B01L9KVYDG/ref=asc_df_B01L9KVYDG/?tag=googleshopp00-20&linkCode=df0&hvadid=379794911936&hvpos=&hvnetw=g&hvrand=16238180961664777646&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-939070999438&psc=1) |
-| Suporte para pilha | 1 | Alimentação do circuito | - | R$ 7 [link](https://www.multcomercial.com.br/suporte-para-3-pilhas-aaa-com-tampa-e-rabicho-de-15cm-jd15-6039a-jinda.html)|
+| Suporte para pilha | 1 | Alimentação do circuito | - | R$ 7,00 [link](https://www.multcomercial.com.br/suporte-para-3-pilhas-aaa-com-tampa-e-rabicho-de-15cm-jd15-6039a-jinda.html)|
 
 <!--- > 
 > Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
@@ -102,7 +102,7 @@ A seguir os principais componentes para o desenvolvimento do projeto.
 
 Inicialmente para a decoração luminosa da árvore de natal estimou-se um total de 12 LEDs. No entanto, para reduzir o número de portas e aprender sobre a construção de matrizes a técnica Charlieplexing será utilizada, diminuindo, assim, a quantidade de portas necessárias para o controle dos LEDs para quatro. Além disso, um botão (atuador) será usado como forma de interrupção para controlar o acionamento das músicas natalinas que serão geradas através de um piezo buzzer (atuador).
 
-Para o controle do projeto definiu-se como unidade micro-controladora o PIC 16F89 da família 16F, que possui 20 pinos, 4K de memória e funciona com alimentação entre 2V e 5,5V. Tal escolha se deu devido a quantidade de memória razoável disponível, pinos de interrupção e de PWM, que serão utilizados na implementação de rotinas, e o alto custo benefício quando comparado ao Atmega328p (outro microcontrolador candidato para o desenvolvimento do projeto visto que as alunas já tinham familiaridade), muito mais caro e com uma capacidade de memória excessiva para o trabalho. Assim, a escolha final do PIC 16F se deu pelo valor através da análise desse site de componentes [link](https://www.multcomercial.com.br/). Note que um PIC com uma quantidade menor de portas não foi escolhido, devido ao baixo valor de memória e ausência de pinos de interrupção. 
+Para o controle do projeto definiu-se como unidade micro-controladora o PIC 16F89 da família 16F, que possui 20 pinos, 7KB de memória e funciona com alimentação entre 2V e 5,5V. Tal escolha se deu devido a quantidade de memória razoável disponível, pinos de interrupção e de PWM, que serão utilizados na implementação de rotinas, e o alto custo benefício quando comparado ao Atmega328p (outro microcontrolador candidato para o desenvolvimento do projeto visto que as alunas já tinham familiaridade), muito mais caro e com uma capacidade de memória excessiva para o trabalho. Assim, a escolha final do PIC 16F se deu pelo valor através da análise desse site de componentes [link](https://www.multcomercial.com.br/). Note que um PIC com uma quantidade menor de portas não foi escolhido, devido ao baixo valor de memória e ausência de pinos de interrupção. 
 
 Por fim, para a alimentação do microcontrolador serão utilizados 3 pilhas AAA de 1,5V cada totalizando uma tensão de 4,5V.
 
@@ -121,7 +121,7 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
  
  Para evitar o efeito de repique ao acionar o botão, ou seja, oscilações indesejadas que podem causar mal funcionamento no circuito, será implementado, via hardware, um capacitor em pararelo com o botão de modo a suavizar a transição de níveis (nível lógico baixo para o alto e vice versa) e com isso impedir interpretações erradas de acionamento de botão [6]. A Figura abaixo mostra o esquemático para o circuito de debounce.
  
-![image](https://user-images.githubusercontent.com/40005866/198850561-d335bd71-75dd-4621-9129-399d8d179642.png)
+ <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Debounce.PNG" width="450" />
 
  Note que o valor da resistência e do capacitor estão associados com o tempo de carregamento do capacitor, ou seja, o atraso nas transições de nível.
 
@@ -149,6 +149,7 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 
 ### Especificação de Algoritmos 
 
+<!--- >
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
 > 
 > Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
@@ -156,7 +157,14 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 > os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
 > espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
-> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+> com a norma internacional ISO 1028-1973 e IS0 2972-1979.-->
+
+A seguir o algoritmo de tratamento dos eventos representado através de um fluxograma.
+
+<!---[colcar a imagem aqui]-->
+
+Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
+
 
 
 
