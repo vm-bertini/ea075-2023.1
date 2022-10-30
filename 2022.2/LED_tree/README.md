@@ -89,7 +89,7 @@ A seguir os principais componentes para o desenvolvimento do projeto.
 |--|--|--|--|--|
 | Microcrontrolador PIC 16F689 | 1 | Unidade micro-controladora | [link](https://pdf1.alldatasheet.com/datasheet-pdf/view/75016/MICROCHIP/PIC16F877.html) | R$ 15 a R$ 20 [link](https://www.multcomercial.com.br/microcontrolador-pic16f689-i-p-dip-20-microchip.html)|
 | Botão | 1 | Mudar padrão de LEDs e música | [link](https://www.hdk.co.jp/pdf/eng/e291702.pdf) | R$ 1,50 [link](https://www.multcomercial.com.br/chave-tactil-com-bot-o-diversas-cores.html) |
-| Buzzer | 1 | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) | |
+| Buzzer | 1 | Músicas natalinas | [link](https://www.mouser.com/datasheet/2/400/ef532_ps-13444.pdf) | R$5,00 [link](https://www.eletrogate.com/buzzer-passivo-5v?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNBsW76Lb3EhztLNXDjKSmbud-RP60JCydtFhrbsoX0LYYNhAoNAGAaAp8WEALw_wcB)|
 | LEDs | 12 | Decoração da arvore | - | Almoxarifado FEEC |
 | Pilhas AAA | 3 | Alimentação do circuito | entre 2 e 6V| R$ 7,49 [link](https://www.amazon.com.br/Rayovac-Amarelinhas-10307-Amarelo-Palito/dp/B01L9KVYDG/ref=asc_df_B01L9KVYDG/?tag=googleshopp00-20&linkCode=df0&hvadid=379794911936&hvpos=&hvnetw=g&hvrand=16238180961664777646&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-939070999438&psc=1) |
 | Suporte para pilha | 1 | Alimentação do circuito | - | R$ 7 [link](https://www.multcomercial.com.br/suporte-para-3-pilhas-aaa-com-tampa-e-rabicho-de-15cm-jd15-6039a-jinda.html)|
