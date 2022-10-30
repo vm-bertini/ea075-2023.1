@@ -23,7 +23,7 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 - Conexão à internet via wi-fi para verificação do horário e comunicação com atuadores;
 - Medição de temperatura;
 - Acender/apagar luzes via wi-fi conforme horário ;
-- Ligar/desligar ar-condicionado/aquecedor via wi-ficonforme temperatura.
+- Ligar/desligar ar-condicionado/aquecedor via wi-fi conforme temperatura.
 
 ### Configurabilidade
 O usuário poderá configurar via Interface Homem-Máquina (IHM) os seguintes parâmetros para a operação do circuito:
@@ -46,7 +46,7 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 - **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado;
 - **Hora para acender as luzes atingida:** acende via wi-fi as luzes do cômodo;
 - **Hora para apagar as luzes atingida:** apaga via wi-fi as luzes do cômodo;
-************- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
+- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
 
 ## Descrição Estrutural do Sistema
 ![Alt](KeePet_Comfort_Block_Diagram.png)
@@ -69,13 +69,15 @@ Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tra
 
 ### Interface IHM
 
-
+Em virtude da necessidade do usuário ser capaz definir suas próprias configurações, conforme abordado na seção [Configurabilidade](#configurabilidade), foi escolhida uma Interface Homem-Máquina 
 
 ### Microcontrolador
 
-Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8285H16* [[10]](#Referências), capaz de realizar comunicação através de protocólos I2C, SPI***** e 1-Wire, possui comunicação Wi-Fi integrada ao chip e suas portas GPIO operam em +3,3V. Exibe temperatura de operação entre –40 °C e 105 °C, também atendendo ao intervalo do DS18B20, indicando ser capaz de satisfazer as condições físicas e ambientais do projeto. 
+Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-estrutural-do-sistema), definiu-se que a utilização de um microcontrolador é fundamental para coordenar a leitura de periféricos de entrada e a subsequente tomada de decisões, visando o tratamento de eventos. Assim, com base nas necessidades abordadas pelas seções anteriores, foi escolhido o *ESP8285H16* [[10]](#Referências), capaz de realizar comunicação através de protocólos I2C e 1-Wire, possui comunicação Wi-Fi integrada ao chip e suas portas GPIO operam em +3,3V. Exibe temperatura de operação entre –40 °C e 105 °C, também atendendo ao intervalo do DS18B20, indicando ser capaz de satisfazer as condições físicas e ambientais do projeto. 
 
-Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias considerando os periféricos já mencionados, na qual o DS18B20 necessita de duas portas de alimentação e uma GPIO, o DS3231 necessita de duas portas para alimentação e as duas portas I2C do chip (pinos 9 e 14), enquanto o ST7735 irá precisar de 3 portas de alimentação e 5 GPIOs, nenhuma utilizada no protocólo I2C.
+Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias considerando os periféricos já mencionados, na qual o DS18B20 necessita de duas portas de alimentação e uma GPIO e o DS3231 necessita de duas portas para alimentação e as duas portas I2C do chip (pinos 9 e 14).
+
+, enquanto o ST7735 irá precisar de 3 portas de alimentação e 5 GPIOs, nenhuma utilizada no protocólo I2C.
 
 ### Discussão
 
@@ -85,29 +87,17 @@ Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível 
 
 ## Especificação de Algoritmos
 
-| ![Alt](Evento_1.png) |
-|:--:| 
-| *Tempetura ambiente igual a ideal* |
-
-| ![Alt](Evento_2.png) |
-|:--:| 
-| *Tempetura ambiente abaixo do ideal* |
-
 | ![Alt](Evento_3.png) |
 |:--:| 
-| *Tempetura ambiente acima do ideal* |
-
-| ![Alt](Evento_4.png) |
-|:--:| 
-| *Apagar luzes* |
+| *Tratamento de eventos para tempetura ambiente igual a ideal, abaixo do ideal e acima do ideal* |
 
 | ![Alt](Evento_5.png) |
 |:--:| 
-| *Acender luzes* |
+| *Tratamento de enventos para acender luzes, apagar luzes ou não acender e não apagar luzes* |
 
-| ![Alt](Evento_6.png) |
+| ![Alt](Evento_7.png) |
 |:--:| 
-| *Não acender e não apagar luzes* |
+| *Sincronizar horário do relógio* |
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
