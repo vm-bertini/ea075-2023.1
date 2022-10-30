@@ -20,13 +20,13 @@ Visando o bem-estar dos pets, busca-se, neste projeto, o desenvolvimento de um s
 ## Descrição Funcional
 
 ### Funcionalidades
-- Conexão à internet via wi-fi para verificação do horário e comunicação com atuadores;
+- Conexão à internet via Wi-Fi para verificação do horário e comunicação com atuadores;
 - Medição de temperatura;
-- Acender/apagar luzes via wi-fi conforme horário ;
-- Ligar/desligar ar-condicionado/aquecedor via wi-fi conforme temperatura.
+- Acender/apagar luzes via Wi-Fi conforme horário ;
+- Ligar/desligar ar-condicionado/aquecedor via Wi-Fi conforme temperatura.
 
 ### Configurabilidade
-O usuário poderá configurar via Interface Homem-Máquina (IHM) os seguintes parâmetros para a operação do circuito:
+O usuário poderá configurar via Wi-Fi os seguintes parâmetros para a operação do circuito:
 - Setpoint de temperatura;
 - Horário em que as luzes devem ser acesas/apagadas.
 
@@ -42,11 +42,11 @@ Todos os eventos considerados são periódicos e diários, a temperatura ambient
 
 ### Tratamento de Eventos
 - **Tempetura ambiente igual a ideal:** aguarda o próximo aferimento de temperatura;
-- **Tempetura ambiente abaixo da ideal:** aciona via wi-fi o aquecedor;
-- **Tempetura ambiente acima da ideal:** aciona via wi-fi o ar-condicionado;
-- **Hora para acender as luzes atingida:** acende via wi-fi as luzes do cômodo;
-- **Hora para apagar as luzes atingida:** apaga via wi-fi as luzes do cômodo;
-- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via wi-fi [[1]](#Referências).
+- **Tempetura ambiente abaixo da ideal:** aciona via Wi-Fi o aquecedor;
+- **Tempetura ambiente acima da ideal:** aciona via Wi-Fi o ar-condicionado;
+- **Hora para acender as luzes atingida:** acende via Wi-Fi as luzes do cômodo;
+- **Hora para apagar as luzes atingida:** apaga via Wi-Fi as luzes do cômodo;
+- **Sincronização do horário do relógio:** sincroniza o real-time clock (RTC) do circuito via Wi-Fi [[1]](#Referências).
 
 ## Descrição Estrutural do Sistema
 ![Alt](KeePet_Comfort_Block_Diagram.png)
@@ -67,7 +67,7 @@ Em conformidade com a seção [*Discussão*](#discussão), foi optada pela não 
 
 Com base no [fluxograma elaborado](#descrição-estrutural-do-sistema) e no [tratamento de eventos](#tratamento-de-eventos), nota-se que, para o controle das luzes, é necessário que a hora seja conhecida. Dessa forma, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. Um dos RTCs analisados foi o *DS3231* [[8]](#Referências) que permite contar horas, minutos, segundos, atendendo a aplicação desejada. O DS3231 comunica-se com o microcontrolador por meio da interface serial I2C, exigindo o uso de 2 pinos para alimentação de 3,3V e 2 pinos para o protocólo I2C. Para aplicações comerciais, seu range de temperatura é de 0°C a +70°C, que também satisfaz o intervalo de operação do DS18B20.
 
-### Interface IHM
+### Interface Homem-Máquina
 
 Conforme a seção [*Discussão*](#discussão), foi optada pela não utilização de uma interface IHM, por conta da falta de pinos disponíveis no microcontrolador.
 
@@ -81,6 +81,8 @@ Em concordante com o que será discutido na seção [*Especificação de Algorit
 
 Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocólos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna, foi escolhido o ESP8285H16.
 
+Para a primeira entrega (E1), havia sido projetada a utilização de uma Interface Homem-Máquina (IHM) com a função de permitir configuração do setpoint de temperatura e horário em que as luzes devem ser acesas/apagadas. No entanto, após pesquisa e análise dos dispositivos encontrados no mercado, como o ILI9341 [[13]](#Referências), definiu-se que esse tipo de componente exige a utilização de muitos pinos do chip, inclusive entrando em conflito com os pinos I2C sendo utilizados pelo RTC, e, portanto, sua utilização foi descartada. Em seu lugar, as informações de temperatura e horário serão aenviadas ao microcontrolador via Wi-Fi, utilizado um **aplicativo de celular**.
+
 Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V.
 
 ## Especificação de Algoritmos
@@ -91,11 +93,11 @@ Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível 
 
 | ![Alt](Evento_5.png) |
 |:--:| 
-| *Tratamento de enventos para acender luzes, apagar luzes ou não acender e não apagar luzes* |
+| *Tratamento de eventos para acender luzes, apagar luzes ou não acender e não apagar luzes* |
 
 | ![Alt](Evento_7.png) |
 |:--:| 
-| *Sincronizar horário do relógio* |
+| *Tratamento de evento para sincronizar horário do relógio* |
 
 ## Referências
 [1] https://ntp.br/ - Acessado em 18 set. 2022.
@@ -121,3 +123,5 @@ Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível 
 [11] https://br.mouser.com/datasheet/2/268/PIC24FJ64GP205_GU205_Family_Data_Sheet_DS30010221D-2933213.pdf - Acessado em 17 out. 2022.
 
 [12] https://datasheets.maximintegrated.com/en/ds/DS1307.pdf - Acessado em 17. out. 2022.
+
+[13] https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf - Acessado em 28 out. 2022.
