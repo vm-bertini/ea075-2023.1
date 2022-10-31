@@ -124,17 +124,30 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição Estrutural do Sistema
 
-O seguinte projeto tem como objetivo monitorar com recorrência  a localização de um pet. A primeira parte iterativa com usuario, sera feita através de um app para celulares. O processamento sera feito com modulo lora e modulo arudino sendo o microcontrolador, recebendo a comunicação continuamente, caso a comunicação pare será emitido sinais de led e vibra. 
+> O seguinte projeto tem como objetivo principal de avisar o dono caso seu pet esteja longe da área de cobertura. Isto é, caso o pet se afaste muito do dono, será setado um alarme informando ao dono, que o animal está muito longe e não é seguro naquela área. Para isso, será realizado uma interface iterativa com o dono, por meio de um aplicativo, o mesmo realizará uma conexão com a coleira via Bluetooth. Quando a coleira estiver no animal e o mesmo se afastar fora da cobertura alcançada pelo Bluetooth, o mesmo ligará um alarme por meio de uma notificação ao celular para o usuário, quando para a coleira que ficará piscando, para informar que o pet está perdido, e apenas será parado quando o dono resetar o alarme.
 
 ## Especificações
 
 ### Especificação Estrutural
 
-![Diagrama sem nome drawio](https://user-images.githubusercontent.com/91965153/198913517-3fd4e910-e93b-464a-a269-afabd49308bb.png)
+> Periféricos de entrada: 
+> Módulo Bluetooth, HC-05, para comunicação serial com microcontrolador. 
+> Celular compatível para instalação do aplicativo para comunicação Bluetooth;
+> Botão de reset;
+> Botão liga-desliga;
+> Bateria 9V
+> Fonte de alimentação para carregamento da bateria.
+> 
+> Periféricos de saída: 
+> Barramento de Led's;
+> Envio de notificação ao usuário;
+> Utilização de periféricos do celular ( Notificação, alarme );
+
+> Neste projeto será escolhido para uso o ATMEGA328P, ao qual será utilizado junto com o módulo HC-05, junto a uma bateria, o circuito será acoplado a coleira e utilizado grau de IP 66, para conter grau de umidade e poeira. O alcance permitido da coleira inicial será de 10m. Em decorrer dos testes com o protótipo, caso o mesmo seja realizado com sucesso, será implementado novas funções.
 
 ### Especificação de Algoritmos 
-
-
+>
+> Pendente.
 >
 ## Referências
 > https://www.electronica-pt.com/radio-frequencia
@@ -144,6 +157,8 @@ O seguinte projeto tem como objetivo monitorar com recorrência  a localização
 > https://blog.novaeletronica.com.br/circuito-receptor-e-transmissor-de-dados-de-baixo-custo/
 
 > https://www.youtube.com/watch?v=6l2XSbG7_Gg&ab_channel=YourWildLifeProject
+
+> https://repositorio.ucs.br/xmlui/bitstream/handle/11338/2455/TCC%20Marcelo%20Sala%20Reck.pdf?sequence=3
 
 > https://makezine.com/projects/gps-cat-tracker-2/
 
