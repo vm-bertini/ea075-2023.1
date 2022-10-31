@@ -123,11 +123,16 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Estado de carregamento: Quando alimentado ao carregador, é gerado uma interrupção e a coleira fica no estado de carregando.
 
 ## Descrição Estrutural do Sistema
-![image](https://user-images.githubusercontent.com/91965153/191393909-73d0100b-3478-4997-ba36-f900adaf8eab.png)
-> 
+
+O seguinte projeto tem como objetivo monitorar com recorrência  a localização de um pet. A primeira parte iterativa com usuario, sera feita através de um app para celulares. O processamento sera feito com modulo lora e modulo arudino sendo o microcontrolador, recebendo a comunicação continuamente, caso a comunicação pare será emitido sinais de led e vibra. 
+
 ## Especificações
 
 ### Especificação Estrutural
+
+![Diagrama sem nome drawio](https://user-images.githubusercontent.com/91965153/198913517-3fd4e910-e93b-464a-a269-afabd49308bb.png)
+
+
 
 > (Se preferir, adicione um link para o documento de especificação estrutural)
 > 
