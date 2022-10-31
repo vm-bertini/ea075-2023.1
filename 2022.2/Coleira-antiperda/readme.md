@@ -131,20 +131,29 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Especificação Estrutural
 
 > Periféricos de entrada: 
-> Módulo Bluetooth, HC-05, para comunicação serial com microcontrolador. 
-> Celular compatível para instalação do aplicativo para comunicação Bluetooth;
-> Botão de reset;
-> Botão liga-desliga;
-> Bateria 9V
-> Fonte de alimentação para carregamento da bateria.
+> 
+> - Módulo Bluetooth, HC-05, para comunicação serial com microcontrolador. 
+> 
+> - Celular compatível para instalação do aplicativo para comunicação Bluetooth;
+> 
+> - Botão de reset;
+> 
+> - Botão liga-desliga;
+> 
+> - Bateria 9V;
+> 
+> - Fonte de alimentação para carregamento da bateria.
 > 
 > Periféricos de saída: 
-> Barramento de Led's;
-> Envio de notificação ao usuário;
-> Utilização de periféricos do celular ( Notificação, alarme );
-
+> 
+> - Barramento de Led's;
+> 
+> - Envio de notificação ao usuário;
+> 
+> - Utilização de periféricos do celular ( Notificação, alarme );
+>
 > Neste projeto será escolhido para uso o ATMEGA328P, ao qual será utilizado junto com o módulo HC-05, junto a uma bateria, o circuito será acoplado a coleira e utilizado grau de IP 66, para conter grau de umidade e poeira. O alcance permitido da coleira inicial será de 10m. Em decorrer dos testes com o protótipo, caso o mesmo seja realizado com sucesso, será implementado novas funções.
-
+>
 ### Especificação de Algoritmos 
 >
 > Pendente.
