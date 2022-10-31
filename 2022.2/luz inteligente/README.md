@@ -51,7 +51,8 @@ O usuário poderá configurar:
 
 ## Estrutura do Sistema
 
-![diagrama](https://user-images.githubusercontent.com/73912017/191380649-05f83f75-f9b9-4dfc-a7c6-20d8a283a7ea.png)
+![DIAGRAMA-EA075](https://user-images.githubusercontent.com/112783871/199125714-ed989c85-57b7-41f3-ab7e-61b6ba271a6a.png)
+
 
 ## Referências
 
