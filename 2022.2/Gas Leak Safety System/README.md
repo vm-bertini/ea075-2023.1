@@ -14,36 +14,35 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição do Projeto
 
-O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer, *poderá configurar a máxima concentração permitida do gás no local e informar os números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada e ainda acionar um buzzer no local* **sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco (não segura)**. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo *versátil que além de permitir ao usuário escolher o gás que irá ser analisado, ele ainda sozinho, consegue enviar mensagens SMS, sem precisar que seja integrado a um sistema de segurança do local* **que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil**. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
+O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer,sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
 O nosso produto visa atender principalmente indústrias e laboratórios químicos. Não temos um valor para nosso produto, porém, a ideia é que seu custo seja competitivo com o dos sensores de leituras específicas do mercado, de forma que como o nosso produto consegue ler diferentes tipos de gases, ele seja mais atrativo do que os demais sensores.
 
 ## Descrição Funcional
 
-O nosso projeto tem a detecção de diferentes tipos de gases como a sua função principal, para isso, iremos utilizar um microcontrolador com memória embutida que será responsável por armazenar as informações enviadas por 2 sensores infravermelhos que irão indicar quantas pessoas estão no local em que o sensor de gás está instalado, conseguindo nos dizer quando uma pessoa entra/sai da instalação. Além dessa informação, o microcontrolador deverá receber um sinal digital informando se a concentração de gás excedeu o limite permitido ou então um sinal analógico que deverá ser tratado internamente verificando se o valor enviado pelo sensor excedeu o limite de concentração *configurado pelo usuário por meio de um display LCD e um teclado embutido no mesmo* **que foi configurado baseado nas normas de seguranças regentes no país em que o dispositivo foi instalado**. Por meio do display LCD, o usuário ainda poderá escolher o tipo de gás que o sistema irá detectar baseado numa lista de opções que será mostrada no display e estará armazenada na memória interna do microcontrolador. *e em seguida, caso o sensor associado ao gás escolhido seja analógico, o usuário terá que informar qual o valor que o sistema deverá tratar como limite de concentração.*
+O nosso projeto tem a detecção de diferentes tipos de gases como a sua função principal, para isso, iremos utilizar um microcontrolador com memória embutida que será responsável por armazenar as informações enviadas por 2 sensores infravermelhos que irão indicar quantas pessoas estão no local em que o sensor de gás está instalado, conseguindo nos dizer quando uma pessoa entra/sai da instalação. Além dessa informação, o microcontrolador deverá receber um sinal digital informando se a concentração de gás excedeu o limite permitido ou então um sinal analógico que deverá ser tratado internamente verificando se o valor enviado pelo sensor excedeu o limite de concentração que foi configurado baseado nas normas de seguranças regentes no país em que o dispositivo foi instalado. Por meio do display LCD, o usuário ainda poderá escolher o tipo de gás que o sistema irá detectar baseado numa lista de opções que será mostrada no display e estará armazenada na memória interna do microcontrolador. 
 
-**No futuro,** o usuário poderá configurar quais os números que deverão receber SMS em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. 
+Em aplicações futuras o usuário poderá configurar quais os números que deverão receber SMS em caso de detecção de concentração acima do limite permitido, essa configuração terá dois níveis de prioridade, o primeiro nível é o referente a equipe de segurança que será informada quando for indicado que a concentração de gás excedeu o limite independente se existem pessoas no local ou não. O segundo nível é o referente a equipe de resgate que será informada quando ocorre a condição citada anteriormente tendo pessoas na instalação. 
 
-**Enquanto que o primeiro protótipo ao detectar uma ocorrência de risco, irá acionar um buzzer acoplado ao dispositivo por meio de uma saída digital que ficará emitindo som até que uma pessoa autorizada pressione o botão de reset após a concentração do gás normalizar novamente.**
+O primeiro protótipo ao detectar uma ocorrência de risco irá acionar um buzzer acoplado ao dispositivo por meio de uma saída digital que ficará emitindo som até que uma pessoa autorizada pressione o botão de reset após a concentração do gás normalizar novamente.
 
 ### Funcionalidades
 
-- *Configuração do sensor que será integrado ao sistema, permitindo o usuário configurar a máxima concentração permitida do gás no local*;
-- **Configuração de quais gases o sistema irá ser responsável de realizar o monitoramento;**
-- **Exibição das concentrações atuais dos gases no display LCD**
-- Configuração dos números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada **(Futuro)**; 
+- Configuração de quais gases o sistema irá ser responsável de realizar o monitoramento;
+- Exibição das concentrações atuais dos gases no display LCD;
+- Configuração dos números de telefone pelos quais o sistema ficará responsável de enviar SMS ao indentificar uma concentração de gás acima da especificada (Futuro); 
 - Monitoramento dos níveis de concentração de determinados gases de interesse em um ambiente desejado;
 - Registro do número de pessoas presentes em determinado local;
 - Acionar indicador sonoro para alerta de perigo;
-- Envio de mensagem SMS para números predeterminados **(Futuro)**;
+- Envio de mensagem SMS para números predeterminados (Futuro);
    
 ### Configurabilidade
 
 Sendo o objetivo primário do sistema o monitoramento da concentração de gases potencialmente nocivos em um ambiente, o circuito terá margem para as seguintes configurações:
 
-- *Modelo do sensor de gás integrado ao sistema*;
-- *Determinação do nível de concentração máxima do gás permitida no local*;
-- Determinação dos números de telefone para envio de SMS **(Futuro)**.
-- **Determinação de quais gases o sistema irá ser responsável de realizar o monitoramento;**
+- Modelo do sensor de gás integrado ao sistema;
+- Determinação do nível de concentração máxima do gás permitida no local;
+- Determinação dos números de telefone para envio de SMS (Futuro).
+- Determinação de quais gases o sistema irá ser responsável de realizar o monitoramento;
  
 ### Eventos
 
@@ -63,9 +62,7 @@ A leitura dos níveis de concentração é periódica, ocorrendo a cada segundo,
 
 Ao detectar níveis de concentração abaixo do especificado independente de quantas pessoas estejam presentes, o sistema deverá apenas armazenar as informações coletadas pelos sensores, nenhuma ação será necessária;
 
-Ao detectar níveis de concentração acima do especificado sem pessoas na sala, o sistema deverá *enviar um SMS para o número da equipe de segurança cadastrado no dispositivo e* emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado **, para o alerta sonoro ser desligado, é necessário pressionar o botão de reset do sistema. A pessoa que deverá realizar essa atividade, deve possuir treinamento e estar com os equipamento de proteção individual (EPI), pois caso a concentração ainda esteja elevada, o buzzer não será desligado**;
-
-*Ao detectar níveis de concentração acima do especificado com pessoas na sala, o sistema deverá enviar um SMS tanto para o número da equipe de segurança quanto para o da equipe de resgate, e emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado;*
+Ao detectar níveis de concentração acima do especificado sem pessoas na sala, o sistema deverá emitir um alerta sonoro por meio do buzzer, indicando que o local em questão deve ser evitado, para o alerta sonoro ser desligado, é necessário pressionar o botão de reset do sistema. A pessoa que deverá realizar essa atividade, deve possuir treinamento e estar com os equipamento de proteção individual (EPI), pois caso a concentração ainda esteja elevada, o buzzer não será desligado;
 
 ## Descrição Estrutural do Sistema
 
@@ -114,9 +111,8 @@ No projeto, os botões serão usados para navegar pelo display,auxiliando o usu�
 
 **Microcontrolador**
 
-Após listarmos todos os sinais que iremos precisar a partir dos sensores e atuadores citados acima. Foi adotado o microcontrolador ATMEGA328P para ser o responsável por tratar e gerenciar as rotinas do nosso dispositivo. O ATMEGA328P possui como características principais o fato de possuir 3 memórias internas, sendo elas uma memória Flash (32 KB), uma SRAM (2 KB) e uma EEPROM (1 KB), possui também 23 I/Os, opera com uma tensão de 5V e as suas saídas fornecem uma corrente de 40 mA, além disso, consegue operar com um clock entre 0 à 20 MHz.
+Após listarmos todos os sinais que iremos precisar a partir dos sensores e atuadores citados acima. Devido a sua ampla utilização e disponibilidade no mercado foi adotado o microcontrolador ATMEGA328P para ser o responsável por tratar e gerenciar as rotinas do nosso dispositivo. O ATMEGA328P possui como características principais o fato de possuir 3 memórias internas, sendo elas uma memória Flash (32 KB), uma SRAM (2 KB) e uma EEPROM (1 KB), possui também 23 I/Os, opera com uma tensão de 5V e as suas saídas fornecem uma corrente de 40 mA, além disso, consegue operar com um clock entre 0 à 20 MHz.
 
-Um dos grandes motivos que nos fez utilizar o ATMEGA328P foi o fato dele ser o microcontrolador utilizado na grande maioria dos arduinos, e por isso , possui uma gama de bibliotecas e informações na internet que facilitam o desenvolvimento e execução do projeto.
 
 ### Especificação de Algoritmos
 
@@ -139,21 +135,21 @@ Partindo das especificações técnicas dos sensores e atuadores selecionados pa
 
 ## Referências
 
-https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-8%20Ver1.3%20-%20Manual.pdf  Acessado em 28/10/2022
+https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-8%20Ver1.3%20-%20Manual.pdf  
 
-https://www.filipeflop.com/produto/sensor-de-gas-mq-2-inflamavel-e-fumaca/  Acessado em 28/10/2022
+https://www.filipeflop.com/produto/sensor-de-gas-mq-2-inflamavel-e-fumaca/  
 
-https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf Acessado em 28/10/2022
+https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf 
 
-https://www.filipeflop.com/produto/sensor-de-gas-mq-4-metano/ Acessado em 28/10/2022
+https://www.filipeflop.com/produto/sensor-de-gas-mq-4-metano/ 
 
-https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ4.pdf Acessado em 28/10/2022
+https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ4.pdf 
 
-https://www.arducore.com.br/sensor-infravermelho-reflexivo-industrial-e18-d80nk Acessado em 28/10/2022
+https://www.arducore.com.br/sensor-infravermelho-reflexivo-industrial-e18-d80nk 
 
-https://datasheetspdf.com/pdf-file/1311838/ETT/E18-D80NK-N/1 Acessado em 28/10/2022
+https://datasheetspdf.com/pdf-file/1311838/ETT/E18-D80NK-N/1 
 
-https://www.filipeflop.com/produto/buzzer-ativo-5v/ Acessado em 28/10/2022
+https://www.filipeflop.com/produto/buzzer-ativo-5v/ 
 
 
 
