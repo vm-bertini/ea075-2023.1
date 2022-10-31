@@ -82,12 +82,19 @@ Além disso, foram desenvolvidos dois fluxogramas que determinam o comportamento
 ## Especificações
 
 Buscando desenvolver um projeto simples, barato e fácil de configurar, optamos pelo  Arduíno¹ como plataforma de prototipagem, aproveitando o microcontrolador interno com suporte de entrada/saída embutido.
-A umidade relativa mais favorável depende da espécie de planta cultivada, com uma faixa típica que varia entre 50% e 70%. Já a temperatura mais favorável depende da espécie de planta cultivada e do nível  desejado de atividade fotossintética. A temperatura típica de uma estufa varia entre 10 °C  e 20 °C. Temperaturas muito altas reduzem o crescimento das plantas, fazendo com que elas murchem e morram; por outro lado, temperaturas muito baixas limitam o crescimento das plantas. ²
 
+A umidade relativa mais favorável depende da espécie de planta cultivada, com uma faixa típica que varia entre 50% e 70%. Já a temperatura mais favorável depende da espécie de planta cultivada e do nível  desejado de atividade fotossintética. A temperatura típica de uma estufa varia entre 10 °C  e 20 °C. Temperaturas muito altas reduzem o crescimento das plantas, fazendo com que elas murchem e morram; por outro lado, temperaturas muito baixas limitam o crescimento das plantas.²
+
+A distribuição dos sensores de temperatura e umidade será feita a cada 12m² no espaço da estufa, e o posicionamento dos ares-condicionados dependerá da potência e área de alcance, mas inicialmente manteremos essa mesma distância de 12m² entre eles. Para irrigação, serão dispostos aspersores de raio de pequeno a médio alcance (entre 6 e 12 metros) também a cada 12m². Nessa etapa é importante que haja um equilíbrio na pressão da água, para não haver locais que sejam regados por dois aspersores simultaneamente.
 
 ### Especificação Estrutural
 
 Para medição de umidade e temperatura foi escolhido o sensor DHT-11³. Este sensor faz medições de temperatura de 0º C até 50º C e mede a umidade do ar nas faixas de 20% a 90%. A precisão (margem de erro) do sensor para medição de temperatura é de aproximadamente 2 °C e para umidade é de 5%. Assim, mesmo que haja necessidade de alteração da faixa de temperatura e umidade mínima pelo plantio específico do cliente, temos certeza que esse sensor atenderá todos os requisitos.
+
+Para acionamento e desligamento dos ares-condicionados, será utilizado o sensor IRM-3638⁴ para leitura do sinal infravermelho emitido pelo controle remoto dele. Dessa forma, permitimos que o cliente escolha o modelo de ar condicionado desejado e utilizamos um LED IR (emissor de infravermelho) para ligar e desligar o ar condicionado, emitindo o mesmo código que seria emitido pelo controle remoto de fábrica do equipamento.
+
+Os aspersores serão os responsáveis por irrigar e umidificar o ambiente, controlados por  válvulas de vazão solenóides 12 VDC normalmente fechadas, ou seja, só permitirão a passagem de fluido se forem energizadas, enquanto estiverem desenergizadas elas bloquearão a passagem do fluido (água). ^5
+
 
 ### Especificação de Algoritmos 
 
