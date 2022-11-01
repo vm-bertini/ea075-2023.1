@@ -107,6 +107,7 @@ Por fim, listamos todos os materiais:
 
 ### Especificação de Algoritmos 
 
+Os algoritmos do projeto serão baseados adicionando as bibliotecas prontas que foram previamente cadastradas, compatíveis com cada um dos materiais utilizados. 
 
 ![image](https://user-images.githubusercontent.com/113607245/199123615-191ae3a9-8833-48d8-b8a2-99a8760b32b0.png)
 
