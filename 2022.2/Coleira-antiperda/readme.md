@@ -18,7 +18,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Há mais de 139 milhões de pets pelo Brasil, e a perda desses animais ocorre com determinada frequência, 
 > e com o desenvolvimento desse projeto podemos amenizar este problema.
 > 
-> É um produto com alta chance de escala, o que pode implicar a venda de grandes lotes, produto com custo fixo rasoável, 
+> É um produto com alta chance de ser escalado, o que pode implicar a venda de grandes lotes, produto com custo fixo rasoável, 
 > com venda do produto a um preço acessível a maioria do público.
 > 
 > Com essa coleira com uma tecnologia embarcada, o dono pode encontrar seu pet que se perdeu em um momento importúno.
