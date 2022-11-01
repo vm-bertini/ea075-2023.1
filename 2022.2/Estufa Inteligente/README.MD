@@ -112,6 +112,10 @@ Os algoritmos do projeto serão baseados adicionando as bibliotecas prontas que 
 Para o sensor de temperatura e umidade, a seguinte lógica será seguida:
 ![image](https://user-images.githubusercontent.com/113607245/199123615-191ae3a9-8833-48d8-b8a2-99a8760b32b0.png)
 
+As bibliotecas utilizadas serão:
+Dht.h - https://github.com/adafruit/DHT-sensor-library
+IRremote - https://github.com/Arduino-IRremote/Arduino-IRremote
+
 
 ## Referências
 [1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
