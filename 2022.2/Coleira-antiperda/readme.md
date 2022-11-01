@@ -153,11 +153,16 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > - Utilização de periféricos do celular ( Notificação, alarme );
 >
 > Neste projeto será escolhido para uso o ATMEGA328P, ao qual será utilizado junto com o módulo HC-05, junto a uma bateria, o circuito será acoplado a coleira e utilizado grau de IP 66, para conter grau de umidade e poeira. O alcance permitido da coleira inicial será de 10m. Em decorrer dos testes com o protótipo, caso o mesmo seja realizado com sucesso, será implementado novas funções.
->
+>![EA075_E2-ESP_ESTRUTURAL drawio](https://user-images.githubusercontent.com/91965153/199144971-ea62d85f-e0a7-435c-95c3-1c3d7172ab1b.png)
+
+
+
 ### Especificação de Algoritmos 
 >
-> Pendente.
->
+> ![EA075_E2-AREA_COBERTURA drawio](https://user-images.githubusercontent.com/91965153/199145018-3c8338b6-cbcd-4730-913d-2934c593594d.png)
+
+>![EA075_E2-COMUNICAO_BT drawio](https://user-images.githubusercontent.com/91965153/199145020-3b9287cf-9d2b-4175-86d6-4dc3bbd4018c.png)
+
 ## Referências
 > https://www.electronica-pt.com/radio-frequencia
 
