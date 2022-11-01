@@ -58,38 +58,29 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ## Descrição Estrutural do Sistema
 > <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/Lobato-B3313/ea075/1669fc1ca83abd8f34cf037b9d73f4315930ea1e/2022.2/irrigador-horta/images/diagram.svg">
 
-## Especificações (NOVO)
+## Especificações
 
 ### Especificação Estrutural
 
-> Micro-controlador: [STM32F103c8](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html)
+> Micro-controlador: [STM32F103CB](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103/stm32f103cb.html)
+
 > Modulo-wifi: [ESP8266](https://www.robocore.net/wifi/modulo-wifi-esp8266)
+
 > Sensor-umidade solo: [392-EDUPON-SENLG](https://www.mouser.com/ProductDetail/STEMinds/EDUPON-SENLG?qs=QNEnbhJQKvaVLsRNVVZeYw%3D%3D)
-> Regulador de Tensão Linear: [KF33BDT-TR](https://www.st.com/en/power-management/kfxx.html)
 
-> (Se preferir, adicione um link para o documento de especificação estrutural)
-> 
-> Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
-> Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
-> para implementação do sistema embarcado proposto.
-> 
-> Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
-> sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
-> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+> Regulador de Tensão Linear: [KF50BDT-TR](https://www.st.com/en/power-management/kfxx.html)
 
-> Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
-> Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
-> que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
-> correspondente, habilitando-o para realizar um ciclo de leitura ou de escrita.
-> 
-> Nesta etapa do projeto espera-se que sejam identificada também a eventual necessidade do projeto de circuitos de interface para os periféricos do projeto.
-> Assim, devem ser incluídos na especificação, se necessário:
-> - conversores AD e DA;
-> - padrões de comunicação a serem adotados;
-> - circuitos de sincronização de sinais temporais.
-> 
-> Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
-> (altura, largura, profundidade) e limites de dissipação térmica.
+> Sensor de pressão: [MP-1.25 ULTRA MINIATURE FLAT PRESSURE SENSOR](https://www.althensensors.com/media/29757/mp-1-25-ultra-miniature-flat-pressure-sensor-en.pdf)
+
+> Bomba de água genérica: [link](https://www.baudaeletronica.com.br/mini-bomba-de-agua-submersivel-5v.html?gclid=CjwKCAjw5P2aBhAlEiwAAdY7dKnaw92g9KBMIXnRh0uPQ8sluj-jkq_YxA1S1TjTgT_wLM4kPu1H9hoCqpYQAvD_BwE)
+
+> O bloco “Sistema de Processamento e Comunicação” será responsável por realizar todo o processamento dos dados. Ele é composto pelo microcontrolador, o módulo Wi-Fi e bateria.  Neste bloco, os dados virão dos sensores de umidade e do reservatório, da tensão restante na bateria, do usuário através da comunicação Wi-Fi. O componente responsável por todo este processamento será um microcontrolador da STMicroelectronics chamado de STM32F103CBT6. O microcontrolador irá comunicar-se com o módulo Wi-Fi regularmente para passar ao usuário o status do irrigador, e por último, ele irá controlar as bombas de água e de fertilizante líquido. O protocolo de comunicação que será usado para comunicar com o módulo Wi-Fi é o UART e para atualizar o display e acionar as bombas será usado pinos GPIO.
+
+> O bloco “Sistema de reservatórios” é responsável por armazenar a água e adubo ou fertilizante líquido e em comunicar para a central de controle a quantidade restante destes recursos em seus respectivos tanques. Ele é composto pelos reservatórios de água e de adubo ou fertilizante líquido.
+
+> O bloco “Sistema de irrigação” é responsável por gotejar os recursos sobre as plantas através de canos e comunicar a central o status da umidade do solo. Ele é composto por duas mini bombas de água, canos e sensores de umidade do solo.
+
+> É importante ressaltar que no circuito do bloco “Sistema de Processamento e Comunicação” terá dois cristais osciladores, um deles é para a frequência das operações do microcontrolador (na faixa de 16MHz) e o outro de frequência menor (na faixa de 32,768kHz) será projetado para operações que irão utilizar o tempo em segundo, que serão necessários no caso do usuário querer setar períodos para acionar a irrigação. Além disso, é bem provável que
 
 ### Especificação de Algoritmos 
 
