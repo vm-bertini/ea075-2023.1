@@ -14,16 +14,24 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto (:warning: ATUALIZAR :warning:)
+> Deve refletir a última versão do projeto.
+>
 > Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
+> 
 > Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
+> 
 > Qual problema vocês pretendem solucionar?
+> 
 > Quem são os potenciais usuários?
+> 
 > É possível estabelecer um valor econômico associado?
+>
 
+## Descrição Funcional (:warning: ATUALIZAR :warning:)
+> Esta seção deve estar atualizada, refletindo o status do projeto no momento da entrega final (E3). 
+> 
+> Alterações realizadas no projeto entre a entrega E2 e a entrega E3 devem ser justificadas nas se, relatando claramente as dificuldades encontradas e as decisões > tomadas.
 
-## Descrição Funcional (ATUALIZAR SE NECESSÁRIO)
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades (ATUALIZAÇÃO NECESSÁRIA)
 > Detalhe todas as tarefas que o sistema será capaz de executar
@@ -39,7 +47,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Tratamento de Eventos
 > Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 
-## Descrição Estrutural do Sistema (ATUALIZAR SE NECESSÁRIO)
+## Descrição Estrutural do Sistema (:warning: ATUALIZAR :warning:)
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
 > para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
 >
@@ -50,7 +58,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
 
-## Especificações (NOVO)
+## Especificações (:warning: ATUALIZAR :warning:)
 
 ### Especificação Estrutural
 
@@ -78,7 +86,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
 
-### Especificação de Algoritmos 
+### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
 > 
@@ -89,5 +97,5 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
-## Referências (ATUALIZAR SE NECESSÁRIO)
+## Referências (:warning: ATUALIZAR :warning:)
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
