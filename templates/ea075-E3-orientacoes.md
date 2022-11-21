@@ -1,4 +1,4 @@
-# 2022.2 EA075 - Projeto - Entrega Final
+# 2022.2 EA075 - Projeto - E3 - Entrega Final
 
 ## Instruções Gerais
 
