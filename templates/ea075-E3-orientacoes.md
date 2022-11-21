@@ -6,7 +6,7 @@ O objetivo geral do projeto final desta disciplina é dar a oportunidade dos alu
 
 Nesta segunda entrega:
  * É suposto que você continue editando o projeto no fork criado anteriormente.
- * Faça o commit dos arquivos associados a esta entrega, conforme descrito a seguir.
+ * Faça o commit dos arquivos associados a esta entrega, conforme descrito nas se
  * Quando tudo estiver pronto para entrega, crie nova uma tag de release no repositório identificada como `2022.2_EA075_E3`.
  * Até a data de submissão estabelecida, crie um pull request para este repositório.
 
