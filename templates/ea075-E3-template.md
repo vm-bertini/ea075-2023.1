@@ -12,6 +12,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > | Nome1  | 123456  | Eng. Elétrica|
 > | Nome2  | 123456  | Eng. Elétrica|
 
+## Arquivos Importantes (:warning: ATUALIZAR :warning:)
+
+>[Esquemático em PDF](link para imagens/pdf esquemático)
+>[Lista de Componentes](link para components.md)
+>[PCB](link para imagens/pdf PCB)
 
 ## Descrição do Projeto (:warning: ATUALIZAR :warning:)
 > Deve refletir a última versão do projeto.
@@ -55,7 +60,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
 > Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
 > os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
+Esq> 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
 
 ## Especificações (:warning: ATUALIZAR :warning:)
