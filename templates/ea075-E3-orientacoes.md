@@ -39,6 +39,6 @@ project
 
 ## Orientações para edição do arquivo README.md do projeto
 
-Para a entrega E3, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E3-template.md).
+Para a entrega E3, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E3-template.md). Toda e qualquer alteração do projeto em relação à entrega E2 deve ser explicitada e justificada.
 
 > Tudo o que aparecer neste modo de citação se refere a algo que deve ser substituído pelo indicado. 
