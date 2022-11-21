@@ -12,10 +12,12 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > | Nome1  | 123456  | Eng. Elétrica|
 > | Nome2  | 123456  | Eng. Elétrica|
 
-## Arquivos Importantes (:warning: ATUALIZAR :warning:)
+## Arquivos Importantes (:warning: NOVO :warning:)
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
+>
 >[Lista de Componentes](link para components.md)
+>
 >[PCB](link para imagens/pdf PCB)
 
 ## Descrição do Projeto (:warning: ATUALIZAR :warning:)
