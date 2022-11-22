@@ -84,14 +84,14 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Especificação de Algoritmos 
 
-> (Se preferir, adicione um link para o documento de especificação de algoritmos).
-> 
-> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
-> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
-> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
-> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
-> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
-> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+Algoritmo reservatório de água e adubo
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/Lobato-B3313/ea075/a7f233d5c7e6227305e15914f0450e0f48069358/2022.2/irrigador-horta/images/diagrama_agua.svg">
+
+Algoritmo nível de bateria
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/Lobato-B3313/ea075/a7f233d5c7e6227305e15914f0450e0f48069358/2022.2/irrigador-horta/images/diagrama_bateria.svg">
+
+Algoritmo sistema de irrigação
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/Lobato-B3313/ea075/a7f233d5c7e6227305e15914f0450e0f48069358/2022.2/irrigador-horta/images/diagrama_irrigacao.svg">
 
 ## Referências
 > Expansão do mercado de produtos organicos [Valor](https://valor.globo.com/empresas/esg/noticia/2022/09/09/de-cosmeticos-a-alimentos-mercado-de-produtos-verdes-esta-em-franca.ghtml)
