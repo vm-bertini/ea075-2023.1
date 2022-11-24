@@ -11,6 +11,13 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 | Wesley Yoshitake Nakamatsu  | 188653  | Eng. Elétrica|
 | Patric Moreto  | 223083  | Eng. Elétrica|
 
+## Arquivos Importantes
+
+[Esquemático em PDF]()
+
+[Lista de Componentes]()
+
+[PCB]()
 
 ## Descrição do Projeto
 Dada a rotina intensa de diversas famílias, a permanência no ambiente residencial está cada vez menor e, com isso, os animais de estimação são deixados sozinhos por longos períodos de tempo, de modo que suas necessidades em relação às condições do ambiente, como luminosidade e temperatura, não são observadas de modo a promover a saúde dos animais e impactanto negativamente o seu conforto diário.
@@ -81,7 +88,7 @@ Em concordante com o que será discutido na seção [*Especificação de Algorit
 
 Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocólos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna para armazenamento dos algoritmos, foi escolhido o *ESP8285H16*.
 
-Para a primeira entrega (E1), havia sido projetada a utilização de uma Interface Homem-Máquina (IHM) com a função de permitir configuração do setpoint de temperatura e horário em que as luzes devem ser acesas/apagadas. No entanto, após pesquisa e análise dos dispositivos encontrados no mercado, como o *ILI9341* [[13]](#Referências), definiu-se que esse tipo de componente exige a utilização de muitos pinos do chip, inclusive entrando em conflito com os pinos I2C sendo utilizados pelo RTC, e, portanto, sua utilização foi descartada. Em seu lugar, as informações de temperatura e horário serão aenviadas ao microcontrolador via Wi-Fi, utilizado um **aplicativo de celular**.
+Para a primeira entrega (E1), havia sido projetada a utilização de uma Interface Homem-Máquina (IHM) com a função de permitir configuração do setpoint de temperatura e horário em que as luzes devem ser acesas/apagadas. No entanto, após pesquisa e análise dos dispositivos encontrados no mercado, como o *ILI9341* [[13]](#Referências), definiu-se que esse tipo de componente exige a utilização de muitos pinos do chip, inclusive entrando em conflito com os pinos I2C sendo utilizados pelo RTC, e, portanto, sua utilização foi descartada. Em seu lugar, as informações de temperatura e horário serão enviadas ao microcontrolador via Wi-Fi, utilizado um **aplicativo de celular**.
 
 Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V. Assim, foi escolhido o *DS3231*.
 
