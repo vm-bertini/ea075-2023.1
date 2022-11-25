@@ -15,7 +15,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 [Esquemático em PDF]()
 
-[Lista de Componentes]()
+[Lista de Componentes](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/components.md)
 
 [PCB]()
 
@@ -84,6 +84,10 @@ Conforme definido na seção [*Descrição Estrutural do Sistema*](#descrição-
 
 Em concordante com o que será discutido na seção [*Especificação de Algoritmos*](#especidifação-de-algoritmos), o microcontrolador é capaz de armazenar os programas e dados considerando sua memória flash interna de 2 MB, além de sua memória SRAM utilizável de cerca de 75 kB. Também foi realizado um levantamento de números de portas necessárias considerando os periféricos já mencionados, na qual o DS18B20 necessita de duas portas de alimentação e uma GPIO, além do DS3231 necessitar de duas portas para alimentação e as duas portas I2C do chip (pinos 9 e 14).
 
+### Antena
+
+Em conformidade com as [aplicabilidades do projeto](#funcionalidades), é necessário a utilização da comunicação Wi-Fi para diferentes atividades. A [*Discussão*](#discussão) elucidará a escolha do microcontrolador com módulo interno para Wi-Fi. No entanto, suas capacidades Wi-Fi se limitam a interpretação e execução dos protocólos de comunicação envolvidos, sendo necessária uma antena externa para estabelecer a comunicação sem fio. Dessa forma, após pesquisas realizadas, foi escolhida a *AN9520* [[14]](#Referências), atuando na faixa de 2,4 GHz, compatível com o ESP8285H16, e, por ser uma antena cerâmica, exibe desempenho superior quando comparada com antenas PCB, segundo relatos de usuários.
+
 ### Discussão
 
 Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocólos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna para armazenamento dos algoritmos, foi escolhido o *ESP8285H16*.
@@ -134,3 +138,5 @@ De acordo com os algoritmos exibidos acima, serão utilizados principalmente dad
 [12] https://datasheets.maximintegrated.com/en/ds/DS1307.pdf - Acessado em 17. out. 2022.
 
 [13] https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf - Acessado em 28 out. 2022.
+
+[14] https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/res/Antenna_Datasheet.pdf - Acessado em 25 nov. 2022.
