@@ -165,6 +165,11 @@ A seguir o algoritmo de tratamento dos eventos representado através de um fluxo
 
 Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
 
+## Projeto da placa
+
+O projeto da placa para o projeto foi realizado utilizando o software [Kicad](https://www.kicad.org/download/) e pode ser encontrado completamente em [scr_zip](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/scr_zip).
+
+Os pdfs com a vista do esquemático e da pcb podem ser encontrados na pasta [pdf](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/pdf) e os arquivos gerber na pasta [gerber](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/gerber).
 
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
