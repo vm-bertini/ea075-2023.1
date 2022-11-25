@@ -71,7 +71,7 @@ O projeto é composto por 3 blocos: interface com usuário, processamento e exec
 
 O diagrama mostra mais sobre as interações entre esses blocos funcionais:
 
-<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-diagrama_estrutural.drawio.png" width="450" />
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-diagrama_estrutural.drawio.png" width="450" />
 
 ## Especificações
 
@@ -115,13 +115,13 @@ Os LEDs serão ligados com a configuração Charlieplexing, que permite um contr
   
 O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configuração proposta. Nesse caso, para que o LED 1 seja aceso, precisamos que IO 3 esteja em nível alto, IO 0 em nível baixo e IO 1 e IO 2 como _input_.
   
- <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-charlieplexing.drawio.png" width="450" />
+ <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-charlieplexing.drawio.png" width="450" />
  
  #### Debounce
  
  Para evitar o efeito de repique ao acionar o botão, ou seja, oscilações indesejadas que podem causar mal funcionamento no circuito, será implementado, via hardware, um capacitor em pararelo com o botão de modo a suavizar a transição de níveis (nível lógico baixo para o alto e vice versa) e com isso impedir interpretações erradas de acionamento de botão [6]. A Figura abaixo mostra o esquemático para o circuito de debounce.
  
- <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Debounce.PNG" width="450" />
+ <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Debounce.PNG" width="450" />
 
  Note que o valor da resistência e do capacitor estão associados com o tempo de carregamento do capacitor, ou seja, o atraso nas transições de nível.
 
@@ -144,7 +144,7 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
 
 A árvore de Natal será feita em forma de bordado, em um quadro circular de cerca de 18cm de diâmetro. Teremos 12 LEDs ligados na configuração Charlieplexing como explicado acima e a placa com o microcontrolador PIC será fixada no quadro do bordado, de forma a deixar o botão e o buzzer à vista. O desenho a seguir ilustra o que foi pensado para a estrutura física do projeto.
 
-<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/Projeto-estrutura_fi%CC%81sica.drawio.png" width="450" />
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-estrutura_fi%CC%81sica.drawio.png" width="450" />
 
 
 ### Especificação de Algoritmos 
@@ -161,7 +161,7 @@ A árvore de Natal será feita em forma de bordado, em um quadro circular de cer
 
 A seguir o algoritmo de tratamento dos eventos representado através de um fluxograma.
 
-<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/algoritmo.drawio.png width="450" />
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/algoritmo.drawio.png width="450" />
 
 Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
 
