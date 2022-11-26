@@ -96,6 +96,8 @@ Para a primeira entrega (E1), havia sido projetada a utilização de uma Interfa
 
 Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V. Assim, foi escolhido o *DS3231*.
 
+Por fim, para a terceira entrega (E3), após análise das ligações a serem realizadas entre o microcontrolador e periféricos, foi verificada a necessidade da utilização de uma antena para comunicação sem fio através do Wi-Fi.
+
 ## Especificação de Algoritmos
 
 | ![Alt](Evento_3.png) |
