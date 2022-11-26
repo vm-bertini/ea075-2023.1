@@ -15,3 +15,9 @@ Conforme a exigência do projeto para realização do controle de temperatura, i
 O controle das luzes necessita que a hora seja conhecida e, assim, identificou-se a necessidade de um módulo RTC que permite o controle do tempo. O *DS3231* foi escolhido pois permite contar horas, minutos, segundos, atendendo a aplicação desejada, e por comunicar-se com o microcontrolador por meio da interface serial I2C, aceita pelo ESP8285H16.
 
 [Link do datasheet](https://datasheets.maximintegrated.com/en/ds/DS3231.pdf)
+
+## AN9520 - Antena
+
+O acionamento de periféricos, sincronização de horário e configurações operacionais são realizadas via Wi-Fi. Visto que o microcontrolador não possui uma antena interna, é necessária a utilização de uma antena para a comunicação sem fio. A **AN9520** foi escolhida por conta de sua frequência de operação corresponder ao exigido pelo ESP8285H16, além de exibir bom desenho por ser uma antena cerâmica.
+
+[Link do datasheet](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/res/Antenna_Datasheet.pdf)
