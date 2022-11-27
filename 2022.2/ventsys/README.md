@@ -41,12 +41,52 @@ Uma das formas mais simples de realizar essa função é utilizando ventilação
 - Se cooler estiver desligado e temperatura for menor que temperatura ajustada, manter desligado;
 - Se cooler estiver desligado e temperatura for maior que temperatura ajustada, ligar cooler;
 - Se cooler estiver ligado e temperatura for maior que temperatura ajustada, manter ligado;
-- Se cooler estiver ligado e temperatura for menor que temperatura ajustada, desligar.
+- Se cooler estiver ligado e temperatura for menor que temperatura ajustada, desligar;
+- Se botão B1 for pressionado, inicia processo de modificar setpoints.
 
 ## Descrição Estrutural do Sistema
 
 Disponível no arquivo `ventsys.drawio` 
 
+## Especificações
+
+
+### Especificação Estrutural
+
+* **Microcontrolador**
+
+    A unidade microcontroladora escolhida é o PIC16F877. Como será descrito nos itens subsequêntes, o microcontrolador deverá comunicar-se com o conversor AD via SPI, comparar as tensões com um valor de referência, mostrar valores em um display LCD e acionar um motor DC. 
+
+* **Sensor de temperatura**
+
+    A temperatura que deverá ser lida pelo sensor vai depender da Workstation que será conrtrolada pelo sistema, uma vez que unidades mais potentes podem chegar a temperaturas mais altas. Uma especificação que abrange uma alta gama de computadores é o intervalo de 0-150°C. 
+
+    Além disso, para simplicidade do projeto, o sensor deve fornecer uma tensão de saída proporcional a temperatura medida, tensão essa que deve estar no intervalo de leitura do ADC (0-5V).
+
+    Para que diferentes sensores possam ser escolhidos à depender da aplicação, o projeto permitira que diferentes sensores possam ser conectados no conector de entrada/saída. 
+
+Apesar da versalidade, uma escolha que atende às especificações listadas é o LM35.
+
+* **Conversor AD**
+
+    Os sensores forneceram uma tensão proporcional à temperatura medida. Ao invés de usar as poucas portas de ADC disponíveis no PIC, uma melhor escolha é utilizar um ADC externo, possibilitando uma melhor resolução e um maior número de leituras.
+
+    O ADC escolhido deve ser capaz de comunicar-se via protocolo SPI com o microcontrolador e ler tensões de 0-5V.
+
+* **Atuador**
+
+    O projeto não contempla, inicialmente, o controle de velocidade do ventilador. Sendo assim, o acionamento pode ser realizado por um MOSFET atuando como chave. A corrente máxima do MOSFET escolhido deve ser pelomenos 2A para que este suporte o acionamento de uma alta gama de coolers disponíveis.
+
+* **Display**
+
+    Um Display irá mostrar a temperatura das workstations medidas, além de auxliar no ajuste da temperatura máxima e mínima. Um Display LCD 16x2 é suficiente para essa aplicação. 
+
+### Especificação de Algoritmos 
+
+Disponível no arquivo `algoritmos` 
+
 ## Referências
 
-Nesta primeira etapa não utilizamos nenhuma referência.
+https://www.ti.com/product/LM35?dcmp=dsproject&hqs=sandbuy&#samplebuy
+
+https://www.microchip.com/en-us/product/PIC16F877
