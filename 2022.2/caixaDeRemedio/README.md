@@ -75,9 +75,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Tratamento de Eventos
 
-> Como o evento de programar horários de alarme e repositório é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
+> Como o evento de programar horários de alarme e data é aperiódico, podemos tratar o evento como uma interrupção para salvar na memória o horário em que foi configurado e o repositório selecionado.
 
-> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fizer a seleção do alarme sonoro pela interface uma prévia do som deve ser tocado e, quando selecionado, a interrupção irá salvar na memória qual toque alarme sonoro irá tocar no evento de alarme.
+> O evento de seleção de um alarme sonoro vai ser tratado via interrupação, pois é aperiódico. Dessa forma, quando a pessoa fizer a seleção do alarme sonoro pela interface a interrupção irá salvar na memória qual alarme sonoro irá tocar no evento de alarme.
 
 > Como o evento de abrir o repositório para colocar o remédio é aperiódico, a interface irá mandar uma interrupção para abrir o repositório indicado pelo usuário. Após o fechamento o usuário irá selecionar na interface que o repositório já foi fechado.
 
@@ -103,7 +103,68 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > A interface permite ao usuário configurar os horários de alarme de cada repositório, selecionar o toque do alarme sonoro e desativá-lo quando o repositório for fechado. A programação do relógio após a inicialização do sistema também é feita pela interface.
 
+## Especificações
+
+### Especificação Estrutural
+
+### Atuadores
+
+> Será utilizado um multiplexador 16x4 para que o processador possa controlar os atuadores utilizando menos pinos. Vale ressaltar que o multiplexador tem 16 saidas e temos 14 atuadores. Dessa forma, um estado do multiplexador vai ser utilizado como modo espera até que realmente o processador comande a abertura de algum atuador. 
+> Os atuadores serão eletroímãs cilíndricos de sucção de 8mm, operando em tensão de 3 V, ativo (fechado) em nível lógico alto.
+
+### Interface
+
+> A interface será  composta por um display LCD e um teclado. O display LCD 16x2 é compatível com o padrão Hitachi HD44780U e será conectado a um adaptador I2C para se comunicar com o microcontrolador. O teclado utilizado será um teclado matricial de 3 colunas e 4 linhas, com um pino controlando cada linha e um para cada coluna, totalizando 7.
+
+### Auto-falante/Buzzer
+
+> O alarme sonoro será um buzzer DA03 de 3.3 V ativo alto da marca CDR01, que suporta correntes menores que 25 mA.
+
+### Microcontrolador e Relógio
+
+> O microcontrolador utilizado será um ATmega328P. O relógio será implementado por código, dessa forma, vamos utilizar o próprio software para a realização dessa estrutura no sistema.
+
+### Memória
+
+>
+> O tamanho da memória necessária pode ser estimado por comparação com um projeto similar, um alarme programável projetado para o microcontrolador Kinetis KL25Z128, da Freescale, disponível em https://github.com/fernandocillo/EA871/blob/main/alarme-final.zip. Este projeto de alarme consome 17 Kbytes de memória flash e 2Kbytes de memória RAM. 
+>
+> Como a Caixa de Remédios tem algumas intruções adicionais relativas à abertura dos compartimentos e as músicas selecionáveis para o alarme serão armazenadas na memória (em forma de sequências de notas associadas à frequência, que pode ser controlada através da tensão enviada por PWM ao buzzer), serão necessários em torno de 20 Kbytes de memória flash. Um módulo de memória flash de 32 Kbytes concede uma larga margem para a aplicação.
+> 
+> Além disso, há a necessidade de, durante a execução do programa, registrar o dia e horário atual, o dia e horário de cada um dos 14 compartimentos e a música selecionada para o alarme. Isso significa que o consumo de memória RAM será bem maior que do projeto de alarme, que deve ser suprida com tranquilidade por um módulo de memória RAM de 4 Kbytes.
+
+### Especificação das restrições físicas e ambientais de funcionamento do circuito
+
+> Imaginamos que para esse projeto devemos ter uma caixa com quatorze divisões possuindo um tamanho de 10cmx35cmx10cm, sendo suficientes para colocar os remédios e os atuadores em cima de cada repositório. Cada repositório terá um tamanho de 5cmx5xm.
+>
+> Sobre restrições ambientais, recomendamos que a caixa de remédio fique em locais frescos e arejados, com baixa incidência solar e, de preferência, com baixa umidade, para preservar os remédios.
+>
+> Vale ressaltar que não precisamos nos preocupar muito com dissipação de calor, visto que os componenentes utilizados não possuem grandes potências, além disso, os atuadores são metálicos, ajudando assim na dissipação do calor.
+
+
+### Especificação de Algoritmos 
+
+### Diagrama Main
+![Diagrama Main](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/Diagrama_main.drawio.png)
+
+## Interrupções
+![Diagrama Interrupções](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/dia_int.drawio.png)
+
 ## Referências
 [1] https://www.tecmundo.com.br/produto/142311-porta-remedios-inteligente-avisa-usuarios-tomar-medicamento.htm
 
 [2] https://tecnosenior.com/dispensador-de-medicamentos-automatico/
+
+[3] https://pt.aliexpress.com/item/1005002526116294.html?_randl_currency=BRL&_randl_shipto=BR&src=google&memo1=freelisting&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265477163&albag=&trgt=&crea=pt1005002526116294&netw=x&device=c&albpg=&albpd=pt1005002526116294&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4oTJup-ydCaw2diEELgPGDvRBtyEBimibqhp1baVVk-Xh9FCBimTMxoCXz4QAvD_BwE&gclsrc=aw.ds&aff_fcid=7b7e5419c9414cc6825a88104a62eaba-1666053734208-00625-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=7b7e5419c9414cc6825a88104a62eaba-1666053734208-00625-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&afSmartRedirect=y
+
+[4] https://www.eletrogate.com/display-lcd-16x2-com-backlight-verde?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant
+
+[5] https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
+
+[6] https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
+
+[7] https://www.casadarobotica.com/robotica/atuadores/outros/3x-buzzer-5v-ativo
+
+[8] https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
+
+[9] https://pt.aliexpress.com/item/32652790510.html?UTABTest=aliabtest343279_484914&_randl_currency=BRL&_randl_shipto=BR&src=google&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265403963&albag=&trgt=&crea=pt32652790510&netw=x&device=c&albpg=&albpd=pt32652790510&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOsHYZP6gvAff69Z34DvzMRyWPaaTfNbtYgujTt67OWACp4CXFOQ2waAqfDEALw_wcB&gclsrc=aw.ds&aff_fcid=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&OLP=1084400108_f_group0&o_s_id=1084400108&afSmartRedirect=y
