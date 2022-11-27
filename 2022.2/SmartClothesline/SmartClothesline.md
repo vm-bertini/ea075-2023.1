@@ -33,6 +33,16 @@ Quem nunca saiu de casa e esqueceu de recolher as roupas do varal? Para resolver
 - Quando diminuir o nível de umidade do sensor e a probabilidade de chuva estiver baixa, irá acionar os atuadores para estender o varal novamente
 ## Descrição Estrutural do Sistema
 ![Micro Controlador](https://github.com/OtavioSoares1997/ea075/blob/main/2022.2/Micro%20Controlador.png)
+## Especificações
+### Especificação Estrutural
+O microcontrolador escolhido é o ESP-32, este possui módulo wifi e bluetooth, ele se comunicará com o sensor de chuva (YL-83), ao ser detectado chuva, um atuador será acionado, o atuador escolhido é o motor DC de alto torque (12V, 80W). Para alimentar o circuito é necessário um conversor AC-DC de 220V/110V para 12V/5V e um regulador de saída de 3,3V.
+ 
+### Especificação de Algoritmos 
+
+![Alt](YL-83 (Sensor de Chuva).png)
+
+
+
 ## Referências
 - https://blog.bidu.com.br/sensor-de-chuva/#:~:text=O%20que%20%C3%A9%20Sensor%20de,de%20interven%C3%A7%C3%A3o%20instant%C3%A2nea%20do%20motorista.
 - [https://sigmasensors.com.br/sensor-temperatura-umidade#:~:text=Sensor%20de%20Temperatura%20e%20Umidade%20%C3%A9%20um%20equipamento%20que%20pode,(temperatura%20e%20umidade%20foliar)](https://sigmasensors.com.br/sensor-temperatura-umidade#:~:text=Sensor%20de%20Temperatura%20e%20Umidade%20%C3%A9%20um%20equipamento%20que%20pode,(temperatura%20e%20umidade%20foliar)).
