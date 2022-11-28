@@ -61,3 +61,79 @@ Lista dos componentes escolhidos para o projeto.
 
 > Sensor de pressão, MPXV7002DPT1, Qnt. 2, [Datasheet](https://www.resistor.com/assets/pdf/0603std.pdf)
 > <br />
+
+### Sistema
+> Modulo Wi-Fi, ESP8266ESP-01, Qnt. 1, [DAtasheet](https://cdn-shop.adafruit.com/product-files/2471/0A-ESP8266__Datasheet__EN_v4.3.pdf)
+> <br />
+
+> Regulador de tensão, 5v KF50BD-TR, Qnt. 3, [Datasheet](https://www.mouser.com/datasheet/2/389/cd00000970-1795532.pdf)
+> <br />
+
+> Regulador de tensão, 5v KF33BD-TR, Qnt. 1, [Datasheet](https://www.mouser.com/datasheet/2/389/cd00000970-1795532.pdf)
+> <br />
+
+> NOME, STP80NF55-06, Qnt. 1, [Datasheet]()
+> <br />
+
+> NOME, PTS645SM43SMTR92LFS, Qnt. 1, [Datasheet]()
+> <br />
+
+> Capacitor, 100 mF, Qnt. 1<br />
+
+> NOME, 1101M2S3CQE2, Qnt. 1, [Datasheet]()
+> <br />
+
+> NOME, STM32F103CBT6, Qnt. 1, [Datasheet]()
+> <br />
+
+> Conector PH, B2B-PH-K-S(LF)(SN), Qnt. 1, [Datasheet](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)
+> <br />
+
+> Resistor, 10k Ohm, Qnt. 2<br />
+> Capacitor, 1 uF, Qnt. 1<br />
+> Capacitor, 10 nF, Qnt. 1<br />
+
+
+#### Supply for sensors
+> Conector PH, B2B-PH-K-S(LF)(SN), Qnt. 2, [Datasheet](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)
+> <br />
+
+#### Circuit for measuring battery level through an A/D pin
+> Resistor, 100K Ohm, Qnt. 1<br />
+> Resistor, 51 Ohm, Qnt. 1<br />
+
+#### Crystal Oscillator Circuit
+> Capacitor, 18 uF, Qnt. 2<br />
+> Resistor, 270K Ohm, Qnt. 1<br />
+
+> NOME, ABS25-32.768KHZ-6-T, Qnt. 1, [Datasheet]()
+> <br />
+
+#### Crystal Oscillator Circuit
+> Capacitor, 30 pF, Qnt. 2<br />
+> Resistor, 330 Ohm, Qnt. 1<br />
+> NOME, ABM7-16.000MHZ-D2Y-T, Qnt. 1, [Datasheet]()
+> <br />
+
+> Capacitor, 0.1 uF, Qnt. 3<br />
+> Capacitor, 2.2 uF, Qnt. 3<br />
+> Resistor, 56 Ohm, Qnt. 1<br />
+> Led, Qnt. 1<br />
+
+#### Reverse polarity protection circuit
+
+> NOME, STD26P3LLH6, Qnt. 1, [Datasheet]()
+> <br />
+
+> NOME, ZMM5235B, Qnt. 1, [Datasheet]()
+> <br />
+
+> Bateria, DEFINIR TENSAO e CAPACIDADE, Qnt. 1<br />
+
+> Resistor, 100K Ohm, Qnt. 1<br />
+
+#### Extra capacitor bulk
+
+> Capacitor, 100 nF, Qnt. 4<br />
+> Capacitor, 2.2 uF, Qnt. 1<br />
+> Capacitor, 4.7 uF, Qnt. 1<br />
