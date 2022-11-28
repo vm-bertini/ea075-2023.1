@@ -16,8 +16,8 @@ O controle das luzes necessita que a hora seja conhecida e, assim, identificou-s
 
 [Link do datasheet](https://datasheets.maximintegrated.com/en/ds/DS3231.pdf)
 
-## AN9520 - Antena
+## ANT5320 - Antena
 
-O acionamento de periféricos, sincronização de horário e configurações operacionais são realizadas via Wi-Fi. Visto que o microcontrolador não possui uma antena interna, é necessária a utilização de uma antena para a comunicação sem fio. A **AN9520** foi escolhida por conta de sua frequência de operação corresponder ao exigido pelo ESP8285H16, além de exibir bom desenho por ser uma antena cerâmica.
+O acionamento de periféricos, sincronização de horário e configurações operacionais são realizadas via Wi-Fi. Visto que o microcontrolador não possui uma antena interna, é necessária a utilização de uma antena para a comunicação sem fio. A **ANT5320** foi escolhida por conta de sua frequência de operação corresponder ao exigido pelo ESP8285H16, além de exibir bom desenho por ser uma antena cerâmica.
 
-[Link do datasheet](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/res/Antenna_Datasheet.pdf)
+[Link do datasheet](https://www.mouser.com/datasheet/2/447/datasheet_ant5320ll04r2455a_v1_1617827487-2902839.pdf)
