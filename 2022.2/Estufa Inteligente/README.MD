@@ -11,6 +11,12 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 | Pedro Henrique Carosso Christensen  | 243048  | Eng. Elétrica|
 | Juliana Nicolette  | 171244  | Eng. Elétrica|
 
+## Arquivos Importantes
+[Esquemático em PDF](link para imagens/pdf esquemático)
+
+[Lista de Componentes](link para components.md)
+
+[PCB](link para imagens/pdf PCB)
 
 ## Descrição do Projeto
 Com o desenvolvimento tecnológico crescendo exponencialmente, automatizações de processos acabam sendo cada vez mais comuns, trazendo segurança e autonomia a processos industriais e domésticos.
