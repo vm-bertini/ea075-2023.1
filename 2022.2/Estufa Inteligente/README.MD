@@ -101,15 +101,6 @@ Para acionamento e desligamento dos ares-condicionados, será utilizado o sensor
 
 Os aspersores serão os responsáveis por irrigar e umidificar o ambiente, controlados por válvulas de vazão solenóides 12 VDC normalmente fechadas, ou seja, só permitirão a passagem de fluido se forem energizadas, enquanto estiverem desenergizadas elas bloquearão a passagem do fluido (água). Em nosso projeto, serão utilizados relês para acionamento das válvulas.⁶
 
-Por fim, listamos todos os materiais:
-- Arduíno ATmega328;
-- Sensor DHT-11;
-- Sensor IRM-3638;
-- LED IR (emissor de infravermelho);
-- Válvula solenóide 12 VDC normalmente fechada;
-- Fonte de alimentação de 12V;
-- Módulo relê de 12V;
-
 
 ### Especificação de Algoritmos 
 
