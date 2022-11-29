@@ -16,9 +16,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 [Esquemático em PDF](link para imagens/pdf esquemático)
 
 
-Lista de Componentes
-
-https://github.com/juuhnicolette/ea075/blob/a07f31901fcd4d004bec73706969db310a6d21b4/2022.2/Estufa%20Inteligente/components.md
+[Lista de Componentes](https://github.com/juuhnicolette/ea075/blob/a07f31901fcd4d004bec73706969db310a6d21b4/2022.2/Estufa%20Inteligente/components.md)
 
 ## Descrição do Projeto
 Com o desenvolvimento tecnológico crescendo exponencialmente, automatizações de processos acabam sendo cada vez mais comuns, trazendo segurança e autonomia a processos industriais e domésticos.
