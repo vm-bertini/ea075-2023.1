@@ -1,8 +1,8 @@
 ## Lista de componentes utilizados no projeto:
 
+- Cabos de ligação/jumpers;
 - [Arduíno ATmega328](https://github.com/juuhnicolette/ea075/blob/c0b06d4bffad5cac1d3cb6e100e9e82565786b91/2022.2/Estufa%20Inteligente/datasheets/Arduino-atmega328p-datasheet.pdf);
 - [Protoboard MP-830A](https://github.com/juuhnicolette/ea075/blob/c0b06d4bffad5cac1d3cb6e100e9e82565786b91/2022.2/Estufa%20Inteligente/datasheets/protoboard-MP-830A.pdf);
-- [Cabos de ligação/jumpers];
 - [Sensor DHT11](https://github.com/juuhnicolette/ea075/blob/65f5fa74a7536e2b79bdfab2bf62828c2832df3b/2022.2/Estufa%20Inteligente/datasheets/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf);
 - [Resistor 10KΩ](https://github.com/juuhnicolette/ea075/blob/65f5fa74a7536e2b79bdfab2bf62828c2832df3b/2022.2/Estufa%20Inteligente/datasheets/resistor10K.pdf);
 - [Sensor IRM-3638](https://github.com/juuhnicolette/ea075/blob/65f5fa74a7536e2b79bdfab2bf62828c2832df3b/2022.2/Estufa%20Inteligente/datasheets/IRM-3638.pdf);
