@@ -13,11 +13,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Arquivos Importantes
 
-[Esquemático em PDF]()
+[Esquemático em PDF](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/pdf/E3_esquematico.pdf)
 
 [Lista de Componentes](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/components.md)
 
-[PCB]()
+[PCB](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/pdf/3d_models.pdf)
 
 ## Descrição do Projeto
 Dada a rotina intensa de diversas famílias, a permanência no ambiente residencial está cada vez menor e, com isso, os animais de estimação são deixados sozinhos por longos períodos de tempo, de modo que suas necessidades em relação às condições do ambiente, como luminosidade e temperatura, não são observadas de modo a promover a saúde dos animais e impactanto negativamente o seu conforto diário.
@@ -86,7 +86,7 @@ Em concordante com o que será discutido na seção [*Especificação de Algorit
 
 ### Antena
 
-Em conformidade com as [aplicabilidades do projeto](#funcionalidades), é necessário a utilização da comunicação Wi-Fi para diferentes atividades. A [*Discussão*](#discussão) elucidará a escolha do microcontrolador com módulo interno para Wi-Fi. No entanto, suas capacidades Wi-Fi se limitam a interpretação e execução dos protocólos de comunicação envolvidos, sendo necessária uma antena externa para estabelecer a comunicação sem fio. Dessa forma, após pesquisas realizadas, foi escolhida a *AN9520* [[14]](#Referências), atuando na faixa de 2,4 GHz, compatível com o ESP8285H16, e, por ser uma antena cerâmica, exibe desempenho superior quando comparada com antenas PCB, segundo relatos de usuários. Posteriormente, optou-se por substituir a antena AN9520 pela *ANT5320* [[15]](#Referências), pois apresenta menores dimensões, permitindo a otimização do roteamento da placa. Além disso, a ANT5320 possuir melhor rendimento, possuindo maior ganho direcional, isto é, maior parte da potência está direcionada a sua frequência de operação, e menor perda de retorno, a potência refletida é menor, otimizando o funcionamento do circuito. 
+Em conformidade com as [aplicabilidades do projeto](#funcionalidades), é necessário a utilização da comunicação Wi-Fi para diferentes atividades. A [*Discussão*](#discussão) elucidará a escolha do microcontrolador com módulo interno para Wi-Fi. No entanto, suas capacidades Wi-Fi se limitam a interpretação e execução dos protocólos de comunicação envolvidos, sendo necessária uma antena externa para estabelecer a comunicação sem fio. Dessa forma, após pesquisas realizadas, foi escolhida a *ANT5320* [[15]](#Referências), atuando na faixa de 2,4 GHz, compatível com o ESP8285H16, e, por ser uma antena cerâmica, exibe desempenho superior quando comparada com antenas PCB, segundo relatos de usuários.
 
 ### Roteamento da PCI
 
@@ -100,7 +100,7 @@ Para a primeira entrega (E1), havia sido projetada a utilização de uma Interfa
 
 Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V. Assim, foi escolhido o *DS3231*.
 
-Por fim, para a terceira entrega (E3), após análise das ligações a serem realizadas entre o microcontrolador e periféricos, foi verificada a necessidade da utilização de uma antena para comunicação sem fio através do Wi-Fi.
+Por fim, para a terceira entrega (E3), após análise das ligações a serem realizadas entre o microcontrolador e periféricos, foi verificada a necessidade da utilização de uma antena para comunicação sem fio através do Wi-Fi. Inicialmente, foi escolhido o *AN9520* [[14]](#Referências) por simplicidade, conforme relatos de usuários em fóruns da internet. Posteriormente, optou-se por substituir a antena AN9520 pela *ANT5320* [[15]](#Referências), pois apresenta menores dimensões, permitindo a otimização do roteamento da placa. Além disso, a ANT5320 possuir melhor rendimento, possuindo maior ganho direcional, isto é, maior parte da potência está direcionada a sua frequência de operação, e menor perda de retorno, a potência refletida é menor, otimizando o funcionamento do circuito.
 
 ## Especificação de Algoritmos
 
