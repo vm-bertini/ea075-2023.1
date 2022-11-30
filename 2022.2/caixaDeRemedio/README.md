@@ -12,7 +12,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > | Fernando Teodoro de Cillo | 197029  | Eng. Elétrica|
 
 
-## Arquivos Importantes (:warning: NOVO :warning:)
+## Arquivos Importantes 
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
 >
