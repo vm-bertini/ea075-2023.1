@@ -43,4 +43,4 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/27059/TI/CD74HC4067.html
 
 > O teclado matricial foi escolhido, pois é de fácil leitura e além disso é o suficiente para o usuário programar os horário,dias e o toque do alarme 
 
-
+https://cdn-learn.adafruit.com/downloads/pdf/matrix-keypad.pdf - Page 6
