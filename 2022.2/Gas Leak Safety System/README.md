@@ -141,10 +141,6 @@ Partindo das especificações técnicas dos sensores e atuadores selecionados pa
 
 ![Alt](Gas_Safety_Sys-Microcontrolador.png)
 
-## Conclusão
-
-O primeiro protótipo do dispositivo será feito sem a funcionalidade de envio de mensagens via SMS, porém 
-
 ## Referências
 
 https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-8%20Ver1.3%20-%20Manual.pdf  
