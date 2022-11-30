@@ -11,11 +11,12 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > | Gabriel Dante Ferreira Roque  | 197242  | Eng. Elétrica|
 > | Fernando Teodoro de Cillo | 197029  | Eng. Elétrica|
 
+
 ## Arquivos Importantes (:warning: NOVO :warning:)
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
 >
->[Lista de Componentes](link para components.md)
+>[Lista de Componentes]([link para components.md](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/componentes.md))
 >
 >[PCB](link para imagens/pdf PCB)
 
