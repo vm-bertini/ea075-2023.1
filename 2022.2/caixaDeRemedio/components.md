@@ -17,7 +17,7 @@ https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
 
 [3] Adaptador 12C para LCD
 
-> Adaptador foi escolhido devido a importância da comunicação entre o LCD e o micro-controlador. Sem a comnicação com LCD fica muito difícil.
+> Adaptador foi escolhido devido a importância da comunicação entre o LCD e o micro-controlador. Sem o adaptador a comunicação com LCD fica muito difícil.
  
 https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
@@ -27,8 +27,20 @@ https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
 https://www.quick-teck.co.uk/Management/EEUploadFile/1420788438.pdf
 
-[5] Datasheet ATMega328P (Micro-Contralador) - https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
+[5] Datasheet ATMega328P (Micro-Contralador)  
 
-[6] Datasheet Multiplexador  - https://pdf1.alldatasheet.com/datasheet-pdf/view/27059/TI/CD74HC4067.html
+> O processador ATmega328P foi escolhido, pois já era de nosso conhecimento o que este controlador pode fazer e além disso, não é muito grande e conseguimos usar praticamente todas as suas portas, diminuindo espaço assim na produção da placa.
 
-[7] Teclado matricial - 
+https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
+
+[6] Datasheet Multiplexador  
+
+> O mutiplexador foi escolhido, pois precisavamos de algum componente que conseguisse abrir os repositórios. Como temos 14 repositórios, o multiplexador pode acionar cada porta de cada vez. Além disso, não precisamos de 14 pinos do processador para fazer esse controle, reduzindo assim o número de pinos usados no processador.  
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/27059/TI/CD74HC4067.html
+
+[7] Teclado matricial
+
+> O teclado matricial foi escolhido, pois é de fácil leitura e além disso é o suficiente para o usuário programar os horário,dias e o toque do alarme 
+
+
