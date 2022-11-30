@@ -83,3 +83,7 @@ Lista dos componentes escolhidos para o projeto.
 > Micro-USB Connector, 105017-0001, Qnt. 1, [Datasheet](https://www.mouser.com/datasheet/2/276/1/1050170001_IO_CONNECTORS-230168.pdf)
 > <br />
 > Conector micro-USB para poder programar o microcontrolador através de um dispositivo externo.
+
+> Soil Moisture Sensor, Qnt. 1, [Datasheet](https://www.mouser.com/catalog/specsheets/Crowd%20Supply_06082021_EDUPON-SENLG.pdf)
+> <br />
+> Leitor de umidade para identificar o nível umidade do solo.
