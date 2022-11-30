@@ -44,6 +44,8 @@ A conexão do sensor com o microcontrolador será feita via porta digital (porta
 
 Caso um gás seja detectado acima do nível de concentração especificado um alerta sonoro será emitido por meio de um buzzer ativo de 5V conectado ao microcontrolador por meio de uma porta digital. A corrente necessária para suprir o buzzer será fornecida por meio de um transistor, evitando, assim, danos na porta do microcontrolador.
 
+[Datasheet](https://www.farnell.com/datasheets/2171929.pdf)
+
 ## Display LCD
 
 O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display por ser um módulo comercial de arduino opera com uma tensão de 5V.
@@ -52,4 +54,29 @@ O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlig
 
 ## Regulador de tensão (L7805CV)
 
-Para a regulação da tensão de alimentação em 5V o L7805CV será utilizado com padrão de conexão especificado pelo fabricante.
+Para a regulação da tensão de alimentação em 5V o L7805CV será utilizado.
+
+[Datasheet](https://br.mouser.com/datasheet/2/389/cd00000444-1795274.pdf)
+
+
+## Transistor 2N7000
+
+Para fornecimento de corrente ao buzzer minimizando eventuais riscos a porta do microntrolador o transistor 2N7000 será utilizado. Um divisor de tensão com resistores de 4k7 e 5k6 é implementado no gate deste transistor para que a tensão de threshold Vgs do componente opere dentro dos limites.
+
+[Datasheet](https://br.mouser.com/datasheet/2/308/NDS7002A_D-1522662.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
