@@ -86,4 +86,4 @@ Lista dos componentes escolhidos para o projeto.
 
 > Soil Moisture Sensor, Qnt. 1, [Datasheet](https://www.mouser.com/catalog/specsheets/Crowd%20Supply_06082021_EDUPON-SENLG.pdf)
 > <br />
-> Leitor de umidade para identificar o nível umidade do solo.
+> Sensor de umidade para identificar o nível umidade do solo.
