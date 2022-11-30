@@ -5,7 +5,7 @@
 
 [2] Datasheet - Display LCD -  https://www.eletrogate.com/display-lcd-16x2-com-backlight-verde?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant
 
-[3] https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
+[3] Datasheet Driver display LCD - https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
 
 [4] https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
