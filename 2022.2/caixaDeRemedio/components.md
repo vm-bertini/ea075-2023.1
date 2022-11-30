@@ -45,10 +45,5 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/27059/TI/CD74HC4067.html
 
 https://cdn-learn.adafruit.com/downloads/pdf/matrix-keypad.pdf - Page 6
 
-[8] Memória 32Kbytes
-
-
-> A Memória ...
-
 
 
