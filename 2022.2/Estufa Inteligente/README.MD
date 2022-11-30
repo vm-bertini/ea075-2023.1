@@ -13,7 +13,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Arquivos Importantes
 
-[Esquemático em PDF](https://github.com/juuhnicolette/ea075/blob/bf6649c19139c04bf37eb86524bcbf7a433cb295/2022.2/Estufa%20Inteligente/pdf/Esquematico.pdf)
+[Esquemático em PDF](https://github.com/juuhnicolette/ea075/blob/612c9111519774235c16353964eb563e56315b2f/2022.2/Estufa%20Inteligente/pdf/Esquematico.pdf)
 
 [Lista de Componentes](https://github.com/juuhnicolette/ea075/blob/a07f31901fcd4d004bec73706969db310a6d21b4/2022.2/Estufa%20Inteligente/components.md)
 
