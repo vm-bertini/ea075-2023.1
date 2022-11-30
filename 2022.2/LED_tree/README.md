@@ -1,4 +1,4 @@
-# Árvore Natalina de LEDs
+#  🎄 Árvore Natalina de LEDs 🎅
 
 # LED tree
 
@@ -106,7 +106,7 @@ Para o controle do projeto definiu-se como unidade micro-controladora o PIC 16F8
 
 Por fim, para a alimentação do microcontrolador serão utilizados 3 pilhas AAA de 1,5V cada totalizando uma tensão de 4,5V.
 
-Em sequência serão tratadas a técnica de Charlieplexing, para a matriz de LEDs, e o problema de debounce proveniente do acionamento do botão.
+Em sequência serão tratadas a técnica de Charlieplexing, para a matriz de LEDs, e o problema de debounce proveniente do acionamento do botão. Além disso, será mostrado o esquemático final para a montagem do projeto.
 
 
 #### Charlieplexing
@@ -136,6 +136,13 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
 > - conversores AD e DA;
 > - padrões de comunicação a serem adotados;
 > - circuitos de sincronização de sinais temporais.-->
+
+#### Especificações elétricas
+
+A Figura abaixo mostra o esquemático simplificado para a montagem do projeto com base em toda descrição mencionada anteriormente.
+
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/esquemático_elétrico.png" width="450" />
+
 
 #### Especificações físicas
 <!--- > 
