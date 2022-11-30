@@ -15,9 +15,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 [Esquemático em PDF](pdf/Ventsys%20V1I1.PDF)
 
-[Lista de Componentes](./BOM%20Ventsys%20V1I1.xlsx)
+[Lista de Componentes](./components.md)
 
-[PCB](./components.md)
+[PCB](pdf/Ventsys%20V1I1%203D.PDF)
 
 ## Descrição do Projeto 
 
