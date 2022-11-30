@@ -141,6 +141,10 @@ Partindo das especificações técnicas dos sensores e atuadores selecionados pa
 
 ![Alt](Gas_Safety_Sys-Microcontrolador.png)
 
+## Conclusão
+
+O primeiro protótipo do dispositivo será feito sem a funcionalidade de envio de mensagens via SMS, porém 
+
 ## Referências
 
 https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-8%20Ver1.3%20-%20Manual.pdf  
@@ -158,11 +162,6 @@ https://www.arducore.com.br/sensor-infravermelho-reflexivo-industrial-e18-d80nk
 https://datasheetspdf.com/pdf-file/1311838/ETT/E18-D80NK-N/1 
 
 https://www.filipeflop.com/produto/buzzer-ativo-5v/ 
-
-
-
-
-
 
 https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf
 
