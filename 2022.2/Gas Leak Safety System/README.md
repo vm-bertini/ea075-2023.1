@@ -14,7 +14,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Arquivos Importantes
 
-[Esquemático em PDF](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/pdf/Esquematico-E3_Gas_Leak_Safety_System.pdf)
+[Esquemático](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/pdf/Esquematico-E3_Gas_Leak_Safety_System.pdf)
 
 [Lista de componentes](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/components.md)
 
