@@ -116,18 +116,18 @@ As bibliotecas utilizadas serão:
 
 
 ## Referências
-1 [Irrigação](https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o)
+1. [Irrigação](https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o)
 
-2 [Arduino](https://pt.wikipedia.org/wiki/Arduino)
+2. [Arduino](https://pt.wikipedia.org/wiki/Arduino)
 
-3 [Medir o clima da estufa garante melhor
+3. [Medir o clima da estufa garante melhor
 crescimento das plantas](https://www.vaisala.com/sites/default/files/documents/CEN-BAU-Greenhouse-Climate-Application-Note-B211142PT-A.pdf)
 
-4 [Veja as diferenças dos sensores DHT11 e DHT22 na prática - Arduino](http://www.squids.com.br/arduino/index.php/projetos-arduino/projetos-squids/basico/292-projeto-89-veja-as-diferencas-dos-sensores-dht11-e-dht22-na-pratica-arduino)
+4. [Veja as diferenças dos sensores DHT11 e DHT22 na prática - Arduino](http://www.squids.com.br/arduino/index.php/projetos-arduino/projetos-squids/basico/292-projeto-89-veja-as-diferencas-dos-sensores-dht11-e-dht22-na-pratica-arduino)
 
-5 [Ar Condicionado Controlado Por Arduino, Via Infravermelho E Com Medição De Temperatura](https://www.instructables.com/Ar-Condicionado-controlado-por-Arduino-via-infrave/)
+5. [Ar Condicionado Controlado Por Arduino, Via Infravermelho E Com Medição De Temperatura](https://www.instructables.com/Ar-Condicionado-controlado-por-Arduino-via-infrave/)
 
-6 [Controle uma válvula solenoide com o Arduino](https://www.filipeflop.com/blog/controle-uma-valvula-solenoide-com-o-arduino/)
+6. [Controle uma válvula solenoide com o Arduino](https://www.filipeflop.com/blog/controle-uma-valvula-solenoide-com-o-arduino/)
 
 
 
