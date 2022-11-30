@@ -12,6 +12,15 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
  | Vitor Semenzato do Amaral  | 207054  | Eng. Elétrica|
 
 
+## Arquivos Importantes
+
+[Esquemático em PDF](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/pdf/Esquematico-E3_Gas_Leak_Safety_System.pdf)
+
+[Lista de componentes](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/components.md)
+
+[PCB -  Vista Superior](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Top_View.png)
+
+
 ## Descrição do Projeto
 
 O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer,sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
@@ -131,10 +140,6 @@ Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudan
 Partindo das especificações técnicas dos sensores e atuadores selecionados para o projeto e dos fluxogramas acima, definimos que os seguintes pinos do controlador ATMEGA328P que serão usados para o nosso projeto:
 
 ![Alt](Gas_Safety_Sys-Microcontrolador.png)
-
-Com a pinagem definida do microcontrolador e com os demais componentes definidos, partimos para o esquemático, obtendo o seguinte resultado:
-
-![Alt](Gas_Safety_Sys-Esquematico.png)
 
 ## Referências
 
