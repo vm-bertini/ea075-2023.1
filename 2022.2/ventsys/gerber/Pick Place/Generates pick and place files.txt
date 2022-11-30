@@ -1,11 +1,11 @@
 Altium Designer Pick and Place Locations
-D:\david\Google Drive\Unicamp\EA075\Nova pasta\V3I3\Project Outputs for Ventsys_V1I1\Pick Place\Generates pick and place files.txt
+G:\Meu Drive\Unicamp\EA075\Nova pasta\ventsys\Project Outputs for Ventsys_V1I1\Pick Place\Generates pick and place files.txt
 
 ========================================================================================================================
 File Design Information:
 
-Date:       29/11/22
-Time:       21:27
+Date:       30/11/22
+Time:       08:37
 Revision:   Not in VersionControl
 Variant:    No variations
 Units used: mil

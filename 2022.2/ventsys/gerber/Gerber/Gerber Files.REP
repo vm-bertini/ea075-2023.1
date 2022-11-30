@@ -2,63 +2,6 @@
 FileName = Gerber Files.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Layer
-      File : Gerber Files.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D13
-    D15
-    D16
-    D17
-    D18
-    D19
-    D20
-    D21
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : Gerber Files.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D13
-    D15
-    D21
-    D35
-    D36
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-*************************************************************
-
-*************************************************************
 Generating : ASM Top
       File : Gerber Files.GM29
 
@@ -87,6 +30,30 @@ Generating : Manufacturing Notes
 
 
 Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : Gerber Files.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Gerber Files.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D14
+    D58
 *************************************************************
 
 *************************************************************
@@ -142,6 +109,55 @@ Used DCodes :
     D55
     D56
     D57
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Gerber Files.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Gerber Files.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -207,62 +223,38 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Overlay
-      File : Gerber Files.GBO
+Generating : Bottom Layer
+      File : Gerber Files.GBL
 
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D10
     D11
-    D14
-    D58
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : Gerber Files.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : Gerber Files.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
+    D13
+    D15
+    D21
     D35
+    D36
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
 *************************************************************
 
 *************************************************************
-Generating : Top Paste
-      File : Gerber Files.GTP
-
-    Adding Layer      : Top Paste
+Generating : Top Layer
+      File : Gerber Files.GTL
 
     Adding Layer      : Top Layer
 
@@ -270,6 +262,8 @@ Generating : Top Paste
 
 
 Used DCodes :
+    D11
+    D13
     D15
     D16
     D17
@@ -277,6 +271,12 @@ Used DCodes :
     D19
     D20
     D21
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
 *************************************************************
 
 *************************************************************
@@ -303,6 +303,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D59
+    D60
 *************************************************************
 
