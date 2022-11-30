@@ -48,7 +48,7 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 ## Display LCD
 
-O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits (que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection).Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display por ser um módulo comercial de arduino opera com uma tensão de 5V.
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits (que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection).Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display, por ser um módulo comercial de arduino opera com uma tensão de 5V.
 
 As portas do microcontrolador usadas para isso foram as portas 16,17,18 e 19 para o modo 4 bits, a porta 11 para o pino de RS do LCD, a porta 12 para habilitar e desabilitar o display, a porta 13 para controle do backlight e a porta 26 para leitura dos botões. 
 
@@ -70,7 +70,7 @@ Para fornecimento de corrente ao buzzer minimizando eventuais riscos à porta do
 
 ## Botão táctil/ Push Button
 
-O push button escolhido é uma chave normalmente aberta (NA) que quando é pressionado. fecha um contato, convertendo assim, um comando mecânico em elétrico. No nosso projeto utilizamos dois desses botões, sendo o primeiro para ligar e desligar o dispositivo e o segundo para realizar resets quando necessário do produto. Para ligar e desligar o sistema foi utilizado a porta 6 do microcontrolador, enquanto que para realizar o reset foi utilizado a porta 1.
+O push button escolhido é uma chave normalmente aberta (NA) que quando é pressionado fecha um contato, convertendo assim, um comando mecânico em elétrico. No nosso projeto utilizamos dois desses botões, sendo o primeiro para ligar e desligar o dispositivo e o segundo para realizar resets quando necessário do produto. Para ligar e desligar o sistema foi utilizado a porta 6 do microcontrolador, enquanto que para realizar o reset foi utilizado a porta 1.
 
 [Datasheet](https://www.eletropecas.com/_uploads/ProdutoDownload/produto_316.pdf)
 
@@ -84,7 +84,7 @@ Como recomendação do datasheet do sensor de gás MQ6, utilizamos um resistor d
 
 ## Cristal oscilador de 16 MHz
 
-Para geração do clock do nosso dispositivo, estamos usando  um oscilador controlado por cristal de quartzo para a frequência de 16 MHz, pois esses cristais mantém a freqüência de oscilação do circuito no valor desejado e com muita precisão.
+Para geração do clock do nosso dispositivo, estamos usando  um oscilador controlado por cristal de quartzo para a frequência de 16 MHz, pois esses cristais mantém a frequência de oscilação do circuito no valor desejado e com muita precisão.
 
 ## Capacitores de 22 pF
 
@@ -100,4 +100,4 @@ Utilizamos um conector jack DC fêmea para alimentação do nosso circuito, poss
 
 ## Barras de pinos fêmea do tipo soquete
 
-Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foi utilizado as mesmas barras de pinos encontradas no arduino UNO, pois assim, não seria necessário soldar os componentes citados acima na placa, permitindo a remoção quando necessário.
+Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foi utilizado as mesmas barras de pinos encontradas no arduino UNO.
