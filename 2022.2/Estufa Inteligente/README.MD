@@ -96,7 +96,7 @@ A distribuição dos sensores de temperatura e umidade será feita a cada 12m² 
 
 Para medição de umidade e temperatura foi escolhido o sensor DHT-11⁴. Este sensor faz medições de temperatura de 0º C até 50º C e mede a umidade do ar nas faixas de 20% a 90%. A precisão (margem de erro) do sensor para medição de temperatura é de aproximadamente 2 °C e para umidade é de 5%. Assim, mesmo que haja necessidade de alteração da faixa de temperatura e umidade mínima pelo plantio específico do cliente, temos certeza que esse sensor atenderá todos os requisitos.
 
-Para acionamento e desligamento dos ares-condicionados, será utilizado o sensor IRM-3638⁵ para leitura do sinal infravermelho emitido pelo controle remoto dele. Dessa forma, permitimos que o cliente escolha o modelo de ar condicionado desejado e utilizamos um LED IR (emissor de infravermelho) para ligar e desligar o ar condicionado, emitindo o mesmo código que seria emitido pelo controle remoto de fábrica do equipamento.
+Para acionamento e desligamento dos ares-condicionados, será utilizado o sensor IRM-3638 para leitura do sinal infravermelho emitido pelo controle remoto dele. Dessa forma, permitimos que o cliente escolha o modelo de ar condicionado desejado e utilizamos um LED IR (emissor de infravermelho) para ligar e desligar o ar condicionado, emitindo o mesmo código que seria emitido pelo controle remoto de fábrica do equipamento.⁵
 
 Os aspersores serão os responsáveis por irrigar e umidificar o ambiente, controlados por válvulas de vazão solenóides 12 VDC normalmente fechadas, ou seja, só permitirão a passagem de fluido se forem energizadas, enquanto estiverem desenergizadas elas bloquearão a passagem do fluido (água). Em nosso projeto, serão utilizados relês para acionamento das válvulas.⁶
 
@@ -110,23 +110,24 @@ Para o sensor de temperatura e umidade, a seguinte lógica será seguida:
 
 As bibliotecas utilizadas serão:
 
-Dht.h - https://github.com/adafruit/DHT-sensor-library
+[Dht.h](https://github.com/adafruit/DHT-sensor-library)
 
-IRremote - https://github.com/Arduino-IRremote/Arduino-IRremote
+[IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote)
 
 
 ## Referências
-[1] https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o
+1 [Irrigação](https://pt.wikipedia.org/wiki/Irriga%C3%A7%C3%A3o)
 
-[2] https://pt.wikipedia.org/wiki/Arduino
+2 [Arduino](https://pt.wikipedia.org/wiki/Arduino)
 
-[3] https://www.vaisala.com/sites/default/files/documents/CEN-BAU-Greenhouse-Climate-Application-Note-B211142PT-A.pdf
+3 [Medir o clima da estufa garante melhor
+crescimento das plantas](https://www.vaisala.com/sites/default/files/documents/CEN-BAU-Greenhouse-Climate-Application-Note-B211142PT-A.pdf)
 
-[4] https://blogmasterwalkershop.com.br/arquivos/datasheet/Datasheet%20DHT11.pdf
+4 [Veja as diferenças dos sensores DHT11 e DHT22 na prática - Arduino](http://www.squids.com.br/arduino/index.php/projetos-arduino/projetos-squids/basico/292-projeto-89-veja-as-diferencas-dos-sensores-dht11-e-dht22-na-pratica-arduino)
 
-[5] https://datasheet.lcsc.com/lcsc/1809301116_Everlight-Elec-IRM-3638_C131209.pdf
+5 [Ar Condicionado Controlado Por Arduino, Via Infravermelho E Com Medição De Temperatura](https://www.instructables.com/Ar-Condicionado-controlado-por-Arduino-via-infrave/)
 
-[6] https://www.filipeflop.com/blog/controle-uma-valvula-solenoide-com-o-arduino/
+6 [Controle uma válvula solenoide com o Arduino](https://www.filipeflop.com/blog/controle-uma-valvula-solenoide-com-o-arduino/)
 
 
 
