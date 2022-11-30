@@ -163,3 +163,5 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 [2] https://tecnosenior.com/dispensador-de-medicamentos-automatico/
 
+[3] https://www.eletrogate.com/display-lcd-16x2-com-backlight-verde?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant
+
