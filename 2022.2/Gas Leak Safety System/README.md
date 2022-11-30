@@ -44,7 +44,7 @@ O primeiro protótipo ao detectar uma ocorrência de risco irá acionar um buzze
 - Acionar indicador sonoro para alerta de perigo;
 - Envio de mensagem SMS para números predeterminados (em um futuro protótipo);
 
-Obs: Nesse nosso primeiro protótipo não será disponibilizado a funcionalidade de envio de mensagens SMS.
+Obs: Nesse primeiro protótipo não será disponibilizado a funcionalidade de envio de mensagens SMS.
 
 ### Configurabilidade
 
@@ -55,7 +55,7 @@ Sendo o objetivo primário do sistema o monitoramento da concentração de gases
 - Determinação dos números de telefone para envio de SMS (em um futuro protótipo).
 - Determinação de quais gases o sistema irá ser responsável de realizar o monitoramento;
 
-Obs: Nesse nosso primeiro protótipo não será disponibilizado a funcionalidade de envio de mensagens SMS.
+Obs: Nesse primeiro protótipo não será disponibilizado a funcionalidade de envio de mensagens SMS.
 ### Eventos
 
 O sistema estará constantemente monitorando os níveis de concentração de determinado gás em um ambiente e a quantidade de pessoas presentes neste mesmo local. Desta forma, deverá realizar o tratamento dos seguintes eventos principais:
