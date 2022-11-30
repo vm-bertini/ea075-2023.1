@@ -132,6 +132,9 @@ Partindo das especificações técnicas dos sensores e atuadores selecionados pa
 
 ![Alt](Gas_Safety_Sys-Microcontrolador.png)
 
+Com a pinagem definida do microcontrolador e com os demais componentes definidos, partimos para o esquemático do sistema:
+
+![Alt](Gas_Safety_Sys-Esquematico.png)
 
 ## Referências
 
