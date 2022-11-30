@@ -7,9 +7,10 @@
 
 [3] Datasheet Driver display LCD - https://blog.eletrogate.com/wp-content/uploads/2018/04/HD44780.pdf
 
-[4] https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
+[4] Adaptador 12C para LCD -  https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
-[5] https://www.casadarobotica.com/robotica/atuadores/outros/3x-buzzer-5v-ativo
+[5] Datsheet Buzzer - https://www.quick-teck.co.uk/Management/EEUploadFile/1420788438.pdf
+
 
 [6] https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
 
