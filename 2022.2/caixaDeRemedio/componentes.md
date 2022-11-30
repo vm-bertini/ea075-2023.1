@@ -9,9 +9,8 @@
 
 [4] Adaptador 12C para LCD -  https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
-[5] Datsheet Buzzer - https://www.quick-teck.co.uk/Management/EEUploadFile/1420788438.pdf
+[5] Datasheet Buzzer - https://www.quick-teck.co.uk/Management/EEUploadFile/1420788438.pdf
 
+[6] Datasheet ATMega328P (Micro-Contralador) - https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
 
-[6] https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
-
-[7] https://pt.aliexpress.com/item/32652790510.html?UTABTest=aliabtest343279_484914&_randl_currency=BRL&_randl_shipto=BR&src=google&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265403963&albag=&trgt=&crea=pt32652790510&netw=x&device=c&albpg=&albpd=pt32652790510&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOsHYZP6gvAff69Z34DvzMRyWPaaTfNbtYgujTt67OWACp4CXFOQ2waAqfDEALw_wcB&gclsrc=aw.ds&aff_fcid=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&OLP=1084400108_f_group0&o_s_id=1084400108&afSmartRedirect=y
+[7] Datasheet Multiplexador  - https://pdf1.alldatasheet.com/datasheet-pdf/view/27059/TI/CD74HC4067.html
