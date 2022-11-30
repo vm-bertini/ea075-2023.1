@@ -9,7 +9,7 @@ Estes sensores, de modo geral, apresentam um material sensível ao gás que prec
 
 Os sensores utilizados nesta aplicação serão o MQ-7, MQ-6 e MQ-4, responsáveis pela detecção de monóxido de carbono, gás inflamável (GLP) e gás metano, respectivamente. 
 
-O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 $não iremos utilizar um módulo comercial e por isso$ será conectado diretamente à porta analógica do microcontrolador. 
+O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 ##não iremos utilizar um módulo comercial e por isso## será conectado diretamente à porta analógica do microcontrolador. 
 
 ### MQ-7 (Monóxido de Carbono)
 
