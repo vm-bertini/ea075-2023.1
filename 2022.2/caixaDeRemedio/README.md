@@ -166,3 +166,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 [3] https://www.eletrogate.com/display-lcd-16x2-com-backlight-verde?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant
 
 [4] https://www.casadarobotica.com/robotica/atuadores/outros/3x-buzzer-5v-ativo
+
+[5] https://pt.aliexpress.com/item/32652790510.html?UTABTest=aliabtest343279_484914&_randl_currency=BRL&_randl_shipto=BR&src=google&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265403963&albag=&trgt=&crea=pt32652790510&netw=x&device=c&albpg=&albpd=pt32652790510&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOsHYZP6gvAff69Z34DvzMRyWPaaTfNbtYgujTt67OWACp4CXFOQ2waAqfDEALw_wcB&gclsrc=aw.ds&aff_fcid=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=8dc6da2d43ff40e4bf5b44c3ff39803e-1667051125100-04959-UneMJZVf&terminal_id=d1aaf1f986c7418bbeef73196755d327&OLP=1084400108_f_group0&o_s_id=1084400108&afSmartRedirect=y
+
