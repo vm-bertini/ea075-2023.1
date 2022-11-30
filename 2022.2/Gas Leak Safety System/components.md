@@ -72,7 +72,7 @@ Para fornecimento de corrente ao buzzer minimizando eventuais riscos à porta do
 
 O push button escolhido é uma chave normalmente aberta (NA) que quando é pressionado. fecha um contato, convertendo assim, um comando mecânico em elétrico. No nosso projeto utilizamos dois desses botões, sendo o primeiro para ligar e desligar o dispositivo e o segundo para realizar resets quando necessário do produto. Para ligar e desligar o sistema foi utilizado a porta 6 do microcontrolador, enquanto que para realizar o reset foi utilizado a porta 1.
 
-[Datasheet] (https://www.eletropecas.com/_uploads/ProdutoDownload/produto_316.pdf)
+[Datasheet](https://www.eletropecas.com/_uploads/ProdutoDownload/produto_316.pdf)
 
 ## Resistores de 10 kΩ
 
