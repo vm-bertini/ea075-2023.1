@@ -44,4 +44,10 @@ A conexão do sensor com o microcontrolador será feita via porta digital (porta
 
 Caso um gás seja detectado acima do nível de concentração especificado um alerta sonoro será emitido por meio de um buzzer ativo de 5V conectado ao microcontrolador por meio de uma porta digital. A corrente necessária para suprir o buzzer será fornecida por meio de um transistor, evitando, assim, danos na porta do microcontrolador.
 
+## Display LCD
 
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desablitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma entrada analógica do microcontrolador através de resistores de valores diferentes. Portanto o botão pressionado pode ser determinado através da tensão medida pelo ADC, onde como cada botão estará associado a um resistor diferente, cada botão enviará um valor de tensão distinto para a entrada analógica.
+
+## Regulador de tensão (L7805CV)
+
+Para a regulação da tensão de alimentação em 5V o L7805CV será utilizado com padrão de conexão especificado pelo fabricante.
