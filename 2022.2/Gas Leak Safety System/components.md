@@ -46,7 +46,9 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 ## Display LCD
 
-O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desablitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma entrada analógica do microcontrolador através de resistores de valores diferentes. Portanto o botão pressionado pode ser determinado através da tensão medida pelo ADC, onde como cada botão estará associado a um resistor diferente, cada botão enviará um valor de tensão distinto para a entrada analógica.
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display por ser um módulo comercial de arduino opera com uma tensão de 5V.
+
+[Datasheet](https://datasheetspdf.com/pdf-file/746588/D-Robotics/DFR0009/1)
 
 ## Regulador de tensão (L7805CV)
 
