@@ -137,9 +137,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 >
 > O tamanho da memória necessária pode ser estimado por comparação com um projeto similar, um alarme programável projetado para o microcontrolador Kinetis KL25Z128, da Freescale, disponível em https://github.com/fernandocillo/EA871/blob/main/alarme-final.zip. Este projeto de alarme consome 17 Kbytes de memória flash e 2Kbytes de memória RAM. 
 >
-> Como a Caixa de Remédios tem algumas intruções adicionais relativas à abertura dos compartimentos e as músicas selecionáveis para o alarme serão armazenadas na memória (em forma de sequências de notas associadas à frequência, que pode ser controlada através da tensão enviada por PWM ao buzzer), serão necessários em torno de 20 Kbytes de memória flash. Um módulo de memória flash de 32 Kbytes concede uma larga margem para a aplicação.
+> Como a Caixa de Remédios tem algumas intruções adicionais relativas à abertura dos compartimentos e as músicas selecionáveis para o alarme serão armazenadas na memória (em forma de sequências de notas associadas à frequência, que pode ser controlada através da tensão enviada por PWM ao buzzer), serão necessários em torno de 20 Kbytes de memória flash. Um módulo de memória flash de 32 Kbytes concede uma larga margem para a aplicação. Vamos usar a própria memória flash do microcontrolador que possui 32 kbytes.
 > 
-> Além disso, há a necessidade de, durante a execução do programa, registrar o dia e horário atual, o dia e horário de cada um dos 14 compartimentos e a música selecionada para o alarme. Isso significa que o consumo de memória RAM será bem maior que do projeto de alarme, que deve ser suprida com tranquilidade por um módulo de memória RAM de 4 Kbytes.
+> Além disso, há a necessidade de, durante a execução do programa, registrar o dia e horário atual, o dia e horário de cada um dos 14 compartimentos e a música selecionada para o alarme. Isso significa que o consumo de memória RAM será bem maior que do projeto de alarme, que deve ser suprida com tranquilidade por um módulo de memória RAM de 2 Kbytes.
 
 ### Especificação das restrições físicas e ambientais de funcionamento do circuito
 
