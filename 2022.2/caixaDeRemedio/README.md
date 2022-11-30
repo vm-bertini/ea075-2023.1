@@ -16,7 +16,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
 >
->[Lista de Componentes]([link para components.md](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/componentes.md))
+>[Lista de Componentes](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/components.md)
 >
 >[PCB](link para imagens/pdf PCB)
 
