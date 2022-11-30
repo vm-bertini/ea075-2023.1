@@ -78,9 +78,9 @@ O diagrama a seguir ilustra os blocos funcionais do sistema frente aos eventos q
 
 Estes sensores, de modo geral, apresentam um material sensível ao gás que precisa ser detectado. Em contato com o ar puro sua condutividade elétrica é baixa enquanto na presença do gás desejado sua condutividade aumenta com a concentração. Desta forma, essa diferença de condutividade é explorada para obtenção de um sinal indicador da presença da substância desejada. 
 
-Os sensores utilizados nesta aplicação serão o MQ-8, MQ-2 e MQ-4, responsáveis pela detecção de gás hidrogênio, gás inflamável (GLP) e gás metano, respectivamente. 
+Os sensores utilizados nesta aplicação serão o MQ-7, MQ-6 e MQ-4, responsáveis pela detecção de monóxido de carbono, gás inflamável (GLP) e gás metano, respectivamente. 
 
-O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-2 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-8 será conectado diretamente à porta analógica do microcontrolador. 
+O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 será conectado diretamente à porta analógica do microcontrolador. 
 
 Os limites físicos dos sensores são listados em seus respectivos datasheets, mas de modo geral para operarem de maneira adequada deve-se evitar:
 
