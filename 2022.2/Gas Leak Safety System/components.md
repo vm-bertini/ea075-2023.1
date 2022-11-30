@@ -61,7 +61,7 @@ Para a regulação da tensão de alimentação em 5V o L7805CV será utilizado.
 
 ## Transistor 2N7000
 
-Para fornecimento de corrente ao buzzer minimizando eventuais riscos a porta do microntrolador o transistor 2N7000 será utilizado. Um divisor de tensão com resistores de 4k7 e 5k6 é implementado no gate deste transistor para que a tensão de threshold Vgs do componente opere dentro dos limites.
+Para fornecimento de corrente ao buzzer minimizando eventuais riscos a porta do microntrolador o transistor 2N7000 será utilizado. 
 
 [Datasheet](https://br.mouser.com/datasheet/2/308/NDS7002A_D-1522662.pdf)
 
