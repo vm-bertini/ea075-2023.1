@@ -9,7 +9,7 @@ Estes sensores, de modo geral, apresentam um material sensível ao gás que prec
 
 Os sensores utilizados nesta aplicação serão o MQ-7, MQ-6 e MQ-4, responsáveis pela detecção de monóxido de carbono, gás inflamável (GLP) e gás metano, respectivamente. 
 
-O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 ##não iremos utilizar um módulo comercial e por isso será conectado diretamente à porta analógica do microcontrolador. 
+O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 não iremos utilizar um módulo comercial e por isso será conectado diretamente à porta analógica do microcontrolador. 
 
 ### MQ-7 (Monóxido de Carbono)
 
@@ -48,7 +48,9 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 ## Display LCD
 
-O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display por ser um módulo comercial de arduino opera com uma tensão de 5V.
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits (que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection).Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display por ser um módulo comercial de arduino opera com uma tensão de 5V.
+
+As portas do microcontrolador usadas para isso foram as portas 16,17,18 e 19 para o modo 4 bits, a porta 11 para o pino de RS do LCD, a porta 12 para habilitar e desabilitar o display, a porta 13 para controle do backlight e a porta 26 para leitura dos botões. 
 
 [Datasheet](https://datasheetspdf.com/pdf-file/746588/D-Robotics/DFR0009/1)
 
@@ -66,17 +68,36 @@ Para fornecimento de corrente ao buzzer minimizando eventuais riscos à porta do
 [Datasheet](https://br.mouser.com/datasheet/2/308/NDS7002A_D-1522662.pdf)
 
 
+## Botão táctil/ Push Button
 
+O push button escolhido é uma chave normalmente aberta (NA) que quando é pressionado. fecha um contato, convertendo assim, um comando mecânico em elétrico. No nosso projeto utilizamos dois desses botões, sendo o primeiro para ligar e desligar o dispositivo e o segundo para realizar resets quando necessário do produto. Para ligar e desligar o sistema foi utilizado a porta 6 do microcontrolador, enquanto que para realizar o reset foi utilizado a porta 1.
 
+[Datasheet] (https://www.eletropecas.com/_uploads/ProdutoDownload/produto_316.pdf)
 
+## Resistores de 10 kΩ
 
+Os resistores de  10 kΩ foram usados no nosso projeto como resistores de pull-up no circuito do botão de liga e desliga e no circuito de leitura das saídas digitais dos sensores infravermelho. E um desses resistores foi utilizado como resistor de pull-down no circuito de reset do microcontrolador, visto que o ATMEGA328P reseta em nível lógico baixo (0).
 
+## Resistores de 20 kΩ
 
+Como recomendação do datasheet do sensor de gás MQ6, utilizamos um resistor de 20 kΩ entre os pinos 3 e 5 do sensor.
 
+## Cristal oscilador de 16 MHz
 
+Para geração do clock do nosso dispositivo, estamos usando  um oscilador controlado por cristal de quartzo para a frequência de 16 MHz, pois esses cristais mantém a freqüência de oscilação do circuito no valor desejado e com muita precisão.
 
+## Capacitores de 22 pF
 
+Como recomendação do datasheet do cristal oscilador, foi adicionado esses 2 capacitores no circuito de clock. 
 
+## Capacitores de 0.33 uF e 0.1 uF
 
+Como recomendação do datasheet do regulador de tensão, foi adicionado esses 2 capacitores no circuito de regulação de tensão. 
 
+## Conectores jack DC fêmea
 
+Utilizamos um conector jack DC fêmea para alimentação do nosso circuito, possibilitando que o circuito seje alimentado facilmente por fontes externas.
+
+## Barras de pinos fêmea do tipo soquete
+
+Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foi utilizado as mesmas barras de pinos encontradas no arduino UNO, pois assim, não seria necessário soldar os componentes citados acima na placa, permitindo a remoção quando necessário.
