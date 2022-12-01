@@ -13,9 +13,9 @@ Disciplina oferecida pela Profa. Dra. Paula Dornhofer Paro Costa, no segundo sem
 
 ## Arquivos Importantes
 
--O src do projeto se encontra zipado (src.zip).
--As imagens relevantes e a visão 3D do projeto se encontra na pasta Images.
--Os arquivos contendo as furações se encontram na pasta gerber.
+- O src do projeto se encontra zipado (src.zip).
+- As imagens relevantes e a visão 3D do projeto se encontra na pasta Images.
+- Os arquivos contendo as furações se encontram na pasta gerber.
 
 ## Descrição do Projeto
 
@@ -61,9 +61,9 @@ O ideal do projeto é ser plug-and-play, ou seja, não há necessidade de config
 
 O sistema consiste em 3 componentes principais que trabalham em conjunto para atender os requisitos do projeto, sendo eles:
 
--Sensor Sonoro (KY-037) que possui quatro entradas/saídas, sendo as duas do meio para alimentação VDD e GND, e as duas exteriores para saída, sendo uma digital e outra analógica. Para o projeto utilizaremos apenas a saída analógica.
--Sensor de Presença (HC-SR501) que possui três entradas/saídas, sendo as duas exteriores para alimentação, e a do meio para saída, sendo a mesma analógica.
--Microcontrolador (ESP8285) foi escolhido pois atende o requisito de ser mais em conta e simples, entregando a alimentação correta para os sensores (3.3V) e possuindo pinos de E/S GPIO. O mesmo poderá ser integrado à rede Wi-Fi posteriormente.
+- Sensor Sonoro (KY-037) que possui quatro entradas/saídas, sendo as duas do meio para alimentação VDD e GND, e as duas exteriores para saída, sendo uma digital e outra analógica. Para o projeto utilizaremos apenas a saída analógica.
+- Sensor de Presença (HC-SR501) que possui três entradas/saídas, sendo as duas exteriores para alimentação, e a do meio para saída, sendo a mesma analógica.
+- Microcontrolador (ESP8285) foi escolhido pois atende o requisito de ser mais em conta e simples, entregando a alimentação correta para os sensores (3.3V) e possuindo pinos de E/S GPIO. O mesmo poderá ser integrado à rede Wi-Fi posteriormente.
 
 Para a instalação, certifique-se que o sensor de presença esteja visualizando todo o ambiente, e que o sensor sonoro não esteja sendo abafado.
 Mantenha-os de preferência nos cantos dos ambientes, para uma melhor visualização dos sensores.
@@ -71,10 +71,10 @@ A alimentação do circuito deverá ser de 5V.
 
 ## Estrutura do Sistema
 
--Estrutura Inicial Proposta:
+- **Estrutura Inicial Proposta:**
 ![DIAGRAMA-EA075](https://user-images.githubusercontent.com/112783871/199125714-ed989c85-57b7-41f3-ab7e-61b6ba271a6a.png)
 
--Visão 3D
+- **Visão 3D:**
 ![luz_inteligente_3D](https://user-images.githubusercontent.com/73912017/204940767-647e4c15-a11e-4e04-b0d9-0c7c618618fe.png)
 
 ## Referências
