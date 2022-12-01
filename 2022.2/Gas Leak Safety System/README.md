@@ -171,6 +171,10 @@ https://www.filipeflop.com/img/files/download/SIM808_Hardware+Design_V1.00.pdf
 
 https://www.filipeflop.com/produto/sensor-de-proximidade-infravermelho/
 
+https://br.mouser.com/datasheet/2/389/cd00000444-1795274.pdf
+
+https://br.mouser.com/datasheet/2/308/NDS7002A_D-1522662.pdf
+
 https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
 
 https://www.ti.com/microcontrollers-mcus-processors/microcontrollers/overview.html
