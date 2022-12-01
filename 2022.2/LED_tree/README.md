@@ -182,6 +182,10 @@ O projeto da placa para o projeto foi realizado utilizando o software [Kicad](ht
 
 Os pdfs com a vista do esquemático e da pcb podem ser encontrados na pasta [pdf](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/pdf) e os arquivos gerber na pasta [gerber](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/gerber).
 
+## Implementação
+
+O projeto está sendo implementado. Mais novidades em breve 😊
+
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
 
