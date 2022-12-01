@@ -18,8 +18,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 [Lista de componentes](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/components.md)
 
-[PCB](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Top_View.png)
+[PCB - Top View](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Top_View.png)
 
+[PCB - Bottom View](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Bottom_View.png)
 
 ## Descrição do Projeto
 
