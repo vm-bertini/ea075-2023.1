@@ -180,9 +180,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 [Esquemático em pdf] https://drive.google.com/drive/folders/1JVpYACYJVL03-pkuDdKhLRD7i3tnIl3X?usp=sharing
 
-[Lista de Componentes] 
+[Lista de Componentes] https://github.com/alefeletrica/ea075/blob/1affdf27c7cf582892379fe2443c33ef3eea1c3a/2022.2/Coleira-antiperda/Lista_componentes
 
-[PCB] 
+[PCB] https://drive.google.com/drive/folders/1JVpYACYJVL03-pkuDdKhLRD7i3tnIl3X?usp=sharing
 
 
 
