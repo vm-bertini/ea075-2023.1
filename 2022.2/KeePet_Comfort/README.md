@@ -13,11 +13,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Arquivos Importantes
 
-[Esquemático em PDF]()
+[Esquemático em PDF](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/pdf/E3_esquematico.pdf)
 
 [Lista de Componentes](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/components.md)
 
-[PCB]()
+[PCB](https://github.com/PatricMT/ea075/blob/main/2022.2/KeePet_Comfort/pdf/3d_models.pdf)
 
 ## Descrição do Projeto
 Dada a rotina intensa de diversas famílias, a permanência no ambiente residencial está cada vez menor e, com isso, os animais de estimação são deixados sozinhos por longos períodos de tempo, de modo que suas necessidades em relação às condições do ambiente, como luminosidade e temperatura, não são observadas de modo a promover a saúde dos animais e impactanto negativamente o seu conforto diário.
@@ -86,17 +86,21 @@ Em concordante com o que será discutido na seção [*Especificação de Algorit
 
 ### Antena
 
-Em conformidade com as [aplicabilidades do projeto](#funcionalidades), é necessário a utilização da comunicação Wi-Fi para diferentes atividades. A [*Discussão*](#discussão) elucidará a escolha do microcontrolador com módulo interno para Wi-Fi. No entanto, suas capacidades Wi-Fi se limitam a interpretação e execução dos protocólos de comunicação envolvidos, sendo necessária uma antena externa para estabelecer a comunicação sem fio. Dessa forma, após pesquisas realizadas, foi escolhida a *AN9520* [[14]](#Referências), atuando na faixa de 2,4 GHz, compatível com o ESP8285H16, e, por ser uma antena cerâmica, exibe desempenho superior quando comparada com antenas PCB, segundo relatos de usuários.
+Em conformidade com as [aplicabilidades do projeto](#funcionalidades), é necessário a utilização da comunicação Wi-Fi para diferentes atividades. A [*Discussão*](#discussão) elucidará a escolha do microcontrolador com módulo interno para Wi-Fi. No entanto, suas capacidades Wi-Fi se limitam a interpretação e execução dos protocólos de comunicação envolvidos, sendo necessária uma antena externa para estabelecer a comunicação sem fio. Dessa forma, após pesquisas realizadas, foi escolhida a *ANT5320* [[15]](#Referências), atuando na faixa de 2,4 GHz, compatível com o ESP8285H16, e, por ser uma antena cerâmica, exibe desempenho superior quando comparada com antenas PCB, segundo relatos de usuários.
+
+### Roteamento da PCI
+
+Após a esolha da antena, utilizou-se como refência as considerações para o layout de antenas cerâmicas [[16]](#Referências) para elaboração do roteamento. Com base nessas considerações, dispensou-se a necessidade de elaboração de um circuito de casamento de impedância, visto que considerou-se que a largura de banda necessária para implentação da comunicação via Wi-Fi não será prejudicada com a adoção dessa premissa. A largura da *microstrip line* para a frequência de projeto foi calculada utilizando a ferramenta disponível no *KiCad* a partir do fornecimento dos parâmetros da placa que será utilizada para a fabricação do circuito. Ainda na calculadora do *KiCad*, conclui-se que a mesma largura da *microstrip line* poderia ser utilizada para o roteamento dos demais componentes, pois a máxima corrente presente no circuito está limitada a máxima corrente do ESP8285H16 que é de 80 mA, e os 0,35 mm implementados permitem a corrente máxima de 3,95 A. Essa escolha de manter a espessura da trilha para todo roteamento foi feita para acelerrar o processo de fabricação da placa. 
 
 ### Discussão
 
-Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocólos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna para armazenamento dos algoritmos, foi escolhido o *ESP8285H16*.
+Durante a fase de busca por microcontroladores, primeiro foi considerada a utilização do microcontrolador *PIC24FJ64GP205* [[11]](#Referências), visto que atendia os protocolos de comunicação utilizados. Entretanto, pesquisas posteriores levaram à conclusão de que a utilização de um *ESP8266EX* [[9]](#Referências) simplifcaria o projeto, dado que o componente em questão já aprenseta módulo de comunicação Wi-Fi interno, eliminando o possível uso de mais portas e periféricos. Ainda, enquanto era realizada a especificação de memória desejada, a troca do microcontrolador foi optada novamente, em decorrência da falta de memória flash interna do ESP8266EX. Por conta das grandes similaridades físicas, apenas com um acréscimo de memória flash interna para armazenamento dos algoritmos, foi escolhido o *ESP8285H16*.
 
 Para a primeira entrega (E1), havia sido projetada a utilização de uma Interface Homem-Máquina (IHM) com a função de permitir configuração do setpoint de temperatura e horário em que as luzes devem ser acesas/apagadas. No entanto, após pesquisa e análise dos dispositivos encontrados no mercado, como o *ILI9341* [[13]](#Referências), definiu-se que esse tipo de componente exige a utilização de muitos pinos do chip, inclusive entrando em conflito com os pinos I2C sendo utilizados pelo RTC, e, portanto, sua utilização foi descartada. Em seu lugar, as informações de temperatura e horário serão enviadas ao microcontrolador via Wi-Fi, utilizado um **aplicativo de celular**.
 
 Outra substituição de componentes ocorreu com o módulo RTC, devido ao nível de tensão do *DS1307* [[12]](#Referências), de 5V, ser incompatível com a alimentação e GPIOs do ESP8285H16, de 3,3V. Assim, foi escolhido o *DS3231*.
 
-Por fim, para a terceira entrega (E3), após análise das ligações a serem realizadas entre o microcontrolador e periféricos, foi verificada a necessidade da utilização de uma antena para comunicação sem fio através do Wi-Fi.
+Por fim, para a terceira entrega (E3), após análise das ligações a serem realizadas entre o microcontrolador e periféricos, foi verificada a necessidade da utilização de uma antena para comunicação sem fio através do Wi-Fi. Inicialmente, foi escolhido o *AN9520* [[14]](#Referências) por simplicidade, conforme relatos de usuários em fóruns da internet. Posteriormente, optou-se por substituir a antena AN9520 pela *ANT5320* [[15]](#Referências), pois apresenta menores dimensões, permitindo a otimização do roteamento da placa. Além disso, a ANT5320 possuir melhor rendimento, possuindo maior ganho direcional, isto é, maior parte da potência está direcionada a sua frequência de operação, e menor perda de retorno, a potência refletida é menor, otimizando o funcionamento do circuito.
 
 ## Especificação de Algoritmos
 
@@ -142,3 +146,7 @@ De acordo com os algoritmos exibidos acima, serão utilizados principalmente dad
 [13] https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf - Acessado em 28 out. 2022.
 
 [14] https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/res/Antenna_Datasheet.pdf - Acessado em 25 nov. 2022.
+
+[15] https://www.mouser.com/datasheet/2/447/datasheet_ant5320ll04r2455a_v1_1617827487-2902839.pdf - Acessado em 27 nov. 2022.
+
+[16] https://www.johansontechnology.com/chip-antenna-layout-for-802-11-applications - Acessado em 27 nov. 2022.
