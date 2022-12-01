@@ -1,0 +1,14 @@
+### Lista de componentes
+
+> - 1 Microcontrolador ATMEGA328P;
+> - 1 Cristal Oscilador 16MHz; 
+> - 2 capacitores 22pF;
+> - 1 Módulo HC-05 (Módulo Bluetooth);
+> - 1 Bateria 9V;
+> - 1 Regulador de tensão 7805 para 5V;
+> - 3 resistores 10k ohms;
+> - 1 conector fêmea 2 vias;
+> - 1 botão para reset;
+> - 1 Conector USB Femea para receber programação;
+> - 1 placa PCB 20x50 mm;
+> - Conector USB B
