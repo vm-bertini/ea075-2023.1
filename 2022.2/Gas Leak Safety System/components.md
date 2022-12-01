@@ -100,4 +100,4 @@ Utilizamos um conector jack DC fêmea para alimentação do nosso circuito, poss
 
 ## Barras de pinos fêmea do tipo pin socket 2.54mm
 
-Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foram utilizadas barras de conectores do tipo pin socket 2.54mm.
+Para facilitar a instalação do LCD, dos sensores MQ4, MQ7 e do sensor de infra-vermelho que são módulos, foram utilizadas barras de conectores do tipo pin socket 2.54mm.
