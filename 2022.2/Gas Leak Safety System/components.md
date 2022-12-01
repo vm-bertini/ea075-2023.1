@@ -78,9 +78,9 @@ O push button escolhido é uma chave normalmente aberta (NA) que quando é press
 
 Os resistores de  10 kΩ foram usados no nosso projeto como resistores de pull-up no circuito do botão de liga e desliga e no circuito de leitura das saídas digitais dos sensores infravermelho. E um desses resistores foi utilizado como resistor de pull-down no circuito de reset do microcontrolador, visto que o ATMEGA328P reseta em nível lógico baixo (0).
 
-## Resistores de 20 kΩ
+## Resistor de 20 kΩ
 
-Como recomendação do datasheet do sensor de gás MQ6, utilizamos um resistor de 20 kΩ entre os pinos 3 e 5 do sensor.
+Conforme aplicação no datasheet do sensor de gás MQ6, utilizamos um resistor de 20 kΩ entre os pinos 3 e 5 do sensor.
 
 ## Cristal oscilador de 16 MHz
 
@@ -88,7 +88,7 @@ Para geração do clock do nosso dispositivo, estamos usando  um oscilador contr
 
 ## Capacitores de 22 pF
 
-Como recomendação do datasheet do cristal oscilador, foi adicionado esses 2 capacitores no circuito de clock. 
+Capacitores adicinados conforme recomendação no datasheet do microcontrolador para circuito de clock com o cristal oscilador.
 
 ## Capacitores de 0.33 uF e 0.1 uF
 
@@ -98,6 +98,6 @@ Como recomendação do datasheet do regulador de tensão, foi adicionado esses 2
 
 Utilizamos um conector jack DC fêmea para alimentação do nosso circuito, possibilitando que o circuito seje alimentado facilmente por fontes externas.
 
-## Barras de pinos fêmea do tipo soquete
+## Barras de pinos fêmea do tipo pin socket 2.54mm
 
-Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foi utilizado as mesmas barras de pinos encontradas no arduino UNO.
+Para facilitar a instalação do LCD, dos sensores MQ4,MQ7 e do sensor de infra-vermelho que são módulos, foram utilizadas barras de conectores do tipo pin socket 2.54mm.
