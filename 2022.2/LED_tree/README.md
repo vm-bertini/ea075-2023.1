@@ -119,7 +119,7 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
  
  A tabela abaixo mostra a lógica para acender cada um dos leds. L indica saída em baixo, H saída em alto e Z alta impedância (pino configurado como entrada).
  
-  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-charlieplexing.drawio.png" width="450" />
+  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/tabela_charlieplexing.png" width="450" />
  
  #### Debounce
  
@@ -155,7 +155,7 @@ A Figura abaixo mostra o esquemático simplificado para a montagem do projeto co
 
 A árvore de Natal será feita em forma de bordado, em um quadro circular de cerca de 18cm de diâmetro. Teremos 12 LEDs ligados na configuração Charlieplexing como explicado acima e a placa com o microcontrolador PIC será fixada no quadro do bordado, de forma a deixar o botão e o buzzer à vista. O desenho a seguir ilustra o que foi pensado para a estrutura física do projeto.
 
-<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-estrutura_fi%CC%81sica.drawio.png" width="450" />
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-estrutura_f%C3%ADsica.drawio.png" width="450" />
 
 
 ### Especificação de Algoritmos 
