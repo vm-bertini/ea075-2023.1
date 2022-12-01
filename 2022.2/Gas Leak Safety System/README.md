@@ -135,7 +135,7 @@ A seguir, será apresentado os fluxogramas que detalham o funcionamento do nosso
 
 O fluxograma a seguir exemplifica o funcionamento normal do sistema, detalhando as rotinas de operação descritas nos tópicos acima:
 
-![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
+![Alt](Gas_Safety_Sys-FluxogramaFuncionamento.png)
 
 Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudanças na rotina principal e que haveria uma rotina para cadastro dos números das equipes de segurança e resgate.
 
