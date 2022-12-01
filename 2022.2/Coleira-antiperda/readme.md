@@ -176,7 +176,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > https://makezine.com/projects/gps-cat-tracker-2/
 
-##Arquivos importantes
+## Arquivos importantes
 
 [Esquemático em pdf] https://drive.google.com/drive/folders/1JVpYACYJVL03-pkuDdKhLRD7i3tnIl3X?usp=sharing
 
