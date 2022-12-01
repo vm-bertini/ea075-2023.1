@@ -1,0 +1,52 @@
+Altium Designer Pick and Place Locations
+G:\Meu Drive\Unicamp\EA075\Nova pasta\ventsys\Project Outputs for Ventsys_V1I1\Pick Place\Generates pick and place files.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       30/11/22
+Time:       08:37
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment                Layer       Footprint              Center-X(mil) Center-Y(mil) Rotation Description                                                                                             
+F4         FIDUCIAL               BottomLayer FID_40X120D            3149.606      0.000         180      Fiducial                                                                                                
+F3         FIDUCIAL               BottomLayer FID_40X120D            11.811        2854.331      180      Fiducial                                                                                                
+X1         20MHz                  BottomLayer ECS-200-12-33-AGN-TR   1830.709      1070.866      180      "20 MHz ±25ppm Crystal 12pF 60 Ohms 4-SMD, No Lead"                                                     
+U6         FDC855N                TopLayer    FDC855N                3740.158      461.614       0        "N-Channel 30 V 6.1A (Ta) 1.6W (Ta) Surface Mount SuperSOT™-6"                                          
+U5         FDC855N                TopLayer    FDC855N                3740.158      1328.150      0        "N-Channel 30 V 6.1A (Ta) 1.6W (Ta) Surface Mount SuperSOT™-6"                                          
+U4         ADC104S                BottomLayer ADC104S021CIMM/NOPB    1313.976      1076.772      0        "10 Bit Analog to Digital Converter 4 Input 1 SAR 10-VSSOP"                                             
+U3         PIC16F877AT-I/PT       BottomLayer PIC16F877AT-I/PT       2246.063      1005.905      180      "PIC PIC® 16F Microcontroller IC 8-Bit 20MHz 14KB (8K x 14) FLASH 44-TQFP (10x10)"                      
+U2         FDC855N                TopLayer    FDC855N                3740.158      2190.748      0        "N-Channel 30 V 6.1A (Ta) 1.6W (Ta) Surface Mount SuperSOT™-6"                                          
+U1         FDC855N                TopLayer    FDC855N                3740.158      3057.284      0        "N-Channel 30 V 6.1A (Ta) 1.6W (Ta) Surface Mount SuperSOT™-6"                                          
+R6         10k                    BottomLayer 1206_RESISTOR          1900.591      346.779       270      "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric)  Thick Film"                                 
+R5         10k                    BottomLayer 1206_RESISTOR          2157.481      667.323       0        "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric)  Thick Film"                                 
+R4         10k                    TopLayer    1206_RESISTOR          2723.835      588.583       180      "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric)  Thick Film"                                 
+R3         10k                    TopLayer    1206_RESISTOR          1770.807      588.583       180      "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric)  Thick Film"                                 
+R2         10k                    TopLayer    1206_RESISTOR          817.779       588.583       180      "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric)  Thick Film"                                 
+R1         10K                    TopLayer    3313J-1-103E           3084.646      828.740       0        "10 kOhms 0.125W, 1/8W J Lead Surface Mount Trimmer Potentiometer Cermet 1.0 Turn Top Adjustment"       
+L1         NMTC-S16208XFYHSGY-24A TopLayer    NMTC-S16208XFYHSGY-24A 1770.807      1848.898      0        "LCD Character Display Modules & Accessories LCD Character STN Yellow LED Backlight"                    
+J14        TSM-105-01-T-SV        BottomLayer TSM-105-01-T-SV        2240.552      347.110       0        "Connector Header Surface Mount 5 position 0.100" (2.54mm)"                                             
+J13        1803426                TopLayer    1803426                4177.166      271.850       90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J12        1803439                TopLayer    1803439                0.000         346.850       270      "3 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical Through Hole"  
+J11        1803426                TopLayer    1803426                4177.166      673.425       90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J10        1803439                TopLayer    1803439                0.000         893.635       270      "3 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical Through Hole"  
+J9         1803426                TopLayer    1803426                4177.166      1138.386      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J8         1803426                TopLayer    1803426                4177.166      1539.960      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J7         1803439                TopLayer    1803439                -0.002        1440.419      270      "3 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical Through Hole"  
+J6         1803426                TopLayer    1803426                4177.166      2004.921      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J5         1803439                TopLayer    1803439                0.000         1987.204      270      "3 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical Through Hole"  
+J4         1803426                TopLayer    1803426                4177.166      2402.559      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J3         1803426                TopLayer    1803426                4177.166      2867.519      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J2         1803426                TopLayer    1803426                4177.166      3269.094      90       "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+J1         1803426                TopLayer    1803426                0.003         3269.094      270      "2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.150" (3.81mm) Vertical  Through Hole" 
+F2         FIDUCIAL               TopLayer    FID_40X120D            3149.606      0.000         0        Fiducial                                                                                                
+F1         FIDUCIAL               TopLayer    FID_40X120D            11.811        2854.331      0        Fiducial                                                                                                
+CV1        MPM-05-5               TopLayer    MPM-05-5               1490.158      2750.000      0        "Enclosed AC DC Converters 1 Output 5V 1A 80 ~ 264 VAC Input"                                           
+C3         22pF                   BottomLayer 0805_CAPACITOR         1664.370      1035.894      0        "22 pF ±5% 10V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"                                           
+C2         22pF                   BottomLayer 0805_CAPACITOR         1665.355      1106.299      0        "22 pF ±5% 10V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"                                           
+C1         0.1uF                  BottomLayer 0805_CAPACITOR         1313.976      958.661       180      "0.1µF ±10% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"                                               
+B3         TS04-66-70-BK-100-SMT  TopLayer    TS04-66-70-BK-100-SMT  2723.835      409.449       0        "Tactile Switch SPST-NO Top Actuated Surface Mount"                                                     
+B2         TS04-66-70-BK-100-SMT  TopLayer    TS04-66-70-BK-100-SMT  1770.807      406.496       0        "Tactile Switch SPST-NO Top Actuated Surface Mount"                                                     
+B1         TS04-66-70-BK-100-SMT  TopLayer    TS04-66-70-BK-100-SMT  817.780       406.496       0        "Tactile Switch SPST-NO Top Actuated Surface Mount"                                                     

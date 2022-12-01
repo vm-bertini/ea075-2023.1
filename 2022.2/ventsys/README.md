@@ -11,12 +11,21 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 | David Daminelli  | 169774  | Eng. Elétrica|
 | Giovanna Presta  | 173275  | Eng. Elétrica|
 
+## Arquivos Importantes
+
+[Esquemático em PDF](pdf/Ventsys%20V1I1.PDF)
+
+[Lista de Componentes](./components.md)
+
+[PCB](pdf/Ventsys%20V1I1%203D.PDF)
 
 ## Descrição do Projeto 
 
 Com o avanço da tecnologia, computadores com maiores capacidades de processamento foram desenvolvidos para resolver os problemas mais complexos. No entanto, essa capacidade de processamento faz com que os componentes eletrônicos dissepem altas quantidades de calor. Para que os computadores operem da maneira desejada e, principalmente, que no sejam danificados, é necessário um sistema de resfriamento que mantenha sua temperatura em um limiar especificado pelo fabricante. 
 
 Uma das formas mais simples de realizar essa função é utilizando ventilação forçada por meio de coolers. Porém, essa solução é custosa e inconveniente por conta da energia gasta e pelo ruído emitido. Nosso sistema resolve essas limitações ao acionar os ventiladores instalados em racks apenas quando a temperatura dos computadores é elevada, desligando caso contrário, mantendo a simplicidade e diminuindo os custos associados à ela.    
+
+Nosso sistema busca ser o mais genérico possível, possibilitando medir até 4 sensores de temperatura, os quais podem ser escolhidos e adaptados para comunicar-se com nosso sistema, além de ser possivel acionar até 4 pares de ventiladores. 
 
 ## Descrição Funcional
 
@@ -71,7 +80,7 @@ Apesar da versalidade, uma escolha que atende às especificações listadas é o
 
     Os sensores forneceram uma tensão proporcional à temperatura medida. Ao invés de usar as poucas portas de ADC disponíveis no PIC, uma melhor escolha é utilizar um ADC externo, possibilitando uma melhor resolução e um maior número de leituras.
 
-    O ADC escolhido deve ser capaz de comunicar-se via protocolo SPI com o microcontrolador e ler tensões de 0-5V.
+    O ADC escolhido deve ser capaz de comunicar-se via protocolo SPI com o microcontrolador e ler até 4 tensões de 0-5V.
 
 * **Atuador**
 
@@ -87,6 +96,8 @@ Disponível no arquivo `algoritmos`
 
 ## Referências
 
-https://www.ti.com/product/LM35?dcmp=dsproject&hqs=sandbuy&#samplebuy
+https://circuitdigest.com/microcontroller-projects/pic16f877a-spi-communication-tutorial
 
-https://www.microchip.com/en-us/product/PIC16F877
+https://circuitdigest.com/microcontroller-projects/16x2-lcd-interfacing-with-pic-microcontroller
+
+Notas de aula Prof. José Raimundo de Oliveira e Wu Shin-Ting
