@@ -1,5 +1,3 @@
-### Lista de componentes
-
 > - 1 Microcontrolador ATMEGA328P;
 > - 1 Cristal Oscilador 16MHz; 
 > - 2 capacitores 22pF;
@@ -10,5 +8,5 @@
 > - 1 conector fêmea 2 vias;
 > - 1 botão para reset;
 > - 1 Conector USB Femea para receber programação;
-> - 1 placa PCB 20x50 mm;
-> - Conector USB B
+> - 1 placa PCB TBD mm;
+> - 1 conector USB-B
