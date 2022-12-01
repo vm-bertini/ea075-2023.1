@@ -18,8 +18,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 >
 >[Lista de Componentes](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/components.md)
 >
->[PCB](link para imagens/pdf PCB)
-
+>[PCB]((https://github.com/danteroque/ea075/tree/main/2022.2/caixaDeRemedio/pdf)
 ## Descrição do Projeto
 
 > A motivação do projeto é criar uma caixa de remédios automática para ajudar as pessoas a não se perderem nos horários de tomar os seus remédios, principalmente pessoas idosas e com perda de memória. Além disso, alguns remédios, como antibióticos, precisam ser tomados nos horários corretos, e todo o tratamento pode não dar certo caso sejam esquecidos. Vale ressaltar, que qualquer pessoa pode utilizar a caixa de remédios automatizada, não somente usuários com perda de memória, pois fornece praticidade para uma tarefa chata do dia a dia.
