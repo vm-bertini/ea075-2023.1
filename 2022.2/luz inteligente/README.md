@@ -72,9 +72,11 @@ A alimentação do circuito deverá ser de 5V.
 ## Estrutura do Sistema
 
 - **Estrutura Inicial Proposta:**
+
 ![DIAGRAMA-EA075](https://user-images.githubusercontent.com/112783871/199125714-ed989c85-57b7-41f3-ab7e-61b6ba271a6a.png)
 
 - **Visão 3D:**
+
 ![luz_inteligente_3D](https://user-images.githubusercontent.com/73912017/204940767-647e4c15-a11e-4e04-b0d9-0c7c618618fe.png)
 
 ## Referências
