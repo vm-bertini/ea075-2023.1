@@ -14,7 +14,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Arquivos Importantes 
 
->[Esquemático em PDF](link para imagens/pdf esquemático)
+>[Esquemático em PDF](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/pdf/esquematico.pdf)
 >
 >[Lista de Componentes](https://github.com/danteroque/ea075/blob/main/2022.2/caixaDeRemedio/components.md)
 >
