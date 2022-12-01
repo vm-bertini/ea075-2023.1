@@ -117,6 +117,10 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
   
  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-charlieplexing.drawio.png" width="450" />
  
+ A tabela abaixo mostra a lógica para acender cada um dos leds. L indica saída em baixo, H saída em alto e Z alta impedância (pino configurado como entrada).
+ 
+  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-charlieplexing.drawio.png" width="450" />
+ 
  #### Debounce
  
  Para evitar o efeito de repique ao acionar o botão, ou seja, oscilações indesejadas que podem causar mal funcionamento no circuito, será implementado, via hardware, um capacitor em pararelo com o botão de modo a suavizar a transição de níveis (nível lógico baixo para o alto e vice versa) e com isso impedir interpretações erradas de acionamento de botão [6]. A Figura abaixo mostra o esquemático para o circuito de debounce.
