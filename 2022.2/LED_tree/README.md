@@ -184,7 +184,15 @@ Os pdfs com a vista do esquemático e da pcb podem ser encontrados na pasta [pdf
 
 ## Implementação
 
-O projeto está sendo implementado. Mais novidades em breve 😊
+A implementação foi feita parcialmente, sem o buzzer, mas com os leds e a interrupção pelo botão. O código está na pasta [code](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/code)
+
+Um vídeo do projeto funcionando está [aqui](https://drive.google.com/file/d/1Tzq5OQSmFOgNobduqd_XC_QDgS8tV93b/view?usp=sharing).
+
+Por fim, duas imagens da montagem final.
+
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final1.jpeg width="450" />
+
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final2.jpeg width="450" />
 
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
