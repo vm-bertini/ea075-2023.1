@@ -190,9 +190,9 @@ Um vídeo do projeto funcionando está [aqui](https://drive.google.com/file/d/1T
 
 Por fim, duas imagens da montagem final.
 
-<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final1.jpeg width="450" />
-
 <img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final2.jpeg width="450" />
+
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final1.jpeg width="450" />
 
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
