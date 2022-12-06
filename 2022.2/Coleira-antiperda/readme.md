@@ -163,6 +163,15 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 >![EA075_E2-COMUNICAO_BT drawio](https://user-images.githubusercontent.com/91965153/199145020-3b9287cf-9d2b-4175-86d6-4dc3bbd4018c.png)
 
+## Arquivos importantes
+
+[Esquemático em pdf] https://drive.google.com/drive/folders/1JVpYACYJVL03-pkuDdKhLRD7i3tnIl3X?usp=sharing
+
+[Lista de Componentes] https://github.com/alefeletrica/ea075/blob/1affdf27c7cf582892379fe2443c33ef3eea1c3a/2022.2/Coleira-antiperda/Lista_componentes
+
+[PCB] https://drive.google.com/drive/folders/1JVpYACYJVL03-pkuDdKhLRD7i3tnIl3X?usp=sharing
+
+
 ## Referências
 > https://www.electronica-pt.com/radio-frequencia
 
@@ -175,4 +184,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > https://repositorio.ucs.br/xmlui/bitstream/handle/11338/2455/TCC%20Marcelo%20Sala%20Reck.pdf?sequence=3
 
 > https://makezine.com/projects/gps-cat-tracker-2/
+
+
+
+
+
+
 
