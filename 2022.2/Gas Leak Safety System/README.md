@@ -12,9 +12,19 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
  | Vitor Semenzato do Amaral  | 207054  | Eng. Elétrica|
 
 
+## Arquivos Importantes
+
+[Esquemático em PDF](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/pdf/Esquematico-E3_Gas_Leak_Safety_System.pdf)
+
+[Lista de componentes](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/components.md)
+
+[PCB - Top View](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Top_View.png)
+
+[PCB - Bottom View](https://github.com/vtrsa/ea075/blob/main/2022.2/Gas%20Leak%20Safety%20System/images/3D_model_Bottom_View.png)
+
 ## Descrição do Projeto
 
-O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer,sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que no futuro o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
+O objetivo deste projeto é desenvolver um detector de gases versátil que consiga realizar a detecção de diferentes tipos de gases nocivos utilizando um mesmo dispositivo. O usuário poderá escolher o tipo de gás que o sistema irá ser responsável de reconhecer,sendo possível identificar até 3 gases diferentes simultaneamente, sendo eles o gás hidrogênio, o gás inflamável (GLP) e o gás metano. Além disso, ao identificar uma concentração de gás acima da especificada, um buzzer será acionado no local que só desligará após a falha ser reconhecida pelo usuário, caso a concentração ainda esteja superior ao permitido, o buzzer não desligará. Desejamos também, que em um futuro protótipo, o nosso dispositivo consiga enviar SMS para números pré-programados alertando sobre o local estar em condição de risco. A nossa maior motivação para desenvolver este projeto é trazer para o mercado um dispositivo que atenda diversas aplicações e instalações e consiga detectar diferentes tipos de gases. Iremos expandir a quantidade de gases que o dispositivo consegue detectar em protótipos futuros, o deixando cada vez mais versátil. Com isso, queremos solucionar o problema de se ter diferentes tipos de sensores numa instalação de diferentes fabricantes que acabam dificultando a integração aos sistemas de segurança.
 O nosso produto visa atender principalmente indústrias e laboratórios químicos. Não temos um valor para nosso produto, porém, a ideia é que seu custo seja competitivo com o dos sensores de leituras específicas do mercado, de forma que como o nosso produto consegue ler diferentes tipos de gases, ele seja mais atrativo do que os demais sensores.
 
 ## Descrição Funcional
@@ -33,17 +43,21 @@ O primeiro protótipo ao detectar uma ocorrência de risco irá acionar um buzze
 - Monitoramento dos níveis de concentração de determinados gases de interesse em um ambiente desejado;
 - Registro do número de pessoas presentes em determinado local;
 - Acionar indicador sonoro para alerta de perigo;
-- Envio de mensagem SMS para números predeterminados (Futuro);
-   
+- Envio de mensagem SMS para números predeterminados (em um futuro protótipo);
+
+Obs: Nesse primeiro protótipo não será disponibilizado a funcionalidade de envio de mensagens SMS.
+
 ### Configurabilidade
 
 Sendo o objetivo primário do sistema o monitoramento da concentração de gases potencialmente nocivos em um ambiente, o circuito terá margem para as seguintes configurações:
 
 - Modelo do sensor de gás integrado ao sistema;
 - Determinação do nível de concentração máxima do gás permitida no local;
-- Determinação dos números de telefone para envio de SMS (Futuro).
+- Determinação dos números de telefone para envio de SMS (em um futuro protótipo).
 - Determinação de quais gases o sistema irá ser responsável de realizar o monitoramento;
- 
+
+Obs: Nesse primeiro protótipo não será disponibilizado a configurabilidade dos números de telefone para envio de mensagens SMS.
+
 ### Eventos
 
 O sistema estará constantemente monitorando os níveis de concentração de determinado gás em um ambiente e a quantidade de pessoas presentes neste mesmo local. Desta forma, deverá realizar o tratamento dos seguintes eventos principais:
@@ -78,9 +92,9 @@ O diagrama a seguir ilustra os blocos funcionais do sistema frente aos eventos q
 
 Estes sensores, de modo geral, apresentam um material sensível ao gás que precisa ser detectado. Em contato com o ar puro sua condutividade elétrica é baixa enquanto na presença do gás desejado sua condutividade aumenta com a concentração. Desta forma, essa diferença de condutividade é explorada para obtenção de um sinal indicador da presença da substância desejada. 
 
-Os sensores utilizados nesta aplicação serão o MQ-8, MQ-2 e MQ-4, responsáveis pela detecção de gás hidrogênio, gás inflamável (GLP) e gás metano, respectivamente. 
+Os sensores utilizados nesta aplicação serão o MQ-7, MQ-6 e MQ-4, responsáveis pela detecção de monóxido de carbono, gás inflamável (GLP) e gás metano, respectivamente. 
 
-O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-2 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-8 será conectado diretamente à porta analógica do microcontrolador. 
+O sinal de saída de cada um destes componentes é analógico, entretanto, a conexão dos sensores MQ-7 e MQ-4 com o microcontrolador será feita via porta digital visto que estes componentes possuem módulos comerciais com conversão AD integrada. O sensor MQ-6 será conectado diretamente à porta analógica do microcontrolador. 
 
 Os limites físicos dos sensores são listados em seus respectivos datasheets, mas de modo geral para operarem de maneira adequada deve-se evitar:
 
@@ -105,7 +119,7 @@ Caso um gás seja detectado acima do nível de concentração especificado um al
 
 **Display LCD**
 
-O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desablitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma entrada analógica do microcontrolador através de resistores de valores diferentes. Portanto o botão pressionado pode ser determinado através da tensão medida pelo ADC, onde como cada botão estará associado a um resistor diferente, cada botão enviará um valor de tensão distinto para a entrada analógica.
+O shield contém um display alfanumérico de 2 linhas de 16 colunas, com backlight azul. Para a sua configuração, é necessário que se tenha 7 saídas do microcontrolador dedicadas ao display, sendo 4 para fazer com que o mesmo opera no modo 4 bits ( que oferece uma melhor resolução), 1 saída dedicada para controle do backlight do display, 1 saída para habilitar e desabilitar o shield e 1 saída de RS (Data or Signal Display Selection). Além disso, a leitura dos botões é feita através de parâmetros analógicos. Os cinco botões do shield serão ligados à uma única entrada analógica do microcontrolador, sendo possível identificar qual botão foi pressionado por meio dos níveis de tensão medidos pelo ADC do microcontrolador, pois o módulo envia valores de tensão distintos para a entrada analógica. O display, por ser um módulo comercial de arduino opera com uma tensão de 5V. As portas do microcontrolador usadas para isso foram as portas 16,17,18 e 19 para o modo 4 bits, a porta 11 para o pino de RS do LCD, a porta 12 para habilitar e desabilitar o display, a porta 13 para controle do backlight e a porta 26 para leitura dos botões.
 
 No projeto, os botões serão usados para navegar pelo display,auxiliando o usuário a verificar a concentração dos gases em tempo rea. No futuro, também será possível usar o display para configurar números de telefone para envio de SMS.
 
@@ -118,11 +132,11 @@ Após listarmos todos os sinais que iremos precisar a partir dos sensores e atua
 
 A seguir, será apresentado os fluxogramas que detalham o funcionamento do nosso dispositivo, o primeiro mostra em detalhe a rotina de inicialização do sistema, que é por meio dela que o usuário define quais gases ele quer que seja lido pelo sistema:
 
-![Alt](Gas_Safety_Sys-FluxogramaInicializacao.png)
+![Alt](Gas_Safety_Sys-FluxogramaInicializacao_.png)
 
 O fluxograma a seguir exemplifica o funcionamento normal do sistema, detalhando as rotinas de operação descritas nos tópicos acima:
 
-![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento.png)
+![Alt](Gas_Safety_Sys-Page-FluxogramaFuncionamento_.png)
 
 Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudanças na rotina principal e que haveria uma rotina para cadastro dos números das equipes de segurança e resgate.
 
@@ -130,8 +144,7 @@ Este, mostra como seria o sistema operando com o módulo SMS, mostrando as mudan
 
 Partindo das especificações técnicas dos sensores e atuadores selecionados para o projeto e dos fluxogramas acima, definimos que os seguintes pinos do controlador ATMEGA328P que serão usados para o nosso projeto:
 
-![Alt](Gas_Safety_Sys-Microcontrolador.png)
-
+![Alt](Gas_Safety_Sys-Micro_controlador.png)
 
 ## Referências
 
@@ -151,11 +164,6 @@ https://datasheetspdf.com/pdf-file/1311838/ETT/E18-D80NK-N/1
 
 https://www.filipeflop.com/produto/buzzer-ativo-5v/ 
 
-
-
-
-
-
 https://www.filipeflop.com/img/files/download/Datasheet_Sensor_Gas_MQ2.pdf
 
 https://www.filipeflop.com/img/files/download/DOC_SIM900_Hardware%20Design_V2.00.pdf
@@ -163,6 +171,10 @@ https://www.filipeflop.com/img/files/download/DOC_SIM900_Hardware%20Design_V2.00
 https://www.filipeflop.com/img/files/download/SIM808_Hardware+Design_V1.00.pdf
 
 https://www.filipeflop.com/produto/sensor-de-proximidade-infravermelho/
+
+https://br.mouser.com/datasheet/2/389/cd00000444-1795274.pdf
+
+https://br.mouser.com/datasheet/2/308/NDS7002A_D-1522662.pdf
 
 https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
 
