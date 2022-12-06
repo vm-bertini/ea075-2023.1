@@ -1,4 +1,4 @@
-# Árvore Natalina de LEDs
+#  🎄 Árvore Natalina de LEDs 🎅
 
 # LED tree
 
@@ -106,7 +106,7 @@ Para o controle do projeto definiu-se como unidade micro-controladora o PIC 16F8
 
 Por fim, para a alimentação do microcontrolador serão utilizados 3 pilhas AAA de 1,5V cada totalizando uma tensão de 4,5V.
 
-Em sequência serão tratadas a técnica de Charlieplexing, para a matriz de LEDs, e o problema de debounce proveniente do acionamento do botão.
+Em sequência serão tratadas a técnica de Charlieplexing, para a matriz de LEDs, e o problema de debounce proveniente do acionamento do botão. Além disso, será mostrado o esquemático final para a montagem do projeto.
 
 
 #### Charlieplexing
@@ -116,6 +116,10 @@ Os LEDs serão ligados com a configuração Charlieplexing, que permite um contr
 O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configuração proposta. Nesse caso, para que o LED 1 seja aceso, precisamos que IO 3 esteja em nível alto, IO 0 em nível baixo e IO 1 e IO 2 como _input_.
   
  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-charlieplexing.drawio.png" width="450" />
+ 
+ A tabela abaixo mostra a lógica para acender cada um dos leds. L indica saída em baixo, H saída em alto e Z alta impedância (pino configurado como entrada).
+ 
+  <img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/tabela_charlieplexing.png" width="450" />
  
  #### Debounce
  
@@ -137,6 +141,13 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
 > - padrões de comunicação a serem adotados;
 > - circuitos de sincronização de sinais temporais.-->
 
+#### Especificações elétricas
+
+A Figura abaixo mostra o esquemático simplificado para a montagem do projeto com base em toda descrição mencionada anteriormente.
+
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/esquemático_elétrico.png" width="450" />
+
+
 #### Especificações físicas
 <!--- > 
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
@@ -144,7 +155,7 @@ O diagrama abaixo mostra uma versão simplificada (sem os resistores) da configu
 
 A árvore de Natal será feita em forma de bordado, em um quadro circular de cerca de 18cm de diâmetro. Teremos 12 LEDs ligados na configuração Charlieplexing como explicado acima e a placa com o microcontrolador PIC será fixada no quadro do bordado, de forma a deixar o botão e o buzzer à vista. O desenho a seguir ilustra o que foi pensado para a estrutura física do projeto.
 
-<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-estrutura_fi%CC%81sica.drawio.png" width="450" />
+<img src="https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/Projeto-estrutura_f%C3%ADsica.drawio.png" width="450" />
 
 
 ### Especificação de Algoritmos 
@@ -170,6 +181,18 @@ Como cada instrução está associada a uma palavra de memória e estima-se para
 O projeto da placa para o projeto foi realizado utilizando o software [Kicad](https://www.kicad.org/download/) e pode ser encontrado completamente em [scr_zip](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/scr_zip).
 
 Os pdfs com a vista do esquemático e da pcb podem ser encontrados na pasta [pdf](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/pdf) e os arquivos gerber na pasta [gerber](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/gerber).
+
+## Implementação
+
+A implementação foi feita parcialmente, sem o buzzer, mas com os leds e a interrupção pelo botão. O código está na pasta [code](https://github.com/juliaplazari/ea075/tree/main/2022.2/LED_tree/code)
+
+Um vídeo do projeto funcionando está [aqui](https://drive.google.com/file/d/1Tzq5OQSmFOgNobduqd_XC_QDgS8tV93b/view?usp=sharing).
+
+Por fim, duas imagens da montagem final.
+
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final2.jpeg width="450" />
+
+<img src= https://github.com/juliaplazari/ea075/blob/main/2022.2/LED_tree/images/montagem_final1.jpeg width="450" />
 
 ## Referências
 <!--- > Seção obrigatória. Inclua aqui referências utilizadas no projeto. -->
