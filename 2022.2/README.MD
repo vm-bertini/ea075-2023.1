@@ -10,7 +10,7 @@ Respirou aliviada...
 Não fossem os sistemas [Smart Clothesline](https://github.com/pdpcosta/ea075/blob/main/2022.2/SmartClothesline/SmartClothesline.md) e [SmartWin](https://github.com/pdpcosta/ea075/tree/main/2022.2/SmartWin), a toalha de mesa deixada no varal estaria encharcada, e a sala alagada.
 
 Paula chegou em casa e teve que gritar "Xô" para as renas que estavam na frente da garagem. 
-Ela ainda não tinha se acostumado com aquela cena desde que seus ilustres visitantes chegaram, há alguns dias atrás.
+Ela ainda não tinha se acostumado com aquela cena, desde a chegada de seus ilustres visitantes, há alguns dias atrás.
 
 Não havia tempo a perder... Entrou em casa, cumprimentou seus hóspedes, e subiu correndo para tomar um banho. Aquele era um dia de festa e, em poucos instantes, a casa estaria cheia.
 
