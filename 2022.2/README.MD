@@ -2,7 +2,7 @@
 
 Paula estava certa de que seu marido adoraria aquele presente.
 Afinal, ele sempre contava dos aquários que teve na infância e, agora que a vida estava um pouco mais estabilizada, da vontade que tinha de se dedicar ao hobby novamente.
-Paula não economizou num [Aquário Inteligente](https://github.com/pdpcosta/ea075/blob/main/2022.2/Aquario_Inteligente/ea075-E1.md) com inúmeros sensores para garantir o melhor habitat para os peixinhos.
+Paula não economizou. Investiu no melhor [Aquário Inteligente](https://github.com/pdpcosta/ea075/blob/main/2022.2/Aquario_Inteligente/ea075-E1.md), com inúmeros sensores para garantir o melhor habitat para os peixinhos.
 
 Enquanto divagava pelo shopping, a sua [Smart Bangle](https://github.com/pdpcosta/ea075/tree/main/2022.2/smart_bangle) vibrou e se iluminou, avisando que a montagem do aquário tinha sido concluída e que ela poderia ir buscá-lo.
 Agradeceu a atenção dos vendedores que a ajudaram a colocar o aquário no carro e, mal afivelou o cinto, o céu desabou, num forte temporal.
