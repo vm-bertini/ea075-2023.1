@@ -44,7 +44,7 @@ O marido de Paula rapidamente pediu para que todos saíssem para o jardim até q
 Papai Noel exclamou, vermelho de raiva: "Maldito Grinch! Sempre sabotando o meu assado!¨
 No mesmo instante, a [Caixa de Remédio](https://github.com/pdpcosta/ea075/tree/main/2022.2/caixaDeRemedio) do Papai Noel piscou e apitou, lembrando-o de seu remédio para pressão alta.
 
-Naquele momento, o duendezinho grita: Gente, onde está o Totó?
+De repente, o duendezinho grita: Gente, onde está o Totó?
 O aplicativo [Coleira Antiperda](https://github.com/pdpcosta/ea075/tree/main/2022.2/Coleira-antiperda) de fato estava sinalizando que o Totó havia saído do alcance de monitoramento.
 O mistério não demorou muito para ser resolvido. O Totó havia fugido para a casa do vizinho, que já tinha o sistema [KeePet Comfort](https://github.com/pdpcosta/ea075/tree/main/2022.2/KeePet_Comfort) instalado.
 Não sem resistência, o bichinho teve que ser trazido de volta no colo, enquanto Paula falava baixinho no seu ouvido: "Ei, fica calmo, você vai ter uma boa surpresa quando abrir seu presente."
