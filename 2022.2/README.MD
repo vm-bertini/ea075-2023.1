@@ -51,6 +51,6 @@ Não sem resistência, o bichinho teve que ser trazido de volta no colo, enquant
 
 E assim, com todos de volta dentro da casa, Paula olhou ao seu redor e, no meio de tanta gente querida e barulhenta, já era fato que o Natal havia chegado e, com ele, a finalização de mais um ciclo.
 Era chegada a hora de ligar a [LED Tree](https://github.com/pdpcosta/ea075/tree/main/2022.2/LED_tree) que, ao iluminar o ambiente, trouxe sorrisos e suspiros de gratidão.
-Naquele momento, Paula refletiu que a única certeza da vida é que ela é cheia de maus-contatos, bugs e que nem sempre nossa estrela brilha como deveria, mas que se temos amor e pessoas especiais ao nosso lado, a jornada sempre vale a pena.
+Naquele momento, Paula refletiu que a única certeza da vida é que ela é cheia de maus-contatos, bugs, e que nem sempre nossa estrela brilha como deveria, mas que se temos amor e pessoas especiais ao nosso lado, a jornada sempre vale a pena.
 
 Enfim, ela olhou para todos e desejou: Feliz Natal!
