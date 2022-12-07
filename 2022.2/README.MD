@@ -17,7 +17,7 @@ Não havia tempo a perder... Entrou em casa, cumprimentou seus hóspedes, e subi
 A campainha tocou assim que ela terminou de passar o batom.
 
 Paula abriu a porta para o primeiro convidado e lá veio a família de duendes, incluindo seu integrante mais novo que, ao ver a decoração, ficou tão excitado que começou a bater palmas de alegria. Neste instante, todas as luzes se apagaram e a mãe Duende deu um grito histérico de pavor.
-Paula tentou acalmá-la: "Não se assuste! É só meu novo sistema de [Luz Inteligente](https://github.com/pdpcosta/ea075/tree/main/2022.2/luz%20inteligente) que reagiu às palmas do pequeno Duente." 
+Paula tentou acalmá-la: "Não se assuste! É só meu novo sistema de [Luz Inteligente](https://github.com/pdpcosta/ea075/tree/main/2022.2/luz%20inteligente) que reagiu às palmas do pequeno duende." 
 Rapidamente, o sistema entendeu que haviam pessoas na sala, religando as luzes. Aprendido o truque, seguiram-se alguns instantes do pequeno duendezinho brincando de apagar as luzes com palmas até uma repreensão mais assertiva do papai Duende.
 
 Após deixar os convidados confortáveis, Paula pediu licença para ir até a cozinha a tempo de ver Mamãe Noel retornando do jardim com um belo pé de alface recém-colhido.
