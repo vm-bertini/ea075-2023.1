@@ -28,7 +28,7 @@ _ "Ahhh sim Mamãe Noel, meu novo [Sistema de Irrigação Automático](https://g
 Mal terminou de falar, Paula já percebeu Mamãe Noel olhando para o Papai Noel como quem diz: "Não exijo nada menos que isto neste Natal!"
 Papai Noel despistou, fingindo que estava concentrando colocando o assado no forno.
 
-Neste momento, o Totó entra correndo na cozinha e quase derruba o Papai Noel, que solta uma risada alta e gostosa: Ho, Ho, Ho. Todos saem correndo atrás do pequeno e rápido cachorrinho, para garantir que ele não cause estragos na decoração da festa. Enquanto Totó corria desvairado pela sala e o duendezinho não parava de dar risada com as peripécias do novo amiguinho, a campainha tocou novamente.
+Neste momento, o Totó entra correndo na cozinha e quase derruba o Papai Noel, que solta uma risada alta e gostosa: Ho, Ho, Ho. Todos saem correndo atrás do pequeno e rápido cachorrinho, para garantir que ele não causasse estragos na decoração da festa. Enquanto Totó corria desvairado pela sala e o duendezinho não parava de dar risada com as peripécias do novo amiguinho, a campainha tocou novamente.
 
 Chegaram, ao mesmo tempo, vários alunos de Paula e o Unicórnio, que disse ter sido convidado por uma de suas alunas. 
 
