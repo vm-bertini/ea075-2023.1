@@ -50,7 +50,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
 
-## Especificações (NOVO)
+## Especificações (⚠️ NOVO ⚠️)
 
 ### Especificação Estrutural
 
