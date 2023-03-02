@@ -15,6 +15,6 @@ Nesta segunda entrega:
 Caso não tenha experiência com edição em Markdown, vide referência: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 Existem também múltiplas ferramentas para edição de Markdown como, por exemplo, [StackEdit](https://stackedit.io/).
 
-Para a entrega E2, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075-2023.1/blob/main/templates/ea075-E2-template.md).
+Para a entrega E2, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/teaching-FEEC/ea075-2023.1/blob/main/templates/ea075-E2-template.md).
 
 > Tudo o que aparecer neste modo de citação se refere a algo que deve ser substituído pelo indicado. 
