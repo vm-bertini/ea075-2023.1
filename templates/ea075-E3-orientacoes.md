@@ -1,4 +1,4 @@
-# 2022.2 EA075 - Projeto - E3 - Entrega Final
+# 2023.1 EA075 - Projeto - E3 - Entrega Final
 
 ## Instruções Gerais
 
@@ -7,7 +7,7 @@ O objetivo geral do projeto final desta disciplina é dar a oportunidade dos alu
 Nesta última entrega:
  * É suposto que você continue editando o projeto no fork criado anteriormente.
  * Faça o commit dos arquivos associados a esta entrega, conforme descrito nas seções a seguir.
- * Quando tudo estiver pronto para entrega, crie nova uma tag de release no repositório identificada como `2022.2_EA075_E3`.
+ * Quando tudo estiver pronto para entrega, crie nova uma tag de release no repositório identificada como `2023.1_EA075_E3`.
  * Até a data de submissão estabelecida, crie um pull request para este repositório.
 
 ## Componentes
@@ -39,6 +39,6 @@ project
 
 ## Orientações para edição do arquivo README.md do projeto
 
-Para a entrega E3, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/pdpcosta/ea075/blob/main/templates/ea075-E3-template.md). Toda e qualquer alteração do projeto em relação à entrega E2 deve ser explicitada e justificada.
+Para a entrega E3, o README.md do repositório deve ser atualizado [segundo o modelo disponibilizado neste link](https://github.com/teaching-FEEC/ea075-2023.1/blob/main/templates/ea075-E3-template.md). Toda e qualquer alteração do projeto em relação à entrega E2 deve ser explicitada e justificada.
 
 > Tudo o que aparecer neste modo de citação se refere a algo que deve ser substituído pelo indicado. 
