@@ -1,4 +1,4 @@
-# `<Título em Português do Projeto>`
+# `<E1: Horta automatizada>`
 # `<Project Title in in English>`
 
 ## Apresentação
@@ -9,8 +9,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
 > |Nome  | RA | Curso|
 > |--|--|--|
-> | Nome1  | 123456  | Eng. Elétrica|
-> | Nome2  | 123456  | Eng. Elétrica|
+> | Nome2 | 123456  | Eng. Elétrica|
+> | Mariana Figueiredo Menezes | 248101 | Eng. Elétrica|
 
 
 ## Descrição do Projeto
@@ -27,9 +27,22 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
+O projeto tem como as principais funcionalidades:
+- Molhar a planta;
+- Fertilizar o solo;
+- Monitorar e avisar sobrea  quantidade de fertilizante no reservatório.
+
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+
+Quanto as configurabilidades, é possivel que o usuario altere os limiares pré-estabelecidos de acordo com sua vontade. Os limiares disponiveis para alteração são:
+- quantidade de água a cada irrigação;
+- quantidade de fertilizante;
+- padrão para o que seria "criticamente seco", "seco" e "úmido";
+- padrão para o que seria "nível baixo de nutriente na planta" e "nível bom de nutriente na planta";
+- salvar diferentes padrões nomeados de acordo com a espécie de planta;
+- escolher um padrão comum pré-estabelecido de plantas.
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
