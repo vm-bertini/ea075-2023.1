@@ -52,16 +52,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > semelhante a uma coreografia.
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/viniandrs/ea0752023.1/main/projetos/cacto_dancante/images/diagrama_estrutural.png">
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+> Por enquanto não foram utilizadas referências
