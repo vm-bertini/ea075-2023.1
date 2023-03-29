@@ -14,42 +14,39 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> Com o intuito de tornar os lares dos estudantes de engenharia elétrica ambientes mais descontraídos, utilizaremos os conhecimentos adquiridos 
-> na disciplina de Sistemas Embarcados para criar um brinquedo interativo que fará todos os alunos da FEEC dançarem: o cacto dançante. 
-> O sistema será composto por um detector de áudio que captará os sons produzidos pelo ambiente e os reproduzirá de maneira distorcida e engraçada
-> enquanto dança.
+> Com o intuito de tornar os lares dos estudantes de engenharia elétrica mais descontraídos, utilizaremos os conhecimentos adquiridos 
+> na disciplina de Sistemas Embarcados para desenvolver um brinquedo interativo que fará todos os alunos da FEEC dançarem: o cacto dançante. 
+> O sistema terá um microfone que será usado para gravar áudios que serão reproduzidos de maneira distorcida e engraçada enquanto o boneco dança.
 
 ## Descrição Funcional
-> O cacto dançante deverá ficar em modo de economia de energia enquanto não há nenhum barulho no ambiente externo. Quando um barulho consideravelmente
-> alto for detectado, ele deverá armazenar o som do ambiente enquanto este não ficar abaixo do limiar de detecção. Em seguida, ele deverá distorcer o
-> som gravado e dançar com o uso de motores.
+> O cacto dançante possuirá os botões "gravar" e "dançar". Para gravar um áudio, basta manter o botão "gravar" pressionado. Ao pressionar o botão dançar,
+> o cacto reproduzirá o áudio armazenado em sua memória de maneira distorcida enquanto dois motores o farão rebolar. Caso não tenha nenhum áudio gravado
+> na memória do brinquedo, um áudio padrão será reproduzido.
 
 ### Funcionalidades
-> **Modo economia de energia:** enquanto estiver ligado, o sistema deve ficar em modo de baixo consumo de energia até que um som acima de um valor limiar
-> seja detectado. 
-> **Detecção de áudio:** ao detectar um som acima do valor de limiar, o sistema deve recordar todo som do ambiente até que este som fique abaixo do valor
-> limiar. O som detectado deve ser armazenado na memória do dispositivo. 
-> **Cantar e dançar:** Após recordar o som, o sistema deverá distorcê-lo e reproduzi-lo através de um alto falante enquanto dança utilizando um conjunto
-> de motores.
+> **Gravador de áudio:** o brinquedo permitirá que o usuário grave sua própria voz cantando ou sua música favorita para o cacto dançar.  
+> **Cantar e dançar:** o sistema reproduzirá o áudio gravado com uma voz engraçada enquanto dança.
 
 ### Configurabilidade
-> O sistema funcionará continuamente enquanto estiver ligado.
+> O usuário deve gravar um áudio na memória do brinquedo, caso contrário um áudio padrão com o cacto falando "cante uma música para mim!" será 
+> reproduzido sem que o brinquedo dance. 
 
 ### Eventos
 > * **Eventos periódicos:**
-> * Checagem de som ambiente
+> * O brinquedo não possui nenhum comportamento passivo.
 
 > * **Eventos não-periódicos:**
 > * Iniciar gravação
-> * Finalizar gravação
-> * Dançar
+> * Parar a gravação
+> * Iniciar a dança
+> * Parar a dança
 
 ### Tratamento de Eventos
-> * Início da gravação: quando o microfone detectar um som acima de um valor limiar, ele começa a gravar o áudio do ambiente.
-> * Fim de gravação: enquanto o sistema estiver gravando, se o microfone detectar que o volume do som ambiente ficou abaixo do valor limiar, a
-> gravação deve ser encerrada e o arquivo de áudio armazenado na memória do microcontrolador.
-> * Dançar: após a finalização da gravação, o dispositivo deve reproduzir o áudio distorcido enquanto ativa os motores de maneira sincronizada, 
-> semelhante a uma coreografia.
+> * Início da gravação: quando o botão gravar for pressionado, o cacto começa a gravar o áudio através do microfone.
+> * Parar gravação: quando o botão for solto, o cacto para a gravação e armazena o áudio na memória do dispositivo.
+> * Iniciar a dança: quando o botão dançar for pressionado, o cacto reproduzirá o áudio em sua memória de maneira distorcida enquanto dança. Caso não
+> possua áudio nenhum em sua memória, um áudio padrão será reproduzido sem que o brinquedo dance.
+> * Parar dança: caso o brinquedo comece a dançar, ele irá parar se o botão dançar for pressionado novamente ou após três reproduções completas do áudio.
 
 ## Descrição Estrutural do Sistema
 > <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/viniandrs/ea075-2023.1/main/projetos/cacto_dancante/images/diagrama_estrutural.png">
