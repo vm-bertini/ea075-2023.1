@@ -52,7 +52,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > semelhante a uma coreografia.
 
 ## Descrição Estrutural do Sistema
-> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/viniandrs/ea0752023.1/main/projetos/cacto_dancante/images/diagrama_estrutural.png">
+> <img title="a title" alt="Alt text" src="https://raw.githubusercontent.com/viniandrs/ea075-2023.1/main/projetos/cacto_dancante/images/diagrama_estrutural.png">
 
 ## Referências
 > Por enquanto não foram utilizadas referências
