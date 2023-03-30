@@ -13,11 +13,6 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 
 ## Descrição do Projeto
-### Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-### Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-### Qual problema vocês pretendem solucionar?
-### Quem são os potenciais usuários?
-### É possível estabelecer um valor econômico associado?
 > 
 > Hoje em dia, observa-se o surgimento de cada vez mais estufas controladas, pois são um ambiente controlado em que plantações podem ser monitoradas e os aspectos físicos do ambiente podem ser configurados e otimizados para o crescimento e desenvolvimento adequado de uma certa espécie. Embora o custo inicial de uma estufa seja elevado, ela possibilita uma melhora na qualidade dos produtos, aumentando seu valor agregado, e uma dependência menor de características que não podemos controlar quando cultivadas a céu aberto.
 > 
