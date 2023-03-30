@@ -9,8 +9,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
 > |Nome  | RA | Curso|
 > |--|--|--|
-> | Mateus Almeida Resende de Miranda  | 000000  | Eng. Elétrica|
-> | Otávio Briske   | 220716  | Eng. Elétrica|
+> | Mateus Almeida Resende de Miranda  | 239852  | Eng. Elétrica|
+> | Otávio Briske Lima  | 220716  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
