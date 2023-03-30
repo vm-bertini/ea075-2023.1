@@ -54,3 +54,4 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
+> http://sistemaolimpo.org/midias/uploads/fa4a7bc53246a8a9bf8642442a68fe3c.pdf
