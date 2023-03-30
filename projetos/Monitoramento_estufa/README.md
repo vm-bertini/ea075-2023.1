@@ -39,8 +39,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Movimentar o "shade" : Abrir o shade caso a luminosidade esteja abaixo da desejada e fechar o shade caso esteja acima da desejada
 >
 > - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
->
->Detalhe todas as tarefas que o sistema será capaz de executar
+
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
