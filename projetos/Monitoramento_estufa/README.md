@@ -72,6 +72,11 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > - Luminosidade acima da luminosidade máxima configurada
 >
+> - Botão para mudar para o modo configuração apertado
+>
+> - Botão para incrementar em 1 minuto o período de amostragem do parâmetro selecionado apertado
+>
+> - Botão para mudar parâmetro selecionado (cujo período deseja-se mudar) apertado
 >
 
 ### Tratamento de Eventos
