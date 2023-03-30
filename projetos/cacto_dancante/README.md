@@ -34,6 +34,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Eventos
 > * **Eventos periódicos:**
 > * Enquanto não houver pedido de ações, o controlador se mantem no modo Economia De Energia.
+> * LED ligado para identificar que o brinquedo está ligado.
 
 > * **Eventos não-periódicos:**
 > * Iniciar gravação
