@@ -41,7 +41,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
 
 ### Configurabilidade
-> A estufa está sendo projetada para uma diversidade de espécies de plantas, e cada planta tem suas especificidades em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar a faixa de valores desejada e a frequência com que os dados serão amostrados. Essa configuração será feita por botões conectados no painel LCD. O LCD no modo exibição mostrará o último estado amostrado, e atualizará a cada amostragem. Ao apertar o botão de configuração, o sistema irá funcionar no modo de configuração, e o LCD mostrará os valores definidos para o período de amostragem e os valores máximo e mínimo para cada parâmetro. Para mudar esses valores, haverá 3 botões (além do botão que muda entre o modo de exibição e configuração, totalizando 4 botões), um botão que muda a característica cujo valor deseja-se mudar, um botão para incrementar esse valor e um botão para decrementar esse valor. Ao pressionar o botão de configuração novamente, retorna-se para o modo de exibição.
+> A estufa está sendo projetada para uma diversidade de espécies de plantas, e cada planta tem suas especificidades em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar a faixa de valores desejada e a frequência com que os dados serão amostrados. Essa configuração será feita por botões conectados no painel LCD. O LCD no modo exibição mostrará o último estado amostrado, e atualizará a cada amostragem. Ao apertar o botão de configuração, o sistema irá funcionar no modo de configuração, e o LCD mostrará os valores definidos para o período de amostragem e os valores máximo e mínimo para cada parâmetro. Para mudar esses valores, haverá 3 botões (além do botão que muda entre o modo de exibição e configuração, totalizando 4 botões), um botão que muda a característica cujo valor deseja-se mudar, um botão para incrementar esse valor e um botão para decrementar esse valor. Ao pressionar o botão de configuração novamente, retorna-se para o modo de exibição. Os valores possíveis para as características obedecerão a limites de acordo com as especificações dos sensores, e o período de amostragem poderá variar de 1 a 59 minutos.
 ### Eventos
 >  O sistema deve tratar os seguintes eventos periódicos:
 >
@@ -82,7 +82,39 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+>
+> - Tratamento da amostragem de temperatura: 
+> Obter o valor da temperatura e analisar se está acima, abaixo ou dentro da faixa desejada, acionando o tratamento do evento correspondente. 
+> - Tratamento da amostragem de umidade:
+> Obter o valor da umidade e analisar se está acima, abaixo ou dentro da faixa desejada, acionando o tratamento do evento correspondente. 
+> - Tratamento da amostragem de luminosidade: 
+>  Obter o valor da luminosidade e analisar se está acima, abaixo ou dentro da faixa desejada, acionando o tratamento do evento correspondente. 
+> - Tratamendo quando a temperatura está dentro da faixa desejada:
+> O sistema retorna ao fluxo normal do programa
+> - Tratamento quando a temperatura está abaixo da temperatura mínima configurada:
+>
+> - Tratamento quando a temperatura está acima da temperatura máxima configurada:
+>
+> - Tratamento quando a umidade está dentro da faixa desejada:
+> O sistema retorna ao fluxo normal do programa
+> - Tratamento quando a umidade está abaixo da umidade mínima configurada:
+>
+> - Tratamento quando a umidade está acima da umidade máxima configurada:
+>
+> - Tratamento quando a luminosidade está dentro da faixa desejada:
+> O sistema retorna ao fluxo normal do programa
+> - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
+>
+> - Tratamento quando a luminosidade está acima da luminosidade máxima configurada:
+>
+> - Tratamento quando o botão de configuração está apertado:
+>
+> - Tratamento quando o botão de incremento está apertado:
+>
+> - Tratamento quando o botão de decremento está apertado:
+>
+> - Tratamento quando o botão para mudar parâmetro selecionado está apertado:
+>
 
 ## Descrição Estrutural do Sistema
 > Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
