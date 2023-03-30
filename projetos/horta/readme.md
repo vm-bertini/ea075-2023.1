@@ -1,5 +1,5 @@
 # `E1: Horta automatizada`
-# `<Project Title in in English>`
+# `Automated vegetable garden`
 
 ## Apresentação
 
