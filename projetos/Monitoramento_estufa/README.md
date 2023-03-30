@@ -6,7 +6,6 @@
 O presente projeto foi originado no contexto das atividades da disciplina de graduação *EA075 - Sistemas Embarcados*, 
 oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
 > |Nome  | RA | Curso|
 > |--|--|--|
 > | Felipe Souza Sisnando de Araujo  | 239617  | Eng. Elétrica|
@@ -14,6 +13,8 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 
 ## Descrição do Projeto
+> Hoje em dia, observa-s e o surgimento de cada vez mais estufas, pois são um ambiente controlado em que plantações podem ser monitoradas e os aspectos físicos do ambiente podem ser configurados e otimizados para o crescimento de uma certa espécie. Isso possibilita uma melhora na qualidade dos produtos e uma dependência menor de características do ambiente que não podemos controlar, como temperatura, luminosidade e umidade.
+> 
 > Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
 > Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
 > Qual problema vocês pretendem solucionar?
@@ -52,4 +53,4 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 
 ## Referências
-> http://sistemaolimpo.org/midias/uploads/fa4a7bc53246a8a9bf8642442a68fe3c.pdf
+> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
