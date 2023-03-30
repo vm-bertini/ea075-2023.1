@@ -61,3 +61,5 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >https://www.rijkzwaan.com.br/blog/estufa-ou-guarda-chuva
 >
 >Miura, M. (2011). Análise Econômica do Cultivo em Ambiente Protegido.
+>
+>https://www.zanatta.com.br/cultivo-protegido/
