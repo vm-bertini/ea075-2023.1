@@ -21,7 +21,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > É possível estabelecer um valor econômico associado?
 
 
-Realizar o controle necessário para a manutenção das grandezas físicas necessárias de um ecossistema aquático.
+O principal objetivo deste projeto é de realizar o controle necessário para a manutenção das grandezas físicas necessárias de um ecossistema aquático.
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para vida aquática.
 O aquário inteligente é um sistema capaz de controlar condições do biossistema como pH, temperatura e nível de água de um aquário marinho. Como tais existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.
 Dessa forma usuários que desejam possuir aquários não precisarão se preocupar com as tarefas de tratamento requeridas, podendo verificar o estado em que o ecossistema se encontra através do relatório gerado.
@@ -33,7 +33,7 @@ Dessa forma usuários que desejam possuir aquários não precisarão se preocupa
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
 
-O sistema será capaz de regular a temperatura e o PH do ecossistema, gerando um relatório sobre suas atividades.
+O sistema será capaz de regular a temperatura, por meio de aquecedores e resfriadores, e o PH do ecossistema, através da liberação de CO2, gerando um relatório periódico sobre suas atividades, através da captação desses valores avaliados por sensores e dos configurados como ideais.
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
