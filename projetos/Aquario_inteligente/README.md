@@ -22,8 +22,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-asdasda
-asdasd
+aaa
+bbb
 
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
