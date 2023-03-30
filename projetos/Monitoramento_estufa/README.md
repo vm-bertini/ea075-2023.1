@@ -32,7 +32,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > O sistema poderá : 
 > - Ligar e desligar os aspersores de água
 >
-> -Ligar, desligar e controlar a temperatura do sistema de aquecimento
+> - Ligar, desligar e controlar a temperatura do sistema de aquecimento
 >
 > - Ligar, desligar e controlar a temperatura dos coolers
 > 
