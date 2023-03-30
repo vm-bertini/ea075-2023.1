@@ -8,7 +8,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 > |Nome  | RA | Curso|
 > |--|--|--|
-> | Nome2 | 123456  | Eng. Elétrica|
+> | Gabriel Benê Teixeira Pereira | 234674  | Eng. Elétrica|
 > | Mariana Figueiredo Menezes | 248101 | Eng. Elétrica|
 
 
