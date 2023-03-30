@@ -101,11 +101,15 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > - Tratamento quando a temperatura está abaixo da temperatura mínima configurada:
 > 
-> Caso o cooler esteja ligado, desliga o cooler. Caso contrário, se o sistema de aquecimento estiver desligado, liga-se o sistema de aquecimento. Se estiver ligado, aumenta em 5°C a temperatura do aquecedor.
+> Caso o cooler esteja ligado, desliga o cooler.
+> 
+>  Caso contrário, se o sistema de aquecimento estiver desligado, liga-se o sistema de aquecimento. Se estiver ligado, aumenta em 5°C a temperatura do aquecedor.
 > 
 > - Tratamento quando a temperatura está acima da temperatura máxima configurada:
 > 
-> Caso o aquecedor esteja ligado, desliga o aquecedor. Caso contrário, se o cooler estiver desligado, liga-se o cooler. Se estiver ligado, diminui em 5°C a temperatura do cooler.
+> Caso o aquecedor esteja ligado, desliga o aquecedor. 
+> 
+> Caso contrário, se o cooler estiver desligado, liga-se o cooler. Se estiver ligado, diminui em 5°C a temperatura do cooler.
 > 
 > - Tratamento quando a umidade está dentro da faixa desejada:
 > 
@@ -113,11 +117,15 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > - Tratamento quando a umidade está abaixo da umidade mínima configurada:
 > 
-> Caso a ventilação esteja ligada, desliga a ventilação. Caso contrário, liga-se o aspersor de água e, após 30 segundos, ele é desligado.
+> Caso a ventilação esteja ligada, desliga a ventilação. 
+> 
+> Caso contrário, liga-se o aspersor de água e, após 30 segundos, ele é desligado.
 >
 > - Tratamento quando a umidade está acima da umidade máxima configurada:
 > 
-> Liga-se o sistema de ventilação. Caso já esteja ligado, aumenta sua potência.
+> Liga-se o sistema de ventilação. 
+> 
+> Caso já esteja ligado, aumenta sua potência.
 >
 > - Tratamento quando a luminosidade está dentro da faixa desejada:
 > 
@@ -125,11 +133,15 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
 > 
-> Caso o shade esteja fechado, abrir o shade. Caso contrário, acender as lâmpadas de LED.
+> Caso o shade esteja fechado, abrir o shade.
+> 
+>  Caso contrário, acender as lâmpadas de LED.
 >
 > - Tratamento quando a luminosidade está acima da luminosidade máxima configurada:
 > 
-> Caso as lâmpadas estejam ligadas, desligar as lâmpadas. Caso contrário, fechar o shade
+> Caso as lâmpadas estejam ligadas, desligar as lâmpadas.
+> 
+>  Caso contrário, fechar o shade
 >
 > - Tratamento quando o botão de configuração está apertado:
 > 
