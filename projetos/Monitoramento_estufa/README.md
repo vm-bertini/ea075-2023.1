@@ -41,7 +41,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+> A estufa está sendo projetada para uma diversidade de espécies de plantas, no qual cada planta tem sua especificidade em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar no software a faixa de valores desejada para operar dentro da estufa nos sensores de temperatura, umidade e luminosidade. 
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
