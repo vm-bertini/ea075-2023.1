@@ -10,7 +10,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > |Nome  | RA | Curso|
 > |--|--|--|
 > | Vinicius Ventura Andreossi  | 195125  | Eng. Elétrica|
-> | Nome2  | 123456  | Eng. Elétrica|
+> | Gabriel Machado Severo Mendes  | 234906  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
@@ -33,7 +33,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Eventos
 > * **Eventos periódicos:**
-> * O brinquedo não possui nenhum comportamento passivo.
+> * Enquanto não houver pedido de ações, o controlador se mantem no modo Economia De Energia.
 
 > * **Eventos não-periódicos:**
 > * Iniciar gravação
