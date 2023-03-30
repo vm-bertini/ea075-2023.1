@@ -27,7 +27,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
+>Detecta temperatura fora da faixa configurada e controla sua variação por meio de tubos de ventilação e aquecedores.
+>Ler a umidade do ambiente e controla com aspersores de água.
+>Ler a luminosidade do ambiente e controla por meio de um sistema de iluminação e shades.
+>Detalhe todas as tarefas que o sistema será capaz de executar
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
