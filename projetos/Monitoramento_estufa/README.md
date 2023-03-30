@@ -76,7 +76,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > - Botão para incrementar em 1 o valor do parâmetro selecionado apertado
 >
+> - Botão para decrementar em 1 o valor do parâmetro selecionado apertado
+>
 > - Botão para mudar parâmetro selecionado (cujo valor deseja-se mudar) apertado
+>
 >
 
 ### Tratamento de Eventos
