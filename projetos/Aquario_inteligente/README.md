@@ -22,8 +22,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
+asdasda
+asdasd
 
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
