@@ -27,13 +27,18 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
->O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do ar a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade .fora da faixa configurada e controla sua variação por meio de tubos de ventilação e aquecedores.
+>O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do ar a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade a cada 10 minutos e a luminosidade a cada 5 minutos, porém esses parâmetros serão configuráveis, e a frequência de amostragem de cada fator pode ser alterada conforme a necessidade do cliente. O sistema também será capaz de detectar quando um valor estiver fora da faixa adequada configurada, e para esse caso, irá iniciar rotinas de tratamento adequadas, controlando o funcionamento dos aspersores de água, sistema de aquecimento, coolers, lâmpadas e "shade".
 >
->Ler a umidade do ambiente e controla com aspersores de água.
+> O sistema poderá : 
+> - Ligar e desligar os aspersores de água
 >
->Ler a luminosidade do ambiente e controla por meio de um sistema de iluminação e shades.
+> - Ligar, desligar e controlar a temperatura do sistema de aquecimento
 >
->Detalhe todas as tarefas que o sistema será capaz de executar
+> - Ligar, desligar e controlar a temperatura dos coolers
+> 
+> - Movimentar o "shade" : Abrir o shade caso a luminosidade esteja abaixo da desejada e fechar o shade caso esteja acima da desejada
+>
+> - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
 
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
