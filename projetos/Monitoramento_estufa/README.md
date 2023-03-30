@@ -27,7 +27,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
->Detecta temperatura fora da faixa configurada e controla sua variação por meio de tubos de ventilação e aquecedores.
+>O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do ar a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade .fora da faixa configurada e controla sua variação por meio de tubos de ventilação e aquecedores.
 >
 >Ler a umidade do ambiente e controla com aspersores de água.
 >
