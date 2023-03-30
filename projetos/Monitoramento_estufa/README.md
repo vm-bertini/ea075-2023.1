@@ -169,23 +169,12 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
+
 >![image](https://user-images.githubusercontent.com/129390336/228986991-64179348-208a-4698-8d23-44ea0e69f3e3.png)
 >
-> Observa-se que podem-se destacar três grandes blocos funcionais: o microcontrolador, os sensores e os atuadores. No bloco dos sensores tem-se os sensores de luminosidade, umidade e temperatura, bem como os botões (que podem ser considerados como sensores de pressão), já como atuadores, observa-se o cooler, shade,  sistema de ventilação, aquecedor, lâmpadas e os aspersores, bem como o LCD (que pode ser considerado um atuador, permitindo a visualização de dados na tela). Os sensores são capazes de transformar parâmetros físicos em sinais elétricos, que podem ser processados pelo microcoontrolador. A partir desses sinais, o microcoontrolador define uma "resposta" (conforme as condições já estabelecidas nos tratamentos dos eventos) e envia sinais de controle para os atuadores, que atuam com base nesses sinais e transformam esses sinais elétricos em alguns parâmetros físicos, permitindo o correto funcionamento do circuito.
->
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
+> Observa-se que podem-se destacar três grandes blocos funcionais: o microcontrolador, os sensores e os atuadores. No bloco dos sensores tem-se os sensores de luminosidade, umidade e temperatura, bem como os botões (que podem ser considerados como sensores de pressão), que permitem uma interação com o usuário; já como atuadores, observa-se o cooler, shade,  sistema de ventilação, aquecedor, lâmpadas e os aspersores, bem como o LCD (que pode ser considerado um atuador, permitindo a visualização de dados na tela). Os sensores são capazes de transformar parâmetros físicos em sinais elétricos, que podem ser processados pelo microcoontrolador. A partir desses sinais, o microcoontrolador processa o programa de tratamento de enventos (conforme explicado em seções anteriores),  e envia sinais de controle para os atuadores, que atuam com base nesses sinais e transformam esses sinais elétricos em alguns parâmetros físicos, permitindo o correto funcionamento do circuito.
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
 > http://sistemaolimpo.org/midias/uploads/fa4a7bc53246a8a9bf8642442a68fe3c.pdf
 >
 > https://www.horticeres.com.br/noticias/dicas-para-cultivo-protegido/#:~:text=Para%20efeito%20estufa%20(regi%C3%B5es%20muito,aproximadamente%20400%20a%201000%20m%C2%B2.
@@ -195,3 +184,5 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >Miura, M. (2011). Análise Econômica do Cultivo em Ambiente Protegido.
 >
 >https://www.zanatta.com.br/cultivo-protegido/
+>
+>https://embarcados.com.br/sensores-e-atuadores-iot/
