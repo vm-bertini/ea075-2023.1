@@ -23,7 +23,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 Realizar o controle necessário para a manutenção das grandezas físicas necessárias de um ecossistema aquático.
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para vida aquática.
-O aquário inteligente é um sistema capaz de controlar condições do biossistema como pH, temperatura e nível de água de um aquário marinho. Como tais existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.![image](https://user-images.githubusercontent.com/128386956/228841451-76eb45ee-fa14-4657-8969-eb6f5f20d453.png)
+O aquário inteligente é um sistema capaz de controlar condições do biossistema como pH, temperatura e nível de água de um aquário marinho. Como tais existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.
 
 
 
