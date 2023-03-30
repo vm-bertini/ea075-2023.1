@@ -41,10 +41,39 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
 
 ### Configurabilidade
-> A estufa está sendo projetada para uma diversidade de espécies de plantas, no qual cada planta tem sua especificidade em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar no software a faixa de valores desejada para operar dentro da estufa nos sensores de temperatura, umidade e luminosidade. 
+> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
 
 ### Eventos
 > Quais eventos o sistema deve tratar?
+>  O sistema deve tratar os seguintes eventos periódicos:
+>
+> - Amostragem de temperatura: De X em X minutos deve-se obter o valor da temperatura lido no sensor (em que X é um valor configurável, inicialmete colocado como 10 minutos) 
+>
+> - Amostragem de umidade: De Y em Y minutos deve-se obter o valor da umidade lido no sensor (em que Y é um valor configurável, inicialmete colocado como 10 minutos) 
+>
+> - Amostragem de luminosidade: De Z em Z minutos deve-se obter o valor da umidade lido no sensor (em que Z é um valor configurável, inicialmete colocado como 5 minutos)
+>
+> O sistema deve tratar os seguintes eventos não periódicos:
+> 
+> - Temperatura dentro da faixa desejada
+> 
+> - Temperatura abaixo da temperatura mínima configurada
+>
+> - Temperatura acima da temperatura máxima configurada
+>
+> - Umidade dentro da faixa desejada
+> 
+> - Umidade abaixo da umidade mínima configurada
+>
+> - Umidade acima da umidade máxima configurada
+>
+> - Luminosidade dentro da faixa desejada
+> 
+> - Luminosidade abaixo da luminosidade mínima configurada
+>
+> - Luminosidade acima da luminosidade máxima configurada
+>
+>
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)?
 
