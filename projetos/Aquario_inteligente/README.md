@@ -10,7 +10,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > |Nome  | RA | Curso|
 > |--|--|--|
 > | Mateus Almeida Resende de Miranda  | 239852  | Eng. Elétrica|
-> | Nome2  | 123456  | Eng. Elétrica|
+> | Otávio Briske Lima  | 220716  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
