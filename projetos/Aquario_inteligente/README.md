@@ -35,6 +35,9 @@ Dessa forma usuários que desejam possuir aquários não precisarão se preocupa
 
 O sistema será capaz de regular a temperatura, por meio de aquecedores e resfriadores, e o PH do ecossistema, através da liberação de CO2, gerando um relatório periódico sobre suas atividades, através da captação desses valores avaliados por sensores e dos configurados como ideais.
 
+O sistema em questão será capaz de executar 4 tipos de tarefas. O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de um display o nível ou a faixa de temperatura e de pH desejados. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura e um de pH. Além disso, medirá o nível de CO_2 no tanque que regula o pH. A partir das informações obtidas o dispositivo irá regular qualquer alteração das condições do aquário por meio da injeção de gás CO_2, um aquecedor e um refrigerador. Ademais, a partir das alterações do ecossistema e das ações tomadas pelo dispositivo, o aquário inteligente vai gerar um relatório para uma análise precisa de como o aquário está se comportando.
+
+
 ### Configurabilidade
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
 
