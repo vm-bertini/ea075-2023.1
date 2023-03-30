@@ -15,6 +15,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição do Projeto
 > Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
+Realizar o controle necessário para a manutenção das grandezas físicas necessárias de um ecossistema aquático.
+A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para vida aquática.
 > Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
 > Qual problema vocês pretendem solucionar?
 > Quem são os potenciais usuários?
@@ -22,9 +24,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-aaa
-
-bbb
+> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
+> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
 > Detalhe todas as tarefas que o sistema será capaz de executar
