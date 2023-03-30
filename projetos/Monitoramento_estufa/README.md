@@ -61,7 +61,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
 > 
 > Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> .
+> 
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
