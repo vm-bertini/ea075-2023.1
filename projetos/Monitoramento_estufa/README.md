@@ -18,7 +18,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Com uma plantação em estufa, os parâmetros externos não terão tanta influência, e as épocas do ano influenciarão menos as colheitas, garantindo a produção durante o ano todo, reduzindo fenômenos como falta de abastecimento em determinados períodos do ano e prejuízos econômicos dos cultivadores devido ao clima. Como exemplo, observa-se que "no verão, as chuvas demasiadas danificam as plantas e criam condições favoráveis para o aparecimento de doenças, atrapalhando a produção, sendo a época de maiores preços dos produtos hortícolas pela falta de oferta para abastecimento. Por outro lado, o frio e os ventos, do inverno prolongam o ciclo dessas culturas, que consequentemente desprogramam a produção e causam grandes prejuízos econômicos" [Miura, 2011]. Porém, mesmo que com influências externas reduzidas ainda é necessário o controle interno devido a problemas como a alta irradiação externa que resulta em um efeito de aquecimento dentro da estufa,podendo ser prejudicial à plantação caso não ocorra o controle da temperatura necessário. 
 >
-> Desse modo, nós propomos o desenvolvimento de um sistema embarcado responsável pelo monitoramento da estufa, que será capaz de identificar quando os valores de temperatura, umidade e luminosidade estiverem fora da faixa desejada, e será capaz de corrigir esses valores, utilizando sistemas de aquecimento e refrigeração (coolers), sistema de ventilação, aspersores de água e um sistema que controla as lâmpadas responsáveis pela luminosidade da estufa, bem como a luminosidade que entra do ambiente externo, a partir de uma claraboia cuja abertura é controlada. Esse monitoramento será de grande utilidade para cultivadores de diversos produtos, visto que as faixas de temperautra, luminosidade e umidade desejadas podem ser configuradas conforme os parâmetros adequados para cada espécie. A instalação desse sistema irá aumentar o valor agregado dos seus produtos, viabilizar o cultivo em todas as épocas do ano e permitir um controle automatizado, sem necessidade de mão de obra.
+> Desse modo, nós propomos o desenvolvimento de um sistema embarcado responsável pelo monitoramento da estufa, que será capaz de identificar quando os valores de temperatura, umidade e luminosidade estiverem fora da faixa desejada, e será capaz de corrigir esses valores, utilizando sistemas de aquecimento e refrigeração (coolers), sistema de ventilação, aspersores de água e um sistema que controla as lâmpadas responsáveis pela luminosidade da estufa, bem como a luminosidade que entra do ambiente externo, a partir de um "shade" (funciona como uma "cortina") cuja abertura é controlada. Esse monitoramento será de grande utilidade para cultivadores de diversos produtos, visto que as faixas de temperautra, luminosidade e umidade desejadas podem ser configuradas conforme os parâmetros adequados para cada espécie. A instalação desse sistema irá aumentar o valor agregado dos seus produtos, viabilizar o cultivo em todas as épocas do ano e permitir um controle automatizado, sem necessidade de mão de obra.
 >  
 
 
@@ -27,11 +27,20 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
->O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do ar a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade .fora da faixa configurada e controla sua variação por meio de tubos de ventilação e aquecedores.
+>O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do ar a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade a cada 10 minutos e a luminosidade a cada 5 minutos, porém esses parâmetros serão configuráveis, e a frequência de amostragem de cada fator pode ser alterada conforme a necessidade do cliente. O sistema também será capaz de detectar quando um valor estiver fora da faixa adequada configurada, e para esse caso, irá iniciar rotinas de tratamento adequadas, controlando o funcionamento dos aspersores de água, sistema de aquecimento, coolers, lâmpadas e "shade".
 >
->Ler a umidade do ambiente e controla com aspersores de água.
+> O sistema poderá : 
+> - Ligar e desligar os aspersores de água
 >
->Ler a luminosidade do ambiente e controla por meio de um sistema de iluminação e shades.
+> -Ligar, desligar e controlar a temperatura do sistema de aquecimento
+>
+> - Ligar, desligar e controlar a temperatura dos coolers
+> 
+> - Movimentar o "shade" : Abrir o shade caso a luminosidade esteja abaixo da desejada e fechar o shade caso esteja acima da desejada
+>
+> - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
+>
+> - Movimentar o "shade" : Abrir o shade caso a luminosidade esteja abaixo da desejada e fechar o shade caso esteja acima da desejada
 >
 >Detalhe todas as tarefas que o sistema será capaz de executar
 
