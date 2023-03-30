@@ -133,14 +133,27 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > - Tratamento quando o botão de configuração está apertado:
 > 
+> Caso esteja no modo exibição, muda para o modo de configuração (o LCD passa a mostrar os limites dos parâmetros e o período de amostragem)
+> 
+> Caso esteja no modo de configuração, muda para o modo exibição(o LCD mostra os valores de temperatura, luminosidade e umidade lidos pelos sensores), estabelece os novos valores limites das faixas de temperatura, umidade e luminosidade e estabelece o novo período de amostragem.
 >
 > - Tratamento quando o botão de incremento está apertado:
 > 
->
+> Caso esteja no modo configuração, aumenta o valor da característica selecionada em 1
+> 
+> Caso esteja no modo exibição, esse evento é ignorado e o programa continua seu fluxo normal
+> 
 > - Tratamento quando o botão de decremento está apertado:
 > 
+> Caso esteja no modo configuração, decrementa o valor da característica selecionada em 1
+> 
+> Caso esteja no modo exibição, esse evento é ignorado e o programa continua seu fluxo normal
 >
 > - Tratamento quando o botão para mudar parâmetro selecionado está apertado:
+> 
+> Caso esteja no modo configuração, muda a característica selecionada
+> 
+> Caso esteja no modo exibição, esse evento é ignorado e o programa continua seu fluxo normal
 >
 
 ## Descrição Estrutural do Sistema
