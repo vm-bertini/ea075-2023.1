@@ -19,7 +19,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > Quem são os potenciais usuários?
 > É possível estabelecer um valor econômico associado? 
 
-Não foi possível estabelecer um valor econômico associado a esse projeto, mas o mesmo design poderia ser aprimorado e produzido em maior escala a fim de trazer maior comodidade e conforto para as pessoas.
+O objetivo principal do projeto é criar um produto que faça a manutenção de uma pequena horta doméstica de forma automatizada, sem que o(a) usuário(a) necessite ter um cuidado diário com a horta. A motivação se originou no fato de existirem pessoas com interesse em cultivar uma horta doméstica, mas que passam a maior parte do dia ou até mesmo vários dias fora de casa e por isso não podem realizar as tarefas necessárias para o cultivo de forma ideal, principalmente em relação a irrigação. Assim, os potenciais usuários são estas pessoas que querem cultivar uma horta doméstica, mas não podem ou não querem realizar os cuidados rotineiros manualmente.
+
+De início, não foi possível estabelecer um valor econômico associado ao projeto, mas o mesmo design pode ser adaptado para uma produção em maior escala e, junto de uma análise de mercado para prever um número potencial de vendas, pode-se chegar a um valor viável que cubra os custos de produção individual do produto e seus custos de projeto e gere um retorno financeiro.
 
 
 ## Descrição Funcional
