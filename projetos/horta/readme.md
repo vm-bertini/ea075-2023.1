@@ -90,13 +90,13 @@ Assim, o comportamento descrito do sistema de irrigação pode ser visualizado p
 
 ![Fluxograma de funcionamento do sistema de irrigação](https://github.com/marifmenezes/ea075-2023.1/blob/7f2e1aa3a34f9040a63b6bae250f3a26109d58bd/projetos/horta/ea075-molhar.drawio(1).png "Fluxograma de funcionamento do sistema de irrigação")
 
-Quanto a adubação da horta, é realizada uma fertilização automaticamente a cada 30 dias, caso o usuário(a) ative esta funcionalidade. Esta fertilização é feita adicionando o fertilizante a água da próxima irrigação.
+Quanto a adubação da horta, é realizada uma fertilização automaticamente a cada 30 dias, caso o(a) usuário(a) ative esta funcionalidade. Esta fertilização é feita adicionando o fertilizante a água da próxima irrigação.
 
 Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de fertilização](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_fertilizacao.png "Fluxograma de funcionamento do sistema de fertilização")
 
-Para a iluminação, caso o usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, é necessário executar uma rotina que aumente gradualmente a intensidade luminosa das lâmpadas ao longo de 6 horas até um valor máximo e depois diminua esta intensidade ao longo de outras 6 horas. Em seguida, deve-se esperar 12 horas até que a mesma rotina seja executada novamente, simulando o ciclo de luminosidade de um dia. 
+Para a iluminação, caso o(a) usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, é necessário executar uma rotina que aumente gradualmente a intensidade luminosa das lâmpadas ao longo de 6 horas até um valor máximo e depois diminua esta intensidade ao longo de outras 6 horas. Em seguida, deve-se esperar 12 horas até que a mesma rotina seja executada novamente, simulando o ciclo de luminosidade do sol ao longo de um dia. 
 
 Este processo pode ser acompanhado pelo fluxograma abaixo:
 
