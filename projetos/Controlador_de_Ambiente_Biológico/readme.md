@@ -14,51 +14,39 @@ Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos 
 | Rodrigo Toshio Ogasawara Tahara | 205578 | Eng. Elétrica |
 
 ## Descrição do Projeto
-Este projeto de propões a ser, antes de tudo, um controlador para plantas de diferentes espécies no interior de ambientes. Após completar essa tarefa, nos propomos a expandir o desenvolvimento do projeto para o controle remoto do sistem, controle de fatores avançados da planta, até um completo simulador de ambiente biológico multi-expansível.
+A natureza e sua preservação, tal como os impactos ambientais, têm tido cada vez mais destaque no mundo contemporâneo. A cada etapa de projeto, critérios como a sustentabilidade, otimização de processos e utilização de meios alternativos detém uma presença mais que necessária, uma vez que a sociedade passou a ser mais exigente com os comprometimentos sócio-ambientais. 
 
-Plantas em casa são a sensação de paz e vida no ambiente, mas, para sempre reluzirem verde, precisam do cuidado constante e especifico. Aguamento constante e na proporção, iluminação adequada e suficiente, umidade do local, e mesmo o monitoramente de nutrientes, são fatores que possuem maior ou menor peso para cada diferente espécies, aumentando a dificuldade dos cuidados.
-Tantos fatores são determinantes para uma planta constantemente viva, verde e vigorosa, e um ambiente harmonizado.
+O projeto de simulador ambiental para desenvolvimento de plantas agrega muito valor econômico e ambiental, pois os processos passam a se tornar automatizados, possibilitando um cenário mais adequado para a planta. Grandezas como temperatura, umidade e luminosidade passam a ser monitoradas através de sensores e câmeras, possibilitando uma maior eficácia em seu desenvolvimento, graças a atuadores conectados à microcontroladores que possibilitam em alguns casos, até mesmo vigilância via remota por meio de aplicativos. A importância desses parâmetros é evidenciada quando destaca-se que, em condições não propícias de maturação das plantas, pode ocorrer o fechamento dos estômatos que provocam uma diminuição de trocas gasosas e, consequentemente, uma alteração no processo de difusão de vapor de água que pode vir a interferir no processo de fotossíntese; inclusive reduzindo a quantidade de nutrientes absorvidos. Quando expostas a um ambiente com constante incidência solar, algumas plantas adoencem pelo estresse e podem ressecar e morrer. 
 
-- Para algumas espécies, alguns dias ou um fim de semana sem aguamento é suficiente para que a planta resseque ou morra.
-- Muitas plantas adoecem e morrem pela falta de iluminação suficiente e não podem preencher o interior dos ambientes.
-- Quando expostas a um ambiente com constante incidência solar, algumas plantas adoencem pelo estresse e podem ressecar e morrer.
-- Nem sempre se dispõe de um ambiente externo ou solo para o cultivo. Às vezes ornar o ambiente interno é mais desejável.
-- Após algum tempo, algumas plantas adoecem pelo esgotamento dos nutrientes do substrato.
-  Cuidar de plantas ou com elas ornar a casa é um hábito desejável que nem sempre a ausência de tantos fatores permite possuir.
-  Todos esses fatores podem ser resolvidos com uma solução automatizada.
+De forma geral, cuidar de plantas no interior de ambientes requer muito zelo, responsabilidade e habilidade, que por muitas vezes; devido à fatores como pressão externa, falta de tempo ou mesmo esquecimento, acaba com comprometer sua integridade. Dependendo da situação, pode requerer reposição de mudas ou até mesmo presença constante de profissionais especializados, sendo que se contabilizar gastos com ferramentas, substratos e vasos, o gasto pode chegar a se tornar inviável, chegando em torno de R$200 - 300 por planta. Por esse motivo, a presença de uma ambientação adequada e otimizada é a diferença entre uma estabilidade e durabilibilidade maximizada do tempo de vida desses seres. Como o projeto propõe, a criação dentro de um ambiente interno é mais desejável, pois além de proporcionar condições desejadas para as plantas, servir de decoração (podendo ser utilizado até dentro do âmbito empresarial) e melhorar a qualidade do ar; uma vantagem extremamente importante é que no caso de plantas voltadas ao cultivo para consumo, há uma proteção quase que integral contra possíveis predadores e pragas.
 
-Em média para se possuir algumas plantas no interior de uma casa, já considerando que se possua um local adequado. Os valores com as ferramentas, o substrato, os vazos e os aparatos de rega de uma única planta estão em torno de R$200 - 300.
-Algumas plantas, como orquídeas, custam de R$50~100 nos melhores preços e comumente adoecem e são substituídas por outras novas. Outras, como cactus adoecem pelo excesso de água. A substituição da planta devido à ausência do cuidado é a solução encontrada.
-No interior de empresas, para harmonização de ambientes, os gastos para manutenção e reposição de plantas são constantes. A presença de uma ambientação adequada é a diferença entre uma recepção que cause boa impressão ou sensação de abandono, uma ambiente de trabalho que forneça tranquilidade ou descuido.
-
-De forma geral, bons cuidados com plantas no interior de ambientes significam cuidado com zelo constante e hábilidade, às vezes altos gastos com reposição ou presença constante de profissionais especializados.
-
-Tantos fatores benéficos, para casas e empresas, poderiam ser alcançados por uma solução automatizada, que cobrissem os cuidados constantes necessários e mantivessem o experiência vitalizadora da presença das plantas no ambiente.
+Embora o problema mundial em relação à fome não seja diretamente relacionada à falta de comida, mas sim pela falta de gestão e o desperdício descontrolado de alimentos; tal projeto visa um público que deseja ter sua própria fonte de alimento caseira, com boa flexibilidade de manejo e um isolamento sobre a dependência parcial do mercado. 
+Visa, inclusive, o desenvolvimento de plantas de diferentes espécies no interior de ambientes, tais como leguminosas e oleagenosas. Propomos-nos a expandir o desenvolvimento do projeto para o controle remoto do sistema, de forma a alterar as condições da planta, sintezindo um modelo próximo ao de um simulador de ambiente biológico multi-expansível como meta final.
 
 ## Descrição Funcional
 
 ### Funcionalidades
 - Umidade do substrato:
    - Medir a umidade do substrato e indicar a falta ou o excesso.
-      - Medir a umidade do solo para, plantas em geral.
+      - Medir a umidade do solo para plantas no geral.
       - Medir a umidade do ar no interior de raízes ou em superfície, para orquídeas
-      - Medir nível de água para espécies com alto aguamento.
-   - Fornecer aguação adequada e programável:
+      - Medir nível de água para espécies com alta demanda de água.
+   - Fornecer regagem adequada e programável:
       - Quantidade de água configurada por planta
-      - Modos de aguamento múltiplos:
+      - Modos de deposição de água múltiplos:
          1. irrigação por gotejamento direto na solo (plantas em geral).
          2. borrifamento leve (orquídeas e similares).
          3. aspersão e simulação de chuva (displays fechados)
 - Iluminação:
    - Medir a iluminação incidente e indicar falta ou excesso de luz.
-   - Fornecer iluminação artificial que substitua ou suplemente a iluminação presente.
+   - Fornecer iluminação artificial que substitua ou suplemente a iluminação presente através de fitas de LED.
 - Temperatura:
-   - Medir temperatura local e indicar necessidade de intervenção
+   - Medir temperatura local e indicar necessidade de intervenção da fita de LED ou do sistema de irrigação com o intuito de alterar a temperatura.
 <!--    - Fornecer aquecimento possível. -->
 - Tempo:
-   - Medir o tempo e fornecer iluminação ou aguamento de acordo com cronograma diário ou semanal.
+   - Medir o tempo e fornecer iluminação ou irrigação de acordo com cronograma diário ou semanal.
 - Nutrientes:
-   - Medir nutrientes principais e ph do solo, indicando ação necessária.
+   - Medir nutrientes principais e PH do solo, indicando o momento que seja necessário intervenção para seu enrequecimento.
 - Monitoramento e conectividade:
    - Monitorar medições e armazenar dados da planta com relatório e possível indicação de intervenção.
    - Enviar dados da planta por wifi e monitoramento remoto por API ou aplicativo.
@@ -75,9 +63,9 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
 - Opções de configurações pré-fornecidas de aguamento e iluminação por espécies mais comuns.
 
 ### Eventos
-- Aguamento: baixo nível de umidade.
+- Irrigação: apenas em casos de baixo nível de umidade.
   - Intervalos entre atuações de 10 ~ 30min, a variar por espécie.
-  - Identificar nível de umidade crítico e aguar o substrato.
+  - Identificar nível de umidade crítico e jogar água sobre o substrato.
 - Iluminação: baixo nível de iluminação.
   - Atuação imediata 100 ~ 1000ms.
   - Atuação durante período do dia (janela de iluminação).
@@ -87,10 +75,10 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
   - Sinalizar protamente, podendo ser desabilitado.
 
 ### Tratamento de Eventos
-- Para o aguamento da planta o intervalo necessário de monitoramento estivo estimado está entre 10 min até mesmo 1 hora. Considera-se que, com a sinalização de necessidade de água, o atuador de irrigação deverá agir prontamente, mas acredita-se que será necessário um tempo em torno de 10 min para que a água se infiltre no substrato e uma nova aferição correta de umidade possa ser feita. Portanto esse será o tempo mínimo estimado para uma nova intervenção.
+- Para a irrigação da planta, o intervalo necessário de monitoramento estivo estimado está entre 10 min até mesmo 1 hora. Considera-se que, com a sinalização de necessidade de água, o atuador de irrigação deverá agir prontamente, mas acredita-se que será necessário um tempo em torno de 10 min para que a água se infiltre no substrato e uma nova aferição correta de umidade possa ser feita. Portanto esse será o tempo mínimo estimado para uma nova intervenção.
 - Para a detecção iluminação insuficiente a ação dos atuadores deve ser imediata e em tempo real. No entanto, considera-se que nenhuma mudança drástica deve ocorrer em um período maior que 1 segundo, e portanto esse será o intervalo entre cada monitoramento.
 - Outro modo de ação da iluminação poderá ser, em conjuto com o anterior ou exclusivamente, de acordo com a janela diária de horário de iluminação programada.
-- Para a possibilade de monitoramento de nutrientes, estima-se que, em caso de adição dos compostos necessários, manual ou automaticamente, seja necessário um tempo maior para que uma nova aferição correta pode ser feita, assim que os compostos tenha se dissolvido no substrato. Estimasse entre horas ou dias. Assim, se o equipamento sinalizar a falta de algum nutriente, assim que ouver alguma adição de composto, o microcontrolador deverá demorar essa quantidade maior de tempo, com o usuário do aparelho indicando a adição no dispositivo ou tal ação sendo tomada automaticamente.
+- Para a possibilade de monitoramento de nutrientes, estima-se que, em caso de adição dos compostos necessários, manual ou automaticamente, seja necessário um tempo maior para que uma nova aferição correta pode ser feita, assim que os compostos tenham se dissolvido no substrato. Estima-se entre horas ou dias para que o processo finalize. Assim, se o equipamento sinalizar a falta de algum nutriente, deve haver a adição de composto, sendo que o microcontrolador deverá tomar esse tipo de decisão ou ainda, com o usuário do aparelho indicando se tal ação deve ser efetuada.
 
 ## Descrição Estrutural do Sistema
 O Sistem foi pensado e dividido nas seguintes partes: sensores gerais, que medem um parâmetro para a planta; atuadores de iluminação e irrigação; módulo de relógio, para controle de tempo; elementos de comunicação, como módulo wifi e, como possibilidade, display e botões (o projeto tem como objetivo ser totalmente controlado apenas remotamente, sem configurações diretas no dispositivo); e o módulo de câmera e produção de imagens, que foi pensado separadamente, devido à complexidade específica.
