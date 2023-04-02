@@ -14,13 +14,14 @@ Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos 
 | Rodrigo Toshio Ogasawara Tahara | 205578 | Eng. Elétrica |
 
 ## Descrição do Projeto
-
-    @@ -20,6 +20,24 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
-
+> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
+> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
+> Qual problema vocês pretendem solucionar?
 > Quem são os potenciais usuários?
 > É possível estabelecer um valor econômico associado?
-> Plantas em casa são a sensação de paz e vida no ambiente, mas, para sempre reluzirem verde, precisam do cuidado constante e especifico. Aguamento constante e na proporção, iluminação adequada e suficiente, umidade do local, e mesmo o monitoramente de nutrientes, são fatores que possuem maior ou menor peso para cada diferente espécies, aumentando a dificuldade dos cuidados.
-> Tantos fatores são determinantes para uma planta constantemente viva, verde e vigorosa, e um ambiente harmonizado.
+
+Plantas em casa são a sensação de paz e vida no ambiente, mas, para sempre reluzirem verde, precisam do cuidado constante e especifico. Aguamento constante e na proporção, iluminação adequada e suficiente, umidade do local, e mesmo o monitoramente de nutrientes, são fatores que possuem maior ou menor peso para cada diferente espécies, aumentando a dificuldade dos cuidados.
+Tantos fatores são determinantes para uma planta constantemente viva, verde e vigorosa, e um ambiente harmonizado.
 
 - Para algumas espécies, alguns dias ou um fim de semana sem aguamento é suficiente para que a planta resseque ou morra.
 - Muitas plantas adoecem e morrem pela falta de iluminação suficiente e não podem preencher o interior dos ambientes.
@@ -39,16 +40,13 @@ De forma geral, bons cuidados com plantas no interior de ambientes significam cu
 Tantos fatores benéficos, para casas e empresas, poderiam ser alcançados por uma solução automatizada, que removesse os cuidados inalcançáveis e mantivessem o experiência vitalizadora da presença das plantas.
 
 ## Descrição Funcional
-
 > A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-
-    @@ -28,14 +46,61 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
+> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-
 > Detalhe todas as tarefas que o sistema será capaz de executar
 
-1. Umidade do substrato:
+- Umidade do substrato:
    - Medir a umidade do substrato e indicar a falta ou o excesso.
      - Medir a umidade do solo para, plantas em geral.
      - Medir a umidade do ar no interior de raízes ou em superfície, para orquídeas
@@ -59,20 +57,20 @@ Tantos fatores benéficos, para casas e empresas, poderiam ser alcançados por u
        - mangueira e bombeamento direto na solo (plantas em geral).
        - borrifamento leve (orquídeas e similares).
        - espalhamento e simulação de chuva (displays fechados)
-2. Iluminação:
+- Iluminação:
    - Medir a iluminação incidente e indicar falta ou excesso de luz.
    - Fornecer iluminação artificial que substitua ou suplemente a iluminação presente.
-3. Temperatura:
+- Temperatura:
    - Medir temperatura local e indicar necessidade de intervenção
    - Fornecer aquecimento possível.
-4. Tempo:
+- Tempo:
    - Medir o tempo e fornecer iluminação ou aguamento de acordo com cronograma diário ou semanal.
-5. Nutrientes:
+- Nutrientes:
    - Medir nutrientes principais e ph do solo, indicando ação necessária.
-6. Monitoramento e conectividade:
+- Monitoramento e conectividade:
    - Monitorar medições e armazenar dados da planta com relatório e possível indicação de intervenção.
    - Enviar dados da planta por wifi e monitoramento remoto por API ou aplicativo.
-7. Captura, envio e tratamento de imagens:
+- Captura, envio e tratamento de imagens:
    - Capturar imagens da planta e torná-las acessíveis remotamente (por API ou aplicativo).
    - Fornecer imagens e informaçãoes do momento atual.
    - Produzir animação timelapse de certos períodos.
@@ -80,12 +78,11 @@ Tantos fatores benéficos, para casas e empresas, poderiam ser alcançados por u
      <!-- - Possível identificação automática de espécie. -->
 
 ### Configurabilidade
-
 > Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
-> Configurações editáveis no aparelho ou remotamente:
 
+Configurações editáveis no aparelho ou remotamente:
 - Configuração customizada de aguamento e iluminação.
-- Configurações pré-fornecidas de aguamento e iluminação por espécies mais comuns.
+- Opções de configurações pré-fornecidas de aguamento e iluminação por espécies mais comuns.
 
 ### Eventos
 
