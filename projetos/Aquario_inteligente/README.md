@@ -26,7 +26,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Funcionalidades
 O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de botões e de um display o nível ou a faixa de temperatura e de pH desejados. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura e um de pH, além de medir o nível de ${CO}_2$ do tanque que é usado para regular o pH. As informações obtidas serão exibidas em tempo real no display e serão armazenadas para gerar os relatórios.
 
-Tarefas:
+Lista de tarefas:
 - Configuração do pH e temperatura desejados
 - Medir pH
 - Medir Temperatura
