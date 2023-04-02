@@ -6,12 +6,11 @@
 O presente projeto foi originado no contexto das atividades da disciplina de graduação *EA075 - Sistemas Embarcados*, 
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
-
-
 |Nome  | RA | Curso|
 |--|--|--|
 | Mateus Almeida Resende de Miranda  | 239852  | Eng. Elétrica|
 | Otávio Briske Lima  | 220716  | Eng. Elétrica|
+
 
 
 ## Descrição do Projeto
@@ -23,7 +22,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-
 
 ### Funcionalidades
 O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de botões e de um display o nível ou a faixa de temperatura e de pH desejados. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura e um de pH, além de medir o nível de ${CO}_2$ do tanque que é usado para regular o pH. As informações obtidas serão exibidas em tempo real no display e serão armazenadas para gerar os relatórios.
@@ -37,7 +35,6 @@ Tarefas:
 - Resfriar a água
 - Liberar ${CO}_2$ na água
 - Geração de relatórios e alertas no display
-
 
 
 ### Configurabilidade
@@ -57,8 +54,7 @@ Já para o último evento um elemento deve alertar a passagem de um ciclo, de fo
 
 
 ## Descrição Estrutural do Sistema
-![Estrutura do aquário inteligente](https://user-images.githubusercontent.com/128386956/229377444-eb438f00-ec3f-4680-8948-adeb6f429f39.png)
-
+![Estrutura do aquário inteligente](https://user-images.githubusercontent.com/128386956/229377536-f7c9c56f-26e6-4932-aa85-5ad2b1e48152.png)
 
 
 ## Referências
