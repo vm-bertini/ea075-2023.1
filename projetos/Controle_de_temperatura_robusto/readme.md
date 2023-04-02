@@ -18,12 +18,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 > |Nome | RA | Curso|
 
-> |--|--|--|
-
 > | Felipe dos Reis Lemos | 204069 | Eng. Elétrica|
 
 > | João Paulo Christofolletti | 199681 | Eng. Elétrica|
-
+>
   
   
 
