@@ -1,6 +1,6 @@
-# `Controlador automático de temperatura`
+# `Controle de temperatura robusto`
 
-# `Automatic temperature controller`
+# `Robust temperature control`
 
   
 
