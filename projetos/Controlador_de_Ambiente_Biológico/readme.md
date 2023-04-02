@@ -95,7 +95,7 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
 ## Descrição Estrutural do Sistema
 O Sistem foi pensado e dividido nas seguintes partes: sensores gerais, que medem um parâmetro para a planta; atuadores de iluminação e irrigação; módulo de relógio, para controle de tempo; elementos de comunicação, como módulo wifi e, como possibilidade, display e botões (o projeto tem como objetivo ser totalmente controlado apenas remotamente, sem configurações diretas no dispositivo); e o módulo de câmera e produção de imagens, que foi pensado separadamente, devido à complexidade específica.
 
-![image](https://drive.google.com/file/d/1snFjC7HWc4AtHhKjwESGPSURNZZuK8Be/view)
+![image](https://drive.google.com/uc?export=view&id=1fs4Ybog8M8WIbZz2sgrIXaeM3cn_ePwT)
 
 ## Referências
 https://www.bybrittanygoldwyn.com/grow-lights-houseplants/
