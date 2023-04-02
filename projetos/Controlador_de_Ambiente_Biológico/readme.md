@@ -87,7 +87,6 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
   - Sinalizar protamente, podendo ser desabilitado.
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 - Para o aguamento da planta o intervalo necessário de monitoramento estivo estimado está entre 10 min até mesmo 1 hora. Considera-se que, com a sinalização de necessidade de água, o atuador de irrigação deverá agir prontamente, mas acredita-se que será necessário um tempo em torno de 10 min para que a água se infiltre no substrato e uma nova aferição correta de umidade possa ser feita. Portanto esse será o tempo mínimo estimado para uma nova intervenção.
 - Para a detecção iluminação insuficiente a ação dos atuadores deve ser imediata e em tempo real. No entanto, considera-se que nenhuma mudança drástica deve ocorrer em um período maior que 1 segundo, e portanto esse será o intervalo entre cada monitoramento.
 - Outro modo de ação da iluminação poderá ser, em conjuto com o anterior ou exclusivamente, de acordo com a janela diária de horário de iluminação programada.
@@ -96,11 +95,9 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
 ## Descrição Estrutural do Sistema
 O Sistem foi pensado e dividido nas seguintes partes: sensores gerais, que medem um parâmetro para a planta; atuadores de iluminação e irrigação; módulo de relógio, para controle de tempo; elementos de comunicação, como módulo wifi e, como possibilidade, display e botões (o projeto tem como objetivo ser totalmente controlado apenas remotamente, sem configurações diretas no dispositivo); e o módulo de câmera e produção de imagens, que foi pensado separadamente, devido à complexidade específica.
 
-![image](https://drive.google.com/file/d/1snFjC7HWc4AtHhKjwESGPSURNZZuK8Be/view?usp=share_link)
+![image](https://drive.google.com/file/d/1snFjC7HWc4AtHhKjwESGPSURNZZuK8Be/view)
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
-
 https://www.bybrittanygoldwyn.com/grow-lights-houseplants/
 
 https://www.youtube.com/watch?v=QTH9m6MDIfc&ab_channel=Dr.Plants
