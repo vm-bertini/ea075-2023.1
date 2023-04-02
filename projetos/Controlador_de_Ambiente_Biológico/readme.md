@@ -16,7 +16,7 @@ Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos 
 ## Descrição do Projeto
 A natureza e sua preservação, tal como os impactos ambientais, têm tido cada vez mais destaque no mundo contemporâneo. A cada etapa de projeto, critérios como a sustentabilidade, otimização de processos e utilização de meios alternativos detém uma presença mais que necessária, uma vez que a sociedade passou a ser mais exigente com os comprometimentos sócio-ambientais. 
 
-O projeto de simulador ambiental para desenvolvimento de plantas agrega muito valor econômico e ambiental, pois os processos passam a se tornar automatizados, possibilitando um cenário mais adequado para a planta. Grandezas como temperatura, umidade e luminosidade passam a ser monitoradas através de sensores e câmeras, possibilitando uma maior eficácia em seu desenvolvimento, graças a atuadores conectados à microcontroladores que possibilitam em alguns casos, até mesmo vigilância via remota por meio de aplicativos. A importância desses parâmetros é evidenciada quando destaca-se que, em condições não propícias de maturação das plantas, pode ocorrer o fechamento dos estômatos que provocam uma diminuição de trocas gasosas e, consequentemente, uma alteração no processo de difusão de vapor de água que pode vir a interferir no processo de fotossíntese; inclusive reduzindo a quantidade de nutrientes absorvidos. Quando expostas a um ambiente com constante incidência solar, algumas plantas adoencem pelo estresse e podem ressecar e morrer. 
+O projeto de simulador ambiental para desenvolvimento de plantas agrega muito valor econômico e ambiental, pois os processos passam a se tornar automatizados, possibilitando um cenário mais adequado para a planta. Grandezas como temperatura, umidade e luminosidade passam a ser monitoradas através de sensores e câmeras, possibilitando uma maior eficácia em seu desenvolvimento, graças a atuadores conectados à microcontroladores que possibilitam em alguns casos, até mesmo vigilância via remota por meio de aplicativos. A importância desses parâmetros é evidenciada quando destaca-se que, em condições não propícias de maturação das plantas, pode ocorrer o fechamento dos estômatos que provocam uma diminuição de trocas gasosas e, consequentemente, uma alteração no processo de difusão de vapor de água que pode vir a interferir no processo de fotossíntese; inclusive reduzindo a quantidade de nutrientes absorvidos. Outra possível consequência é quando ela se encontra em um ambiente com constante incidência solar, pois algumas plantas adoecem devido ao estresse, o que pode arrecatar no fato de ressecar e morrer. 
 
 De forma geral, cuidar de plantas no interior de ambientes requer muito zelo, responsabilidade e habilidade, que por muitas vezes; devido à fatores como pressão externa, falta de tempo ou mesmo esquecimento, acaba com comprometer sua integridade. Dependendo da situação, pode requerer reposição de mudas ou até mesmo presença constante de profissionais especializados, sendo que se contabilizar gastos com ferramentas, substratos e vasos, o gasto pode chegar a se tornar inviável, chegando em torno de R$200 - 300 por planta. Por esse motivo, a presença de uma ambientação adequada e otimizada é a diferença entre uma estabilidade e durabilibilidade maximizada do tempo de vida desses seres. Como o projeto propõe, a criação dentro de um ambiente interno é mais desejável, pois além de proporcionar condições desejadas para as plantas, servir de decoração (podendo ser utilizado até dentro do âmbito empresarial) e melhorar a qualidade do ar; uma vantagem extremamente importante é que no caso de plantas voltadas ao cultivo para consumo, há uma proteção quase que integral contra possíveis predadores e pragas.
 
@@ -59,8 +59,8 @@ Visa, inclusive, o desenvolvimento de plantas de diferentes espécies no interio
 
 ### Configurabilidade
 Configurações editáveis no aparelho ou remotamente (o objetivo inicial do projeto é ser totalmente controlado de forma remota):
-- Configuração customizada de aguamento e iluminação.
-- Opções de configurações pré-fornecidas de aguamento e iluminação por espécies mais comuns.
+- Configuração customizada de irrigação e iluminação.
+- Opções de configurações pré-determinadas de irrigação e iluminação por espécies mais comuns.
 
 ### Eventos
 - Irrigação: apenas em casos de baixo nível de umidade.
@@ -72,16 +72,16 @@ Configurações editáveis no aparelho ou remotamente (o objetivo inicial do pro
 - Identificação de nutrientes: baixo nível de nutrientes.
   - Evento com menor intervalo, de 1 ~ 7 dias entre cada aferimento e indicação.
 - Temperatura: temperatura excessivamente alta ou baixa.
-  - Sinalizar protamente, podendo ser desabilitado.
+  - Sinalizar prontamente, podendo ser desabilitado.
 
 ### Tratamento de Eventos
-- Para a irrigação da planta, o intervalo necessário de monitoramento estivo estimado está entre 10 min até mesmo 1 hora. Considera-se que, com a sinalização de necessidade de água, o atuador de irrigação deverá agir prontamente, mas acredita-se que será necessário um tempo em torno de 10 min para que a água se infiltre no substrato e uma nova aferição correta de umidade possa ser feita. Portanto esse será o tempo mínimo estimado para uma nova intervenção.
+- Para a irrigação da planta, o intervalo necessário de monitoramento estivo estimado está entre 10 min até mesmo 1 hora. Considera-se que, com a sinalização de necessidade de água, o atuador de irrigação deverá agir prontamente, mas acredita-se que será necessário um tempo em torno de 10 min para que a água se infiltre no substrato e uma nova medição correta de umidade possa ser feita. Portanto esse será o tempo mínimo estimado para uma nova intervenção.
 - Para a detecção iluminação insuficiente a ação dos atuadores deve ser imediata e em tempo real. No entanto, considera-se que nenhuma mudança drástica deve ocorrer em um período maior que 1 segundo, e portanto esse será o intervalo entre cada monitoramento.
 - Outro modo de ação da iluminação poderá ser, em conjuto com o anterior ou exclusivamente, de acordo com a janela diária de horário de iluminação programada.
 - Para a possibilade de monitoramento de nutrientes, estima-se que, em caso de adição dos compostos necessários, manual ou automaticamente, seja necessário um tempo maior para que uma nova aferição correta pode ser feita, assim que os compostos tenham se dissolvido no substrato. Estima-se entre horas ou dias para que o processo finalize. Assim, se o equipamento sinalizar a falta de algum nutriente, deve haver a adição de composto, sendo que o microcontrolador deverá tomar esse tipo de decisão ou ainda, com o usuário do aparelho indicando se tal ação deve ser efetuada.
 
 ## Descrição Estrutural do Sistema
-O Sistem foi pensado e dividido nas seguintes partes: sensores gerais, que medem um parâmetro para a planta; atuadores de iluminação e irrigação; módulo de relógio, para controle de tempo; elementos de comunicação, como módulo wifi e, como possibilidade, display e botões (o projeto tem como objetivo ser totalmente controlado apenas remotamente, sem configurações diretas no dispositivo); e o módulo de câmera e produção de imagens, que foi pensado separadamente, devido à complexidade específica.
+O Sistema foi pensado e dividido nas seguintes partes: sensores gerais, que medem um parâmetro para a planta; atuadores de iluminação e irrigação; módulo de relógio, para controle de tempo; elementos de comunicação, como módulo wifi e, como possibilidade, display e botões (o projeto tem como objetivo ser totalmente controlado apenas remotamente, sem configurações diretas no dispositivo); e o módulo de câmera e produção de imagens, que foi pensado separadamente, devido à complexidade específica.
 
 ![image](https://drive.google.com/uc?export=view&id=1fs4Ybog8M8WIbZz2sgrIXaeM3cn_ePwT)
 
@@ -89,3 +89,5 @@ O Sistem foi pensado e dividido nas seguintes partes: sensores gerais, que medem
 https://www.bybrittanygoldwyn.com/grow-lights-houseplants/
 
 https://www.youtube.com/watch?v=QTH9m6MDIfc&ab_channel=Dr.Plants
+
+
