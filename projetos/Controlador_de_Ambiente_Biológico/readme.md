@@ -40,15 +40,15 @@ Tantos fatores benéficos, para casas e empresas, poderiam ser alcançados por u
 ### Funcionalidades
 - Umidade do substrato:
    - Medir a umidade do substrato e indicar a falta ou o excesso.
-         - Medir a umidade do solo para, plantas em geral.
-         - Medir a umidade do ar no interior de raízes ou em superfície, para orquídeas
-         - Medir nível de água para espécies com alto aguamento.
+      - Medir a umidade do solo para, plantas em geral.
+      - Medir a umidade do ar no interior de raízes ou em superfície, para orquídeas
+      - Medir nível de água para espécies com alto aguamento.
    - Fornecer aguação adequada e programável:
-         - Quantidade de água configurada por planta
-         - Modos de aguamento múltiplos:
-            - irrigação por gotejamento direto na solo (plantas em geral).
-            - borrifamento leve (orquídeas e similares).
-            - aspersão e simulação de chuva (displays fechados)
+      - Quantidade de água configurada por planta
+      - Modos de aguamento múltiplos:
+         1. irrigação por gotejamento direto na solo (plantas em geral).
+         2. borrifamento leve (orquídeas e similares).
+         3. aspersão e simulação de chuva (displays fechados)
 - Iluminação:
    - Medir a iluminação incidente e indicar falta ou excesso de luz.
    - Fornecer iluminação artificial que substitua ou suplemente a iluminação presente.
