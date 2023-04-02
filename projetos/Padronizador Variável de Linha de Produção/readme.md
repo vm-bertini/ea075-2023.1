@@ -26,13 +26,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 >assim evitando ambos os casos e podendo aumentar/diminuir o fluxo de produtos dependendo da necessidade para a manufatura.
 
 >O problema que será resolvido é pontual, e, igualmente, o projeto irá resolver ele pontualmente, com baixo número de componentes, 
->necessitando apenas de um sensor simples, um microcontrolador (MCU), um temporizador, e um motor (de preferência DC).
-
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> Qual problema vocês pretendem solucionar?
-> Quem são os potenciais usuários?
-> É possível estabelecer um valor econômico associado?
+>necessitando apenas de um sensor simples, um microcontrolador (MCU), dois temporizadores, 
+>uma para controlar os momentos da entrada de itens e outra para contar, regressivamente, a saída, e um motor (de preferência DC).
 
 
 ## Descrição Funcional
@@ -42,9 +37,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 >Por exemplo, caso a necessidade de entrega de produto for de 1 produto/10 segundos, 
 >e ele detecta um produto no momento t = 1 e outro no t = 9, com Δt = 8s, após a entrega do primeiro produto, 
 >ele irá desacelerar a  esteira para entregar o segundo produto com o atraso pedido de 10s.
-
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
 * Detecção de Produtos por meio do sensor infravermelho:
@@ -62,10 +54,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Eventos
 * Passagem de item pelo sensor (não periódico)
 * Item saindo da esteira (não periódico)
-
-> Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
 
 ### Tratamento de Eventos
 * Passagem de item pelo sensor (não periódico):
