@@ -15,17 +15,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> Qual problema vocês pretendem solucionar?
-> Quem são os potenciais usuários?
-> É possível estabelecer um valor econômico associado?
-
-
-O principal objetivo deste projeto é de realizar o controle necessário para a manutenção das grandezas físicas necessárias de um ecossistema aquático.
-A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para vida aquática.
-O aquário inteligente é um sistema capaz de controlar condições do biossistema como pH, temperatura e nível de água de um aquário marinho. Como tais existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.
-Dessa forma usuários que desejam possuir aquários não precisarão se preocupar com as tarefas de tratamento requeridas, podendo verificar o estado em que o ecossistema se encontra através do relatório gerado.
+  O principal objetivo deste projeto é de realizar o controle de algumas grandezas físicas e químicas necessárias para a manutenção um ecossistema aquático marinho. Como existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.
+  O aquário inteligente é um sistema capaz de controlar o pH, a temperatura e medir o nível de ${CO}_2$ de um tanque responsável pelo controle de pH. Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado que também serve para otimizar o aquário caso esteja muito descontrolado. 
+  A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento.
+  No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, é difícil de se estabelecer um valor econômico a sua implementação prática.
 
 
 ## Descrição Funcional
