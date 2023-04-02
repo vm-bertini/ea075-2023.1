@@ -59,3 +59,5 @@ Já para o último evento um elemento deve alertar a passagem de um ciclo, de fo
 
 ## Referências
 Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023.
+Ferramenta StackEdit.
+Referência: Mastering Markdown.
