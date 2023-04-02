@@ -77,7 +77,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
   * Esse saída do item pela esteira deve ser estimado pelo microcontrolador, baseada na velocidade da esteira em em seu tamanha (ou sua distância para o fim da esteira)
 
 ## Descrição Estrutural do Sistema
-
+![Draw.io padronizador](Diagrama sem nome.drawio)
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
