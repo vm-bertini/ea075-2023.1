@@ -53,11 +53,13 @@ E, como último evento, temos a solicitação (por meio do pressionamento de um 
 
 ### Tratamento de Eventos
 O tratamento do primeiro tipo de evento consiste em utilizar atuadores de forma a balancear as variáveis físicas para que atinjam os valores configurados, nesse aspecto: caso a temperatura esteja abaixo/acima do valor desejado o microcontrolador deve ativar respectivamente o sistema de aquecimento/resfriamento; enquanto caso o pH esteja acima do esperado o sistema embarcado deve comandar a liberação de ${CO}_2$.
-Já para o último evento um elemento deve alertar a passagem de um ciclo, de forma com que os valores medidos pelos sensores, assim como os estados do sistema de refrigeração, do sistema de aquecimento e da válvula de liberação de ${CO}_2$ são captados e transferidos para um relatório, juntamente das configurações atuais, que é exibido em um display.
+Já para o último evento um elemento deve alertar a passagem de um ciclo, de forma com que os valores medidos pelos sensores, assim como os estados do sistema de refrigeração, do sistema de aquecimento e da válvula de liberação de ${CO}_2$ são captados e transferidos para um relatório, juntamente das configurações atuais, que são exibidos em um display.
 
 
 ## Descrição Estrutural do Sistema
+![Estrutura do aquário inteligente](https://user-images.githubusercontent.com/128386956/229377444-eb438f00-ec3f-4680-8948-adeb6f429f39.png)
+
 
 
 ## Referências
-
+Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023.
