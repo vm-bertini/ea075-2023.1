@@ -52,7 +52,7 @@ E, como último evento, temos a solicitação (por meio do pressionamento de um 
 
 
 ### Tratamento de Eventos
-O tratamento do primeiro tipo de evento consiste em utilizar atuadores de forma a balancear as variáveis físicas para que atinjam os valores configurados, nesse aspecto: caso a temperatura esteja abaixo/acima do valor desejado o microcontrolador deve ativar respectivamente o sistema de aquecimento/resfriamento; enquanto caso o pH esteja acima do esperado o sistema embarcado deve comandar a liberação de CO2.
+O tratamento do primeiro tipo de evento consiste em utilizar atuadores de forma a balancear as variáveis físicas para que atinjam os valores configurados, nesse aspecto: caso a temperatura esteja abaixo/acima do valor desejado o microcontrolador deve ativar respectivamente o sistema de aquecimento/resfriamento; enquanto caso o pH esteja acima do esperado o sistema embarcado deve comandar a liberação de ${CO}_2$.
 Já para o último evento um elemento deve alertar a passagem de um ciclo, de forma com que os valores medidos pelos sensores, assim como os estados do sistema de refrigeração, do sistema de aquecimento e da válvula de liberação de ${CO}_2$ são captados e transferidos para um relatório, juntamente das configurações atuais, que é exibido em um display.
 
 
