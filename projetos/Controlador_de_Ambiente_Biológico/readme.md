@@ -90,4 +90,6 @@ https://www.bybrittanygoldwyn.com/grow-lights-houseplants/
 
 https://www.youtube.com/watch?v=QTH9m6MDIfc&ab_channel=Dr.Plants
 
+https://repositorio.unesp.br/bitstream/handle/11449/103444/souza_tr_dr_botfca.pdf?sequence=1&isAllowed=y
 
+https://repositorio.ufu.br/bitstream/123456789/34084/1/SistemaAutomatizadoIrriga%c3%a7%c3%a3o.pdf
