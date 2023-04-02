@@ -1,16 +1,17 @@
-# `<Aquário Inteligente>`
-# `<Smart Aquarium>`
+# `Aquário Inteligente`
+# `Smart Aquarium`
 
 ## Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de graduação *EA075 - Sistemas Embarcados*, 
 oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
-> |Nome  | RA | Curso|
-> |--|--|--|
-> | Mateus Almeida Resende de Miranda  | 239852  | Eng. Elétrica|
-> | Otávio Briske Lima  | 220716  | Eng. Elétrica|
+
+
+|Nome  | RA | Curso|
+|--|--|--|
+| Mateus Almeida Resende de Miranda  | 239852  | Eng. Elétrica|
+| Otávio Briske Lima  | 220716  | Eng. Elétrica|
 
 
 ## Descrição do Projeto
