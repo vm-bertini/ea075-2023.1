@@ -1,5 +1,5 @@
-# `<Padronizador Variável de Linha de Produção>`
-# `<Variable Line Production Standardizer>`
+# `Padronizador Variável de Linha de Produção`
+# `Variable Line Production Standardizer`
 
 ## Apresentação
 
@@ -13,6 +13,21 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
+>Este projeto surge como um otimizador de linhas de produção. No contexto de linhas de produção, 
+>os produtos que serão manufaturados são transportados por uma esteira transportadora equidistantes uns dos outros,
+>dando assim um tempo padronizado para as máquinas e trabalhadores do chão de fábrica trabalharem no produto. 
+>Entretanto isto nem sempre acontece, existem casos onde os produtos são transportados amontoados 
+>ou muito espaçados uns entre os outros, em ambos os casos há problemas, se os produtos estiverem amontoados, 
+>há maior chance de perda de produtos, onde os trabalhadores/ máquinas não conseguiram trabalhar em todos, 
+>necessitando descarte, e, no caso deles estarem muito espaçados, há o problema de aumento no tempo de manufatura, 
+>que também é uma perda para a fábrica.
+
+>Este produto tenta resolver isso, padronizando as distâncias entre os produtos nas esteiras, 
+>assim evitando ambos os casos e podendo aumentar/diminuir o fluxo de produtos dependendo da necessidade para a manufatura.
+
+>O problema que será resolvido é pontual, e, igualmente, o projeto irá resolver ele pontualmente, com baixo número de componentes, 
+>necessitando apenas de um sensor simples, um microcontrolador (MCU), um temporizador, e um motor (de preferência DC).
+
 > Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
 > Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
 > Qual problema vocês pretendem solucionar?
@@ -21,34 +36,48 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
+>O padronizador funciona utilizando um sensor infravermelho que detecta a presença de produto passando 
+>e o tempo no qual eles passaram, com essas informações ele varia a velocidade da esteira, 
+>assim regulando a distância entre os produtos. 
+>Por exemplo, caso a necessidade de entrega de produto for de 1 produto/10 segundos, 
+>e ele detecta um produto no momento t = 1 e outro no t = 9, com Δt = 8s, após a entrega do primeiro produto, 
+>ele irá desacelerar a  esteira para entregar o segundo produto com o atraso pedido de 10s.
+
 > A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
 > com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
+* Detecção de Produtos por meio do sensor infravermelho:
+  * Item chega na esteira conectada com o padronizador, passando pelo sensor
+  * Sensor registra o momento de passagem 
+* Cálculo de distância entre dois produtos em sequência:
+  * Momento da passagem é usado em comparação com o segundo item e com a velocidade da esteira para calcular a distância entre os items
+  
+* Aceleração ou diminuição da velocidade da esteira de acordo com a quantidade e distância entre o próximo item na esteira e o final da esteira:
+  * Aciona um valor de tensão para o motor DC regulando a velocidade desejada para a chegada do produto
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+> Configurado para funcionar em apenas um modo
 
 ### Eventos
+* Passagem de item pelo sensor (não periódico)
+* Item saindo da esteira (não periódico)
+
 > Quais eventos o sistema deve tratar?
 > Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
 > (qual o tempo mínimo entre dois eventos sucessivos)?
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
+* Passagem de item pelo sensor (não periódico):
+  * Para esse evento o padronizador deve registrar o momento de passagem referente a esse produto
+  * Ele deve comparar esse valor registrado com o valor do item anterior a ele, para calcular sua distância
+  * Caso o item em questão seja o primeiro ele deve ser tratado de maneira diferente
+* Item saindo da esteira (não periódico)
+  * O motor deve ser ajustado para um novo valor de velocidade, referente ao próximo item, sempre que o mais a frente sai da esteira
+  * Esse saída do item pela esteira deve ser estimado pelo microcontrolador, baseada na velocidade da esteira em em seu tamanha (ou sua distância para o fim da esteira)
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
+
 
 ## Referências
 > Seção obrigatória. Inclua aqui referências utilizadas no projeto.
