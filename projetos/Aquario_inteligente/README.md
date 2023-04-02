@@ -54,6 +54,7 @@ Já para o último evento um elemento deve alertar a passagem de um ciclo, de fo
 
 
 ## Descrição Estrutural do Sistema
+O seguinte diagrama apresenta a descrição estrutural do sistema, através da exibição de como os objetos que o compõem interagem entre si.
 ![Estrutura do aquário inteligente](https://user-images.githubusercontent.com/128386956/229377536-f7c9c56f-26e6-4932-aa85-5ad2b1e48152.png)
 
 
