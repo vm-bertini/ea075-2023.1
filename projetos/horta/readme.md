@@ -13,11 +13,6 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> Qual problema vocês pretendem solucionar?
-> Quem são os potenciais usuários?
-> É possível estabelecer um valor econômico associado? 
 
 O objetivo principal do projeto é criar um produto que faça a manutenção de uma pequena horta doméstica de forma automatizada, sem que o(a) usuário(a) necessite ter um cuidado diário com a horta. A motivação se originou no fato de existirem pessoas com interesse em cultivar uma horta doméstica, mas que passam a maior parte do dia ou até mesmo vários dias fora de casa e por isso não podem realizar as tarefas necessárias para o cultivo de forma ideal, principalmente em relação a irrigação. Assim, os potenciais usuários são estas pessoas que querem cultivar uma horta doméstica, mas não podem ou não querem realizar os cuidados rotineiros manualmente.
 
@@ -25,11 +20,8 @@ De início, não foi possível estabelecer um valor econômico associado ao proj
 
 
 ## Descrição Funcional
-> A descrição funcional do projeto é a principal entrega do E1 e pode ser realizada neste próprio arquivo Markdown,
-> com links para diagramas ou outros arquivos que estejam no próprio repositório.
 
 ### Funcionalidades
-> Detalhe todas as tarefas que o sistema será capaz de executar
 
 O projeto tem como as principais funcionalidades:
 - Molhar a planta;
@@ -38,16 +30,11 @@ O projeto tem como as principais funcionalidades:
 
 
 ### Configurabilidade
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
-
 
 Quanto as configurabilidades, é possivel que o(a) usuário(a) decida manualmente, através de um botão, se quiser molhar ou fertilizar. Além disso, o(a) usuário(a) poderá configurar se a planta está em um espaço com iluminação natural ou não, por meio de um interruptor, e se ela será ou não fertilizada automaticamente a cada 30 dias.
 
 
 ### Eventos
-> Quais eventos o sistema deve tratar?
-> Se aplicável, classifique os eventos que são periódicos (procure especificar a periodicidade) e os que são não-periódicos
-> (qual o tempo mínimo entre dois eventos sucessivos)?
 
 O sistema deverá verificar a umidade do solo a cada 12h, decidir molhar ou não. Além de verificar interrupções provenientes dos botões, que não são periódicos, quanto à: a) molhar naquele momento; b) fertilizar naquele momento; c) ativar/desativar a fertilização automática e; d) ativar/desativar modo iluminação artificial.
 
@@ -55,7 +42,6 @@ Caso a função de fertilização esteja ativada, o sistema deverá periodicamen
 
 
 ### Tratamento de Eventos
-> Qual comportamento o sistema deve ter para tratar corretamente cada evento?
 
 O sistema deverá tratar o pressionamento dos botões e do interruptor. Outro ponto a ser tratado são as rotinas de molhar, fertilizar e iluminar as plantas periodicamente.
 
@@ -64,17 +50,6 @@ Ao tratar o evento de "a) molhar naquele momento", o sistema deve realizar a irr
 Já ao tratar o evento de "b) fertilizar naquele momento", o sistema deve realizar a fertilização e colocar a rotina de fetilização automática no início da espera para a nova fertilização, caso esta função esteja ativada.
 
 ## Descrição Estrutural do Sistema
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-> 
-
 
 Para tratar corretamente os eventos, temos que, para a irrigação das plantas, é necessário:
 1) Medir a umidade do solo e de acordo com os padrões pré-estabelecidos categorizar entre: criticamente seco, seco ou úmido. 
@@ -106,7 +81,6 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 
 ## Referências
-> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
 
 [1] [Horta automatizada](https://github.com/renanserrano/horta-automatizada)
 
