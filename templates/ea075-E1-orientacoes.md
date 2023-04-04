@@ -9,7 +9,7 @@ Nesta primeira entrega, siga as seguintes instruções atentamente:
  * Faça fork deste repositório.
  * No seu fork, dentro da pasta de `projetos`, *crie uma nova pasta* com o *nome do seu projeto*.
  * Faça o commit dos arquivos associados a esta entrega, conforme descrito a seguir.
- * Quando tudo estiver pronto para entrega, crie uma tag de release no repositório identificada como `2022.2_EA075_E1`.
+ * Quando tudo estiver pronto para entrega, crie uma tag de release no repositório identificada como `2023.1_EA075_E1`.
  * Até a data de submissão estabelecida, crie um pull request para este repositório.
 
 ## Orientações para edição do arquivo README.md do projeto
