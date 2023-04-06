@@ -14,24 +14,21 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
   
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
+|Nome | RA | Curso|
 
-> |Nome | RA | Curso|
+| Felipe dos Reis Lemos | 204069 | Eng. Elétrica|
+| João Paulo Christofolletti | 199681 | Eng. Elétrica|
 
-> | Felipe dos Reis Lemos | 204069 | Eng. Elétrica|
-
-> | João Paulo Christofolletti | 199681 | Eng. Elétrica|
->
   
   
 
 ## Descrição do Projeto
 
-> O mal controle de temperatura pode interferir em diversos processos industriais, especialmente tratando-se de produtos sensíveis a alterações ambientais como os dos setores farmacêutico e alimentício. Logo, o controle dessa variável é fundamental para garantir que o padrão de qualidade seja atingido, pois a falta de controle sobre a temperatura do ambiente pode resultar em desperdício dos produtos, o que significa prejuízos financeiros. Há equipamentos que necessitam também atuar dentro da faixa de temperatura indicada pelos fabricantes, ou poderão apresentar defeitos.
->
-> Diante disso, este projeto tem como objetivo realizar o controle de temperatura de um determinado ambiente de forma robusta utilizando a média ponderada de quatro sensores de temperaturas espalhados pelo ambiente e usando um controle PID. Pode-se ser desde um ambiente industrial, onde se encontra uma linha de produção que necessita de uma temperatura uniforme ao longo de todo o percurso, por exemplo, ou um ambiente residencial, o qual pode ser um cômodo ou a casa inteira. Portanto, é esperado uma maximização da eficiência energética e consequentemente o controle mais preciso e uniforme da temperatura do local escolhido pelo cliente, garantindo assim maior qualidade sobre seu produto.
->
-> O público alvo são empresas ou pessoas específicas, as quais desejam uniformizar, maximizar e obter uma maior eficiência energética em relação a refrigeração presentes em suas residências, e empresas as quais necessitam garantir um controle preciso da temperatura em sua linha de produção, por exemplo, para que possam aumentar a qualidade e confiabilidade de seus produtos.
+O bom controle de temperatura pode interferir em diversos processos industriais, especialmente tratando-se de produtos sensíveis a alterações ambientais como os dos setores farmacêutico e alimentício. Logo, o controle dessa variável é fundamental para garantir que o padrão de qualidade seja atingido, pois a falta de controle sobre a temperatura do ambiente pode resultar em desperdício dos produtos, o que significa prejuízos financeiros. Há equipamentos que necessitam também atuar dentro da faixa de temperatura indicada pelos fabricantes, ou poderão apresentar defeitos.
+
+Diante disso, este projeto tem como objetivo realizar o controle de temperatura de um determinado ambiente de forma robusta utilizando a média ponderada de quatro sensores de temperaturas espalhados pelo ambiente e usando um controle PID. Pode-se ser desde um ambiente industrial, onde se encontra uma linha de produção que necessita de uma temperatura uniforme ao longo de todo o percurso, por exemplo, ou um ambiente residencial, o qual pode ser um cômodo ou a casa inteira. Portanto, é esperado uma maximização da eficiência energética e consequentemente o controle mais preciso e uniforme da temperatura do local escolhido pelo cliente, garantindo assim maior qualidade sobre seu produto.
+
+O público alvo são empresas ou pessoas específicas, as quais desejam uniformizar, maximizar e obter uma maior eficiência energética em relação a refrigeração presentes em suas residências, e empresas as quais necessitam garantir um controle preciso da temperatura em sua linha de produção, por exemplo, para que possam aumentar a qualidade e confiabilidade de seus produtos.
 > 
 > Um controle de temperatura por PID é uma tecnologia avançada que permite um controle preciso da temperatura em processos industriais. Isso pode resultar em economia de energia e aumento da eficiência do processo de controle. Além disso, é um tipo de controle amplamente utilizado nas mais diversas complexidades da indústria, não somente em processos simples.
 > 
