@@ -79,11 +79,23 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de iluminação](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_iuminacao.png "Fluxograma de funcionamento do sistema de iluminação")
 
-###Especificações (warning NOVO warning)
+### Especificações (warning NOVO warning)
 
-##Especificação Estrutural
+| Item                                          | Quantidade |               Funcionalidade para o Circuito              |                 Datasheet                 | Preço | Link de compra                                                                                                        |
+|-----------------------------------------------|------------|:---------------------------------------------------------:|:-----------------------------------------:|:-----:|-----------------------------------------------------------------------------------------------------------------------|
+| Arduino Uno R3 + Cabo USB;                    |          1 | Unidade micro-controladora                                |                                           |       |                                                                                                                       |
+| Sensor de Umidade de Solo para Arduino;       |          1 | conferir a umidade do solo                                |                                           |       |                                                                                                                       |
+| Vávula solenóide água 110V                    |          2 | controlar quando será molhado e fertilizado               |                                           |       |                                                                                                                       |
+| Módulo Relé 5V 10A 1 Canal com Optoacoplador; |          3 | ativar a lampada e as valvulas                            |                                           | 13,87 | https://www.usinainfo.com.br/rele-arduino/modulo-rele-5v-10a-1-canal-com-optoacoplador-para-esp32-e-arduino-2533.html |
+| Fonte de Alimentação para Arduino 9VDC 1A;    |          1 | alimentar a tesão                                         |                                           |       |                                                                                                                       |
+| Botão                                         |          2 | molhar e fertilizar manualmente                           | https://www.hdk.co.jp/pdf/eng/e291702.pdf |       |                                                                                                                       |
+| Interruptor                                   |          1 | definir se está em um lugar com iluminação natural ou não |                                           |       |                                                                                                                       |
+| LED                                           |          2 | avisar se está ativo o modo automatico                    |                                           |       |                                                                                                                       |
+| Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
+| Sensor de luminosidade                        |          1 | conferir a luminosidade do local                          |                                           |       |                                                                                                                       |
+## Especificação Estrutural
 
-##Especificação de Algoritmos
+## Especificação de Algoritmos
 
 ## Referências
 
