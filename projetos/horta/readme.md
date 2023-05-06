@@ -79,6 +79,11 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de iluminação](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_iuminacao.png "Fluxograma de funcionamento do sistema de iluminação")
 
+###Especificações (warning NOVO warning)
+
+##Especificação Estrutural
+
+##Especificação de Algoritmos
 
 ## Referências
 
