@@ -81,6 +81,8 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ### Especificações (warning NOVO warning)
 
+Os principais itens necessários para o projeto estão descritos na tabela abaixo.
+
 | Item                                          | Quantidade |               Funcionalidade para o Circuito              |                 Datasheet                 | Preço | Link de compra                                                                                                        |
 |-----------------------------------------------|------------|:---------------------------------------------------------:|:-----------------------------------------:|:-----:|-----------------------------------------------------------------------------------------------------------------------|
 | Arduino Uno R3 + Cabo USB;                    |          1 | Unidade micro-controladora                                |                                           |       |                                                                                                                       |
@@ -93,6 +95,9 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 | LED                                           |          2 | avisar se está ativo o modo automatico                    |                                           |       |                                                                                                                       |
 | Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
 | Sensor de luminosidade                        |          1 | conferir a luminosidade do local                          |                                           |       |                                                                                                                       |
+
+Inicialmente optamos por utilizar do microcontrolador Atmega328p dado a familiaridade dos alunos com este. Sabemos que esse microcontrolador é mais caro que outros que conseguiriam realizar a mesma função e apresenta uma capacidade de memória excessiva para o trabalho. Contudo, ele é bastante popularizado, possibilitando que o compartilhamento do projeto e sua replicação com maior facilidade, além de ser mais acessíveis a resolução de eventuais dúvidas.
+
 ## Especificação Estrutural
 
 ## Especificação de Algoritmos
