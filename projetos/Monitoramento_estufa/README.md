@@ -210,6 +210,40 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 Para a amostragem da temperatura:
 ![image](https://user-images.githubusercontent.com/107422206/236696956-68dcf807-9bde-4a49-bc3c-87a116b963b9.png)
 
+>
+> - Tratamento da amostragem de temperatura: 
+> 
+> - Tratamento da amostragem de umidade:
+> 
+> - Tratamento da amostragem de luminosidade: 
+>
+> - Tratamento quando a temperatura está dentro da faixa desejada:
+>
+> - Tratamento quando a temperatura está abaixo da temperatura mínima configurada:
+> 
+> - Tratamento quando a temperatura está acima da temperatura máxima configurada:
+> 
+> - Tratamento quando a umidade está dentro da faixa desejada:
+> 
+> - Tratamento quando a umidade está abaixo da umidade mínima configurada:
+>  
+> - Tratamento quando a umidade está acima da umidade máxima configurada:
+> 
+> - Tratamento quando a luminosidade está dentro da faixa desejada:
+> 
+> - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
+> 
+> - Tratamento quando a luminosidade está acima da luminosidade máxima configurada:
+> 
+> - Tratamento quando o botão de configuração está apertado:
+> ![image](https://user-images.githubusercontent.com/107422206/236700114-71c4a9ee-358b-4d4a-88bb-3dff188f349c.png)
+> - Tratamento quando o botão de incremento está apertado:
+> 
+> - Tratamento quando o botão de decremento está apertado:
+> 
+> - Tratamento quando o botão para mudar parâmetro selecionado está apertado:
+
+
 ## Referências
 > http://sistemaolimpo.org/midias/uploads/fa4a7bc53246a8a9bf8642442a68fe3c.pdf
 >
@@ -224,3 +258,5 @@ Para a amostragem da temperatura:
 >https://embarcados.com.br/sensores-e-atuadores-iot/
 >
 >https://dgadelha.github.io/Portugol-Webstudio/
+>
+>https://lyceumonline.usf.edu.br/salavirtual/documentos/2702.pdf
