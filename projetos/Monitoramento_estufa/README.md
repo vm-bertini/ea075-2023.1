@@ -206,8 +206,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
-
-
+> 
+>
+> A seguir, apresenta-se, para cada evento, um pseudocódigo e um fluxograma representando o algoritmo de tratamento do evento:
+>
 > - Tratamento da amostragem de temperatura: 
 >
 > ![image](https://user-images.githubusercontent.com/107422206/236700555-143d603a-3734-4e33-bd52-70d67fefefe0.png)
