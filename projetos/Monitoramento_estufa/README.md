@@ -164,7 +164,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 ## Descrição Estrutural do Sistema
 
->![image](https://user-images.githubusercontent.com/129390336/228986991-64179348-208a-4698-8d23-44ea0e69f3e3.png)
+>![image](https://user-images.githubusercontent.com/129390336/236701399-4ac96c8e-3348-4a60-967e-d6bc64f020f8.png)
 >
 > Observa-se que podem-se destacar três grandes blocos funcionais: o microcontrolador, os sensores e os atuadores. No bloco dos sensores tem-se os sensores de luminosidade, umidade e temperatura, bem como os botões (que podem ser considerados como sensores de pressão); já como atuadores, observa-se o cooler, shade,  sistema de ventilação, aquecedor, lâmpadas e os aspersores, bem como o LCD (que pode ser considerado um atuador, permitindo a visualização de dados na tela). Os sensores são capazes de transformar parâmetros físicos em sinais elétricos, que podem ser processados pelo microcoontrolador. A partir desses sinais, o microcoontrolador processa o programa de tratamento de enventos (conforme explicado em seções anteriores),  e envia sinais de controle para os atuadores, que atuam com base nesses sinais e transformam esses sinais elétricos em alguns parâmetros físicos, permitindo o correto funcionamento do circuito.
 
