@@ -127,7 +127,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
 > 
-> Caso o shade esteja fechado, abrir o shade.
+> Caso o shade não esteja completamente aberto, abrir mais o shade.
 > 
 >  Caso contrário, acender as lâmpadas de LED. Se estiverem acesas, aumentar intensidade da luz.
 >
@@ -135,7 +135,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Caso as lâmpadas estejam ligadas, desligar as lâmpadas.
 > 
->  Caso contrário, fechar o shade
+>  Caso contrário, se o shade não estiver completamente fechado, fechar mais o shade
 >
 > - Tratamento quando o botão de configuração está apertado:
 > 
@@ -207,6 +207,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
+Para a amostragem da temperatura:
 ![image](https://user-images.githubusercontent.com/107422206/236696956-68dcf807-9bde-4a49-bc3c-87a116b963b9.png)
 
 ## Referências
