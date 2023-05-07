@@ -207,41 +207,51 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
-Para a amostragem da temperatura:
-![image](https://user-images.githubusercontent.com/107422206/236696956-68dcf807-9bde-4a49-bc3c-87a116b963b9.png)
 
->
 > - Tratamento da amostragem de temperatura: 
+> ![image](https://user-images.githubusercontent.com/107422206/236700204-086ac3f0-6edb-40ff-8423-95d374ec276f.png)
 > 
 > - Tratamento da amostragem de umidade:
+> ![image](https://user-images.githubusercontent.com/107422206/236700218-47ac6e0d-d10b-4962-9eef-9687abcb6fd8.png)
 > 
 > - Tratamento da amostragem de luminosidade: 
+>![image](https://user-images.githubusercontent.com/107422206/236700244-cc86efc2-43d2-42c7-bf70-d6114afd8af7.png)
 >
 > - Tratamento quando a temperatura está dentro da faixa desejada:
 >
 > - Tratamento quando a temperatura está abaixo da temperatura mínima configurada:
+> ![image](https://user-images.githubusercontent.com/107422206/236700265-e670d44f-0815-4201-b8b2-fbf1473cf694.png)
 > 
 > - Tratamento quando a temperatura está acima da temperatura máxima configurada:
+> ![image](https://user-images.githubusercontent.com/107422206/236700254-9d67fa11-6d7d-4996-a8f3-1f4a4bdba8d9.png)
 > 
 > - Tratamento quando a umidade está dentro da faixa desejada:
 > 
 > - Tratamento quando a umidade está abaixo da umidade mínima configurada:
+>  ![image](https://user-images.githubusercontent.com/107422206/236700274-56fefd35-cf35-4325-b176-37dd61ec9877.png)
 >  
 > - Tratamento quando a umidade está acima da umidade máxima configurada:
 > 
 > - Tratamento quando a luminosidade está dentro da faixa desejada:
 > 
 > - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
+> ![image](https://user-images.githubusercontent.com/107422206/236700305-3fba3154-066b-437f-9d85-f36e1913e652.png)
 > 
 > - Tratamento quando a luminosidade está acima da luminosidade máxima configurada:
+> ![image](https://user-images.githubusercontent.com/107422206/236700294-80dae9c8-2a4f-49ec-9956-ea658a5eb78a.png)
 > 
 > - Tratamento quando o botão de configuração está apertado:
 > ![image](https://user-images.githubusercontent.com/107422206/236700114-71c4a9ee-358b-4d4a-88bb-3dff188f349c.png)
+> 
 > - Tratamento quando o botão de incremento está apertado:
+> ![image](https://user-images.githubusercontent.com/107422206/236700154-3575f5ee-ba16-42de-b067-3577508e3cdf.png)
 > 
 > - Tratamento quando o botão de decremento está apertado:
+> ![image](https://user-images.githubusercontent.com/107422206/236700165-af680cab-4f2a-43e2-913e-e20cd52cfdf0.png)
 > 
 > - Tratamento quando o botão para mudar parâmetro selecionado está apertado:
+> ![image](https://user-images.githubusercontent.com/107422206/236700180-4db00aff-4563-4788-9e26-a6b908664ce2.png)
+> 
 
 
 ## Referências
