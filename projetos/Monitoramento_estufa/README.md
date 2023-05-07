@@ -288,25 +288,25 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > ![image](https://user-images.githubusercontent.com/107422206/236700875-10ab2d4d-828e-47d4-b958-cf3d697fec5b.png)
 >
-> ![image](https://user-images.githubusercontent.com/107422206/236700114-71c4a9ee-358b-4d4a-88bb-3dff188f349c.png)
+> ![image](https://user-images.githubusercontent.com/107422206/236704734-9856f863-a51c-4a79-b4d1-74d7517fdf45.png)
 > 
 > - Tratamento quando o botão de incremento está apertado:
 > 
 > ![image](https://user-images.githubusercontent.com/107422206/236700901-979c6bb1-d4b3-4bda-a60e-bf010be492fe.png)
 >
-> ![image](https://user-images.githubusercontent.com/107422206/236700154-3575f5ee-ba16-42de-b067-3577508e3cdf.png)
+> ![image](https://user-images.githubusercontent.com/107422206/236704754-181c6997-368e-4393-bd30-e0ac64a857aa.png)
 > 
 > - Tratamento quando o botão de decremento está apertado:
 > 
 > ![image](https://user-images.githubusercontent.com/107422206/236700913-ebef1838-430f-45b7-9f7f-33c428cb03fa.png)
 >
-> ![image](https://user-images.githubusercontent.com/107422206/236700165-af680cab-4f2a-43e2-913e-e20cd52cfdf0.png)
+> ![image](https://user-images.githubusercontent.com/107422206/236704758-4cc59c69-7f63-4e46-96f7-9b95a77b4990.png)
 > 
 > - Tratamento quando o botão para mudar parâmetro selecionado está apertado:>
 > 
 > ![image](https://user-images.githubusercontent.com/107422206/236700926-276d1259-a109-4513-a435-25bd73a0a6e0.png)
 >
-> ![image](https://user-images.githubusercontent.com/107422206/236700180-4db00aff-4563-4788-9e26-a6b908664ce2.png)
+> ![image](https://user-images.githubusercontent.com/107422206/236704769-d8ba7a3b-d11d-40a2-80cc-f0a20c52304f.png)
 > 
 
 
