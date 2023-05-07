@@ -114,16 +114,12 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > O sistema retorna ao fluxo normal do programa
 > 
 > - Tratamento quando a umidade está abaixo da umidade mínima configurada:
-> 
-> Caso a ventilação esteja ligada, desliga a ventilação. 
-> 
-> Caso contrário, liga-se o aspersor de água e, após 30 segundos, ele é desligado.
+>  
+> Liga-se o aspersor de água e, após 30 segundos, ele é desligado.
 >
 > - Tratamento quando a umidade está acima da umidade máxima configurada:
 > 
-> Liga-se o sistema de ventilação. 
-> 
-> Caso já esteja ligado, aumenta sua potência.
+>  O sistema retorna ao fluxo normal do programa
 >
 > - Tratamento quando a luminosidade está dentro da faixa desejada:
 > 
