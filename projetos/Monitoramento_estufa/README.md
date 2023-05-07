@@ -211,6 +211,8 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
+![image](https://user-images.githubusercontent.com/107422206/236696956-68dcf807-9bde-4a49-bc3c-87a116b963b9.png)
+
 ## Referências
 > http://sistemaolimpo.org/midias/uploads/fa4a7bc53246a8a9bf8642442a68fe3c.pdf
 >
