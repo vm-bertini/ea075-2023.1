@@ -202,7 +202,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > - Inicialmente, devem-se estabelecer as variáveis que serão utilizadas:
 > 
-> ![image](https://github.com/Felipe-Sisnando/ea075-2023.1/assets/107422206/ee7a562a-aec4-418f-81f1-3917e0287c3a)
+> ![image](https://github.com/Felipe-Sisnando/ea075-2023.1/assets/107422206/7e5bbacb-94a5-408a-84a1-655590c42cc3)
 >
 > - Destaca-se que o programa principal sera feito por polling (programado), mas os botoes serao por interrupcao
 >
