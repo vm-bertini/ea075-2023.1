@@ -45,9 +45,9 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > - Amostragem de temperatura: De X em X minutos deve-se obter o valor da temperatura lido no sensor (em que X é um valor configurável, inicialmete colocado como 10 minutos) 
 >
-> - Amostragem de umidade do solo: De Y em Y minutos deve-se obter o valor da umidade lido no sensor (em que Y é um valor configurável, inicialmete colocado como 10 minutos) 
+> - Amostragem de umidade do solo: De X em X minutos deve-se obter o valor da umidade lido no sensor 
 >
-> - Amostragem de luminosidade: De Z em Z minutos deve-se obter o valor da umidade lido no sensor (em que Z é um valor configurável, inicialmete colocado como 10 minutos)
+> - Amostragem de luminosidade: De X em X minutos deve-se obter o valor da umidade lido no sensor 
 >
 > O sistema deve tratar os seguintes eventos não periódicos:
 > 
@@ -60,8 +60,6 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Umidade do solo dentro da faixa desejada
 > 
 > - Umidade abaixo da umidade mínima configurada
->
-> - Umidade acima da umidade máxima configurada
 >
 > - Luminosidade dentro da faixa desejada
 > 
@@ -117,25 +115,17 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >  
 > Liga-se o aspersor de água e, após 30 segundos, ele é desligado.
 >
-> - Tratamento quando a umidade está acima da umidade máxima configurada:
-> 
->  O sistema retorna ao fluxo normal do programa
->
 > - Tratamento quando a luminosidade está dentro da faixa desejada:
 > 
 > O sistema retorna ao fluxo normal do programa
 > 
 > - Tratamento quando a luminosidade está abaixo da luminosidade mínima configurada:
 > 
-> Caso o shade não esteja completamente aberto, abrir mais o shade.
-> 
->  Caso contrário, acender as lâmpadas de LED. Se estiverem acesas, aumentar intensidade da luz.
+> Acender as lâmpadas de LED. Se estiverem acesas, aumentar intensidade da luz.
 >
 > - Tratamento quando a luminosidade está acima da luminosidade máxima configurada:
 > 
 > Caso as lâmpadas estejam ligadas, desligar as lâmpadas.
-> 
->  Caso contrário, se o shade não estiver completamente fechado, fechar mais o shade
 >
 > - Tratamento quando o botão de configuração está apertado:
 > 
