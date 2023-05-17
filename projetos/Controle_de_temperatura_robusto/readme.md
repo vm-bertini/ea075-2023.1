@@ -118,6 +118,47 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 >![](https://lh4.googleusercontent.com/2-Qc6JEknqoZsFVLEfL1C0yD5RxjqQ5rzbKLFPHxtnHVWpqCpuINMYjDCzHNdL85RB-CQwJgaGBi5FXKHwUfHJIe94HMGEX_EM6Ca8KaHotyltf360VodMfV41BdMRJKPM72IPSzlVPoP8UeFhnfKFM)
 >
+## Especificações (⚠️ NOVO ⚠️)
+
+### Especificação Estrutural
+
+> (Se preferir, adicione um link para o documento de especificação estrutural)
+> 
+> Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
+> Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
+> para implementação do sistema embarcado proposto.
+> 
+> Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
+> sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
+> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+
+> Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
+> Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
+> que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
+> correspondente, habilitando-o para realizar um ciclo de leitura ou de escrita.
+> 
+> Nesta etapa do projeto espera-se que sejam identificada também a eventual necessidade do projeto de circuitos de interface para os periféricos do projeto.
+> Assim, devem ser incluídos na especificação, se necessário:
+> - conversores AD e DA;
+> - padrões de comunicação a serem adotados;
+> - circuitos de sincronização de sinais temporais.
+> 
+> Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
+> (altura, largura, profundidade) e limites de dissipação térmica.
+
+### Especificação de Algoritmos 
+
+> (Se preferir, adicione um link para o documento de especificação de algoritmos).
+> 
+> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
+> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
+> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
+> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
+> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
+> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+
+## Referências (ATUALIZAR SE NECESSÁRIO)
+> Seção obrigatória. Inclua aqui referências utilizadas no projeto.
 ## Referências
 > -  SILVA, Italo. UTILIZAÇÃO DE UM CONTROLE PID DE TEMPERATURA PARA ESTUDO DE RESFRIAMENTO TERMOELÉTRICO. 2022. Monografia (Graduação em Engenharia Mecânica) - UFPE, [S. l.], 2022. Disponível em: https://repositorio.ufpe.br/bitstream/123456789/47590/1/TCC%20%C3%8Dtalo%20Souza%20da%20Silva.pdf. Acesso em: 2 abr. 2023.
 >
