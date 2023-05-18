@@ -73,6 +73,8 @@ Lista de componentes utilizados:
 ### Especificação estrutural
 
 ### Especificação de algoritmos
+> <img title="a title" alt="Alt text" src="https://github.com/viniandrs/ea075-2023.1/blob/main/projetos/cacto_dancante/images/especificacao_software.png">
+
 
 > * Iniciar gravação
 > * Parar a gravação
