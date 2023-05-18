@@ -126,7 +126,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > A distribuição dos quatro sensores de temperatura será feita de modo que a média deles tente representar muito bem o ambiente, ou seja, colocando um mais afastado do sistema de resfriamento do ambiente, outro perto e os outros dois na metade entre a parte mais distante do cômodo até o sistema de resfriamento. A figura abaixo mostra dois exemplos de ambientes e os pontos em preto representam exemplos de onde os sensores de temperaturas podem ser colocados.
 >
-> ![](Controle_de_temperatura_robusto//Screenshot_20230518_085854.png)
+> ![](Controle_de_temperatura_robusto/Screenshot_20230518_085854.png)
 
 
 ### Especificação de Algoritmos 
