@@ -13,24 +13,25 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição do Projeto
->Este projeto surge como um otimizador de linhas de produção. No contexto de linhas de produção, 
->os produtos que serão manufaturados são transportados por uma esteira transportadora equidistantes uns dos outros,
->dando assim um tempo padronizado para as máquinas e trabalhadores do chão de fábrica trabalharem no produto. 
+>Este projeto surge como um otimizador de linhas de produção. Nesse contexto, 
+>os produtos que serão manufaturados são transportados por uma esteira transportadora, distribuídos de forma a estarem equidistantes uns dos outros,
+>dando assim um tempo padronizado para as máquinas e trabalhadores do chão de fábrica para trabalharem no produto. 
 >Entretanto isto nem sempre acontece, existem casos onde os produtos são transportados amontoados 
->ou muito espaçados uns entre os outros, em ambos os casos há problemas, se os produtos estiverem amontoados, 
->há maior chance de perda de produtos, onde os trabalhadores/ máquinas não conseguiram trabalhar em todos, 
->necessitando descarte, e, no caso deles estarem muito espaçados, há o problema de aumento no tempo de manufatura, 
->que também é uma perda para a fábrica.
+>ou muito espaçados uns entre os outros, em ambos os casos isso pode gerar problemas; se os produtos estiverem amontoados, 
+>há maior chance de perda de produtos, onde os trabalhadores/ máquinas não conseguirão trabalhar em todos, 
+>necessitando descarte, ou, no caso deles estarem muito espaçados, há o problema de aumento no tempo de manufatura, 
+>que irá gerar uma perda para a fábrica.
 
->Este produto tenta resolver isso, padronizando as distâncias entre os produtos nas esteiras, 
->assim evitando ambos os casos e podendo aumentar/diminuir o fluxo de produtos dependendo da necessidade para a manufatura.
->
+>O objetivo do padronizador é resolver esse problema. Padronizando as distâncias entre os produtos nas esteiras, 
+>assim evitando ambos os casos e podendo aumentar/diminuir o fluxo de produtos dependendo da necessidade para a manufatura, os defeitos rítimicos
+>descritos acima podem ser atenuados, ou completamente anulados.
+
 >Esse produto forneceria uma nova alavanca de eficiência, que facilitaria o controle de produção ou a administração de crescimento,
 >que será feita por um gestor. A má administração de demando, ou o fluxo aumentado de entrada de produtos pode mais facilmente ser controlada
 >com a presença desse padronizador.
 
 >O problema que será resolvido é pontual, e, igualmente, o projeto irá resolver ele pontualmente, com baixo número de componentes, 
->necessitando apenas de um sensor simples, um microcontrolador (MCU), um temporizador, e um motor (de preferência DC).
+>necessitando apenas de um sensor simples, um microcontrolador (MCU), um temporizador, e um motor (de preferência DC). 
 
 
 ## Descrição Funcional
@@ -104,6 +105,11 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ## Descrição Estrutural do Sistema
 ![Draw.io padronizador](Diagrama sem nome.drawio)
+
+## Especificações
+
+### Especificação Estrutural
+
 
 ## Referências
 * Motor referência para o projeto:
