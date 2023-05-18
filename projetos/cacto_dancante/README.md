@@ -64,7 +64,7 @@ Lista de componentes utilizados:
 | Módulo microfone KY-038 | 1 | Entrada de áudio  | Content Cell  | [R$10,90](https://www.makerhero.com/produto/sensor-de-som-ky-038-microfone/)  |
 | Módulo amplificador de áudio LM386 | 1 | Amplificação da saída de áudio  | Content Cell  | [R$10,36](https://www.eletrogate.com/modulo-amplificador-de-audio-com-lm386) |
 | Auto-falante | 1 | Saída de áudio  | Content Cell  | [R$8,46](https://www.eletrogate.com/mini-alto-falante-0.5w-8ohms) |
-| Módulo cartão Micro-SD | 1  | Armazenamento dos áudios gravados pelo usuário | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Módulo cartão Micro-SD SPI | 1  | Armazenamento dos áudios gravados pelo usuário | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
 | Motor DC 1.5-3V | 1 | Atuador | Content Cell  | [R$6,90](https://www.eletrogate.com/mini-motor-dc-15-3v) |
 | LEDs | 1 | Indicadores de estado | Content Cell  | []() |
 | Botões | 1 | Interface com o usuário | Content Cell  | []() |
