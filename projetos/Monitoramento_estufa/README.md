@@ -185,7 +185,17 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
-
+>
+>
+> #### Sensor de Temperatura
+> 
+>  O sensor de temperatura escolhido foi o LM35D (Precision Centigrade Temperature Sensor), que oferece uma voltagem de saída diretamente proporcional à temperatura em °C. Ele possui as seguintes especificações relevantes ao nosso projeto:
+>  
+> -Temperatura de operação: 
+> A temperatura de operação recomendada desse sensor é na faixa de 0 a 100°C (região apropriada para o monitoramento de uma estufa).
+> 
+> - 
+>
 ### Especificação de Algoritmos 
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
