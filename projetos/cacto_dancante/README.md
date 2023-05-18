@@ -83,6 +83,4 @@ Lista de componentes utilizados:
 
 
 ## Referências
-> [1] https://blog.eletrogate.com/gravacao-e-reproducao-de-audio-com-arduino-modulo-isd1820/
-
-> [2] https://github.com/thisissihab/arduino-based-digital-voice-recorder/tree/main
+> [1] https://github.com/thisissihab/arduino-based-digital-voice-recorder/tree/main
