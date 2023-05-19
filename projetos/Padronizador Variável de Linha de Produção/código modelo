@@ -1,1 +1,34 @@
+#define tde 1 // Taxa de entrega, n° de unidades por segundo
+#define vi 10 // Velocidade inicial, em cm/s
+
+#define HALL_1_PIN N //(pino do MCU de sensor hall)
+
+void setup()
+{
+    pinMode(HALL_1_PIN, INPUT);
+}    
+void CalculoPNPA (PA,PN,v)
+      int sensorHall = digitalReadFast(HALL_1_PIN)
+    if(sensorHall == 0)
+    {
+   	 PN += v;
+   	 PA += v;
+    }
+    else
+	{
+   	 PN = PA;
+   	 PA = 0;
+ 	}
+float PN = 10; // posição da ultima unidade (valor inicial), em cm
+float PA = 0; // posição da unidade atual
+float v = vi; // velocidade da esteira
+void loop()
+{
+    CalculoPNPA (PA,PN,v)
+	if ((v/(PN-PA)) != tde)
+	{
+ 		 v = tde*(PN-PA);
+	}
+      delay(10000) //delay 1 s
+}
 
