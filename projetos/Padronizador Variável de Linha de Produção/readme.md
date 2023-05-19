@@ -111,7 +111,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ### Especificação Estrutural
 ### Especificação de Algoritiomos
 * Sob o documento "código modelo" um modelo de algorítimo em linguagem de IDE de Arduíno como modelo para o funcionamento do sistema, é notável que o arduíno NÃO será o MCU utilizado por este projeto
-
+* Para este projeto há dois eventos, a passagem de item e a saída dele pela esteira. Para a passagem de item pelo sensor o padronizador irá armazenar o tempo em que o item passou pela esteira e periódicamente irá atualizar a posição dele (começando em 0) até que ele saia da esteira (posição igual o tamanho da esteira), utilizando de um delay com tempo padronizado e a velocidade da esteira, que é conhecida. Para o segundo evento, a saída do item de esteira, haverá a alteração da velocidade da esteira baseada na distância entre o item saindo da esteira e o próximo da fila e da taxa desejada de entrega de produtos, por exemplo, caso a taxa configurada for 1 item/segundo, e a distância dos itens for de 10 cm, a velocidade da esteira será calibrada para 10cm/s usando uma metodologia PID para garantir o controle correto da velocidade da esteira.
 
 ## Referências
 * Motor referência para o projeto:
