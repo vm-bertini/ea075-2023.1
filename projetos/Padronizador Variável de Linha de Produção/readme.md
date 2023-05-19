@@ -109,6 +109,8 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ## Especificações
 
 ### Especificação Estrutural
+### Especificação de Algoritiomos
+* Sob o documento "código modelo" um modelo de algorítimo em linguagem de IDE de Arduíno como modelo para o funcionamento do sistema, é notável que o arduíno NÃO será o MCU utilizado por este projeto
 
 
 ## Referências
