@@ -12,13 +12,16 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 | Otávio Briske Lima  | 220716  | Eng. Elétrica|
 
 
-
 ## Descrição do Projeto
-  O principal objetivo deste projeto é de realizar o controle de algumas grandezas físicas e químicas necessárias para a manutenção um ecossistema aquático marinho. Como existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso a todo momento.
-  O aquário inteligente é um sistema capaz de controlar o pH, a temperatura e medir o nível de ${CO}_2$ de um tanque responsável pelo controle de pH. As informações obtidas serão exibidas em tempo real no display e serão armazenadas para gerar os seguintes relatórios: nível de ${CO}_2$ por período, tempo que o resfriador ficou ligado por período e tempo que o aquecedor ficou ligado por período. O período pode ser escolhido pelo usuário entre diário ou semanal.
-  Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado que também serve para otimizar o aquário caso esteja descontrolado. 
-  A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento.
-  No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, é difícil de se estabelecer um valor econômico a sua implementação prática.
+O principal objetivo deste projeto é de realizar o controle de algumas grandezas físicas necessárias para a manutenção um ecossistema aquático marinho. Como existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso frequentemente. 
+
+O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório, que possuirá as informações de: tempo que o resfriador ficou ligado por período, tempo que o aquecedor ficou ligado por período, temperatura atual do aquário e desempenho energético no período analisado. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
+
+Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas.  
+
+A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
+
+No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor econômico de R$54,00, correspondente aos valores do SOC (System On Chip) e dos sensores utilizados. 
 
 
 ## Descrição Funcional
