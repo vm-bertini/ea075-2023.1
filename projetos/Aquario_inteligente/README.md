@@ -61,10 +61,10 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 ## Especificações
 
-## Especificação Estrutural
+### Especificação Estrutural
 
 
-## Especificação de Algoritmos
+### Especificação de Algoritmos
 
 
 
