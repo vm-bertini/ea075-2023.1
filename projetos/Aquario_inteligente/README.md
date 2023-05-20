@@ -54,7 +54,7 @@ Nos últimos dois eventos temos que não são necessárias ações adicionais po
 
 
 ## Descrição Estrutural do Sistema
-O seguinte diagrama apresenta a descrição estrutural do sistema, através da exibição de como os objetos que o compõem interagem entre si.
+Será necessário a utilização de sensores para temperatura dentro do ambiente aquático e no ambiente externo, para a captação analógica dessas grandezas, e então se converter esses em valores digitais que poderão ser compreendidos pelo sistema embarcado de forma com que ele possa tomar decisões quanto a habilitação dos atuadores (sistemas de refrigeração e de aquecimento). 
 ![Estrutura do aquário inteligente](https://user-images.githubusercontent.com/128386956/229377536-f7c9c56f-26e6-4932-aa85-5ad2b1e48152.png)
 
 
