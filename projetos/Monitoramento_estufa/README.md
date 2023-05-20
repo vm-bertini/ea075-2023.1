@@ -187,16 +187,52 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > (altura, largura, profundidade) e limites de dissipação térmica.
 > #### Microcontrolador
 >Foi selecionado o microcontrolador da família PIC, especificamente o modelo PIC16F886, devido à presença das características essenciais para o projeto em questão. O referido microcontrolador apresenta uma configuração de 24 pinos, dos quais 18 serão empregados no projeto, sendo 5 deles destinados a funcionalidades analógicas e 12 a funcionalidades digitais. Além disso, destaca-se a compatibilidade do PIC16F886 com os protocolos seriais I2C e SPI, que são fundamentais para a comunicação com os sensores utilizados neste projeto. Adicionalmente, é relevante mencionar que a faixa de tensão de operação do microcontrolador é de 2 a 5.5V, o que se alinha com a tensão de operação de 5V presente em vários sensores utilizados no projeto. Um fator adicional que influenciou a escolha deste microcontrolador foi a sua ampla popularidade e a disponibilidade de informações acessíveis, tanto por meio da fabricante Microchip quanto em fóruns especializados.
+>
 >Datasheet: https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/40001291H.pdf
 >
 > #### Sensor de Temperatura
 > 
 >  O sensor de temperatura escolhido foi o LM35D (Precision Centigrade Temperature Sensor), que oferece uma voltagem de saída diretamente proporcional à temperatura em °C. Ele possui as seguintes especificações relevantes ao nosso projeto:
+>  
 > A faixa de operação do sensor é de 4 a 30V.
+> 
 > A temperatura de operação recomendada desse sensor é na faixa de 0 a 100°C (região apropriada para o monitoramento de uma estufa).
+> 
 > O sensor ja da o valor em graus centígrados, logo não precisa de nenhuma conversão.
+> 
 > A precisão é de 0,75 °C.
+> 
 > Tem 3 entradas: VCC(5V no caso do projeto, mesmo do controlador), GND e Vout(Analog Output).
+> 
+> Datasheet:https://storage.googleapis.com/baudaeletronicadatasheet/lm35-texas.pdf
+> 
+> #### Sensor Higrômero
+> 
+> O sensor escolhido foi o SKU: SEN0193 que é um sensor de umidade do solo mede os níveis de umidade do solo por detecção capacitiva em vez de detecção resistiva como outros sensores no mercado. É feito de material resistente à corrosão, o que lhe confere uma excelente vida útil. Ele possui as seguintes especificações relevantes ao nosso projeto:
+> 
+> Faixa de operação de 3,3 a 5.5 VDC
+> 
+> A variação da capacitância é a variação da temperatura(no datasheet contém informações para a calibração do sensor).
+> 
+> Tem 3 entradas: VCC(5V no caso do projeto, mesmo do controlador), GND e Aout(Analog Output).
+> 
+> Datasheet: https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193
+> 
+> #### Sensor Luminosidade
+> 
+> O sensor escolhido foi o Sensor de Luminosidade LDR é um componente cuja resistência varia de acordo com a intensidade da luz. Quanto mais luz incidir sobre o componente, menor a resistência. Ele possui as seguintes especificações relevantes ao nosso projeto:
+> 
+> Temperatura de operação: -25 a 75°C.
+> 
+> Maxíma voltagem de 150 V, no caso do projeto utilizaremos 5V.
+> 
+> Tem 2 entradas: GND E VCC( 5 V e Analog Output conectada no mesmo pino).
+> 
+> https://components101.com/sites/default/files/component_datasheet/LDR%20Datasheet.pdf
+> 
+> #### Sensor de Pressão
+> 
+> Agora vamos entrar na parte dos Atuadores do projeto.
 ### Especificação de Algoritmos 
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
