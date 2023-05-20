@@ -53,7 +53,6 @@ No segundo evento, temos que o SoC capta as medições dos sensores realizando e
 Então no terceiro evento (cujo período é superior ao do segundo evento), os dados armazenados na memória até então são finalmente transmitidos para um relatório na nuvem, permitindo que a memória seja limpa, e novos parâmetros para o aquário são calculados. 
 No quarto evento temos que caso seja identificado uma leitura improvável em algum dos sensores o sistema deverá realizar um alerta via aplicativo quanto ao valor provavelmente incorreto da leitura. 
 Nos últimos dois eventos temos que não são necessárias ações adicionais por parte do microcontrolador, além da recuperação dos dados salvos na nuvem, assim que tanto a energia quanto o Wi-fi fossem reestabelecidos, antes de seu retorno à operação normal. 
-Abaixo são ilustrados os fluxogramas de tratamento para cada evento:
 
 
 ## Descrição Estrutural do Sistema
@@ -69,9 +68,15 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 ### Especificação de Algoritmos
 
-Inicialmente temos que para a passagem de um tempo correspondente ao periodo regulado T teremos o seguinte algoritmo de tratamento:
+Inicialmente para a mudança de alguma das possíveis configurações:
 
+Então temos que para a passagem de um tempo correspondente ao periodo de amostragem regulado T teremos o seguinte algoritmo de tratamento:
 
+Para a transmissão dos dados para nuvem e atualização dos parâmetros a cada 12 horas temos:
+
+Para a vericação de leituras improváveis de parte dos sensores:
+
+No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
 ## Referências
 Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023.
