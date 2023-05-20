@@ -185,17 +185,18 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
 > (altura, largura, profundidade) e limites de dissipação térmica.
->
+> #### Microcontrolador
+>Foi selecionado o microcontrolador da família PIC, especificamente o modelo PIC16F886, devido à presença das características essenciais para o projeto em questão. O referido microcontrolador apresenta uma configuração de 24 pinos, dos quais 18 serão empregados no projeto, sendo 5 deles destinados a funcionalidades analógicas e 12 a funcionalidades digitais. Além disso, destaca-se a compatibilidade do PIC16F886 com os protocolos seriais I2C e SPI, que são fundamentais para a comunicação com os sensores utilizados neste projeto. Adicionalmente, é relevante mencionar que a faixa de tensão de operação do microcontrolador é de 2 a 5.5V, o que se alinha com a tensão de operação de 5V presente em vários sensores utilizados no projeto. Um fator adicional que influenciou a escolha deste microcontrolador foi a sua ampla popularidade e a disponibilidade de informações acessíveis, tanto por meio da fabricante Microchip quanto em fóruns especializados.
+>Datasheet: https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/40001291H.pdf
 >
 > #### Sensor de Temperatura
 > 
 >  O sensor de temperatura escolhido foi o LM35D (Precision Centigrade Temperature Sensor), que oferece uma voltagem de saída diretamente proporcional à temperatura em °C. Ele possui as seguintes especificações relevantes ao nosso projeto:
->  
-> -Temperatura de operação: 
+> A faixa de operação do sensor é de 4 a 30V.
 > A temperatura de operação recomendada desse sensor é na faixa de 0 a 100°C (região apropriada para o monitoramento de uma estufa).
-> 
-> - 
->
+> O sensor ja da o valor em graus centígrados, logo não precisa de nenhuma conversão.
+> A precisão é de 0,75 °C.
+> Tem 3 entradas: VCC(5V no caso do projeto, mesmo do controlador), GND e Vout(Analog Output).
 ### Especificação de Algoritmos 
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
