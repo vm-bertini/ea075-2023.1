@@ -40,17 +40,20 @@ Tarefas:
 
 ### Eventos
 O primeiro evento corresponde à uma interrupção gerada por uma alteração das configurações originais (da frequência de amostragem, do modo de operação em valor fixo ou faixa de temperaturas, da resolução dos sensores ou dos valores limites de temperatura) via aplicativo. 
-Um segundo evento é a passagem de tempo correspondente a um período (verificada pela comunicação do SoC com a internet via Wi-fi). 
-O terceiro evento corresponde à uma medição discrepante por parte dos sensores (de temperatura externa e/ou interna ao aquário). 
+Um segundo evento é a passagem de tempo correspondente a um período para a realização da amostragem e operação dos atuadores (verificada pela comunicação do SoC com a internet via Wi-fi).
+Outro evento corresponde a passagem de um segundo período para a transmissão dos valores armazenados na memória interna do SoC para a nuvem via Wi-fi, assim como para o cálculo de novos parâmetros representativos do aquário.
+O quarto evento corresponde à uma medição discrepante por parte dos sensores (de temperatura externa e/ou interna ao aquário). 
 O último evento considerado é o de queda de energia, em que tanto os sistemas de aquecimento e resfriamento provavelmente irão parar de operar, de forma com que seja sensato que o sistema de controle também cesse a sua operação, considerando que todos os dados e valores configurados já estejam salvos na nuvem. 
 Como última parte temos que ao a energia retornar o microcontrolador irá esperar que tanto a energia quanto o Wi-fi sejam reestabelecidos, recuperando então os valores necessários da nuvem e retornando para a sua operação normal. 
 
 
 ### Tratamento de Eventos
 Para o primeiro evento a unidade micro controladora deve iniciar uma sub-rotina de atendimento a interrupção na qual se atualiza todos os parâmetros de operação configuráveis e então se retorna ao programa principal. 
-No segundo evento, temos que o SoC capta as medições dos sensores realizando então um processamento interno dependente destes valores e dos configurados, de forma com que os dados desejados sejam gerados e transmitidos para um relatório na nuvem. 
-No terceiro evento temos que caso seja identificado uma leitura improvável em algum dos sensores o sistema deverá realizar um alerta via aplicativo quanto ao valor provavelmente incorreto da leitura. 
+No segundo evento, temos que o SoC capta as medições dos sensores realizando então um processamento interno dependente destes valores e dos configurados, de forma com que os dados desejados sejam gerados e armazenados na memória interna do SoC.
+Então no terceiro evento (cujo período é superior ao do segundo evento), os dados armazenados na memória até então são finalmente transmitidos para um relatório na nuvem, permitindo que a memória seja limpa, e novos parâmetros para o aquário são calculados. 
+No quarto evento temos que caso seja identificado uma leitura improvável em algum dos sensores o sistema deverá realizar um alerta via aplicativo quanto ao valor provavelmente incorreto da leitura. 
 Nos últimos dois eventos temos que não são necessárias ações adicionais por parte do microcontrolador, além da recuperação dos dados salvos na nuvem, assim que tanto a energia quanto o Wi-fi fossem reestabelecidos, antes de seu retorno à operação normal. 
+Abaixo são ilustrados os fluxogramas de tratamento para cada evento:
 
 
 ## Descrição Estrutural do Sistema
@@ -66,6 +69,7 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 ### Especificação de Algoritmos
 
+Inicialmente temos que para a passagem de um tempo correspondente ao periodo regulado T teremos o seguinte algoritmo de tratamento:
 
 
 
