@@ -14,46 +14,43 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 ## Descrição do Projeto
 O principal objetivo deste projeto é de realizar o controle de algumas grandezas físicas necessárias para a manutenção um ecossistema aquático marinho. Como existem condições específicas e bem controladas para garantir a sobrevivência de peixes, corais e outros animais, é de suma importância repassar a tarefa de controle das condições para uma máquina que fará isso frequentemente. 
-
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório, que possuirá as informações de: tempo que o resfriador ficou ligado por período, tempo que o aquecedor ficou ligado por período, temperatura atual do aquário e desempenho energético no período analisado. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
-
 Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas.  
-
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
-
 No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor econômico de R$54,00, correspondente aos valores do SOC (System On Chip) e dos sensores utilizados. 
 
 
 ## Descrição Funcional
 
 ### Funcionalidades
-O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de botões e de um display o nível ou a faixa de temperatura e de pH desejados. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura e um de pH, além de medir o nível de ${CO}_2$ do tanque que é usado para regular o pH. As informações obtidas serão exibidas em tempo real no display e serão armazenadas para gerar os relatórios.
+O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de um aplicativo o nível ou a faixa de temperatura desejado, a resolução a ser utilizada pelos sensores e o período de amostragem. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura dentro do aquário e um do lado de fora. As informações obtidas serão atualizadas a cada período no relatório que será armazenado na nuvem podendo ser acessado pelo aplicativo. 
 
-Lista de tarefas:
-- Configuração do pH e temperatura desejados
-- Medir pH
-- Medir Temperatura
-- Medir o nível de ${CO}_2$ no tanque
-- Aquecer a água
-- Resfriar a água
-- Liberar ${CO}_2$ na água
-- Geração de relatórios e alertas no display
+Tarefas: 
+- Configuração da operação em valor fixo ou faixa de temperaturas; 
+- Configuração das temperaturas desejados; 
+- Medir as temperaturas; 
+- Gerenciar o aquecedor; 
+- Gerenciar o resfriador; 
+- Gerar relatórios diários e semanais que são atualizados a cada período. 
 
 
 ### Configurabilidade
-É previsto que se possa configurar o sistema para operar em valores fixos de temperatura e/ou pH ou em uma faixa de valores ajustáveis (através de botões conectados ao microcontrolador e de uma interface via display), com o objetivo de se adaptar as demandas de diferentes tipos de ecossistemas. Além disso, também é possível na hora de observar os relatórios escolher o período desejado de observação dos resultados entre diário e semanal.
+É previsto que se possa configurar o sistema para operar em valores fixos de temperatura ou em uma faixa de valores ajustáveis (através do aplicativo), com o objetivo de se adaptar as demandas de diferentes tipos de ecossistemas. Além disso, também é possível se ajustar a taxa de amostragem das grandezas do aquário e a resolução a ser utilizada pelos sensores, de acordo com o desejado. 
 
 
 ### Eventos
-Os eventos descritos a seguir ocorrerão tanto para o caso em que o sistema esteja operando em uma faixa de valores quanto no de operação em valores fixos.
-O primeiro dos eventos consiste na percepção por parte dos sensores de leituras não desejadas de temperatura ou de pH, em que: haverá os eventos em que a grandeza é medida com uma intensidade menor ou maior que a esperada, totalizando três eventos totais (apenas o evento de intensidade maior ocorre para o pH, o evento de pH menor é raro e caso seja identificado será gerado um alerta no display). Os sensores farão leituras a cada 10 minutos.
-O segundo evento corresponde à geração do relatório por meio das medidas dos sensores. O evento em questão é aperiódico, pois sempre que houver uma medida o dado será armazenado e gerará o relatório no instante que o usuário solicitar.
-E, como último evento, temos a solicitação (por meio do pressionamento de um botão) de alterações desejadas nos valores considerados como ideais e que regem a ativação dos atuadores, juntamente das medidas dos sensores.
+O primeiro evento corresponde à uma interrupção gerada por uma alteração das configurações originais (da frequência de amostragem, do modo de operação em valor fixo ou faixa de temperaturas, da resolução dos sensores ou dos valores limites de temperatura) via aplicativo. 
+Um segundo evento é a passagem de tempo correspondente a um período (verificada pela comunicação do SoC com a internet via Wi-fi). 
+O terceiro evento corresponde à uma medição discrepante por parte dos sensores (de temperatura externa e/ou interna ao aquário). 
+O último evento considerado é o de queda de energia, em que tanto os sistemas de aquecimento e resfriamento provavelmente irão parar de operar, de forma com que seja sensato que o sistema de controle também cesse a sua operação, considerando que todos os dados e valores configurados já estejam salvos na nuvem. 
+Como última parte temos que ao a energia retornar o microcontrolador irá esperar que tanto a energia quanto o Wi-fi sejam reestabelecidos, recuperando então os valores necessários da nuvem e retornando para a sua operação normal. 
 
 
 ### Tratamento de Eventos
-O tratamento do primeiro tipo de evento consiste em utilizar atuadores de forma a balancear as variáveis físicas para que atinjam os valores configurados, nesse aspecto: caso a temperatura esteja abaixo/acima do valor desejado o microcontrolador deve ativar respectivamente o sistema de aquecimento/resfriamento; enquanto caso o pH esteja acima do esperado o sistema embarcado deve comandar a liberação de ${CO}_2$.
-Já para o último evento um elemento deve alertar a passagem de um ciclo, de forma com que os valores medidos pelos sensores, assim como os estados do sistema de refrigeração, do sistema de aquecimento e da válvula de liberação de ${CO}_2$ são captados e transferidos para um relatório, juntamente das configurações atuais, que são exibidos em um display.
+Para o primeiro evento a unidade micro controladora deve iniciar uma sub-rotina de atendimento a interrupção na qual se atualiza todos os parâmetros de operação configuráveis e então se retorna ao programa principal. 
+No segundo evento, temos que o SoC capta as medições dos sensores realizando então um processamento interno dependente destes valores e dos configurados, de forma com que os dados desejados sejam gerados e transmitidos para um relatório na nuvem. 
+No terceiro evento temos que caso seja identificado uma leitura improvável em algum dos sensores o sistema deverá realizar um alerta via aplicativo quanto ao valor provavelmente incorreto da leitura. 
+Nos últimos dois eventos temos que não são necessárias ações adicionais por parte do microcontrolador, além da recuperação dos dados salvos na nuvem, assim que tanto a energia quanto o Wi-fi fossem reestabelecidos, antes de seu retorno à operação normal. 
 
 
 ## Descrição Estrutural do Sistema
