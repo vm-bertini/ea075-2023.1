@@ -206,7 +206,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Datasheet:https://storage.googleapis.com/baudaeletronicadatasheet/lm35-texas.pdf
 > 
-> #### Sensor Higrômero
+> #### Sensor Higrômetro
 > 
 > O sensor escolhido foi o SKU: SEN0193 que é um sensor de umidade do solo mede os níveis de umidade do solo por detecção capacitiva em vez de detecção resistiva como outros sensores no mercado. É feito de material resistente à corrosão, o que lhe confere uma excelente vida útil. Ele possui as seguintes especificações relevantes ao nosso projeto:
 > 
@@ -231,7 +231,17 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > https://components101.com/sites/default/files/component_datasheet/LDR%20Datasheet.pdf
 > 
 > #### Sensor de Pressão
+> Vão ser utilizados 4 push Bottom 6x6x4;3mm como botão que vai operar junto com o Display LCD 20X4.Ele possui as seguintes especificações relevantes ao nosso projeto:
 > 
+> Temperatura de operação: -20 a 70°C.
+> 
+> Máximo de 24V, no caso do projeto utilizaremos 5V.
+> 
+> Bounce de 5ms(não interfere no projeto).
+> 
+> tem 4 entradas(das quais somente 3 serão utilizadas): GND, VCC e Digital Output(Pino digital).
+> 
+> Datasheet: https://www.hdk.co.jp/pdf/eng/e291702.pdf
 > Agora vamos entrar na parte dos Atuadores do projeto.
 ### Especificação de Algoritmos 
 
