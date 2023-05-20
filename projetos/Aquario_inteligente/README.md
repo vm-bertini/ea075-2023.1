@@ -59,6 +59,16 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 ![image](https://github.com/Nothingtopus/Imagens/assets/127249262/6bf2077f-7120-4f35-8862-b491f0e0c5ed)
 
 
+## Especificações
+
+# Especificação Estrutural
+
+
+# Especificação de Algoritmos
+
+
+
+
 ## Referências
 Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023.
 Ferramentas StackEdit e draw.io.
