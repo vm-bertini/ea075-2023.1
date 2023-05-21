@@ -179,6 +179,6 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > - Datasheet de termômetro: https://pdf1.alldatasheet.com/datasheet-pdf/view/58557/DALLAS/DS18B20.html
 > 
-> - Link do display: https://nurdspace.nl/images/e/e0/ESP8266_Specifications_English.pdf
+> - Link do módulo Wi-Fi: https://nurdspace.nl/images/e/e0/ESP8266_Specifications_English.pdf
 
 
