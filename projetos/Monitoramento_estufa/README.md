@@ -200,7 +200,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > A precisão é de 0,75 °C.
 > 
-> Tem 3 entradas: VCC(5V no caso do projeto, mesmo do controlador), GND e Vout(Analog Output).
+> Tem 3 saídas: VCC(5V no caso do projeto, mesmo do controlador), GND e Vout(Analog Output).
 > 
 > Datasheet:https://storage.googleapis.com/baudaeletronicadatasheet/lm35-texas.pdf
 > 
@@ -212,7 +212,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > A variação da capacitância é a variação da temperatura(no datasheet contém informações para a calibração do sensor).
 > 
-> Tem 3 entradas: VCC(5V no caso do projeto, mesmo do controlador), GND e Aout(Analog Output).
+> Tem 3 saídas: VCC(5V no caso do projeto, mesmo do controlador), GND e Aout(Analog Output).
 > 
 > Datasheet: https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193
 > 
@@ -224,7 +224,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Maxíma voltagem de 150 V, no caso do projeto utilizaremos 5V.
 > 
-> Tem 2 entradas: GND E VCC( 5 V e Analog Output conectada no mesmo pino).
+> Tem 2 saídas: GND E VCC( 5 V e Analog Output conectada no mesmo pino).
 > 
 > https://components101.com/sites/default/files/component_datasheet/LDR%20Datasheet.pdf
 > 
@@ -237,7 +237,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Bounce de 5ms(não interfere no projeto).
 > 
-> tem 4 entradas(das quais somente 3 serão utilizadas): GND, VCC e Digital Output(Pino digital).
+> tem 4 saídas(das quais somente 3 serão utilizadas): GND, VCC e Digital Output(Pino digital).
 > 
 > Datasheet: https://www.hdk.co.jp/pdf/eng/e291702.pdf
 > Agora vamos entrar na parte dos Atuadores do projeto. Veja que a maioria dos atuadores são 12V, por isso, será necessário uma alimentação externa de uma bateria de 12V.
@@ -254,7 +254,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > #### Controle da Luminosidade.
 > No projeto para controlar a intensidade luminosa das lampdas utilizaremos um Dimmer MC-8A que pode ser tanto 127/220V,ou seja, feito para ser ligado na tomada. É um equipamento eletrônico que permite realizar o controle da quantidade de energia que é enviada para a lâmpada incandescente, consecutivamente proporcionando maior ou menor luminosidade, de forma a dimerizá-la.Ele possui as seguintes especificações relevantes ao nosso projeto:
 > 
-> Tem 4 entradas: VCC(5V), GND, ZC(Digital Output), DIM(Analog output) E 4 Saidas: 2 para conectar na tomada(220 ou 127V) e mais duas para conectar a lampâda.
+> Tem 4 saídas: VCC(5V), GND, ZC(Digital Output), DIM(Analog output) E 4 entradas: 2 para conectar na tomada(220 ou 127V) e mais duas para conectar a lampâda.
 > 
 > Possui fácil controle e simples instalação.
 > 
@@ -273,7 +273,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Possibilidade de controle: O display é capaz de receber comandos do microcontrolador para atualizar as informações exibidas e ajustar o conteúdo de acordo com as necessidades do projeto.
 > 
-> Vai utilizar 8 portas de entrada: VCC, GND e 6 Digital Output.
+> Vai utilizar 8 portas de saída: VCC, GND e 6 Digital Output.
 > 
 > Temperatura de operação:-20 a 70°C.
 > 
