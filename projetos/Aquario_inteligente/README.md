@@ -65,7 +65,7 @@ Nos últimos dois eventos temos que não são necessárias ações adicionais po
 ## Descrição Estrutural do Sistema
 Será necessário a utilização de sensores para temperatura dentro do ambiente aquático e no ambiente externo, para a captação analógica dessas grandezas, e então se converter esses em valores digitais (A conversão analógica-digital é feita pelo próprio sensor) que poderão ser compreendidos pelo sistema embarcado de forma com que ele possa tomar decisões quanto a habilitação dos atuadores (sistemas de resfriamento e de aquecimento). 
 
-![Diagrama](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/2de17313-44fb-4246-b31a-8df91483a644)
+![Descrição estrutural](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/08942d95-266c-4345-9533-fb43e9eb0096)
 
 
 
