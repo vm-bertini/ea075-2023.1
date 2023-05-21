@@ -87,6 +87,34 @@ Para a vericação de leituras improváveis de parte dos sensores:
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
 ## Referências
-Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023.
-Ferramentas StackEdit e draw.io.
-Referência: Mastering Markdown.
+-Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023. 
+-Uso do sensor de temperatura DS18B20: 
+https://curtocircuito.com.br/blog/Categoria%20Arduino/como-utilizar-o-ds18b20#teste_ds18b20 
+-Datasheet do SoC ESP8266 (SoC utilizado no projeto): 
+https://pdf1.alldatasheet.com/datasheet-pdf/view/1132995/ESPRESSIF/ESP8266.html 
+-Datasheet do SoC ESP32: 
+https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html 
+https://pdf1.alldatasheet.com/datasheet-pdf/view/1424855/ESPRESSIF/ESP32-S2.html 
+-Datasheet do sensor de temperatura DS18B20: 
+https://www.alldatasheet.com/datasheet-pdf/pdf/58557/DALLAS/DS18B20.html 
+https://storage.googleapis.com/baudaeletronicadatasheet/DS18B20.pdf 
+-Arquitetura do SoC ESP32: 
+https://deinfo.uepg.br/~alunoso/2019/SO/ESP32/HARDWARE/#:~:text=O%20ESP32%20%C3%A9%20um%20microcontrolador,um%20grande%20n%C3%BAmero%20de%20aplica%C3%A7%C3%B5es 
+-Referência para a escolha da resistência de aquecimento dependendo da capacidade do aquário utilizado: 
+https://www.youtube.com/watch?v=ziXkMCADjBo  
+-Referência para o circuito de interfaceamento com o aquecedor: 
+https://www.electronics-tutorials.ws/blog/optocoupler.html 
+-Datasheet do opto acoplador MOC3021 Datasheet: 
+https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html 
+-TRIAC BTA41-600: 
+https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB 
+-Referência para a o desenvolvimento de um circuito retificador para a alimentação do SoC utilizado: 
+https://www.fvml.com.br/2020/06/controle-de-potencia-de-carga-110220vac.html  
+https://eletronicaparahobbistas.blogspot.com/2017/02/retificador-de-onda-completa-com_5.html?m=1 
+-Referências para a elaboração dos diagramas de fluxo: 
+https://cdn.standards.iteh.ai/samples/5500/6b28378512604ff7bdaace506be7dc0c/ISO-1028-1973.pdf 
+https://cdn.standards.iteh.ai/samples/8027/d55d5d8d5033436e945431e3f6e00f34/ISO-2972-1979.pdf 
+https://rjbfx.files.wordpress.com/2012/08/aula-01-introduc3a7c3a3o-a-lc3b3gica-e-algoritmos.pdf  
+-Referências utilizadas para a utilização da plataforma GitHub:
+  Ferramentas StackEdit e draw.io.
+  Referência: Mastering Markdown.
