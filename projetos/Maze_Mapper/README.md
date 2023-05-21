@@ -64,7 +64,6 @@ Com isso, os 4 modos configuráveis são:
 3. Encontrou saída.
 4. Liga/desliga.
 5. Requisição de retorno (prioritário).
-6. Transferência do mapa para a memória externa.
 
 
 ### Tratamento de Eventos
