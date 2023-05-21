@@ -93,6 +93,12 @@ Para a vericação de leituras improváveis de parte dos sensores:
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
+Com base nos algoritmos apresentados acima podemos estimar o espaço que será ocupado na memória flash do SoC por uma comparação das instruções nesses algoritmos com as de um microcontrolador mais simples como um AT8051, que podem ser acessadas pelo link abaixo:
+
+https://www2.pcs.usp.br/~labdig/pdffiles_2009/apendiceB.pdf
+
+Assim para cada uma das setas que saem de um bloco de decisão podemos aproximá-las como comandos de desvio caso dois valores sejam diferentes (no caso do AT8051 esse comando se chama CJNE possuindo 3 bytes), de forma com que teriamos XXX bytes ocupados por blocos de decisão no total.
+
 ## Referências
 
 -Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023. 
