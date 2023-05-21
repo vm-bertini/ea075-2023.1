@@ -77,13 +77,18 @@ Partindo pela especificação dos sensores a serem utilizados temos que o mesmo 
 Então temos o microcontrolador a ser utilizado, que como já denominado corresponde ao System on a Chip (SoC) ESP8266, que será utilizado principalmente por apresentar comunicação Wi-fi embutida, necessária para a transmissão de dados para compor relatórios salvos na nuvem; PWM (Pulse Width Modulation) necessário para o controle da potência fornecida para os atuadores; e por apresentar metódos que reduzem seu consumo de energia.
 
 Este SoC possuirá como saída terminais para comunicação I2C com o resfriador (que não será projetado), e terminais para a realização do controle de potência via PWM de um sistema aquecedor (que corresponde à uma resistência que é aquecida pelo efeito Joule), para isso o seguinte sistema será utilizado para o interfaceamento entre o SoC e o aquecedor:
+
 ![articles-opto6](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/d07226a5-fa47-4077-becb-7d797307b300)
+
+Fonte: https://www.electronics-tutorials.ws/blog/optocoupler.html 
 
 Cujos componentes serão devidamente apresentados adiante.
 
 Ademais será necessário um cabo para a realização do carregamento do programa no ESP8266, e um circuito retificador de onda completa (apresentado abaixo) que alimentará o SoC externamente, por seu pino Vin, com uma tensão de 5V; de forma com que não seja necessário a presença do cabo utilizado para o carregamento para a alimentação elétrica, evitando, por exemplo, que se utilize duas saídas de uma régua de tomadas e deixando este cabo disponível para outras aplicações. Para isso adicionalmente ao circuito apresentado abaixo, será necessário um transformador que converta o valor da tensão da rede elétrica para um valor adequado como V1 = 12V.
 
 ![image](https://github.com/Nothingtopus/Imagens/assets/127249262/6945f055-51a1-47ef-bc37-99aa0f16bb55)
+
+Fonte: https://eletronicaparahobbistas.blogspot.com/2017/02/retificador-de-onda-completa-com_5.html
 
 Finalmente são apresentados abaixo os componetes utilizados nesse projeto, no formato de uma lista de materiais:
 
