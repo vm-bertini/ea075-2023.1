@@ -141,14 +141,26 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 ### Especificação de Algoritmos 
 
-> (Se preferir, adicione um link para o documento de especificação de algoritmos).
-> 
-> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
-> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
-> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
-> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
-> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
-> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+>A especificação dos algoritmos é ilustrada em 3 fluxogramas:
+>
++> Interface do usuário:
+>
+->Tela de início e inicialização do sistema.
+->Menu de configuração exibindo opções como calibração e rede Wi-Fi.
+->Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
+-> de cada modo de configuração.
+->Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
+>
++>Modo Calibração:
+
+->Início da calibração selecionando no menu.
+->Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
+->Atualização dos valores do controlador.
++> Funcionamento do controlador:
+>
+->Realização das medições dos sensores do sistema em intervalos definidos.
+->Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
+->Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
 
 
 ## Referências
