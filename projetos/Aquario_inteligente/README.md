@@ -217,6 +217,10 @@ https://cdn.standards.iteh.ai/samples/5500/6b28378512604ff7bdaace506be7dc0c/ISO-
 https://cdn.standards.iteh.ai/samples/8027/d55d5d8d5033436e945431e3f6e00f34/ISO-2972-1979.pdf 
 
 https://rjbfx.files.wordpress.com/2012/08/aula-01-introduc3a7c3a3o-a-lc3b3gica-e-algoritmos.pdf  
+  
+-Referência para se programar no ESP8266 pela IDE do Arduino:
+  
+https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266-no-arduino-ide/
 
 -Referências utilizadas para a utilização da plataforma GitHub:
   
