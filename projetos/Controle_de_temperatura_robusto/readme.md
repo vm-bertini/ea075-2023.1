@@ -141,21 +141,20 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 ### Especificação de Algoritmos 
 
-> A especificação dos algoritmos é ilustrada em 3 fluxogramas:
+>A especificação dos algoritmos é ilustrada em 3 fluxogramas:
 >
-+> Interface do usuário:
+>-Interface do usuário:
 >
--> Tela de início e inicialização do sistema.
--> Menu de configuração exibindo opções como calibração e rede Wi-Fi.
--> Se houver uma interrupção via teclado/encoder, exibir opções de configuração de cada modo.
--> Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
+>--Tela de início e inicialização do sistema.
+>--Menu de configuração exibindo opções como calibração e rede Wi-Fi.
+>--Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
+>--Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
 >
->
-+> Modo Calibração:
+>+Modo Calibração:
 
--> Início da calibração selecionando no menu.
--> Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
--> Atualização dos valores do controlador.
+->Início da calibração selecionando no menu.
+->Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
+->Atualização dos valores do controlador.
 +> Funcionamento do controlador:
 >
 ->Realização das medições dos sensores do sistema em intervalos definidos.
