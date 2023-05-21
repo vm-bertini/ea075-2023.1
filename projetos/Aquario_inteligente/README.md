@@ -155,6 +155,4 @@ https://rjbfx.files.wordpress.com/2012/08/aula-01-introduc3a7c3a3o-a-lc3b3gica-e
   
   [Ferramentas StackEdit e draw.io.](https://stackedit.io/)
   
-  https://www.drawio.com/
-  
   [Referência: Mastering Markdown.](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
