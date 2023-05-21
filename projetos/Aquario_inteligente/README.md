@@ -77,6 +77,7 @@ Para a transmissão dos dados para nuvem e atualização dos parâmetros a cada 
 ![Diagrama sem nome drawio (1)](https://github.com/Nothingtopus/Imagens/assets/127249262/52ea651f-adf6-4cfc-991f-c1791cc5116f)
 
 Para a vericação de leituras improváveis de parte dos sensores:
+
 ![temp drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/f41b8da2-1c18-4931-b3d5-13ade3516bbb)
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
