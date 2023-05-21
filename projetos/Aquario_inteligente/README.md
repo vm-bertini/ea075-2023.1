@@ -17,7 +17,7 @@ O principal objetivo deste projeto é de realizar o controle de algumas grandeza
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório, que possuirá as informações de: tempo que o resfriador ficou ligado por período, tempo que o aquecedor ficou ligado por período, temperatura atual do aquário e desempenho energético no período analisado. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
 Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas.  
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
-No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor econômico de R$54,00, correspondente aos valores do SOC (System On Chip) e dos sensores utilizados. 
+No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor econômico de R$96,15, correspondente aos materiais utilizados. 
 
 
 ## Descrição Funcional
@@ -72,7 +72,7 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 ### Especificação Estrutural
 
-Partindo pela especificação dos sensores a serem utilizados temos que o mesmo modelo de sensor será utilizado tanto para a realização da leitura da temperatura do ar quanto da água, com a diferença de que para a água este sensor (DS18B20) possuirá um encapsulamento diferenciado pare permitir sua submersão nela. Considerando que esses sensores utilizam um padrão de comunicação denominado de one-wire, no qual para a realização da transferência das leituras para o SoC basta conectar o devido terminal de dados do sensor à um pino GPIO do SoC, e que o ESP8266 possui 16 pinos GPIO, logo não será necessário a implementação de interfaces com lógicas de chip select (CS) para ordanar a comunicação dos periféricos de entrada com o microcontrolador.
+Partindo pela especificação dos sensores a serem utilizados temos que o mesmo modelo de sensor será utilizado tanto para a realização da leitura da temperatura do ar quanto da água, com a diferença de que para a água este sensor (DS18B20) possuirá um encapsulamento diferenciado pare permitir sua submersão nela. Considerando que esses sensores utilizam um protocolo de comunicação denominado de one-wire, no qual para a realização da transferência das leituras para o SoC basta conectar o devido terminal de dados do sensor à um pino GPIO do SoC, e que o ESP8266 possui 16 pinos GPIO, logo não será necessário a implementação de interfaces com lógicas de chip select (CS) para ordanar a comunicação dos periféricos de entrada com o microcontrolador.
 
 Então temos o microcontrolador a ser utilizado, que como já denominado corresponde ao System on a Chip (SoC) ESP8266, que será utilizado principalmente por apresentar comunicação Wi-fi embutida, necessária para a transmissão de dados para compor relatórios salvos na nuvem; PWM (Pulse Width Modulation) necessário para o controle da potência fornecida para os atuadores; e por apresentar metódos que reduzem seu consumo de energia.
 
@@ -92,7 +92,42 @@ Fonte: https://eletronicaparahobbistas.blogspot.com/2017/02/retificador-de-onda-
 
 Finalmente são apresentados abaixo os componetes utilizados nesse projeto, no formato de uma lista de materiais:
 
-COLOCAR TABELAaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+<html>
+<body>
+<!--StartFragment--><google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style>
+
+Componentes | Quantidade [unidades] | Valor unitário [R$] | Valor total [R$] | Valor estimado para o projeto [R$]
+-- | -- | -- | -- | --
+Sensores: |   |   |   | 96,15
+DS18B20 (para o ar) | 1 | 10 | 10 |  
+DS18B20 (para a água) | 1 | 14 | 14 |  
+System on a chip: |   |   |   |  
+ESP8266 | 1 | 30 | 30 |  
+Cabo USB - Micro USB | 1 | 12 | 12 |  
+Sistema aquecedor: |   |   |   |  
+Escolhido pelo própio consumidor, dado restrições do aparelho de controle |   |   |   |  
+Sistema refrigerador: |   |   |   |  
+Projetado à parte |   |   |   |  
+Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |   |  
+Resistor filme metálico 1/4W 1% - 56 ohms | 1 | 0,1 | 0,1 |  
+Resistor filme metálico 1/4W 1% - 100 ohms | 1 | 0,21 | 0,21 |  
+Resistor filme metálico 1/4W 1% - 33 ohms | 1 | 0,15 | 0,15 |  
+Capacitor Cerâmico 33nF / 50V | 1 | 0,14 | 0,14 |  
+TRIAC BTA41-600 | 1 | 13 | 13 |  
+Circuito retificador de onda completa para a alimentação do SoC: |   |   |   |  
+LM7805 | 1 | 3 | 3 |  
+Capacitor de 100nF | 2 | 0,2 | 0,4 |  
+Diodo1N4007 | 4 | 0,2 | 0,8 |  
+Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 0,35 |  
+Conectores KRE de 2 vias | 2 | 2 | 4 |  
+Transformador de 220V para 12V | ? | ? | ? |  
+Para a alimentação do aquecedor: |   |   |   |  
+Tomada com plugue Fêmea 2P+T 20 A 250 V | 1 | 8 | 8 |  
+
+<!--EndFragment-->
+</body>
+</html>
+
 
 ### Especificação de Algoritmos
 
