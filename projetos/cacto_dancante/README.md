@@ -72,6 +72,35 @@ Lista de componentes utilizados:
 
 ### Especificação estrutural
 
+Para o controle do projeto definiu-se o PIC16C72A que possui 4.5KB de memória, 28 pinos, entradas analógicas além de pinos para comunicação SPI e saída PWM. A escolha foi feita baseando no baixo custo, por ser DIP,
+possuir comunicação SPI necessária para a gravação do cartão de memória e um PWM de resolução 10-bit que atende ao controle do motor. 
+
+A alimentação do microcontrolador serão utilizados 3 pilhas AAA de 1,5V cada totalizando uma tensão de 4,5V.
+
+Na sequência serão tratados os blocos de funcionamento do cricuito do Cacto Dançarino.
+Abaixo está todo o esquemático do projeto, para acompanhar o funcionamento de cada bloco (que foram colocados separados para melhor visualização).
+> <img title="a title" alt="Alt text" src="https://github.com/viniandrs/ea075-2023.1/blob/main/projetos/cacto_dancante/images/EsquematicoCacto.png">
+
+### Debounce
+Para evitar que ocorra o efeito de repique (as oscilações que podem comprometer o correto funcionamento das interrupções) nos botões de gravação e reprodução, foram colocados um resistor de 10K e um capacitor de 
+0.1uF com o intuito de suavizar a transiçãode niveis lógicos. Assim evitará o efeito do debounce.
+
+### Entrada e saída de áudio
+Na entrada de áudio foi colocado um heade qque será conectado ao microfone. Este Header está ligado em um circuito amplificador de sinal utilizando um transistor do tipo TBJ e filtros capacitivos.
+O sinal amplificado está ligado na entrada analógica do controlador, que a partir dela salvará no cartão.
+A saída de áudio é um PWM modulado de forma a reproduzir o áudio WMV que foi salvo no cartão pelo PIC. O PWM passa por um amplificador operacional antes de ssair no alto-falante, para passar
+por um processo de amplificação de áudio.
+
+
+### Controle do motor
+O motor não precisa de um controle fino no seu movimento, então a saída do PWM foi ligada na entrada de sinal de uma ponte H que i´ra controlar a rotacão do motor
+de acordo com o áudio reproduzido. 
+
+### Cartão SD
+Para o cartão SD escolheu-se um adaptador que liga as conecxões do cartão até entradas e saídas do PIC. Para ser feita a escrita e leitura opotou-se pela comunicação SPI
+ao invés da comunicação em paralelo, visto qque essa já tem bibliotecas implementadas além de apresentar menos conectores. 
+
+
 ### Especificação de algoritmos
 > <img title="a title" alt="Alt text" src="https://github.com/viniandrs/ea075-2023.1/blob/main/projetos/cacto_dancante/images/especificacao_software.png">
 
