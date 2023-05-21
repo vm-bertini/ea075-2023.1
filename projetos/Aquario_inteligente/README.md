@@ -97,7 +97,7 @@ Com base nos algoritmos apresentados acima podemos estimar o espaço que será o
 
 https://www2.pcs.usp.br/~labdig/pdffiles_2009/apendiceB.pdf
 
-Assim para cada uma das setas que entram em um bloco de decisão podemos aproximá-las como comandos de desvio caso dois valores sejam diferentes (no caso do AT8051 esse comando se chama CJNE possuindo 3 bytes), de forma com que teriamos XXX bytes ocupados por blocos de decisão no total.
+Assim para cada uma das setas que entram em um bloco de decisão podemos aproximá-las como comandos de desvio caso dois valores sejam diferentes (no caso do AT8051 esse comando se chama CJNE possuindo 3 bytes), de forma com que teriamos cerca de 3.(4+ bytes ocupados por blocos de decisão no total.
 
 ## Referências
 
