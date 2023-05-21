@@ -107,9 +107,101 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 ![Draw.io padronizador](Diagrama sem nome.drawio)
 
 ## Especificações
-
+(Especificações dos componentes)
 ### Especificação Estrutural
 
+Tabela de componentes:
+
+> |Nome do componente  | Descrição | Link para documento de especificação estrutural|
+> |--|--|--|
+> | ATMEGA128-16AU SMD TQFP-64  | Microcontrolador de 8-bits, com memória flash programável de 128KB  | https://pdf1.alldatasheet.com/datasheet-pdf/view/392232/ATMEL/ATMEGA128A-AU.html |
+> | APDS-9960  | Sensor de proximidade  | https://pdf1.alldatasheet.com/datasheet-pdf/view/918047/AVAGO/APDS-9960.html |
+> | Mini Motor DC 1.5-3V - RE-140RA | Mini motor DC| https://www.eletrogate.com/mini-motor-dc-15-3v?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant |
+
+
+* Microcontrolador:
+  * ATmega128-AU:
+    * Condições Limite:
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Temperatura de funcionamento | -55 | +125 | C° |
+    > | Tensão em qualquer pino menos o de reset | -0.5 | Vcc+0.5 | Volts |
+    > | Tensão no pino de reset | -0.5 | 13 | Volts |
+    > | Temperatura de armazenamento | -65 | 50 | C° |
+    > | Maior tensão de operação | - | 6 | Volts |
+    > |Maior corrente por I/O pin| - | 40 | mA |
+    > | Maior corrente Vcc e Gnd | 200 | 400 | mA |
+
+    * Condições elétricas (Temp: -40C° - 85C°; Vcc = 5V):
+
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Input Low | -0.5 | 0.2Vcc | Volts |
+    > | Input High | 0.85 | Vcc+0.5 | Volts |
+    > | Output Low | - | 0.9 | Volts |
+    > | Output High | -4.2 | - | Volts |
+
+
+    * Condições elétricas (Temp: -40C° - 85C°; Vcc = 3V):
+
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Input Low | -0.5 | 0.2Vcc | Volts |
+    > | Input High | 0.85 | Vcc+0.5 | Volts |
+    > | Output Low | - | 0.6 | Volts |
+    > | Output High | 2.2 | - | Volts |
+    
+    * Condições temporais:
+    > |Parametro| Descrição | Tempo |
+    > |--|--|--|
+    > | Tempo de hold de dados| 0.9 | 0.45 | ns |
+    > | Tempo de hold de dados | 100 | 250 | ns |
+    > | Frequecia de clock SCL (serial clock) | 0 | 400 | KHz |
+    
+    * Deve-se garantir que os valores de input vindos para o MCU tenham tempo suficiente para serem captados e guardados
+    
+
+* Conversores:
+  * Sensor:
+    * Limites físicos - largura: 3.94 mm; profundidade: 2.36 mm; altura: 1.35 mm
+    * Condições limite:
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Tensão da fonte | - | 3.8 | Volts |
+    > | Tensão de entrada | -0.5 | 3.8 | Volts |
+    > | Tensão de saída | -0.3 | 3.8 | Volts |
+    > | Temperatura de armazenamento | -40 | 85 | C° |
+    
+    * Condições elétrica de funcionamento (recomendadas):
+    
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Operação | -30 | 85 | C° |
+    > | Tensão da fonte | 2.4 | 3.8 | Volts |
+    > | Erro de tensão | -3 | +3 | % |
+    > | Tensão de alimentação do LED | 3.0 | 4.5 | Volts |
+    
+    * Baseado nos dados do MCU do sensor não há necessidade de circuitos do Sensor --> microcontrolador (no que se trata dos valores de tensão máximos e mínimos do dois componentes)
+    * Baseado nos dados do MCU do sensor há necessidade de circuitos do Microcontrolador --> Sensor, já que os valores de saída do microcontrolador pode ultrapassar os limites do sensor
+    
+    
+  * Atuador:
+    * Limites Físicos - largura: 20.4 mm; profundidade: 24.4 mm; Diâmetro do eixo (altura): 	2 mm
+    * Condições Elétricas:
+    > |Parametro| Min | Max | Unidade |
+    > |--|--|--|--|
+    > | Tensão de operação | 1.5 | 3 | Volts |
+    > | Corrente sem carga | 130 | 160 | mA |
+    
+    * Para o bom funcionamento do sistema a porta B7 do MCU deve ser conectada a fonte VCC do motor, assim a função PWM poderá ser utilizada
+    * Com os valores do motor listados é possível concluir que será necessário um circuito de interface entre o motor e o MCU para que a tensão da porta b7 seja de valor pico de 3 volts
+
+
+
+### Especificação de Algoritmos
+
+* Sob o documento "código modelo" um modelo de algorítimo em linguagem de IDE de Arduíno como modelo para o funcionamento do sistema, é notável que o arduíno NÃO será o MCU utilizado por este projeto
+* Para este projeto há dois eventos, a passagem de item e a saída dele pela esteira. Para a passagem de item pelo sensor o padronizador irá armazenar o tempo em que o item passou pela esteira e periódicamente irá atualizar a posição dele (começando em 0) até que ele saia da esteira (posição igual o tamanho da esteira), utilizando de um delay com tempo padronizado e a velocidade da esteira, que é conhecida. Para o segundo evento, a saída do item de esteira, haverá a alteração da velocidade da esteira baseada na distância entre o item saindo da esteira e o próximo da fila e da taxa desejada de entrega de produtos, por exemplo, caso a taxa configurada for 1 item/segundo, e a distância dos itens for de 10 cm, a velocidade da esteira será calibrada para 10cm/s usando uma metodologia PID para garantir o controle correto da velocidade da esteira.
 
 ## Referências
 * Motor referência para o projeto:
