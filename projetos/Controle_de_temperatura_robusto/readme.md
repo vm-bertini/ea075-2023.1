@@ -153,14 +153,14 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
 
-> ![](Comunicaçã com o usuario.drawio.png)
+> ![](comunicacao.png)
 #### Modo Calibração:
 >
 >Início da calibração selecionando no menu.
 >Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
 >Atualização dos valores do controlador.
 
->![](Modo calibração.drawio.png)
+>![](Modocalibracao.png)
 
 #### Funcionamento do controlador:
 >
