@@ -145,21 +145,21 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >-Interface do usuário:
 >
->--Tela de início e inicialização do sistema.
->--Menu de configuração exibindo opções como calibração e rede Wi-Fi.
->--Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
->--Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
+>-- Tela de início e inicialização do sistema.
+>-- Menu de configuração exibindo opções como calibração e rede Wi-Fi.
+>-- Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
+>-- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
 >
->+Modo Calibração:
+>+ Modo Calibração:
 
-->Início da calibração selecionando no menu.
-->Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
-->Atualização dos valores do controlador.
-+> Funcionamento do controlador:
+> Início da calibração selecionando no menu.
+>Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
+>Atualização dos valores do controlador.
+> Funcionamento do controlador:
 >
-->Realização das medições dos sensores do sistema em intervalos definidos.
-->Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
-->Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
+>Realização das medições dos sensores do sistema em intervalos definidos.
+>Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
+>Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
 
 
 ## Referências
