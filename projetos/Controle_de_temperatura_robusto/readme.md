@@ -145,13 +145,13 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >+ Interface do usuário:
 >
->-- Tela de início e inicialização do sistema.
+>- Tela de início e inicialização do sistema.
 >
->-- Menu de configuração exibindo opções como calibração e rede Wi-Fi.
+>- Menu de configuração exibindo opções como calibração e rede Wi-Fi.
 >
->-- Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
+>- Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
 >
->-- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
+>- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
 >
 >
 >+ Modo Calibração:
