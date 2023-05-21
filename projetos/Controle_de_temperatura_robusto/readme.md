@@ -130,11 +130,11 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > Para poder medir a temperatura do ambiente escolhemos o termômetro digital DS18B20, pois ele não necessita de nenhum módulo adicional, ou seja, pode ser conectado dirematente nas entradas GPIO's do microcontrolador que iremos utilizar e é relativamente barato. Para que seja possível essa comunicação entre o sensor e o ATmega teremos que definir as entradas do microcontrolador e utilizaremos bibliotecas disponíves e vamos ter que definir os endereços de momória, uma vez que, pretendemos utilizar uma única porta para os quatros sensores.
 > 
-> Para mostrar as informações, iremos utilizar um display OLED 128x64, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados. 
+> Para mostrar as informações, iremos utilizar um display OLED 128x64, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo. 
 > 
 > O módulo Wi-Fi será o.... (ainda escolher)
 > 
-> O acionamento do sistema de refrigeração será feito...
+> O acionamento do sistema de refrigeração será feito através de um sinal PWM de saída para os refrigerados
 > 
 > Vamos utilizar também um cristal oscilador de 16 MHz como clock 
 
