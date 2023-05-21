@@ -72,6 +72,18 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 ### Especificação Estrutural
 
+Partindo pela especificação dos sensores a serem utilizados temos que o mesmo modelo de sensor será utilizado tanto para a realização da leitura da temperatura do ar quanto da água, com a diferença de que para a água este sensor (DS18B20) possuirá um encapsulamento diferenciado pare permitir sua submersão nela. Considerando que esses sensores utilizam um padrão de comunicação denominado de one-wire, no qual para a realização da transferência das leituras para o SoC basta conectar o devido terminal de dados do sensor à um pino GPIO do SoC, e que o ESP8266 possui 16 pinos GPIO, logo não será necessário a implementação de interfaces com lógicas de chip select (CS) para ordanar a comunicação dos periféricos de entrada com o microcontrolador.
+
+Então temos o microcontrolador a ser utilizado, que como já denominado corresponde ao System on a Chip (SoC) ESP8266, que será utilizado principalmente por apresentar comunicação Wi-fi embutida, necessária para a transmissão de dados para compor relatórios salvos na nuvem; PWM (Pulse Width Modulation) necessário para o controle da potência fornecida para os atuadores; e por apresentar metódos que reduzem seu consumo de energia.
+
+Este SoC possuirá como saída terminais para comunicação I2C com o resfriador (que não será projetado), e terminais para a realização do controle de potência via PWM de um sistema aquecedor (que corresponde à uma resistência que é aquecida pelo efeito Joule), para isso o seguinte sistema será utilizado para o interfaceamento entre o SoC e o aquecedor:
+![articles-opto6](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/d07226a5-fa47-4077-becb-7d797307b300)
+
+Cujos componentes serão devidamente apresentados adiante.
+
+Ademais será necessário um cabo para a realização do carregamento do programa no ESP8266, e um circuito retificador de onda completa (apresentado abaixo) que alimentará o SoC externamente, por seu pino Vin, com uma tensão de 5V; de forma com que não seja necessário a presença do cabo utilizado para o carregamento para a alimentação elétrica, evitando, por exemplo, que se utilize duas saídas de uma régua de tomadas e deixando este cabo disponível para outras aplicações.
+
+colocar a imagem aqIIIIIIIIIIIIIIIIII
 
 ### Especificação de Algoritmos
 
@@ -131,6 +143,8 @@ https://www.youtube.com/watch?v=ziXkMCADjBo
 
 https://www.electronics-tutorials.ws/blog/optocoupler.html 
 
+https://www.fvml.com.br/2020/06/controle-de-potencia-de-carga-110220vac.html  
+
 -Datasheet do opto acoplador MOC3021 Datasheet: 
 
 https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html 
@@ -140,8 +154,6 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html
 https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB 
 
 -Referência para a o desenvolvimento de um circuito retificador para a alimentação do SoC utilizado: 
-
-https://www.fvml.com.br/2020/06/controle-de-potencia-de-carga-110220vac.html  
 
 https://eletronicaparahobbistas.blogspot.com/2017/02/retificador-de-onda-completa-com_5.html?m=1 
 
