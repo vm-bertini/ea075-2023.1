@@ -128,6 +128,7 @@ Tomada com plugue Fêmea 2P+T 20 A 250 V | 1 | 8 | 8 |  
 </body>
 </html>
 
+Finalmente podemos estabelecer algumas recomendações e restrições para o uso do aquário inteligente, assim recomenda-se que: os sensores de temperatura da água e o aquecedor sejam mantidos em um aquário secundário (e não no de exibição), com o sensor de temparatura da água mergulhado até metade do nível de água presente (considerando que o sensor DS18B20 possui um cabo de 1 metro de comprimento, sem extensores, o aquário secundário (sump) em que ele seria aplicado poderia ter no máximo 2 metros de profundidade); se evite de posicionar o sensor de temperatura do ar próximo de fontes ou sovedouros de calor.
 
 ### Especificação de Algoritmos
 
@@ -154,6 +155,10 @@ Com base nos algoritmos apresentados acima podemos estimar o espaço que será o
 ## Referências
 
 -Material postado na página (do google classroom) da disciplina de EA075A, de oferecimento para o primeiro semestre de 2023. 
+  
+-Referências sobre aquarismo:
+  
+https://www.aquarismomarinho.com.br/blog/sump-marinho/
 
 -Uso do sensor de temperatura DS18B20: 
 
@@ -175,6 +180,10 @@ https://www.alldatasheet.com/datasheet-pdf/pdf/58557/DALLAS/DS18B20.html
 
 https://storage.googleapis.com/baudaeletronicadatasheet/DS18B20.pdf 
 
+-Arquitetura do SoC ESP8266 (SoC utilizado no projeto):  
+  
+https://blogmasterwalkershop.com.br/embarcados/esp8266/descomplicando-a-pinagem-do-nodemcu
+  
 -Arquitetura do SoC ESP32: 
 
 https://deinfo.uepg.br/~alunoso/2019/SO/ESP32/HARDWARE/#:~:text=O%20ESP32%20%C3%A9%20um%20microcontrolador,um%20grande%20n%C3%BAmero%20de%20aplica%C3%A7%C3%B5es 
