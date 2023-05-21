@@ -132,7 +132,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Para mostrar as informações, iremos utilizar um display OLED 128x64, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo. 
 > 
-> O módulo Wi-Fi será o ESP8266, o qual possui compatibilidade com o microcontrolador que estamos utilizando e há diversos materiais na internet de como realizar as configurações necessárias para poder utilizá-lo com o Atemega. Para poder conectá-lo, vamos ter que definir uma porta como TXD e outra como RXD para receber e enviar os dados via Wi-Fi
+> O módulo Wi-Fi será o ESP8266, o qual possui compatibilidade com o microcontrolador que estamos utilizando e há diversos materiais na internet de como realizar as configurações necessárias para poder utilizá-lo com o ATmega. Para poder conectá-lo, vamos ter que definir uma porta como TXD e outra como RXD para receber e enviar os dados via Wi-Fi
 > 
 > O acionamento do sistema de refrigeração será feito através de um sinal PWM de saída para os refrigerados
 > 
