@@ -152,19 +152,22 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >- Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
 >
 >- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
->
+
+> ![](projetos/Controle_de_temperatura_robusto/Comunicaçã com o usuario.drawio.png)
 #### Modo Calibração:
 >
 >Início da calibração selecionando no menu.
 >Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
 >Atualização dos valores do controlador.
->
+
+>![](projetos/Controle_de_temperatura_robusto/Modo calibração.drawio.png)
+
 #### Funcionamento do controlador:
 >
 >- Realização das medições dos sensores do sistema em intervalos definidos.
 >- Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
 >- Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
-
+>![](projetos/Controle_de_temperatura_robusto/leitura_controle.drawio.png)
 
 ## Referências
 > -  SILVA, Italo. UTILIZAÇÃO DE UM CONTROLE PID DE TEMPERATURA PARA ESTUDO DE RESFRIAMENTO TERMOELÉTRICO. 2022. Monografia (Graduação em Engenharia Mecânica) - UFPE, [S. l.], 2022. Disponível em: https://repositorio.ufpe.br/bitstream/123456789/47590/1/TCC%20%C3%8Dtalo%20Souza%20da%20Silva.pdf. Acesso em: 2 abr. 2023.
