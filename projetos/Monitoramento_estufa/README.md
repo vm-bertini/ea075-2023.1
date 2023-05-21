@@ -25,21 +25,19 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 ## Descrição Funcional
 
 ### Funcionalidades
->O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do solo a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade a cada 10 minutos e a luminosidade a cada 5 minutos, porém esses parâmetros serão configuráveis, e a frequência de amostragem de cada fator pode ser alterada conforme a necessidade do cliente. O sistema também será capaz de detectar quando um valor estiver fora da faixa adequada configurada, e para esse caso, irá iniciar rotinas de tratamento adequadas, controlando o funcionamento dos aspersores de água, sistema de aquecimento, coolers, lâmpadas e "shade".
+>O nosso sistema embarcado será capaz de obter a temperatura do ambiente, a luminosidade e a umidade do solo a partir de sensores. Ele mostrará esses valores em um LCD (Liquid Crystal Display). Inicialmente ele amostrará os valores de temperatura e umidade a cada 10 minutos e a luminosidade a cada 5 minutos, porém esses parâmetros serão configuráveis, e a frequência de amostragem de cada fator pode ser alterada conforme a necessidade do cliente. O sistema também será capaz de detectar quando um valor estiver fora da faixa adequada configurada, e para esse caso, irá iniciar rotinas de tratamento adequadas, controlando o funcionamento dos aspersores de água, sistema de aquecimento, coolers, lâmpadas.
 >
 > O sistema poderá : 
-> - Ligar e desligar os aspersores de água
+> - Ligar e desligar os aspersores de água.
 >
-> - Ligar, desligar e controlar a temperatura do sistema de aquecimento
+> - Ligar, desligar e controlar a temperatura do sistema de aquecimento.
 >
-> - Ligar, desligar e controlar a temperatura dos coolers
-> 
-> - Movimentar o "shade" : Abrir o shade caso a luminosidade esteja abaixo da desejada e fechar o shade caso esteja acima da desejada
+> - Ligar, desligar e controlar a temperatura dos coolers.
 >
 > - Ligar, desligar e controlar a intensidade da luz das lâmpadas de LED (as lâmpadas serão utilizadas caso a luminosidade não seja o bastante mesmo com o shade totalmente aberto (por exemplo à noite)).
 
 ### Configurabilidade
-> A estufa está sendo projetada para uma diversidade de espécies de plantas, e cada planta tem suas especificidades em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar a faixa de valores desejada e a frequência com que os dados serão amostrados. Essa configuração será feita por botões. O LCD no modo exibição mostrará o último estado amostrado, e atualizará a cada amostragem. Ao apertar o botão de configuração, o sistema irá funcionar no modo de configuração, e o LCD mostrará os valores definidos para o período de amostragem e os valores máximo e mínimo para cada parâmetro. Para mudar esses valores, haverá 3 botões (além do botão que muda entre o modo de exibição e configuração, totalizando 4 botões), um botão que muda a característica cujo valor deseja-se alterar, um botão para incrementar esse valor e um botão para decrementar esse valor. Ao pressionar o botão de configuração novamente, retorna-se para o modo de exibição. Os valores possíveis para as características obedecerão a limites de acordo com as especificações dos sensores, e o período de amostragem poderá variar de 1 a 59 minutos.
+> A estufa está sendo projetada para uma diversidade de espécies de plantas, e cada planta tem suas especificidades em relação ao ambiente para ter uma produtividade melhor. Portanto, será possível configurar a faixa de valores desejada e a frequência com que os dados serão amostrados. Essa configuração será feita por botões. O LCD no modo exibição mostrará o último estado amostrado, e atualizará a cada amostragem. Ao apertar o botão de configuração, o sistema irá funcionar no modo de configuração, e o LCD mostrará os valores definidos para o período de amostragem e os valores máximo e mínimo para cada parâmetro. Para mudar esses valores, haverá 3 botões (além do botão que muda entre o modo de exibição e configuração, totalizando 4 botões), um botão que muda a característica cujo valor deseja-se alterar, um botão para incrementar esse valor e um botão para decrementar esse valor. Ao pressionar o botão de configuração novamente, retorna-se para o modo de exibição. Os valores possíveis para as características obedecerão a limites de acordo com as especificações dos sensores, e o período de amostragem poderá variar de 1 a 59 minutos. Os sensores deverão ter o mesmo perído de amostragem.
 ### Eventos
 >  O sistema deve tratar os seguintes eventos periódicos:
 >
