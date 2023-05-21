@@ -128,7 +128,7 @@ Tomada com plugue Fêmea 2P+T 20 A 250 V | 1 | 8 | 8 |  
 </body>
 </html>
 
-Finalmente podemos estabelecer algumas recomendações e restrições para o uso do aquário inteligente, assim recomenda-se que: os sensores de temperatura da água e o aquecedor sejam mantidos em um aquário secundário (e não no de exibição), com o sensor de temparatura da água mergulhado até metade do nível de água presente (considerando que o sensor DS18B20 possui um cabo de 1 metro de comprimento, sem extensores, o aquário secundário (sump) em que ele seria aplicado poderia ter no máximo 2 metros de profundidade); se evite de posicionar o sensor de temperatura do ar próximo de fontes ou sovedouros de calor.
+Finalmente podemos estabelecer algumas recomendações e restrições para o uso do aquário inteligente, assim recomenda-se que: os sensores de temperatura da água e o aquecedor sejam mantidos em um aquário secundário (e não no de exibição), com o sensor de temparatura da água mergulhado até metade do nível de água presente (considerando que o sensor DS18B20 possui um cabo de 1 metro de comprimento, sem extensores, o aquário secundário (sump) em que ele seria aplicado poderia ter no máximo 2 metros de profundidade); se evite de posicionar o sensor de temperatura do ar próximo de fontes ou sovedouros de calor; o aquecedor utilizado não exceda as especificações elétricas máximas do plug de tomada, possuindo uma potência menor que 5kW.
 
 ### Especificação de Algoritmos
 
