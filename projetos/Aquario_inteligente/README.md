@@ -94,7 +94,7 @@ Finalmente são apresentados abaixo os componetes utilizados nesse projeto, no f
 
 <html>
 <body>
-<!--StartFragment--><google-sheets-html-origin><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style>
+<!--StartFragment--><google-sheets-html-origin><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->
 
 Componentes | Quantidade [unidades] | Valor unitário [R$] | Valor total [R$] | Valor estimado para o projeto [R$]
 -- | -- | -- | -- | --
