@@ -100,6 +100,12 @@ Inicialmente optamos por utilizar do microcontrolador Atmega328p dado a familiar
 
 ## Especificação Estrutural
 
+O sistema é dividido em três módulos, responsáveis pelas funções de irrigação, fertilização e iluminação.
+
+O mais simples deles é o módulo responsável pela iluminação. Ele é composto por uma chave/interruptor, um relé de 5V e a lâmpada. Este módulo utiliza o interruptor como sensor para identificar se a função de iluminação foi ativada pelo usuário e gera um sinal de controle para ativar a lâmpada nos momentos planejados, necessitando de duas GPIOs do microcontrolador para isto, uma como entrada para o sinal do interruptor e outra como saída para o sinal de controle que será conctado a um relé 5V para ligar e desligar a lâmpada. Para realizar o controle deste módulo o microcontrolador 
+
+O módulo renponsável pela irrigação é composto por uma conecção para alimentar o sistema com água, seguido por uma válvula solenóide para controle do fluxo de água para irrigação seguida pela mangueira que realizará a irrigação. Entre a mangueira e a válvula, terá uma derivação conectada a outra válvula solenóide que por padrão ficará fechada, mas que será responsável por permitir a passagem do fertilizante no módulo de fertilização.
+
 ## Especificação de Algoritmos
 
 ## Referências
