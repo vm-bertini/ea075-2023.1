@@ -1,7 +1,8 @@
 #define tde 1 // Taxa de entrega, n° de unidades por segundo
 #define vi 10 // Velocidade inicial, em cm/s
 
-#define HALL_1_PIN N //(pino do MCU de sensor hall)
+#define HALL_1_PIN N // (N = pino do MCU de sensor hall)
+#define MOTOR_1_PIN M //(M = pino do MCU do motor)
 
 void setup()
 {
@@ -28,6 +29,7 @@ void loop()
 	if ((v/(PN-PA)) != tde)
 	{
  		 v = tde*(PN-PA);
+		 analogWrite(v,MOTOR_1_PIN);
 	}
       delay(10000) //delay 1 s
 }
