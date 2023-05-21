@@ -167,6 +167,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >- Realização das medições dos sensores do sistema em intervalos definidos.
 >- Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
 >- Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
+>
 >![](leitura_controle.drawio.png)
 
 ## Referências
