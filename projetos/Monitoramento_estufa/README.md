@@ -263,6 +263,18 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > Tem compatibilidade com o microcontrolador PIC.
 > 
 > Datasheet: https://www.usinainfo.com.br/index.php?controller=attachment&id_attachment=71
+>
+> #### Monitor
+> Será utilzido um Display LCD 20x4 que tem como porta serial I2C que tem compatibilidade com o microcontrolador PIC usado. A função do Display é ser utilziado como um monitor que mostrar as informações de temperatura , umidade do solo e luminosidade. A partir deste, será possível controlar, juntamente com os botões, o range em que cada sensor funcionará para a estufa. Ele possui as seguintes especificações relevantes ao nosso projeto:
+> 
+> Tensão de operação: 5V
+> 
+> Vai utilizar 8 portas de entrada: VCC, GND e 6 Digital Output.
+> 
+> Temperatura de operação:-20 a 70°C.
+> 
+> Datasheet:https://www.vishay.com/docs/37314/lcd020n004l.pdf
+> 
    
 
 ### Especificação de Algoritmos 
