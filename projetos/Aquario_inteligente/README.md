@@ -71,7 +71,7 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 Inicialmente para a mudança de alguma das possíveis configurações:
 
 Então temos que para a passagem de um tempo correspondente ao periodo de amostragem regulado T teremos o seguinte algoritmo de tratamento:
-![Passagem do tempo drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/72477ed6-3ba7-4241-8f1c-de43a76b0035)
+![T drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/9e420ff5-4866-48e4-bdec-bb7de084c4bd)
 
 Para a transmissão dos dados para nuvem e atualização dos parâmetros a cada 12 horas temos:
 ![Diagrama sem nome drawio (1)](https://github.com/Nothingtopus/Imagens/assets/127249262/52ea651f-adf6-4cfc-991f-c1791cc5116f)
