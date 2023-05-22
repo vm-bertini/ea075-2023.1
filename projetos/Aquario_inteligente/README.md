@@ -152,6 +152,10 @@ O envio de dados para a nuvem também pode ocorrer através da interrupção ger
 Para a vericação de leituras improváveis de parte dos sensores:
 
 ![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/3d5206d0-fe6e-477e-99c1-dbb603f7540b)
+  
+Já para ação indevida dos atuadores temos o seguinte algoritmo:
+  
+![Envio de dados para a nuvem de maneira assincrona](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/35491751-9cda-423e-af38-d8c2dfe65533)
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
