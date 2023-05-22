@@ -75,9 +75,9 @@ Será necessário a utilização de sensores para temperatura dentro do ambiente
 
 Partindo pela especificação dos sensores a serem utilizados temos que o mesmo modelo de sensor será utilizado tanto para a realização da leitura da temperatura do ar quanto da água, com a diferença de que para a água este sensor (DS18B20) possuirá um encapsulamento diferenciado pare permitir sua submersão nela. Considerando que esses sensores utilizam um protocolo de comunicação denominado de one-wire, no qual para a realização da transferência das leituras para o SoC basta conectar o devido terminal de dados do sensor à um pino GPIO do SoC, e que o ESP8266 possui 16 pinos GPIO, logo não será necessário a implementação de interfaces com lógicas de chip select (CS) para ordanar a comunicação dos periféricos de entrada com o microcontrolador.
 
-Então temos o microcontrolador a ser utilizado, que como já denominado corresponde ao System on a Chip (SoC) ESP8266, que será utilizado principalmente por apresentar comunicação Wi-fi embutida, necessária para a transmissão de dados para compor relatórios salvos na nuvem; PWM (Pulse Width Modulation) necessário para o controle da potência fornecida para os atuadores; e por apresentar metódos que reduzem seu consumo de energia.
+Então temos o microcontrolador a ser utilizado, que como já denominado corresponde ao System on a Chip (SoC) ESP8266, que será utilizado principalmente por apresentar comunicação Wi-fi embutida, necessária para a transmissão de dados para compor relatórios salvos na nuvem; PWM (Pulse Width Modulation) necessário para o controle da potência fornecida para os atuadores; e por apresentar memória flash não-volátil necessária para armazenar as temperaturas medidas e os parâmetros cálculados, e não perdê-los caso a energia de alimentação seja interrompida.
 
-Este SoC possuirá como saída terminais para comunicação I2C com o resfriador (que não será projetado), e terminais para a realização do controle de potência via PWM de um sistema aquecedor (que corresponde à uma resistência que é aquecida pelo efeito Joule), para isso o seguinte sistema será utilizado para o interfaceamento entre o SoC e o aquecedor:
+Este SoC possuirá como saída terminais para comunicação I2C com o resfriador (que dentro do objetivo do projeto não faz sentido comprar um chiller a parte, mas projetar um do zero), e terminais para a realização do controle de potência via PWM de um sistema aquecedor (que corresponde à uma resistência que é aquecida pelo efeito Joule), para isso o seguinte sistema será utilizado para o interfaceamento entre o SoC e o aquecedor. Este sistema, será semelhante a figura logo abaixo, substituindo a fonte de 5V com a chave por um pino GPIO e um gnd do esp8266, e conectando um cabo com plug-in macho de tomada (energia da rede) em série com um plug-in fêmea de tomada (energia fornecida ao aquecedor) nos pontos "To load" (fase da rede) e "N" (fase do aquecedor).
 
 ![articles-opto6](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/d07226a5-fa47-4077-becb-7d797307b300)
 
@@ -121,9 +121,9 @@ Capacitor de 100nF | 2 | 0,2 | 0,4 |  
 Diodo1N4007 | 4 | 0,2 | 0,8 |  
 Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 0,35 |  
 Conectores KRE de 2 vias | 2 | 2 | 4 |  
-Transformador de 220V para 12V | ? | ? | ? |  
+Transformador de 220V para 12V | 1 | 74,49 | 74,49 |  
 Para a alimentação do aquecedor: |   |   |   |  
-Tomada com plugue Fêmea 2P+T 20 A 250 V | 1 | 8 | 8 |  
+Tomada com plugue fêmea 2P 250V 10A 57420952 Tramontina | 1 | 3,19 | 3,19 |  
 
 <!--EndFragment-->
 </body>
@@ -228,3 +228,6 @@ https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266
   [Ferramentas StackEdit e draw.io.](https://stackedit.io/)
   
   [Referência: Mastering Markdown.](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+ 
+-Referência utilizada para o valor do transformador de 220V/12V:
+https://produto.mercadolivre.com.br/MLB-3276527293-conversor-de-tenso-220v-para-12v-transformador-eletrnico-i-_JM?matt_tool=54307261&matt_word=&matt_source=google&matt_campaign_id=14302215582&matt_ad_group_id=134553712308&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425529689&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=623194816&matt_product_id=MLB3276527293&matt_product_partition_id=1802672036537&matt_target_id=pla-1802672036537&gclid=CjwKCAjwgqejBhBAEiwAuWHioJUjP2nSSHbEiWERYT_BIw9dajKQbRiMtEKUTwAVvxpAHGNx5dkc4hoCR28QAvD_BwE
