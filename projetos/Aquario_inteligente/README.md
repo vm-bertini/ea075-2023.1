@@ -133,7 +133,7 @@ Finalmente podemos estabelecer algumas recomendações e restrições para o uso
 
 ### Especificação de Algoritmos
 
-Inicialmente para a mudança de alguma das possíveis configurações:
+Inicialmente para a mudança de alguma das possíveis configurações, temos o seguinte fluxograma que possui o seu início a partir de uma interrupção gerada pela alteração das configuração no aplicativo.
 
 ![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/c533ee61-b0d7-4e5d-ba3c-395c4b029a7e)
 
