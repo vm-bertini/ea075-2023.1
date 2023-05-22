@@ -153,6 +153,15 @@ https://lh3.googleusercontent.com/dEtVDtnTXxLJs2YYxXNb0YExX45h7YhmmGbJCrGO4sbP2Z
 > Relações com outros blocos:
 > > Apenas se comunica com o bloco SISTEMA Rx/Tx
 
+## Especificações
+
+### Especificação Estrutural
+
+https://docs.google.com/document/d/1n6RbynMdM-dFheosjJLS--sK0qMWMoK55iLZcWa1GU8/edit?usp=sharing
+
+### Especificação de Algoritmos
+
+https://docs.google.com/document/d/1WOtS1sczeaAlzp9vi0PXV7JNHWrlSyEX5yq-FA1AXzs/edit?usp=sharing
 
 ## Referências
 - https://www.youtube.com/playlist?list=PLifLftIJFUm-1iIAEPWvuSJTA50YKYD7J
