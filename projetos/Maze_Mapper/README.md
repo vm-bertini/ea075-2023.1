@@ -51,38 +51,39 @@ Com isso, os 4 modos configuráveis são:
 ### Eventos
 > Periódicos
 
-1. Utilização dos sensores para varredura (500ms).
-2. Verificar a distância do ponto inicial (5000ms).
-3. Verificar status da locomoção (5000ms).
-4. Verificação de bateria (60000 ms).
-5. Mapeamento (5000ms).
+1. Verificação do sensor frontal (500ms).
+2. Verificar status da locomoção (15000ms).
 
 > Não Periódicos (não ocorrem simultaneamente, portanto não preocupações com tempo mínimo)
 
-1. Encontrou ramificação.
-2. Encontrou obstrução.
-3. Encontrou saída.
-4. Liga/desliga.
-5. Requisição de retorno (prioritário).
+1. Mapeamento.
+2. Verificação de bateria.
+3. Requisição de retorno.
+4. Verificar a distância do ponto inicial.
+5. Controle de Navegação.
+6. Encontrou ramificação.
+7. Encontrou obstrução.
+8. Encontrou saída.
+9. Liga/desliga.
 
 
 ### Tratamento de Eventos
 > Periódicos:
 
-1. Verificação de ramificação, obstrução, saída (trigger para os eventos não periódicos 1, 2 e 3).
-2. Se a distância for maior que o raio de atuação, ou houver perda de sinal, voltar.
-3. Caso a locomoção seja comprometida, enviar sinal de ajuda e entrar em modo de segurança (economia de bateria, e LEDs ligados para facilitar localização).
-4. Caso a bateria esteja abaixo de um certo limite, voltar.
-5. Atualizar o mapa na memória RAM com uma reta entre a posição anterior e a atual. 
+1. Verifica se é necessário mapear uma nova posição com base na distância percorrida desde a última atualização.
+2. Caso a locomoção seja comprometida, enviar sinal de ajuda e a última posição registrada (localização atual).
 
 > Não Periódicos
 
-1. Sempre escolher o caminho mais a esquerda que ainda não tenha sido percorrido. Salvar ponto de ramificação no mapa.
-2. Salvar como obstrução e retornar até a última ramificação. Caso em modo de busca por obstrução única, salvar o mapa e retornar (tarefa concluída).
-3. Salvar como saída e retornar até a última ramificação. Caso em modo de busca por saída única, salvar o mapa e retornar (tarefa concluída).
-4. Ligar e desligar o sistema.
-5. Interromper o processamento normal e retornar ao ponto inicial pelo caminho mais curto.
-6. Atualizar o mapeamento salvo na memória externa a cada 10 pontos.
+1. Paraliza o motor, marca a nova posição, categoriza-a, e volta a ligar o motor quando todo o processamento necessário para prosseguir é realizado. É trigger dos eventos não periódicos de 2 a 5.
+2. Caso a bateria esteja abaixo de um certo limite, configura o carrinho para voltar ao ponto inicial.
+3. Interromper o processamento normal e configurar o carrinho para retornar ao ponto inicial.
+4. Se a distância for maior que o raio de atuação, dar meia volta.
+5. Com base no tipo de ponto (ramificação, obstrução, saída, etc) em que se está, corrige a orientação do carrinho para que este possa continuar se movimentando para frente. É trigger dos eventos não-periódicos de 6 a 8, dependendo do tipo de ponto.
+6. Salvar ponto de ramificação no mapa e escolher por qual caminho seguir a partir da posição atual.
+7. Salvar ponto como obstrução e dar meia volta. Caso em modo de busca por obstrução única, retornar ao ponto de início (tarefa concluída).
+8. Salvar ponto como saída e dar meia volta. Caso em modo de busca por saída única, retornar ao ponto de início (tarefa concluída).
+9. Ligar e desligar o sistema.
 
 
 ## Descrição Estrutural do Sistema
