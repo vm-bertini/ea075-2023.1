@@ -46,8 +46,6 @@ Outro evento corresponde a passagem de um segundo período para a transmissão d
 
 O quarto evento corresponde à uma medição discrepante por parte dos sensores (de temperatura externa e/ou interna ao aquário) ou falha nos atuadores. Se os eventos ocorrerem, será interrompida qualquer atuação do aquecedor e resfriador, além de gerar um alerta no aplicativo e um pop-up de notificação no celular informando o erro. 
 
-O último evento considerado é o de queda de energia, em que tanto os sistemas de aquecimento e resfriamento provavelmente irão parar de operar, de forma com que seja sensato que o sistema de controle também cesse a sua operação, considerando que todos os dados e valores configurados já estejam salvos na nuvem. 
-Como última parte temos que ao a energia retornar o microcontrolador irá esperar que tanto a energia quanto o Wi-fi sejam reestabelecidos, recuperando então os valores necessários da nuvem e retornando para a sua operação normal. 
 
 
 ### Tratamento de Eventos
@@ -59,7 +57,7 @@ Então no terceiro evento (cujo período é superior ao do segundo evento), os d
 
 No quarto evento temos que caso seja identificado uma leitura improvável em algum dos sensores o sistema deverá realizar um alerta via aplicativo quanto ao valor provavelmente incorreto da leitura. 
 
-Nos últimos dois eventos temos que não são necessárias ações adicionais por parte do microcontrolador, além da recuperação dos dados salvos na nuvem, assim que tanto a energia quanto o Wi-fi fossem reestabelecidos, antes de seu retorno à operação normal. 
+
 
 
 ## Descrição Estrutural do Sistema
