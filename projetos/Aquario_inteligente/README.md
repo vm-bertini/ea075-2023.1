@@ -17,7 +17,7 @@ O principal objetivo deste projeto é de realizar o controle da temperatura nece
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório em um aplicativo e que possuirá os seguintes gráficos: temperatura X tempo, gasto energético (do aquecedor mais do resfriador) X tempo; e as segiuntes informações: temperatura atual do aquário, desempenho energético no período analisado, alertas de erro como temperatura fora da faixa ideal. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
 Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas ou em que os sensores falhem.  
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
-No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$96,15, correspondente aos materiais utilizados. 
+No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$165,83, correspondente aos materiais utilizados. 
 
 
 ## Descrição Funcional
@@ -149,11 +149,12 @@ O envio de dados para a nuvem também pode ocorrer através da interrupção ger
 
 Para a vericação de leituras improváveis de parte dos sensores:
 
-![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/3d5206d0-fe6e-477e-99c1-dbb603f7540b)
-  
+![Verificação de erro dos sensores](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/765f521f-5c44-4815-a9f3-21bf6012d854)
+
 Já para ação indevida dos atuadores temos o seguinte algoritmo:
   
-![Envio de dados para a nuvem de maneira assincrona](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/35491751-9cda-423e-af38-d8c2dfe65533)
+![Erro dos atuadores](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/7369503e-ac9e-40a8-87d6-35ac8dd38403)
+
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
