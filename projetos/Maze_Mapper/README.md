@@ -22,7 +22,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-![Descrição Funcional](Diaframa1.png)
+![Descrição Funcional](Diagrama1.png)
 
 ### Funcionalidades
 > O projeto possui uma série de funcionalidades para realizar a tarefa proposta, conforme as descrições a seguir.
@@ -88,7 +88,7 @@ Com isso, os 4 modos configuráveis são:
 ## Descrição Estrutural do Sistema
 A estrutura necessária ao desenvolvimento do projeto pode ser sintetizada por meio do diagrama de blocos abaixo:
 
-![Descrição Estrutural do Sistema](Diagrama2.png)
+![Descrição Estrutural do Sistema](Diaframa2.png)
 
 ### Descrição dos blocos:
 #### SENSORES: 
