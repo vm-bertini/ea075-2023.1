@@ -87,7 +87,7 @@ Cujos componentes serão devidamente apresentados adiante.
 
 Ademais será necessário um cabo para a realização do carregamento do programa no ESP8266, e um circuito retificador de onda completa (apresentado abaixo) que alimentará o SoC externamente, por seu pino Vin, com uma tensão de 5V; de forma com que não seja necessário a presença do cabo utilizado para o carregamento para a alimentação elétrica, evitando, por exemplo, que se utilize duas saídas de uma régua de tomadas e deixando este cabo disponível para outras aplicações. Para isso adicionalmente ao circuito apresentado abaixo, será necessário um transformador que converta o valor da tensão da rede elétrica para um valor adequado como V1 = 12V.
 
-![image](https://github.com/Nothingtopus/Imagens/assets/127249262/6945f055-51a1-47ef-bc37-99aa0f16bb55)
+![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/867f7b1f-24fd-4d27-9cfd-39c06d7492dc)
 
 Fonte: https://eletronicaparahobbistas.blogspot.com/2017/02/retificador-de-onda-completa-com_5.html
 
