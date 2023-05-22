@@ -135,19 +135,19 @@ Finalmente podemos estabelecer algumas recomendações e restrições para o uso
 
 Inicialmente para a mudança de alguma das possíveis configurações:
 
-![interrup drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/bb80d27f-3d79-4558-9100-30d0b383c219)
+![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/c533ee61-b0d7-4e5d-ba3c-395c4b029a7e)
 
 Então temos que para a passagem de um tempo correspondente ao periodo de amostragem regulado T teremos o seguinte algoritmo de tratamento:
 
-![T drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/9e420ff5-4866-48e4-bdec-bb7de084c4bd)
+![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/a3a0430c-7015-4a37-ac56-b5204683dc1d)
 
 Para a transmissão dos dados para nuvem e atualização dos parâmetros a cada 12 horas temos:
 
-![Diagrama sem nome drawio (1)](https://github.com/Nothingtopus/Imagens/assets/127249262/52ea651f-adf6-4cfc-991f-c1791cc5116f)
+![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/4a855b0d-782f-43b7-ad43-a25f45c2f32c)
 
 Para a vericação de leituras improváveis de parte dos sensores:
 
-![temp drawio](https://github.com/Nothingtopus/Imagens/assets/127249262/f41b8da2-1c18-4931-b3d5-13ade3516bbb)
+![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/3d5206d0-fe6e-477e-99c1-dbb603f7540b)
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
