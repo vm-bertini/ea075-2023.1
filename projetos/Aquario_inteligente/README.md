@@ -99,7 +99,7 @@ Finalmente são apresentados abaixo os componetes utilizados nesse projeto, no f
 
 Componentes | Quantidade [unidades] | Valor unitário [R$] | Valor total [R$] | Valor estimado para o projeto [R$]
 -- | -- | -- | -- | --
-Sensores: |   |   |   | 96,15
+Sensores: |   |   |   | 
 DS18B20 (para o ar) | 1 | 10 | 10 |  
 DS18B20 (para a água) | 1 | 14 | 14 |  
 System on a chip: |   |   |   |  
@@ -206,6 +206,13 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html
 -TRIAC BTA41-600: 
 
 https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB 
+  
+-Transformador de 220V/12V:
+  
+https://produto.mercadolivre.com.br/MLB-3276527293-conversor-de-tenso-220v-para-12v-transformador-eletrnico-i-_JM?matt_tool=54307261&matt_word=&matt_source=google&matt_campaign_id=14302215582&matt_ad_group_id=134553712308&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425529689&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=623194816&matt_product_id=MLB3276527293&matt_product_partition_id=1802672036537&matt_target_id=pla-1802672036537&gclid=CjwKCAjwgqejBhBAEiwAuWHioJUjP2nSSHbEiWERYT_BIw9dajKQbRiMtEKUTwAVvxpAHGNx5dkc4hoCR28QAvD_BwE
+  
+-Tomada plugue fêmea 2P 250V 10A 57420952 Tramontina
+https://www.dimensional.com.br/plugue-femea-2p-250v-10a-57420952-tramontina/p?idsku=192830&gclid=CjwKCAjwgqejBhBAEiwAuWHioKcka9j1v_gFVKNrZYaaJW1ZBMC7G3IKxYh_wfv3idYQUSwBucLkwxoCQvcQAvD_BwE
 
 -Referência para a o desenvolvimento de um circuito retificador para a alimentação do SoC utilizado: 
 
@@ -228,6 +235,3 @@ https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266
   [Ferramentas StackEdit e draw.io.](https://stackedit.io/)
   
   [Referência: Mastering Markdown.](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
- 
--Referência utilizada para o valor do transformador de 220V/12V:
-https://produto.mercadolivre.com.br/MLB-3276527293-conversor-de-tenso-220v-para-12v-transformador-eletrnico-i-_JM?matt_tool=54307261&matt_word=&matt_source=google&matt_campaign_id=14302215582&matt_ad_group_id=134553712308&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425529689&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=623194816&matt_product_id=MLB3276527293&matt_product_partition_id=1802672036537&matt_target_id=pla-1802672036537&gclid=CjwKCAjwgqejBhBAEiwAuWHioJUjP2nSSHbEiWERYT_BIw9dajKQbRiMtEKUTwAVvxpAHGNx5dkc4hoCR28QAvD_BwE
