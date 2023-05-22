@@ -145,13 +145,17 @@ Para a transmissão dos dados para nuvem e atualização dos parâmetros a cada 
 
 ![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/4a855b0d-782f-43b7-ad43-a25f45c2f32c)
 
+O envio de dados para a nuvem também pode ocorrer através da interrupção gerada por um botão no aplicativo de atualização dos dados, segundo o seguinte fluxograma:
+  
+![Envio de dados para a nuvem de maneira assincrona](https://github.com/mateusmiranda01/ea075-2023.1/assets/128386956/ec70281f-00b6-402a-864f-09e4fa92d823)
+
 Para a vericação de leituras improváveis de parte dos sensores:
 
 ![image](https://github.com/mateusmiranda01/ea075-2023.1/assets/127249262/3d5206d0-fe6e-477e-99c1-dbb603f7540b)
 
 No caso de queda de energia não são necessárias ações adicionais, considerando que os dados estão salvos em uma memória flash não volátil (ou na nuvem) e que o SoC irá esperar o reestabelecimento tanto de sua alimentação elétrica quanto da comunicação via Wi-fi para prosseguir com seu funcionamento.
 
-Com base nos algoritmos apresentados acima podemos estimar o espaço que será ocupado na memória flash do SoC pela realização de um esboço de código em C++ (uma vez que este SoC pode ser programada nessa linguagem via a IDE do arduino), com feito abaixo:
+Com base nos algoritmos apresentados acima podemos estimar o espaço que o programa ocupará na memória flash do SoC pela realização de um esboço de código em C++ (uma vez que este SoC pode ser programada nessa linguagem via a IDE do arduino). A memória do programa foi estimada em aproximadamente 1Mb. Já a memória de dados, que também serão armazenados na memória flash é aproximadamente 2Mb.
 
 ## Referências
 
