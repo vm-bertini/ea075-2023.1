@@ -116,7 +116,67 @@ O público alvo são empresas ou pessoas específicas, as quais desejam uniformi
 
 >![](https://lh4.googleusercontent.com/2-Qc6JEknqoZsFVLEfL1C0yD5RxjqQ5rzbKLFPHxtnHVWpqCpuINMYjDCzHNdL85RB-CQwJgaGBi5FXKHwUfHJIe94HMGEX_EM6Ca8KaHotyltf360VodMfV41BdMRJKPM72IPSzlVPoP8UeFhnfKFM)
 >
+## Especificações
+
+### Especificação Estrutural
+
+> Para cumprir com os objetivos propostos e não tornar nosso projeto muito complexo e caro, decidimos por utilizar o microcontrolador ATmega328P, que é o mesmo utilizado no Arduino. Portanto já existe um grande acervo de materiais disponíveis para consulta e uma grande comunidade que utiliza esse microcontrolador, assim facilita o desenvolvimento deste projeto. 
+>
+> A distribuição dos quatro sensores de temperatura será feita de modo que a média deles tente representar muito bem o ambiente, ou seja, colocando um mais afastado do sistema de resfriamento do ambiente, outro perto e os outros dois na metade entre a parte mais distante do cômodo até o sistema de resfriamento. A figura abaixo mostra dois exemplos de ambientes e os pontos em preto representam exemplos de onde os sensores de temperaturas podem ser colocados.
+>
+> ![](Screenshot_20230518_085854.png)
+>
+> Para poder medir a temperatura do ambiente escolhemos o termômetro digital DS18B20, pois ele não necessita de nenhum módulo adicional, ou seja, pode ser conectado dirematente nas entradas GPIO's do microcontrolador que iremos utilizar e é relativamente barato. Para que seja possível essa comunicação entre o sensor e o ATmega teremos que definir as entradas do microcontrolador e utilizaremos bibliotecas disponíves e vamos ter que definir os endereços de momória, uma vez que, pretendemos utilizar uma única porta para os quatros sensores.
+> 
+> Para mostrar as informações, iremos utilizar um display OLED 128x64, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo. 
+> 
+> O módulo Wi-Fi será o ESP8266, o qual possui compatibilidade com o microcontrolador que estamos utilizando e há diversos materiais na internet de como realizar as configurações necessárias para poder utilizá-lo com o ATmega. Para poder conectá-lo, vamos ter que definir uma porta como TXD e outra como RXD para receber e enviar os dados via Wi-Fi
+> 
+> O acionamento do sistema de refrigeração será feito através de um sinal PWM de saída para os refrigerados
+> 
+> Vamos utilizar também um cristal oscilador de 16 MHz como clock 
+
+
+### Especificação de Algoritmos 
+
+>A especificação dos algoritmos é ilustrada em 3 fluxogramas:
+>
+#### Interface do usuário:
+>
+>- Tela de início e inicialização do sistema.
+>
+>- Menu de configuração exibindo opções como calibração e rede Wi-Fi.
+>
+>- Se houver uma interrupção via teclado/encoder, exibir opções de configuração.
+>
+>- Se nenhuma interrupção for identificada, o display continua mostrando os dados ao usuário.
+
+> ![](comunicacao.png)
+#### Modo Calibração:
+>
+>Início da calibração selecionando no menu.
+>Opção para o usuário inserir os valores manualmente ou realizar um teste automático para o cálculo dos coeficientes.
+>Atualização dos valores do controlador.
+
+>![](Modocalibracao.png)
+
+#### Funcionamento do controlador:
+>
+>- Realização das medições dos sensores do sistema em intervalos definidos.
+>- Cálculos para ativação do controle e verificação de eventos necessários para manter a temperatura controlada dentro dos limites desejados.
+>- Se não houver mudança no setpoint (diferença entre a temperatura de referência e a temperatura do sistema), apenas atualiza as variáveis do código.
+>
+>![](leitura_controle.drawio.png)
+
 ## Referências
 > -  SILVA, Italo. UTILIZAÇÃO DE UM CONTROLE PID DE TEMPERATURA PARA ESTUDO DE RESFRIAMENTO TERMOELÉTRICO. 2022. Monografia (Graduação em Engenharia Mecânica) - UFPE, [S. l.], 2022. Disponível em: https://repositorio.ufpe.br/bitstream/123456789/47590/1/TCC%20%C3%8Dtalo%20Souza%20da%20Silva.pdf. Acesso em: 2 abr. 2023.
 >
 > - PRATA, Tiago; CAMPO, Alexandre. Desenvolvimento e aplicação de controle preditivo baseado em modelo (MPC). Sociedade Brasileira de Automática, [S. l.], p. Vol 2 No 1, 8 dez. 2020. DOI https://doi.org/10.48011/asba.v2i1.1187. Disponível em: https://www.sba.org.br/open_journal_systems/index.php/cba/article/view/1187. Acesso em: 2 abr. 2023.
+>
+> - Datasheet do micocontrolador ATMEGA328P:https://www.ic-components.hk/files/cb/DEV-14083.pdf
+>
+> - Datasheet de termômetro: https://pdf1.alldatasheet.com/datasheet-pdf/view/58557/DALLAS/DS18B20.html
+> 
+> - Link do módulo Wi-Fi: https://nurdspace.nl/images/e/e0/ESP8266_Specifications_English.pdf
+
+
