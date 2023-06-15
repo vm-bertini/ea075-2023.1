@@ -7,6 +7,7 @@ A seguir serão listados todos os componentes utilizados para o desenvolvimento 
 6. Botão (https://www.hdk.co.jp/pdf/eng/e291702.pdf)
 7. Interruptor 	 			
 8. LED vermelho		
-9. Resistor de 300 ohms
-10. Lampada 
-11. Sensor de luminosidade 
+9. Resistor de 300 ohms, 100 ohms e 47 kohms
+10. Capacitor de 1 nF
+11. Lampada 
+12. Sensor de luminosidade 
