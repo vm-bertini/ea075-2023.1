@@ -115,6 +115,7 @@ Todo esse esquema pode ser observado no fluxograma abaixo
 
 Assim, sabendo os recursos necessários do microcontrolador é possível justificar a sua escolha. Na parte estrutural foi definido que o sistema necessita de 7 entradas de propósito geral, 2 entradas analógicas e um temporizador. Na parte de código foi definido que, a princípio, serão utilizadas 6 variáveis globais do tipo int, de 2B cada, e 2 variáveis globais do tipo char, de 1B cada. As variáveis locais de rotinas distintas não serão definidas simultaeamente e nenhuma rotina terá muitas variáveis, logo é provável que 256B de memória SRAM sejam suficientes. Dada a familiaridade com o microcontrolado AtMega328p, optamos por escolher outro microcontrolador AVR que fosse um pouco mais simples e mais barato, optando então pelo ATtiny40.
 
+### Debounce
 
 ## Especificação de Algoritmos
 
