@@ -121,7 +121,7 @@ O esquematico da montagem pode ser visto no desenho abaixo.
 
 ### Debounce
 
- A fim de evitar que o sistema entenda que apertamos o botão mais de uma vez quando apertamos somente uma vez ou outro ruídos semeslhantes nomeados de bouce, usaremos o debouce. Para isso utilizaremos um circuito formado por um capacitor e duas resistência como na imagem abaixo.
+ A fim de evitar que o sistema entenda que apertamos o botão mais de uma vez quando apertamos somente uma vez ou outro ruídos semelhantes nomeados de bouce, usaremos o debouce. Para isso utilizaremos um circuito formado por um capacitor e duas resistência como na imagem abaixo.
 
 
 ![Debouce](https://github.com/marifmenezes/ea075-2023.1/blob/main/projetos/horta/debouce.png)
