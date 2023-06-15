@@ -24,8 +24,8 @@ De início, não foi possível estabelecer um valor econômico associado ao proj
 ### Funcionalidades
 
 O projeto tem como as principais funcionalidades:
-- Molhar a planta;
-- Fertilizar o solo;
+- Molhar a planta (inclui verificar a umidade do solo e cronometrar a última irrigação);
+- Fertilizar o solo (inclui cronometrar a ultima fertilização e pode ser desabilitado a função automática);
 - Iluminar a planta.
 
 
