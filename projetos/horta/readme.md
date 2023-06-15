@@ -79,13 +79,13 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de iluminação](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_iuminacao.png "Fluxograma de funcionamento do sistema de iluminação")
 
-### Especificações (warning NOVO warning)
+### Especificações 
 
 Os principais itens necessários para o projeto estão descritos na tabela abaixo.
 
-| Item                                          | Quantidade |               Funcionalidade para o Circuito              |                 Datasheet                 | Preço | Link de compra                                                                                                        |
-|-----------------------------------------------|------------|:---------------------------------------------------------:|:-----------------------------------------:|:-----:|-----------------------------------------------------------------------------------------------------------------------|
-| ATtiny40;                    |          1 | Unidade micro-controladora                                |                                           |       | https://www.microchip.com/en-us/product/ATTINY40                                                                                                                      |
+| Item                                          | Quantidade |               Funcionalidade para o Circuito     |
+|-----------------------------------------------|------------|:------------------------------------------------:|
+| ATtiny40;                    |          1 | Unidade micro-controladora                                |  
 | Sensor de Umidade de Solo para Arduino;       |          1 | conferir a umidade do solo                                |                                           |       |                                                                                                                       |
 | Vávula solenóide água 110V                    |          2 | controlar quando será molhado e fertilizado               |                                           |       |                                                                                                                       |
 | Módulo Relé 5V 10A 1 Canal com Optoacoplador; |          3 | ativar a lampada e as valvulas                            |                                           | 13,87 | https://www.usinainfo.com.br/rele-arduino/modulo-rele-5v-10a-1-canal-com-optoacoplador-para-esp32-e-arduino-2533.html |
