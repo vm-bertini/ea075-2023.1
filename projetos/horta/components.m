@@ -6,6 +6,7 @@ A seguir serão listados todos os componentes utilizados para o desenvolvimento 
 5. Fonte de Alimentação para Arduino 9VDC 1A 			
 6. Botão (https://www.hdk.co.jp/pdf/eng/e291702.pdf)
 7. Interruptor 	 			
-8. LED vermelho				
-9. Lampada 
-10. Sensor de luminosidade 
+8. LED vermelho		
+9. Resistor de 300 ohms
+10. Lampada 
+11. Sensor de luminosidade 
