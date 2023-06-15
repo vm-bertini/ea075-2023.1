@@ -73,7 +73,7 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de fertilização](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_fertilizacao.png "Fluxograma de funcionamento do sistema de fertilização")
 
-Para a iluminação, caso o(a) usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, é necessário executar uma rotina que aumente gradualmente a intensidade luminosa das lâmpadas ao longo de 6 horas até um valor máximo e depois diminua esta intensidade ao longo de outras 6 horas. Em seguida, deve-se esperar 12 horas até que a mesma rotina seja executada novamente, simulando o ciclo de luminosidade do sol ao longo de um dia. 
+Para a iluminação, caso o(a) usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, a lampada ficará acesa por 12horas e desligar. Em seguida, deve-se esperar 12 horas até que a lampada seja acessa executando novamente, simulando o ciclo de luminosidade do sol ao longo de um dia. 
 
 Este processo pode ser acompanhado pelo fluxograma abaixo:
 
