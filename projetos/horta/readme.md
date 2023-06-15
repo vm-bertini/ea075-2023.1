@@ -1,4 +1,4 @@
-# `E1: Horta automatizada`
+# `E3: Horta automatizada`
 # `Automated vegetable garden`
 
 ## Apresentação
