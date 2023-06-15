@@ -117,6 +117,9 @@ Assim, sabendo os recursos necessários do microcontrolador é possível justifi
 
 ### Debounce
 
+ A fim de evitar que o sistema entenda que apertamos o botão mais de uma vez quando apertamos uma vez, usaremos o debouce. Para isso utilizaremos um circuito formado por um capacitor e duas resistência como na imagem abaixo.
+![Debouce](https://github.com/marifmenezes/ea075-2023.1/blob/main/projetos/horta/debouce.png)
+
 ## Especificação de Algoritmos
 
 O algoritmo utilizado controlará os três módulos acima e todos móludos necessitam da função de temporização do microcontrolador para medir períodos de espera, ou seja, os intervalos entre irrigações, fertilizações ou ciclos de iluminação. Como são ciclos longos de espera (horas ou dias), optamos por utilizar um código por interrupções ao invés de varredura, para tentar minimizar o consumo de energia nos momentos em que o microcontrolador não estiver realizando nemhuma função além de temporização. 
