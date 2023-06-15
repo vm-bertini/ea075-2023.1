@@ -113,9 +113,7 @@ Todo esse esquema pode ser observado no fluxograma abaixo
 ![Fluxograma de funcionamento do sistema de interrupções](https://github.com/marifmenezes/ea075-2023.1/blob/main/projetos/horta/fluxograma_interrupcoes.png)
 
 
-Assim, sabendo os recursos necessários do microcontrolador é possível justificar a sua escolha. Na parte estrutural foi definido que o sistema necessita de 7 entradas de propósito geral, 2 entradas analógicas e um temporizador. Na parte de código foi definido que, a princípio, serão utilizadas 6 variáveis globais do tipo int, de 2B cada, e 2 variáveis globais do tipo char, de 1B cada. As variáveis locais de rotinas distintas não serão definidas simultaeamente e nenhuma rotina terá muitas variáveis, logo é provável que 256B de memória SRAM sejam suficientes. Dada a familiaridade com o microcontrolado AtMega328p, optamos por escolher outro microcontrolador AVR que fosse um pouco mais simples e mais barato, optando então pelo ATtiny40.
-
-O esquematico da montagem pode ser visto no desenho abaixo.
+O esquemático da montagem pode ser visto no desenho abaixo.
 
 ![Esquematico](https://github.com/marifmenezes/ea075-2023.1/blob/main/projetos/horta/esquematico.png)
 
@@ -138,7 +136,9 @@ A rotina de irrigação será chamada após o fim de um dos períodos de tempori
 
 Além disso, os botões e o interruptor também devem gerar interrupções que tratem esses eventos.
 
-Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que kB de memória irá atender ao projeto.
+Assim, sabendo os recursos necessários do microcontrolador é possível justificar a sua escolha. Na parte estrutural foi definido que o sistema necessita de 7 entradas de propósito geral, 2 entradas analógicas e um temporizador. Na parte de código foi definido que, a princípio, serão utilizadas 6 variáveis globais do tipo int, de 2B cada, e 2 variáveis globais do tipo char, de 1B cada. As variáveis locais de rotinas distintas não serão definidas simultaeamente e nenhuma rotina terá muitas variáveis, logo é provável que 256B de memória SRAM sejam suficientes. Dada a familiaridade com o microcontrolado AtMega328p, optamos por escolher outro microcontrolador AVR que fosse um pouco mais simples e mais barato, optando então pelo ATtiny40.
+
+
 
 ## Referências
 
