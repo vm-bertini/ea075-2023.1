@@ -109,6 +109,9 @@ O módulo responsável pela irrigação é composto por uma conecção para alim
 
 O módulo de fertilização é composto por um reservatório para o fertilizante que o usuário escolher, que terá uma saída no fundo conectada a uma válvula solenóide que permanecerá fechada por padrão e se conectará ao sistema de irrigação. O fertilizante ultilizado deve ser líquido ou diluído na água e sua aplicação será feita abrindo a válvula solenóide abaixo do reservatório por um instante de duração adequada para permitir que a quantidade correta de fertilizante flua para a tubulação de irrigação. Portanto, o módulo de fertilização precisará de uma GPIO do microcontrolador de saída do sinal de controle para o relé 5V que ativa a válvula solenóide de fertilização, uma GPIO como saída para acender o LED que indica se a função de fertilização automatica está ativada e uma GPIO como entrada para o botão que realiza uma fertilização manual e ativa/desativa a função de fertilização automática.
 
+Assim, sabendo os recursos necessários do microcontrolador é possível justificar a sua escolha. Na parte estrutural foi definido que o sistema necessita de 7 entradas de propósito geral, 2 entradas analógicas e um temporizador. Na parte de código foi definido que, a princípio, serão utilizadas 6 variáveis globais do tipo int, de 2B cada, e 2 variáveis globais do tipo char, de 1B cada. As variáveis locais de rotinas distintas não serão definidas simultaeamente e nenhuma rotina terá muitas variáveis, logo é provável que 256B de memória SRAM sejam suficientes. Dada a familiaridade com o microcontrolado AtMega328p, optamos por escolher outro microcontrolador AVR que fosse um pouco mais simples e mais barato, optando então pelo ATtiny40.
+
+
 ## Especificação de Algoritmos
 
 O algoritmo utilizado controlará os três módulos acima e todos móludos necessitam da função de temporização do microcontrolador para medir períodos de espera, ou seja, os intervalos entre irrigações, fertilizações ou ciclos de iluminação. Como são ciclos longos de espera (horas ou dias), optamos por utilizar um código por interrupções ao invés de varredura, para tentar minimizar o consumo de energia nos momentos em que o microcontrolador não estiver realizando nemhuma função além de temporização. 
@@ -121,7 +124,6 @@ A rotina de irrigação será chamada após o fim de um dos períodos de tempori
 
 Além disso, os botões e o interruptor também devem gerar interrupções que tratem esses eventos.
 
-Assim, sabendo os recursos necessários do microcontrolador é possível justificar a sua escolha. Na parte estrutural foi definido que o sistema necessita de 7 entradas de propósito geral, 2 entradas analógicas e um temporizador. Na parte de código foi definido que, a princípio, serão utilizadas 6 variáveis globais do tipo int, de 2B cada, e 2 variáveis globais do tipo char, de 1B cada. As variáveis locais de rotinas distintas não serão definidas simultaeamente e nenhuma rotina terá muitas variáveis, logo é provável que 256B de memória SRAM sejam suficientes. Dada a familiaridade com o microcontrolado AtMega328p, optamos por escolher outro microcontrolador AVR que fosse um pouco mais simples e mais barato, optando então pelo ATtiny40.
 
 ## Referências
 
