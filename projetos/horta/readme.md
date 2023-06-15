@@ -124,7 +124,7 @@ A rotina de irrigação será chamada após o fim de um dos períodos de tempori
 
 Além disso, os botões e o interruptor também devem gerar interrupções que tratem esses eventos.
 
-Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que 7 kB de memória irá atender ao projeto.
+Como cada instrução está associada a uma palavra de memória e estima-se para cada rotina uma quantidade de no máximo 30 instruções (linhas) acredita-se que kB de memória irá atender ao projeto.
 
 ## Referências
 
