@@ -11,19 +11,44 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
  | Rodrigo Dutra de Freitas Cardoso  | 205513  | Eng. Elétrica|
  | Vinicius de Lima Quadrado  | 225357  | Eng. Elétrica|
 
+## Arquivos Importantes (:warning: NOVO :warning:)
 
-## Descrição do Projeto
+>[Esquemático em PDF](link para imagens/pdf esquemático)
+>
+>[Lista de Componentes](link para components.md)
+>
+>[PCB](link para imagens/pdf PCB)
+
+## Descrição do Projeto (:warning: ATUALIZAR :warning:)
+> Deve refletir a última versão do projeto.
+>
+> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
+> 
+> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
+> 
+> Qual problema vocês pretendem solucionar?
+> 
+> Quem são os potenciais usuários?
+> 
+> É possível estabelecer um valor econômico associado?
+>
  Com o intuito de prever catastrofes naturais e assegurar que vidas possam ser poupadas, os alunos da Engenharia Elétrica da Unicamp, juntamente com os conhecimentos desenvolvidos na Disciplica de Sistemas Embarcados, desenvolveram um Sismógrafo com interface de comunicação Bluetooth.
 
  O projeto consiste em uma implementação de um Sensor Acelerômetro e um chip de BLE(Bluetooth Low Energy) para realizar aquisição de dados de vibração do solo, enviando para análise na nuvem e gerando relatórios em tempo real de ondas causadas por possíveis terremotos.
 
  O sistema completo que este projeto trata corresponde a um beacon sensor, responsável por detectar ondas sismicas, processar os dados recolhidos e emiti-los via advertisings BLE e também por um beacon receptor, que colhe os advertisings dos beacons sensores e os envia para a nuvem, no entanto **estamos limitando o escopo do projeto a apenas o beacon sensor**.
 
-## Descrição Funcional
+## Descrição Funcional (:warning: ATUALIZAR :warning:)
+> Esta seção deve estar atualizada, refletindo o status do projeto no momento da entrega final (E3). 
+> 
+> Alterações realizadas no projeto entre a entrega E2 e a entrega E3 devem ser justificadas nas se, relatando claramente as dificuldades encontradas e as decisões > tomadas.
+
  Para aquisição dos dados de vibração do  solo será usado um sensor que mede as alterações de posição em relação ao local onde estiver instalado. Estas informações serão  enviadas via Bluetooth para uma central, onde serão analisadas e relatórios serão emitidos de acordo com a necessidade ou urgência de eventos serem informados para que medidas sejam tomadas.  
 
 
-### Funcionalidades
+### Funcionalidades (ATUALIZAÇÃO NECESSÁRIA)
+> Detalhe todas as tarefas que o sistema será capaz de executar
+
  - Beacon sensor
    - Tratar dados crus provenientes dos sensores
    - Emitir em advertisings BLE com os dados processados
@@ -31,7 +56,9 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
    - Receber dados processados de diversos beacons sensores
    - Enviar dados para a nuvem.
 
-### Configurabilidade
+### Configurabilidade (ATUALIZAÇÃO NECESSÁRIA)
+> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
+
  O usuáriuo poderá configurar os seguintes itens:
 	- frequência com a qual será captadas as oscilações do solo
 	- potência de comunicação via Bluetooth
@@ -54,9 +81,34 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 	2 - há um pré-tratamento dos dados, de forma que somente os dados considerados válidos serão guardados
 	3 - envio dos dados para o beacon receptor 
 
-## Especificações
+## Especificações (:warning: ATUALIZAR :warning:)
 
-### Estrutural
+### Estrutural (:warning: ATUALIZAR :warning:)
+> (Se preferir, adicione um link para o documento de especificação estrutural)
+> 
+> Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
+> Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
+> para implementação do sistema embarcado proposto.
+> 
+> Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
+> sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
+> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+
+> Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
+> Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
+> que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
+> correspondente, habilitando-o para realizar um ciclo de leitura ou de escrita.
+> 
+> Nesta etapa do projeto espera-se que sejam identificada também a eventual necessidade do projeto de circuitos de interface para os periféricos do projeto.
+> Assim, devem ser incluídos na especificação, se necessário:
+> - conversores AD e DA;
+> - padrões de comunicação a serem adotados;
+> - circuitos de sincronização de sinais temporais.
+> 
+> Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
+> (altura, largura, profundidade) e limites de dissipação térmica.
+
+
 ## Microcontrolador
  Modelo: EFR32BG13P632F512GM32-D
 
@@ -165,8 +217,17 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 
 
 
-### Algoritmos
+### Algoritmos (:warning: ATUALIZAR :warning:)
  Para transformar um sinal de onda sísmica bruto em um dado entendível, você pode seguir uma sequência de etapas e aplicar os seguintes algoritmos:
+
+ > (Se preferir, adicione um link para o documento de especificação de algoritmos).
+> 
+> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
+> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
+> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
+> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
+> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
+> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
 1. Pré-processamento:
    - Filtro de banda: Aplicar um filtro de banda para remover ruídos indesejados e focar nas frequências de interesse.
@@ -184,7 +245,17 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 
 Lembrando que a sequência e os algoritmos específicos podem variar dependendo dos objetivos da interpretação sísmica e das características dos dados. É sempre importante adaptar o fluxo de trabalho e escolher os algoritmos mais adequados para o contexto em que você está trabalhando.
 
-## Descrição Estrutural do Sistema
+## Descrição Estrutural do Sistema  (:warning: ATUALIZAR :warning:)
+> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
+> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
+>
+> Para essa descrição recomenda-se a criação de diagramas de blocos.
+> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
+> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
+> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
+Esq> 
+> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
+
 ![Kiku](Diagrama_projeto_ea075.jpg)
 
 ## Referências
