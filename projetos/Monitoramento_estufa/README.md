@@ -12,6 +12,14 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > | Levi Santos Volotão  | 239783  | Eng. Elétrica|
 
 
+## Arquivos Importantes (:warning: NOVO :warning:)
+
+>[Esquemático em PDF](link para imagens/pdf esquemático)
+>
+>[Lista de Componentes](link para components.md)
+>
+>[PCB](link para imagens/pdf PCB)
+
 ## Descrição do Projeto
 > 
 > Hoje em dia, observa-se o surgimento de cada vez mais estufas controladas, pois são um ambiente controlado em que plantações podem ser monitoradas e os aspectos físicos do ambiente podem ser configurados e otimizados para o crescimento e desenvolvimento adequado de uma certa espécie. Embora o custo inicial de uma estufa seja elevado, ela possibilita uma melhora na qualidade dos produtos, aumentando seu valor agregado, e uma dependência menor de características que não podemos controlar quando cultivadas a céu aberto.
