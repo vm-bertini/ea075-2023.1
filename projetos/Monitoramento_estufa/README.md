@@ -275,11 +275,11 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > https://www.usinainfo.com.br/index.php?controller=attachment&id_attachment=71
 >
 > #### Monitor
-> Será utilizado um Display LCD 20x4 com uma interface serial I2C que é compatível com o microcontrolador PIC selecionado. O principal objetivo desse display é atuar como um monitor, exibindo informações como temperatura, umidade do solo e luminosidade. Através do display, será possível controlar, em conjunto com os botões correspondentes, os intervalos de funcionamento de cada sensor na estufa. O Display LCD em questão possui as seguintes especificações relevantes para o nosso projeto:
+> Será utilizado um Display LCD 16x2 com uma interface serial I2C que é compatível com o microcontrolador PIC selecionado. O principal objetivo desse display é atuar como um monitor, exibindo informações como temperatura, umidade do solo e luminosidade. Através do display, será possível controlar, em conjunto com os botões correspondentes, os intervalos de funcionamento de cada sensor na estufa. O Display LCD em questão possui as seguintes especificações relevantes para o nosso projeto:
 > 
 > Tensão de operação: 5V
 > 
-> Tamanho: 20 colunas por 4 linhas, permitindo uma exibição adequada das informações.
+> Tamanho: 16 colunas por 2 linhas, permitindo uma exibição adequada das informações.
 > 
 > Comunicação serial: Utiliza o protocolo I2C, o qual é compatível com o microcontrolador PIC escolhido. Essa interface simplifica a conexão do display com o microcontrolador e permite uma comunicação eficiente entre os dispositivos.
 > 
@@ -291,7 +291,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > 
 > Essas especificações relevantes ao nosso projeto garantem que o Display LCD 20x4 seja uma escolha adequada para a função de monitorização e controle dos dados sensoriais na estufa, permitindo uma exibição clara e facilitando a interação com o sistema por meio dos botões correspondentes.
 > 
-> Datasheet:https://www.vishay.com/docs/37314/lcd020n004l.pdf
+> Datasheet: https://www.vishay.com/docs/37299/37299.pdf
 > 
    
 
