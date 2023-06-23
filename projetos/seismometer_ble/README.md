@@ -59,11 +59,9 @@ O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, c
 - Aplicação em pesquisas e estudos científicos
 
 
-### Funcionalidades (ATUALIZAÇÃO NECESSÁRIA)
-> Detalhe todas as tarefas que o sistema será capaz de executar
-
+### Funcionalidades
  - Beacon sensor
-   - Tratar dados crus provenientes dos sensores
+   - Tratar dados crus provenientes dos sensoresß
    - Emitir em advertisings BLE com os dados processados
  - Beacon receptor
    - Receber dados processados de diversos beacons sensores
@@ -134,7 +132,7 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
   - Correntes de Operação: A corrente de operação depende dos fatores abaixo:
     - Potência do rádio (Potência usada para emitir advertisings e realizar scans ativos). e frequência de emissão de advertisings.
       - 8.5 mA em TX a 0 dBm de potência em 2,4 GHz
-      - 35.3 mA em Tx a 14 dBm de potência em 869 MHz. (Este MCU chega apenas até 10 dBM de potência de saída em rádio.
+      - 35.3 mA em Tx a 14 dBm de potência em 869 MHz. (Este MCU chega apenas até 10 dBM de potência de saída em rádio).
     - Uso da CPU para rodar o programa
       - 69 μA/MHz em Modo Ativo (EM0 - Energy Mode 0)
     - Modo Sleep:
