@@ -118,7 +118,7 @@ MOC3020M | 1 | 3,53 | 3,53 |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   |   |  
 LM7805 | 1 | 3 | 3 |  
 Capacitor de 100nF | 2 | 0,2 | 0,4 |  
-Diodo1N4007 | 4 | 0,2 | 0,8 |  
+Diodo1N4007 | 5 | 0,2 | 1 |  
 Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 0,35 |  
 Conectores KRE de 2 vias | 2 | 2 | 4 |  
 Transformador de 220V para 12V | 1 | 74,49 | 74,49 |  
