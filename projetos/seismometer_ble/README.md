@@ -15,7 +15,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
 >
->[Lista de Componentes](link para components.md)
+>[Lista de Componentes](components.md)
 >
 >[PCB](link para imagens/pdf PCB)
 
@@ -67,10 +67,8 @@ O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, c
    - Receber dados processados de diversos beacons sensores
    - Enviar dados para a nuvem.
 
-### Configurabilidade (ATUALIZAÇÃO NECESSÁRIA)
-> Detalhe, se houver, todas as possíveis configurações do circuito e todos os pontos de alteração da configuração.
-
- O usuáriuo poderá configurar os seguintes itens:
+### Configurabilidade
+ O usuário poderá configurar os seguintes itens:
 	- frequência com a qual será captadas as oscilações do solo
 	- potência de comunicação via Bluetooth
  	- taxa de amostragem das oscilações
@@ -92,35 +90,40 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 	2 - há um pré-tratamento dos dados, de forma que somente os dados considerados válidos serão guardados
 	3 - envio dos dados para o beacon receptor 
 
-## Especificações (:warning: ATUALIZAR :warning:)
+## Especificação estrutural
+Este tópico descreve as especificações estruturais do projeto
 
-### Estrutural (:warning: ATUALIZAR :warning:)
-> (Se preferir, adicione um link para o documento de especificação estrutural)
-> 
-> Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
-> Nessa etapa do projeto, ainda não será solicitado o diagrama elétrico mas espera-se que já estejam identificados os componentes e circuitos integrados propostos
-> para implementação do sistema embarcado proposto.
-> 
-> Como o projeto de um sistema embarcado é centralizado nas tarefas, recomenda-se iniciar com a definição dos periféricos de entrada e saída (atuadores e/ou sensores) apropriados para o
-> sistema. Pode ser necessário definir um endereço distinto para cada um deles. 
-> Este endereço será utilizado pela unidade micro-controladora para acessá-los tanto para leitura como para escrita.
+### Saídas e entradas do dispositivo
 
-> Nesta etapa do projeto espera-se que a unidade micro-controladora seja definida.
-> Tendo definidos os periféricos e a memória, é possível projetar um decodificador de endereços
-> que converte o endereço referenciado no programa em sinal *Chip Select – CS* do dispositivo
-> correspondente, habilitando-o para realizar um ciclo de leitura ou de escrita.
-> 
-> Nesta etapa do projeto espera-se que sejam identificada também a eventual necessidade do projeto de circuitos de interface para os periféricos do projeto.
-> Assim, devem ser incluídos na especificação, se necessário:
-> - conversores AD e DA;
-> - padrões de comunicação a serem adotados;
-> - circuitos de sincronização de sinais temporais.
-> 
-> Finalmente, deve-se especificar as restrições físicas e ambientais de funcionamento do circuito, tais como limites mecânicos
-> (altura, largura, profundidade) e limites de dissipação térmica.
+Este tópico mostra quais são saídas e entradas, e seus respectivos tipos, empregadas neste dispositivo, tão bem 
+quanto as entradas e saídas de intercomunicão entre os circuitos integrados.
+
+### Saídas e entradas para o ambiente
+
+Teremos três modos de I/O’s, duas cabeadas e uma sem fio.
+
+Cabeadas: 
+- SWD (Serial Wired Debug)
+  - Através desta será feito a gravação em fábrica do firmware, pois possui acesso direto a memória do microcontrolador.
+- SCI (Serial Comunnication Interface)
+  - Através desta será usado o protocolo UART para comunicação serial assíncrona.
+  - Os dados e funcionalidades disponibilizadas através desta interface serão definidos no firmware do microcontrolador.
+
+Sem fio:
+- BLE (Bluetooth Low Energy) 2.4 GHz
+  - Através desta interface serão publicados os advertisings BLE contendo os dados processados dos tremores sísmicos medidos.
+
+### Saídas e entradas para intercomunicação entre circuitos integrados
+
+Harwired (cabeado na PCB):
+- SPI (3 Fios)
+  - Através desta será transmitido do acelerômetro para o microcontrolador os dados crús dos tremores sísmicos.ß
 
 
-## Microcontrolador
+### Componentes principais 
+Este tópico descreve os principais componentes utilizados no projeto
+
+### Microcontrolador
  Modelo: EFR32BG13P632F512GM32-D
 
  Datasheet: [EFR32BG13](./datasheet/efr32bg13-datasheet.pdf)
@@ -166,72 +169,56 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
       - Pinos: 32 pinos
   - Configuração de Antenas: Antena tipo F invertida, construída na própria PCB (Printed Circuit Board). Detalhes serão exemplificados em uma sessão dedicada.
 
+### Sensor Acelerômetro
+Modelo: ADXL345
+
+Datasheet: [ADXL345](./datasheet/adxl345.pdf)
+
+O acelerômetro ADXL345 é um sensor de alta resolução e baixo consumo de energia projetado para medir acelerações em três eixos (x, y e z). Ele utiliza a tecnologia de microeletromecânica (MEMS) para detectar mudanças nas forças de aceleração e converter essas mudanças em um sinal elétrico proporcional.
+
+Características Elétricas:
+- Tensão de Alimentação: O acelerômetro ADXL345 opera com uma faixa de tensão especificada, geralmente entre 2.0V e 3.6V, garantindo uma alimentação adequada para seu funcionamento.
+- Corrente de Operação: É importante considerar a corrente típica de operação do acelerômetro para dimensionar corretamente a fonte de alimentação e garantir uma eficiência energética adequada.
+  - consumo típico de corrente é de cerca de 40 microamperes (µA) a 2,5 volts de alimentação
+- Interface de Comunicação: O ADXL345 pode ser configurado para se comunicar por meio de uma interface digital, como I2C ou SPI, permitindo a integração com microcontroladores ou outros dispositivos em seu projeto.
+
+Características Temporais:
+- Faixa de Medição: O acelerômetro ADXL345 possui uma faixa de medição especificada para cada um dos três eixos (x, y e z), permitindo a detecção de acelerações em uma determinada escala, como ±2g, ±4g ou ±16g.
+- Resolução: É importante considerar a resolução do acelerômetro, que indica a menor mudança de aceleração que pode ser detectada. O ADXL345 possui uma resolução de 10 bits, o que proporciona uma precisão adequada para muitas aplicações.
+
+Restrições Físicas:
+- Tamanho e Layout de Pinos: 
+  - Dimensões:
+    - 3 x 5 x 1 mm
+  - Pinos:
+    - 14 pinos
+- Sensibilidade à Vibração: O acelerômetro é sensível a vibrações externas, portanto, considere medidas adequadas para minimizar interferências indesejadas, como o uso de isoladores mecânicos ou filtros adequados.
+
+### Antena F invertida
+
+Construída na própria PCB do dispositivo, comumente conhecida por sua estrutura simples e eficiência de radiação, sendo frequentemente utilizada em aplicações de transmissão e recepção de sinais de rádio.
+
+Documentação Antena F Invertida:
+- [Design of 2.4 GHz-Band Meander Planar Inverted F Antenna for Bionic Hand Using DOE Method](https://ieeexplore.ieee.org/document/9501861)
+- [Inverted-F antenna](https://en.wikipedia.org/wiki/Inverted-F_antenna)
+
+Modelo: Antena F invertido
+
+Datasheet: [AN1088: Designing with an Inverted-F 2.4 GHz PCB Antenna](./datasheet/an1088-designing-with-pcb-antenna.pdf)
+
+Características Elétricas:
+- Faixa de Frequência: A antena F invertida é projetada para operar em uma determinada faixa de frequência, que pode variar dependendo da aplicação específica. Neste caso, seguindo a normas do Bluetooth Core, a operação se dará em 2,4 Ghz.
+- Impedância Característica: A antena F invertida geralmente possui uma impedância característica específica, como 50 ohms, que deve ser compatível com o sistema de transmissão/recepção utilizado.
+
+Características Geométricas:
+- Sobre as dimensões da antena, o fabricante do microcontrolador recomenda seguir, vide datasheet, as seguintes especificações para a antena tipo F invertido
+  - Para PCB FR4 de espessura 0,8mm e 0,062”, referência na imagem 2.1, página 3, do datasheet AN1088 da antena F invertido.
 
 
-
-## Sensor Acelerômetro
- Modelo: ADXL345
-
- Datasheet: [ADXL345](./datasheet/adxl345.pdf)
-
- O acelerômetro ADXL345 é um sensor de alta resolução e baixo consumo de energia projetado para medir acelerações em três eixos (x, y e z). Ele utiliza a tecnologia de microeletromecânica (MEMS) para detectar mudanças nas forças de aceleração e converter essas mudanças em um sinal elétrico proporcional.
-
- Características Elétricas:
-  - Tensão de Alimentação: O acelerômetro ADXL345 opera com uma faixa de tensão especificada, geralmente entre 2.0V e 3.6V, garantindo uma alimentação adequada para seu funcionamento.
-  - Corrente de Operação: É importante considerar a corrente típica de operação do acelerômetro para dimensionar corretamente a fonte de alimentação e garantir uma eficiência energética adequada.
-    - consumo típico de corrente é de cerca de 40 microamperes (µA) a 2,5 volts de alimentação
-  - Interface de Comunicação: O ADXL345 pode ser configurado para se comunicar por meio de uma interface digital, como I2C ou SPI, permitindo a integração com microcontroladores ou outros dispositivos em seu projeto.
- 
- Características Temporais:
-  - Faixa de Medição: O acelerômetro ADXL345 possui uma faixa de medição especificada para cada um dos três eixos (x, y e z), permitindo a detecção de acelerações em uma determinada escala, como ±2g, ±4g ou ±16g.
-  - Resolução: É importante considerar a resolução do acelerômetro, que indica a menor mudança de aceleração que pode ser detectada. O ADXL345 possui uma resolução de 10 bits, o que proporciona uma precisão adequada para muitas aplicações.
-
- Restrições Físicas:
-  - Tamanho e Layout de Pinos: 
-    - Dimensões:
-      - 3 x 5 x 1 mm
-    - Pinos:
-      - 14 pinos
-  - Sensibilidade à Vibração: O acelerômetro é sensível a vibrações externas, portanto, considere medidas adequadas para minimizar interferências indesejadas, como o uso de isoladores mecânicos ou filtros adequados.
-
-## Saída/Entrada de dados
-
- Teremos dois modos de I/O’s, cabeadas e sem fio.
-
- Cabeadas: 
-  - Serão usadas as interfaces UART e SPI do microcontrolador
-
- Sem fio:
-
- Será utilizada uma antena F invertida,, construída na própria PCB do dispositivo, comumente conhecida por sua estrutura simples e eficiência de radiação, sendo frequentemente utilizada em aplicações de transmissão e recepção de sinais de rádio.
-
- Documentação Antena F Invertida:
- - [Design of 2.4 GHz-Band Meander Planar Inverted F Antenna for Bionic Hand Using DOE Method](https://ieeexplore.ieee.org/document/9501861)
- - [Inverted-F antenna](https://en.wikipedia.org/wiki/Inverted-F_antenna)
-
- Modelo: Antena F invertido
-
- Datasheet: [AN1088: Designing with an Inverted-F 2.4 GHz PCB Antenna](./datasheet/an1088-designing-with-pcb-antenna.pdf)
-
- Características Elétricas:
-  - Faixa de Frequência: A antena F invertida é projetada para operar em uma determinada faixa de frequência, que pode variar dependendo da aplicação específica. Neste caso, seguindo a normas do Bluetooth Core, a operação se dará em 2,4 Ghz.
-  - Impedância Característica: A antena F invertida geralmente possui uma impedância característica específica, como 50 ohms, que deve ser compatível com o sistema de transmissão/recepção utilizado.
- 
- Características Geométricas:
-  - Sobre as dimensões da antena, o fabricante do microcontrolador recomenda seguir, vide datasheet, as seguintes especificações para a antena tipo F invertido
-    - Para PCB FR4 de espessura 0,8mm e 0,062”, referência na imagem 2.1, página 3, do datasheet AN1088 da antena F invertido.
-
-
- Restrições de Projeto:
-  - Espaço Disponível: A antena F invertida requer um espaço adequado para sua implementação. Certifique-se de reservar um espaço suficiente em sua placa de circuito impresso (PCB) ou em seu projeto para acomodar a antena de acordo com suas dimensões físicas.
-  - Interferências Eletromagnéticas: A antena F invertida pode ser afetada por interferências eletromagnéticas próximas, como outros componentes eletrônicos ou objetos metálicos. Certifique-se de posicionar a antena longe de fontes potenciais de interferência para evitar distorções no desempenho.
-
-
-
-### Algoritmos (:warning: ATUALIZAR :warning:)
+### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
  Para transformar um sinal de onda sísmica bruto em um dado entendível, você pode seguir uma sequência de etapas e aplicar os seguintes algoritmos:
 
- > (Se preferir, adicione um link para o documento de especificação de algoritmos).
+> (Se preferir, adicione um link para o documento de especificação de algoritmos).
 > 
 > Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
 > tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
