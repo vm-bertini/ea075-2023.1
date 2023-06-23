@@ -19,31 +19,44 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >[PCB](link para imagens/pdf PCB)
 
-## Descrição do Projeto (:warning: ATUALIZAR :warning:)
-> Deve refletir a última versão do projeto.
->
-> Descrição do objetivo principal do projeto, incluindo contexto gerador, motivação.
-> 
-> Escreva essa seção imaginando que está tentando convencer alguém a investir financeiramente no seu projeto.
-> 
-> Qual problema vocês pretendem solucionar?
-> 
-> Quem são os potenciais usuários?
-> 
-> É possível estabelecer um valor econômico associado?
->
- Com o intuito de prever catastrofes naturais e assegurar que vidas possam ser poupadas, os alunos da Engenharia Elétrica da Unicamp, juntamente com os conhecimentos desenvolvidos na Disciplica de Sistemas Embarcados, desenvolveram um Sismógrafo com interface de comunicação Bluetooth.
+## Descrição do Projeto
 
- O projeto consiste em uma implementação de um Sensor Acelerômetro e um chip de BLE(Bluetooth Low Energy) para realizar aquisição de dados de vibração do solo, enviando para análise na nuvem e gerando relatórios em tempo real de ondas causadas por possíveis terremotos.
+Com o objetivo de prever catástrofes naturais e salvar vidas, os alunos de Engenharia elétrica
+da Unicamp, em conjunto com os conhecimentos desenvolvidos na disciplina de Sistemas
+Embarcados, criaram um sismógrafo com interface Bluetooth.
 
- O sistema completo que este projeto trata corresponde a um beacon sensor, responsável por detectar ondas sismicas, processar os dados recolhidos e emiti-los via advertisings BLE e também por um beacon receptor, que colhe os advertisings dos beacons sensores e os envia para a nuvem, no entanto **estamos limitando o escopo do projeto a apenas o beacon sensor**.
+O projeto consiste na implementação de um sensor acelerômetro e um chip BLE
+(Bluetooth Low Energy) para a coleta de dados de vibração do solo. Esses dados são enviados
+para análise na nuvem e geram relatórios em tempo real das ondas causadas por possíveis
+terremotos.
 
-## Descrição Funcional (:warning: ATUALIZAR :warning:)
-> Esta seção deve estar atualizada, refletindo o status do projeto no momento da entrega final (E3). 
-> 
-> Alterações realizadas no projeto entre a entrega E2 e a entrega E3 devem ser justificadas nas se, relatando claramente as dificuldades encontradas e as decisões > tomadas.
+O sistema completo que este projeto trata corresponde a beacon sensor responsável por
+detectar ondas sísmicas, processar os dados recolhidos e emiti-los via advertisings BLE.
+Um beacon receptor coleta esses advertisings dos beacons sensores e envia-os para a nuvem.
+No entanto, estamos limitando o escopo do projeto apenas ao beacon sensor.
 
- Para aquisição dos dados de vibração do  solo será usado um sensor que mede as alterações de posição em relação ao local onde estiver instalado. Estas informações serão  enviadas via Bluetooth para uma central, onde serão analisadas e relatórios serão emitidos de acordo com a necessidade ou urgência de eventos serem informados para que medidas sejam tomadas.  
+### Apoie este projeto
+
+O diferencial do nosso projeto está na combinação dessas tecnologias avançadas.
+Ao utilizar o sensor acelerômetro, podemos capturar com precisão as vibrações do solo,
+fornecendo informações valiosas sobre possíveis terremotos iminentes. A interface Bluetooth
+permitirá que esses dados sejam transmitidos em tempo real para a nuvem. Lá serão
+processados ​​e utilizados para gerar relatórios detalhados das ondas sísmicas.
+
+Ao investir neste projeto, você estará contribuindo para proteção vida humana
+e reduzindo danos causados ​​por catástrofes naturais. O foco inicial é no beacon sensor, mas há potencial para expandir o sistema completo incluindo o beacon receptor e integração com a nuvem.
+
+### Potenciais usuários
+
+Os públicos-alvo deste projeto são órgãos públicos, como prefeituras e defesa civil, além de empresas que prestam serviços aos governos locais ou regionais.
+
+### Valor econômico associado
+
+O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, como proteção ao capital humano e material. Como exemplos, podemos citar:
+- Salvaguarda de vidas
+- Redução de custos em desastres naturais
+- Impacto na indústria seguradora
+- Aplicação em pesquisas e estudos científicos
 
 
 ### Funcionalidades (ATUALIZAÇÃO NECESSÁRIA)
@@ -112,7 +125,7 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 ## Microcontrolador
  Modelo: EFR32BG13P632F512GM32-D
 
- Datasheet: [EFR32BG13](./DataSheet/efr32bg13-datasheet.pdf)
+ Datasheet: [EFR32BG13](./datasheet/efr32bg13-datasheet.pdf)
 
  Este SoC faz parte da família de microcontroladores EFR32BG13, que possui  conectividade Bluetooth Low Energy (BLE) e são baseados na plataforma EFR32 da Silicon Labs. Ele foi projetado para fornecer recursos de comunicação sem fio de baixa energia para aplicações IoT (Internet of Things). 
 
@@ -161,7 +174,7 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 ## Sensor Acelerômetro
  Modelo: ADXL345
 
- Datasheet: [ADXL345](./DataSheet/adxl345.pdf)
+ Datasheet: [ADXL345](./datasheet/adxl345.pdf)
 
  O acelerômetro ADXL345 é um sensor de alta resolução e baixo consumo de energia projetado para medir acelerações em três eixos (x, y e z). Ele utiliza a tecnologia de microeletromecânica (MEMS) para detectar mudanças nas forças de aceleração e converter essas mudanças em um sinal elétrico proporcional.
 
@@ -200,7 +213,7 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 
  Modelo: Antena F invertido
 
- Datasheet: [AN1088: Designing with an Inverted-F 2.4 GHz PCB Antenna](./DataSheet/an1088-designing-with-pcb-antenna.pdf)
+ Datasheet: [AN1088: Designing with an Inverted-F 2.4 GHz PCB Antenna](./datasheet/an1088-designing-with-pcb-antenna.pdf)
 
  Características Elétricas:
   - Faixa de Frequência: A antena F invertida é projetada para operar em uma determinada faixa de frequência, que pode variar dependendo da aplicação específica. Neste caso, seguindo a normas do Bluetooth Core, a operação se dará em 2,4 Ghz.
