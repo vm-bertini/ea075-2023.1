@@ -35,7 +35,7 @@ detectar ondas sísmicas, processar os dados recolhidos e emiti-los via advertis
 Um beacon receptor coleta esses advertisings dos beacons sensores e envia-os para a nuvem.
 No entanto, estamos limitando o escopo do projeto apenas ao beacon sensor.
 
-### Apoie este projeto
+### **Apoie este projeto**
 
 O diferencial do nosso projeto está na combinação dessas tecnologias avançadas.
 Ao utilizar o sensor acelerômetro, podemos capturar com precisão as vibrações do solo,
@@ -46,11 +46,11 @@ processados ​​e utilizados para gerar relatórios detalhados das ondas sísm
 Ao investir neste projeto, você estará contribuindo para proteção vida humana
 e reduzindo danos causados ​​por catástrofes naturais. O foco inicial é no beacon sensor, mas há potencial para expandir o sistema completo incluindo o beacon receptor e integração com a nuvem.
 
-### Potenciais usuários
+### **Potenciais usuários**
 
 Os públicos-alvo deste projeto são órgãos públicos, como prefeituras e defesa civil, além de empresas que prestam serviços aos governos locais ou regionais.
 
-### Valor econômico associado
+### **Valor econômico associado**
 
 O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, como proteção ao capital humano e material. Como exemplos, podemos citar:
 - Salvaguarda de vidas
@@ -59,7 +59,7 @@ O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, c
 - Aplicação em pesquisas e estudos científicos
 
 
-### Funcionalidades
+### **Funcionalidades**
  - Beacon sensor
    - Tratar dados crus provenientes dos sensoresß
    - Emitir em advertisings BLE com os dados processados
@@ -67,14 +67,14 @@ O valor econômico deste projeto baseia-se nos benefícios da sua aplicação, c
    - Receber dados processados de diversos beacons sensores
    - Enviar dados para a nuvem.
 
-### Configurabilidade
+### **Configurabilidade**
  O usuário poderá configurar os seguintes itens:
 	- frequência com a qual será captadas as oscilações do solo
 	- potência de comunicação via Bluetooth
  	- taxa de amostragem das oscilações
 
 
-### Eventos
+### **Eventos**
 
 Os eventos tratados para o sistema serão:
 
@@ -84,7 +84,7 @@ Os eventos tratados para o sistema serão:
 
 Todos os eventos são periódicos, de frequência **F** a determinar em ensaios. Essa frequência deve ser tal que as frequências de onda mais comuns de eventos sísmicos possam ser detectadas precisamente.
 
-### Tratamento de Eventos
+### **Tratamento de Eventos**
  Para tratar os eventos vamos separar em três etapas:
 	1 - propagação das ondas Sísmicas são captadas pelo sensor Acelerômetro
 	2 - há um pré-tratamento dos dados, de forma que somente os dados considerados válidos serão guardados
@@ -106,12 +106,12 @@ Esq>
 ## Especificação estrutural
 Este tópico descreve as especificações estruturais do projeto
 
-### Saídas e entradas do dispositivo
+### **Saídas e entradas do dispositivo**
 
 Este tópico mostra quais são saídas e entradas, e seus respectivos tipos, empregadas neste dispositivo, tão bem 
 quanto as entradas e saídas de intercomunicão entre os circuitos integrados.
 
-### Saídas e entradas para o ambiente
+### **Saídas e entradas para o ambiente**
 
 Teremos três modos de I/O’s, duas cabeadas e uma sem fio.
 
@@ -135,7 +135,7 @@ Harwired (cabeado na PCB):
 ### Componentes principais 
 Este tópico descreve os principais componentes utilizados no projeto
 
-### Microcontrolador
+### **Microcontrolador**
  Modelo: EFR32BG13P632F512GM32-D
 
  Datasheet: [EFR32BG13](./datasheet/efr32bg13-datasheet.pdf)
@@ -181,7 +181,7 @@ Este tópico descreve os principais componentes utilizados no projeto
       - Pinos: 32 pinos
   - Configuração de Antenas: Antena tipo F invertida, construída na própria PCB (Printed Circuit Board). Detalhes serão exemplificados em uma sessão dedicada.
 
-### Sensor Acelerômetro
+### **Sensor Acelerômetro**
 Modelo: ADXL345
 
 Datasheet: [ADXL345](./datasheet/adxl345.pdf)
@@ -206,7 +206,7 @@ Restrições Físicas:
     - 14 pinos
 - Sensibilidade à Vibração: O acelerômetro é sensível a vibrações externas, portanto, considere medidas adequadas para minimizar interferências indesejadas, como o uso de isoladores mecânicos ou filtros adequados.
 
-### Antena F invertida
+### **Antena F invertida**
 
 Construída na própria PCB do dispositivo, comumente conhecida por sua estrutura simples e eficiência de radiação, sendo frequentemente utilizada em aplicações de transmissão e recepção de sinais de rádio.
 
@@ -227,7 +227,7 @@ Características Geométricas:
   - Para PCB FR4 de espessura 0,8mm e 0,062”, referência na imagem 2.1, página 3, do datasheet AN1088 da antena F invertido.
 
 
-### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
+## Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
  Para transformar um sinal de onda sísmica bruto em um dado entendível, você pode seguir uma sequência de etapas e aplicar os seguintes algoritmos:
 
 > (Se preferir, adicione um link para o documento de especificação de algoritmos).
