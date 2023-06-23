@@ -89,6 +89,19 @@ Todos os eventos são periódicos, de frequência **F** a determinar em ensaios.
 	1 - propagação das ondas Sísmicas são captadas pelo sensor Acelerômetro
 	2 - há um pré-tratamento dos dados, de forma que somente os dados considerados válidos serão guardados
 	3 - envio dos dados para o beacon receptor 
+  
+## Descrição Estrutural do Sistema  (:warning: ATUALIZAR :warning:)
+> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
+> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
+>
+> Para essa descrição recomenda-se a criação de diagramas de blocos.
+> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
+> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
+> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
+Esq> 
+> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
+
+![Kiku](Diagrama_projeto_ea075.jpg)
 
 ## Especificação estrutural
 Este tópico descreve as especificações estruturais do projeto
@@ -118,7 +131,6 @@ Sem fio:
 Harwired (cabeado na PCB):
 - SPI (3 Fios)
   - Através desta será transmitido do acelerômetro para o microcontrolador os dados crús dos tremores sísmicos.ß
-
 
 ### Componentes principais 
 Este tópico descreve os principais componentes utilizados no projeto
@@ -242,19 +254,6 @@ Características Geométricas:
    - Inversão de impedância: Realizar uma inversão de impedância para estimar as propriedades físicas do subsolo, como a variação de impedância acústica. Isso ajuda a mapear as mudanças de litologia e identificar possíveis reservatórios de hidrocarbonetos.
 
 Lembrando que a sequência e os algoritmos específicos podem variar dependendo dos objetivos da interpretação sísmica e das características dos dados. É sempre importante adaptar o fluxo de trabalho e escolher os algoritmos mais adequados para o contexto em que você está trabalhando.
-
-## Descrição Estrutural do Sistema  (:warning: ATUALIZAR :warning:)
-> Junto com a descrição do comportamento do sistema, deve-se especificar, em nível de bloco ou sistema, a estrutura necessária 
-> para captar os eventos do mundo externo, para alojar e processar o programa de tratamento de eventos, e para atuar sobre o mundo externo.
->
-> Para essa descrição recomenda-se a criação de diagramas de blocos.
-> Nesse diagrama, devem ser destacados os blocos funcionais que compõem o sistema, incluindo uma síntese das funcionalidades de cada bloco.
-> Além disso, deve-se esclarecer também o relacionamento entre estes blocos, incluindo os principais sinais de comunicação entre
-> os blocos de forma a assegurar a execução de todas as tarefas que o sistema deve realizar.
-Esq> 
-> Você sabia? Ferramentas como o `draw.io` permitem integração com o Github.
-
-![Kiku](Diagrama_projeto_ea075.jpg)
 
 ## Referências
 Decifrando a Terra. . São Paulo: Companhia Editora Nacional. . Acesso em: 02 abr. 2023. , 2009
