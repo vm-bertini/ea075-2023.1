@@ -242,7 +242,7 @@ Em resumo, o algoritmo STFT-WF pode ser usado para melhorar a precisão da anál
 para aplicações onde informações detalhadas sobre as propriedades temporais e espectrais são importantes.
 
 O fluxograma para implementação deste algoritmo:
-::: mermaid
+```mermaid
 graph TD
 A[Leitura do sinal de entrada] --> B[Aplicar wavelet pre-filtragem]
     B --> C[Dividir o sinal em segmentos sobrepostos]
@@ -257,7 +257,7 @@ A[Leitura do sinal de entrada] --> B[Aplicar wavelet pre-filtragem]
     L --> M[Finalizar]
     G --> K[Refinamento da localização das fases]
     K --> I
-:::
+```
 
 O tamanho do algoritmo em memória é estimado entre 4 e 10 kB, a stack Bluetooth Low Energy deve ocupar em torno de 50 kB.
 Como o microcontrolador possui 512 kB de flash e 64 kB de RAM, este terá os recursos necessários para a 
