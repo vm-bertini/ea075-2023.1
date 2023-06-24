@@ -108,10 +108,11 @@ Escolhido pelo própio consumidor, dado restrições do aparelho de controle | �
 Sistema resfriador: |   |   |   |  
 Projetado à parte |   |   |   |  
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |   |  
-Resistor filme metálico 1/4W 1% - 33 ohms | 1 | 0,15 | 0,15 |
-Resistor filme metálico 1/4W 1% - 56 ohms | 1 | 0,1 | 0,1 |  
-Resistor filme metálico 1/4W 1% - 100 ohms | 1 | 0,21 | 0,21 |  
-Resistor 1/4W 5% - 240 ohms | 1 | 0,05 | 0,05
+Resistor filme metálico 1/4W 1% - 33 Ω | 1 | 0,15 | 0,15 |
+Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 | 0,1 |  
+Resistor filme metálico 1/4W 1% - 100 Ω | 1 | 0,21 | 0,21 |  
+Resistor 1/4W 5% - 240 Ω | 1 | 0,05 | 0,05 |
+Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 | 0,1 |
 Capacitor Cerâmico 33nF / 50V | 1 | 0,14 | 0,14 |  
 TRIAC BTA41-600 | 1 | 13 | 13 |  
 MOC3020M | 1 | 3,53 | 3,53 |
