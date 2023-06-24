@@ -16,10 +16,23 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 >[Esquemático em PDF](link para imagens/pdf esquemático)
 >
+> Imagens:
+>
+>
+> PDF:
+>
+>
 >[Lista de Componentes]
 >https://github.com/Felipe-Sisnando/ea075-2023.1/blob/main/projetos/Monitoramento_estufa/components.md
 >
 >[PCB](link para imagens/pdf PCB)
+>
+> Imagens:
+>
+>
+>PDF:
+>
+>
 
 ## Descrição do Projeto
 > 
