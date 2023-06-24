@@ -244,7 +244,7 @@ para aplicações onde informações detalhadas sobre as propriedades temporais 
 O fluxograma para implementação deste algoritmo:
 ```mermaid
 graph TD
-A[Leitura do sinal de entrada] --> B[Aplicar wavelet pre-filtragem]
+A[Leitura do sinal de entrada] --> B[Aplicar pre-filtragem de wavelets]
     B --> C[Dividir o sinal em segmentos sobrepostos]
     C --> D[Aplicar a janela de segmento]
     D --> E[Calcular a Transformada de Fourier de cada segmento]
