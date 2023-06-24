@@ -126,13 +126,13 @@ Sem fio:
 - BLE (Bluetooth Low Energy) 2.4 GHz
   - Através desta interface serão publicados os advertisings BLE contendo os dados processados dos tremores sísmicos medidos.
 
-### Saídas e entradas para intercomunicação entre circuitos integrados
+### **Saídas e entradas para intercomunicação entre circuitos integrados**
 
 Harwired (cabeado na PCB):
 - SPI (3 Fios)
   - Através desta será transmitido do acelerômetro para o microcontrolador os dados crús dos tremores sísmicos.ß
 
-### Componentes principais 
+### **Componentes principais**
 Este tópico descreve os principais componentes utilizados no projeto
 
 ### **Microcontrolador**
@@ -227,35 +227,45 @@ Características Geométricas:
   - Para PCB FR4 de espessura 0,8mm e 0,062”, referência na imagem 2.1, página 3, do datasheet AN1088 da antena F invertido.
 
 
-## Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
- Para transformar um sinal de onda sísmica bruto em um dado entendível, você pode seguir uma sequência de etapas e aplicar os seguintes algoritmos:
+## Especificação de Algoritmos
 
-> (Se preferir, adicione um link para o documento de especificação de algoritmos).
-> 
-> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
-> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
-> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
-> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
-> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
-> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+O algoritmo STFT-WF (Short-Time Fourier Transform com pré-filtragem de Wavelet) é uma técnica que combina a Transformada de Fourier 
+de Curta Duração com a pré-filtragem de wavelets para analisar sinais e obter uma representação tempo-frequência mais precisa. 
+Este especialmente útil para sinais não-estacionários ou com características espectrais variáveis.
 
-1. Pré-processamento:
-   - Filtro de banda: Aplicar um filtro de banda para remover ruídos indesejados e focar nas frequências de interesse.
-   - Correção de amplitude: Corrigir possíveis variações na amplitude do sinal para garantir uma representação mais precisa.
+Ao combinar a pré-filtragem de wavelet com a STFT, o algoritmo STFT-WF permite uma análise mais precisa das variações 
+espectrais ao longo do tempo, o que proporciona um entendimento detalhado das propriedades temporais e espectrais do sinal. 
+Esta abordagem é particularmente valiosa para aplicações que requerem processamento sensível ao tempo e à frequência, tais como 
+processamento de sinais de áudio, análise de vibração e processamento sísmico.
 
-2. Picking de fases:
-   - Algoritmo de picking automático: Utilizar um algoritmo automático de picking de fases para identificar as chegadas das ondas sísmicas, como as ondas P e S. Isso pode ser baseado em técnicas de amplitude, polaridade ou outros critérios.
+Em resumo, o algoritmo STFT-WF pode ser usado para melhorar a precisão da análise tempo-frequência em sinais complexos e é adequado 
+para aplicações onde informações detalhadas sobre as propriedades temporais e espectrais são importantes.
 
-3. Cálculo de atributos sísmicos:
-   - Envelope sísmico: Calcular o envelope do sinal para destacar as variações de amplitude e ajudar na interpretação visual.
-   - Frequência central: Determinar a frequência central do sinal para identificar características importantes, como a resolução da imagem sísmica.
+O fluxograma para implementação deste algoritmo:
+::: mermaid
+graph TD
+A[Leitura do sinal de entrada] --> B[Aplicar wavelet pre-filtragem]
+    B --> C[Dividir o sinal em segmentos sobrepostos]
+    C --> D[Aplicar a janela de segmento]
+    D --> E[Calcular a Transformada de Fourier de cada segmento]
+    E --> F[Geração do espectrograma]
+    F --> G[Análise e processamento do espectrograma]
+    G --> H[Determinar picos de energia]
+    H --> I[Aplicar critérios de picking de fases]
+    I --> J[Marcar as fases identificadas]
+    J --> L[Obter resultados desejados]
+    L --> M[Finalizar]
+    G --> K[Refinamento da localização das fases]
+    K --> I
+:::
 
-4. Inversão sísmica:
-   - Inversão de impedância: Realizar uma inversão de impedância para estimar as propriedades físicas do subsolo, como a variação de impedância acústica. Isso ajuda a mapear as mudanças de litologia e identificar possíveis reservatórios de hidrocarbonetos.
-
-Lembrando que a sequência e os algoritmos específicos podem variar dependendo dos objetivos da interpretação sísmica e das características dos dados. É sempre importante adaptar o fluxo de trabalho e escolher os algoritmos mais adequados para o contexto em que você está trabalhando.
+O tamanho do algoritmo em memória é estimado entre 4 e 10 kB, a stack Bluetooth Low Energy deve ocupar em torno de 50 kB.
+Como o microcontrolador possui 512 kB de flash e 64 kB de RAM, este terá os recursos necessários para a 
+implementação da aplicação.
 
 ## Referências
 Decifrando a Terra. . São Paulo: Companhia Editora Nacional. . Acesso em: 02 abr. 2023. , 2009
 
 Anthony, Robert & Ringler, Adam & Wilson, David & Wolin, Emily. (2018). Os sismógrafos de baixo custo funcionam bem o suficiente para a sua rede? Uma visão geral dos testes de laboratório e observações de campo do Raspberry Shake 4D da OSOP. Seismological Research Letters. 90. 10.1785/0220180251.
+
+Özcebe, A.G.; Tiganescu, A.; Ozer, E.; Negulescu, C.; Galiana-Merino, J.J.; Tubaldi, E.; Toma-Danila, D.; Molina, S.; Kharazian, A.; Bozzoni, F.; et al. Raspberry Shake-Based Rapid Structural Identification of Existing Buildings Subject to Earthquake Ground Motion: The Case Study of Bucharest. Sensors 2022, 22, 4787. https://doi.org/10.3390/s22134787
