@@ -167,6 +167,7 @@ Tabela de componentes:
   * Sensor:
     * Limites físicos - largura: 3.94 mm; profundidade: 2.36 mm; altura: 1.35 mm
     * Condições limite:
+
      |Parametro| Min | Max | Unidade |
      |--|--|--|--|
      | Tensão da fonte | - | 3.8 | Volts |
@@ -190,6 +191,7 @@ Tabela de componentes:
   * Atuador:
     * Limites Físicos - largura: 20.4 mm; profundidade: 24.4 mm; Diâmetro do eixo (altura): 	2 mm
     * Condições Elétricas:
+
      |Parametro| Min | Max | Unidade |
      |--|--|--|--|
      | Tensão de operação | 1.5 | 3 | Volts |
