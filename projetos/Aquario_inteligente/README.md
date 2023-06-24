@@ -244,3 +244,7 @@ https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266
   [Ferramentas StackEdit e draw.io.](https://stackedit.io/)
   
   [Referência: Mastering Markdown.](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+- Referência utilizada para o circuito dos sensores com o SoC
+  https://medium.com/@automacaoem5minutos/guia-r%C3%A1pido-16-utilizando-sensor-de-temperatura-ds18b20-com-esp8266-nodemcu-403c74a6238f
+  
