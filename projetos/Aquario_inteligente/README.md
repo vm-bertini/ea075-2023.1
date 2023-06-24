@@ -220,7 +220,8 @@ https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_AR
   
 https://produto.mercadolivre.com.br/MLB-3276527293-conversor-de-tenso-220v-para-12v-transformador-eletrnico-i-_JM?matt_tool=54307261&matt_word=&matt_source=google&matt_campaign_id=14302215582&matt_ad_group_id=134553712308&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425529689&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=623194816&matt_product_id=MLB3276527293&matt_product_partition_id=1802672036537&matt_target_id=pla-1802672036537&gclid=CjwKCAjwgqejBhBAEiwAuWHioJUjP2nSSHbEiWERYT_BIw9dajKQbRiMtEKUTwAVvxpAHGNx5dkc4hoCR28QAvD_BwE
   
--Tomada plugue fêmea 2P 250V 10A 57420952 Tramontina
+-Tomada plugue fêmea 2P 250V 10A 57420952 Tramontina:
+
 https://www.dimensional.com.br/plugue-femea-2p-250v-10a-57420952-tramontina/p?idsku=192830&gclid=CjwKCAjwgqejBhBAEiwAuWHioKcka9j1v_gFVKNrZYaaJW1ZBMC7G3IKxYh_wfv3idYQUSwBucLkwxoCQvcQAvD_BwE
 
 -Referência para a o desenvolvimento de um circuito retificador para a alimentação do SoC utilizado: 
@@ -245,6 +246,7 @@ https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266
   
   [Referência: Mastering Markdown.](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-- Referência utilizada para o circuito dos sensores com o SoC
-  https://medium.com/@automacaoem5minutos/guia-r%C3%A1pido-16-utilizando-sensor-de-temperatura-ds18b20-com-esp8266-nodemcu-403c74a6238f
+-Referência utilizada para o circuito dos sensores com o SoC:
+
+https://medium.com/@automacaoem5minutos/guia-r%C3%A1pido-16-utilizando-sensor-de-temperatura-ds18b20-com-esp8266-nodemcu-403c74a6238f
   
