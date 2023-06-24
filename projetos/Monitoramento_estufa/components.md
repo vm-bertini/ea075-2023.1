@@ -101,7 +101,7 @@
 > 
 > Datasheet: https://www.vishay.com/docs/37299/37299.pdf
 > 
-   #### Alimentação
+   ## Alimentação
 >
 > Para a alimentação do sistema, será utilizada uma bateria de 12V e um regulador de tensão (12-5V) (para alimentar com 5V os equipamentos com essa especificação). Foi escolhida essa bateria para que fosse possível alimentar, a partir da mesma fonte, o motor de 12 V e os outros componentes de 5V, com uma fonte de tensão "própria" (não é necessário fontes externas, ).
 > 
