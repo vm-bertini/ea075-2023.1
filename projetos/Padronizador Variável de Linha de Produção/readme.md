@@ -122,6 +122,7 @@ Tabela de componentes:
 * Microcontrolador:
   * ATmega128-AU:
     * Condições Limite:
+
      |Parametro| Min | Max | Unidade |
      |--|--|--|--|
      | Temperatura de funcionamento | -55 | +125 | C° |
@@ -152,6 +153,7 @@ Tabela de componentes:
      | Output High | 2.2 | - | Volts |
     
     * Condições temporais:
+
      |Parametro| Descrição | Tempo |
      |--|--|--|
      | Tempo de hold de dados| 0.9 | 0.45 | ns |
