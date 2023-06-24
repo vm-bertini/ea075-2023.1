@@ -101,5 +101,12 @@
 > 
 > Datasheet: https://www.vishay.com/docs/37299/37299.pdf
 > 
-   
+   #### Alimentação
+>
+> Para a alimentação do sistema, será utilizada uma bateria de 12V e um regulador de tensão (12-5V) (para alimentar com 5V os equipamentos com essa especificação). Foi escolhida essa bateria para que fosse possível alimentar, a partir da mesma fonte, o motor de 12 V e os outros componentes de 5V, com uma fonte de tensão "própria" (não é necessário fontes externas, ).
+> 
+> Por outro lado, a alimentação da lâmpada e o Dimmer é realizada com uma tensão de 110V. Por esse motivo, o dimmer deve ser conectado a uma tomada residencial (110V) para a sua alimentação, para permitir o funcionamento correto da lâmpada.
+> 
+> Portanto, para o funcionamento completo do sistema, é necessária apenas uma tomada (encontrada facilmente em residências), pois a bateria é capaz de alimentar o restante do sistema.
+>  
 
