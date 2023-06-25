@@ -105,7 +105,7 @@
 > 
    ## Alimentação
 >
-> Para a alimentação do sistema, será utilizada uma bateria de 12V e um regulador de tensão (12-5V) (para alimentar com 5V os equipamentos com essa especificação). Foi escolhida essa bateria para que fosse possível alimentar, a partir da mesma fonte, o motor de 12 V e os outros componentes de 5V, com uma fonte de tensão "própria" (não é necessário fontes externas, ).
+> Para alimentar o circuito que inclui um aspersor de água operando com uma tensão de 12V, foi utilizado  uma bateria de 12V. No entanto, como outros componentes do circuito, incluindo o microcontrolador, operam com uma tensão de 5V, foi necessário utilizar um regulador de tensão para converter a tensão de 12V para 5V. Nesse caso, um regulador de tensão LM7805 pode ser utilizado em conjunto com um conjunto de capacitores para realizar essa conversão. O LM7805 é um regulador de tensão linear que é capaz de fornecer uma saída estável de 5V, mesmo com uma entrada variável de até 12V. Os capacitores são utilizados em conjunto com o regulador para filtrar eventuais flutuações e ruídos na tensão de entrada, garantindo uma saída de 5V mais estável e livre de interferências.
 > 
 > Por outro lado, a alimentação da lâmpada e o Dimmer é realizada com uma tensão de 110V. Por esse motivo, o dimmer deve ser conectado a uma tomada residencial (110V) para a sua alimentação, para permitir o funcionamento correto da lâmpada.
 > 
