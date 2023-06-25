@@ -1,4 +1,4 @@
-# `Cacto dançante`
+![image](https://github.com/viniandrs/ea075-2023.1/assets/71352251/3107ba8b-86a3-4b2f-965a-61f0eb7baba0)![image](https://github.com/viniandrs/ea075-2023.1/assets/71352251/fde9b561-6cc5-4d23-be14-bc1c45ae9b92)# `Cacto dançante`
 # `Dancing cactus`
 
 ## Apresentação
@@ -61,10 +61,23 @@ Lista de componentes utilizados:
 | Componente  | Quantidade | Função | Datasheet | Preço |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Microcontrolador PIC16C72A  | 1  | Unidade micro-controladora  | Content Cell  | [R$20,00](https://www.acheicomponentes.com.br/circuitos-integrados/dip-pth/dip-28/ci-microcontrolador-pic16c72a-04sp-dip-28) |
+| Módulo de motor L9110S | 1 | Módulo de controle do motor  | Content Cell  | [R$20,00](https://www.acheicomponentes.com.br/circuitos-integrados/dip-pth/dip-28/ci-microcontrolador-pic16c72a-04sp-dip-28) |
+| Terminal com conector parafuso  | 3 | Conexão a periféricos  | Content Cell  | [R$20,00](https://www.acheicomponentes.com.br/circuitos-integrados/dip-pth/dip-28/ci-microcontrolador-pic16c72a-04sp-dip-28) |
+| Módulo cartão Micro-SD SMT MEM2067 | 1 | Interface micro-SD | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Transistor NPN 2N3904 | 1 | Amplificador do microfone | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Potenciômetro | 1 | Ajuste do volume | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Resistores | 13 | - | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Botão TL2230EEF140 | 2 | On/Off | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| LM386N-3/NOPB | 1 | Amplificador da saída de áudio | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Regulador de voltagem AMS1117 | 1 |  | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+
+
+
+
 | Módulo microfone KY-038 | 1 | Entrada de áudio  | Content Cell  | [R$10,90](https://www.makerhero.com/produto/sensor-de-som-ky-038-microfone/)  |
 | Módulo amplificador de áudio LM386 | 1 | Amplificação da saída de áudio  | Content Cell  | [R$10,36](https://www.eletrogate.com/modulo-amplificador-de-audio-com-lm386) |
 | Auto-falante | 1 | Saída de áudio  | Content Cell  | [R$8,46](https://www.eletrogate.com/mini-alto-falante-0.5w-8ohms) |
-| Módulo cartão Micro-SD SPI | 1  | Armazenamento dos áudios gravados pelo usuário | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+
 | Motor DC 1.5-3V | 1 | Atuador | Content Cell  | [R$6,90](https://www.eletrogate.com/mini-motor-dc-15-3v) |
 | LEDs | 1 | Indicadores de estado | Content Cell  | []() |
 | Botões | 1 | Interface com o usuário | Content Cell  | []() |
