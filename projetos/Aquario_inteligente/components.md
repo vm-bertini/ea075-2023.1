@@ -20,7 +20,7 @@ Capacitor Cerâmico 33nF / 50V | 1 | 0,14 |
 TRIAC BTA41-600 | Utilizado para realizar o controle da potência do sistema aquecedor, através de sua operação em conjunto de um sistema específico que permite esse controle pelo método de modulação por lagura de pulso (PWM), utilizando para tanto também o controlador ESP8266. | https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB |
 MOC3020M | Optoacoplador utilizado como parte do sistema para o controle da potênca entregue ao aquecedor, que possui como propósito majoritário isolar eletricamente o sistema de controle (de baixa potência) do composto pelos atuadores (de maior potência), evitando principalmente o sistema de controle passe a apresentar falhas devido a algum imprevisto relacionado a uma conexão elétrica existente com um sistema de maior potência. | https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   | 
-LM7805 | 1 | 3 |
+LM7805 | Corresponde a um regulador de tensão para 5V que é usado em conjunto com o sistema retificador (e um para sua própria operação, como apresentado em seu datasheet) para alimentar o SoC empregado através de um e seus pinos que permite sua alimentação externa. | https://pdf1.alldatasheet.com/datasheet-pdf/view/82833/FAIRCHILD/LM7805.html |
 Capacitor de 100nF | 2 | 0,2 |
 Diodo1N4007 | 5 | 0,2 |
 Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 
