@@ -117,7 +117,7 @@ Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 | 0,1 |  
 Resistor filme metálico 1/4W 1% - 100 Ω | 1 | 0,21 | 0,21 |  
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 | 0,1 |
-Capacitor Cerâmico 33nF / 310V | 1 | 6 | 6 |  
+Capacitor Cerâmico 33nF / 310VAC | 1 | 6 | 6 |  
 TRIAC BTA41-600 | 1 | 13 | 13 |  
 MOC3020M | 1 | 3,53 | 3,53 |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   |   |  
