@@ -108,7 +108,7 @@ System on a chip: |   |   |   |  
 ESP8266 | 1 | 30 | 30 |  
 Cabo USB - Micro USB | 1 | 12 | 12 |  
 Sistema aquecedor: |   |   |   |  
-Escolhido pelo própio consumidor, dado restrições do aparelho de controle |   |   |   |  
+Escolhido pelo próprio consumidor, dado restrições do aparelho de controle |   |   |   |  
 Sistema resfriador: |   |   |   |  
 Projetado à parte |   |   |   |  
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |   |  
