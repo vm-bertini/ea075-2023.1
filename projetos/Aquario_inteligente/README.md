@@ -19,7 +19,7 @@ Abaixo são apresentados arquivos altamente pertinentes ao projeto desenvolvido:
 -Esquemático do circuito elaborado:
 
 -Lista dos componentes utilizados:
-projetos/Aquario_inteligente/components.md.
+projetos/Aquario_inteligente/components.md
 
 -Imagens relativas à placa de circuito impresso (PCB) desenvolvida:
 
