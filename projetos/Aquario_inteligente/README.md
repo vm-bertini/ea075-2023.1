@@ -41,7 +41,7 @@ No momento atual de escrita dado a fase de desenvolvimento em que o projeto se e
 ## Descrição Funcional
 
 ### Funcionalidades
-O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de um aplicativo o nível ou a faixa de temperatura desejado e o período de amostragem. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura dentro do aquário e um do lado de fora em contato com o ar. As informações obtidas serão atualizadas a cada período no relatório que será armazenado na nuvem podendo ser acessado pelo aplicativo. 
+O sistema em questão será capaz de executar 4 tipos de tarefas (Configuração, medição, regulação e geração de relatório). O primeiro tipo consiste na configuração do sistema no qual o usuário é capaz de configurar através de um aplicativo o nível ou a faixa de temperatura desejado e o período de amostragem. Após isso, o sistema medirá as condições do aquário através de um sensor de temperatura dentro do aquário e um do lado de fora em contato com o ar. As informações obtidas serão atualizadas a cada período no relatório que será armazenado na nuvem podendo ser acessado pelo aplicativo. No caso do projeto realizado, tem-se que essa comunicação seria realizada através da plataforma da Amazon Web Services (AWS), a qual providenciaria um ambiente que permitiria a comunicação via Wi-fi com o controlador utilizado e que os dados coletados fossem salvos em relatórios presentes armazenados na nuvem, através de uma taxa mensal de cerca de 100 reais, que apresentaria uma boa solução em quesitos de segurança e ferramentas disponibilizadas. Assim por meio de bibliotecas externas à uma IDE o ESP8266 seria programado, e pelo site da AWS a plataforma seria configurada de forma a se conectar o controlador, permitindo o funcionamento do sistema, como é demostrado pelo exemplo da seguinte referência: https://www.youtube.com/watch?v=x9GfxgkEpXg.
 
 Tarefas: 
 - Configuração da operação em valor fixo ou faixa de temperaturas; 
@@ -267,4 +267,7 @@ https://www.blogdarobotica.com/2020/05/28/como-programar-a-placa-nodemcu-esp8266
 -Referência utilizada para o circuito dos sensores com o SoC:
 
 https://medium.com/@automacaoem5minutos/guia-r%C3%A1pido-16-utilizando-sensor-de-temperatura-ds18b20-com-esp8266-nodemcu-403c74a6238f
-  
+
+-Referência utilizada para exemplificação de como a comunicação com a nuvem do ESP8266 se estabelece através da plataforma AWS (Amazon Web Services):
+
+https://www.youtube.com/watch?v=x9GfxgkEpXg.
