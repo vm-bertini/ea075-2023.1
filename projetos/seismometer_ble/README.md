@@ -11,13 +11,13 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
  | Rodrigo Dutra de Freitas Cardoso  | 205513  | Eng. Elétrica|
  | Vinicius de Lima Quadrado  | 225357  | Eng. Elétrica|
 
-## Arquivos Importantes (:warning: NOVO :warning:)
+## Arquivos Importantes
 
->[Esquemático em PDF](link para imagens/pdf esquemático)
->
->[Lista de Componentes](components.md)
->
->[PCB](link para imagens/pdf PCB)
+[Esquemático em PDF](pdf/ble_seismometer.pdf)
+
+[Lista de Componentes](components.md)
+
+[PCB](pdf/ble_seismometer_PCB.pdf)
 
 ## Descrição do Projeto
 
