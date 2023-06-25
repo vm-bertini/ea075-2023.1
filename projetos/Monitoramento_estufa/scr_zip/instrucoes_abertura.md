@@ -1,3 +1,4 @@
+## Se tiver uma plataforma EDA:
 > 1 - Baixe o arquivo Zip do Projeto Final na pasta scr_zip.
 > 
 > 2 - Localize a pasta ZIP em seu computador e clique com o botão direito do mouse sobre ela.
