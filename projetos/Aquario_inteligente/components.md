@@ -16,7 +16,7 @@ Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 |
 Resistor filme metálico 1/4W 1% - 100 Ω | 1 | 0,21 | 
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 |
-Capacitor Cerâmico 33nF / 310V | Utilizado em um circuito snubber juntamente de um resistor de 33 ohms, com o objetivo de se suprimir picos ou transientes indesejados na alimentação do sistema aquecedor. | https://br.mouser.com/c/?q=capacitor%2033nf |
+Capacitor Cerâmico 33nF / 310VAC | Utilizado em um circuito snubber juntamente de um resistor de 33 ohms, com o objetivo de se suprimir picos ou transientes indesejados na alimentação do sistema aquecedor. | https://br.mouser.com/c/?q=capacitor%2033nf |
 TRIAC BTA41-600 | Utilizado para realizar o controle da potência do sistema aquecedor, através de sua operação em conjunto de um sistema específico que permite esse controle pelo método de modulação por lagura de pulso (PWM), utilizando para tanto também o controlador ESP8266. | https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB |
 MOC3020M | Optoacoplador utilizado como parte do sistema para o controle da potênca entregue ao aquecedor, que possui como propósito majoritário isolar eletricamente o sistema de controle (de baixa potência) do composto pelos atuadores (de maior potência), evitando principalmente o sistema de controle passe a apresentar falhas devido a algum imprevisto relacionado a uma conexão elétrica existente com um sistema de maior potência. | https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   | 
