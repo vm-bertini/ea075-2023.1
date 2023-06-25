@@ -237,8 +237,6 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > Bounce de 5ms.
 > 
 > Datasheet: https://www.hdk.co.jp/pdf/eng/e291702.pdf
-> 
-> Para alimentar o circuito que inclui um aspersor de água operando com uma tensão de 12V, foi utilizado  uma bateria de 12V. No entanto, como outros componentes do circuito, incluindo o microcontrolador, operam com uma tensão de 5V, foi necessário utilizar um regulador de tensão para converter a tensão de 12V para 5V. Nesse caso, um regulador de tensão LM7805 pode ser utilizado em conjunto com um conjunto de capacitores para realizar essa conversão. O LM7805 é um regulador de tensão linear que é capaz de fornecer uma saída estável de 5V, mesmo com uma entrada variável de até 12V. Os capacitores são utilizados em conjunto com o regulador para filtrar eventuais flutuações e ruídos na tensão de entrada, garantindo uma saída de 5V mais estável e livre de interferências.
 >
 > #### Motores (:warning: Atualizado :warning:)
 >  Cooler 5V: Um cooler para ambientes é um dispositivo de ventilação projetado para facilitar a circulação de ar e fornecer resfriamento em espaços confinados ou com ventilação insuficiente. No contexto do projeto em questão, o cooler é representado por meio de um motor de 5V. Seu controle será feito por PWM. Nesse contexto, o cooler é acionado como parte de um sistema automatizado, sendo ligado e desligado conforme a necessidade de resfriamento do ambiente. Um dos pinos do microcontrolador que atuará como saída digital é responsável por ativar o motor do cooler. Essa abordagem digital simplifica o controle do cooler, permitindo que ele opere de forma eficiente e precisa dentro dos parâmetros estabelecidos. Dessa forma, o resfriamento adequado do ambiente é alcançado sem a necessidade de um controle contínuo e analógico, simplificando o projeto e otimizando o consumo de energia. Um cooler possível proposto é: OD4028-05MB.
@@ -287,7 +285,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >  #### Alimentação
 >
-> Para a alimentação do sistema, será utilizada uma bateria de 12V e um regulador de tensão (12-5V) (para alimentar com 5V os equipamentos com essa especificação). Foi escolhida essa bateria para que fosse possível alimentar, a partir da mesma fonte, o motor de 12 V e os outros componentes de 5V, com uma fonte de tensão "própria" (não é necessário fontes externas, ).
+> Para alimentar o circuito que inclui um aspersor de água operando com uma tensão de 12V, foi utilizado  uma bateria de 12V. No entanto, como outros componentes do circuito, incluindo o microcontrolador, operam com uma tensão de 5V, foi necessário utilizar um regulador de tensão para converter a tensão de 12V para 5V. Nesse caso, um regulador de tensão LM7805 pode ser utilizado em conjunto com um conjunto de capacitores para realizar essa conversão. O LM7805 é um regulador de tensão linear que é capaz de fornecer uma saída estável de 5V, mesmo com uma entrada variável de até 12V. Os capacitores são utilizados em conjunto com o regulador para filtrar eventuais flutuações e ruídos na tensão de entrada, garantindo uma saída de 5V mais estável e livre de interferências.
 > 
 > Por outro lado, a alimentação da lâmpada e o Dimmer é realizada com uma tensão de 110V. Por esse motivo, o dimmer deve ser conectado a uma tomada residencial (110V) para a sua alimentação, para permitir o funcionamento correto da lâmpada.
 > 
