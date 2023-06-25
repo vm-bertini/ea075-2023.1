@@ -112,9 +112,9 @@ Escolhido pelo próprio consumidor, dado restrições do aparelho de controle | 
 Sistema resfriador: |   |   |   |  
 Projetado à parte |   |   |   |  
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |   |  
-Resistor de fio enrolado 5W 1% - 33 Ω | 1 | 6 | 6 |
-Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 | 0,1 |  
-Resistor filme metálico 1/4W 1% - 100 Ω | 1 | 0,21 | 0,21 |  
+Resistor de fio enrolado 5W 5% - 33 Ω | 1 | 6 | 6 |
+Resistor de fio enrolado 5W 5% - 56 Ω | 1 | 0,1 | 0,1 |  
+Resistor de fio enrolado 5W 5% - 100 Ω | 1 | 0,21 | 0,21 |  
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 | 0,1 |
 Capacitor Cerâmico 33nF / 310VAC | 1 | 6 | 6 |  
