@@ -16,9 +16,9 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 Abaixo são apresentados arquivos altamente pertinentes ao projeto desenvolvido:
 
--Esquemático do circuito elaborado:
+-Esquemático do circuito elaborado e PCB:
 
-
+https://github.com/mateusmiranda01/ea075-2023.1/tree/main/projetos/Aquario_inteligente/pdf
 
 -Lista dos componentes utilizados:
 
@@ -27,7 +27,7 @@ https://github.com/mateusmiranda01/ea075-2023.1/blob/main/projetos/Aquario_intel
 
 -Imagens relativas à placa de circuito impresso (PCB) desenvolvida:
 
-
+https://github.com/mateusmiranda01/ea075-2023.1/tree/main/projetos/Aquario_inteligente/images
 
 
 ## Descrição do Projeto
