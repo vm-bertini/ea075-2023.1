@@ -12,6 +12,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 | Otávio Briske Lima  | 220716  | Eng. Elétrica|
 
 
+## Arquivos Importantes
+
+
+
 ## Descrição do Projeto
 O principal objetivo deste projeto é de realizar o controle da temperatura necessárias para a manutenção de um ecossistema aquático marinho, reduzindo o gasto de energia da rede. Como existem condições bem específicas para garantir a sobrevivência de peixes, corais e outros seres vivos, é de suma importância repassar a tarefa de controle dessas condições para uma máquina que fará isso frequentemente. Neste caso, a condição abordada pelo aquário inteligente será a temperatura da água.
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório em um aplicativo e que possuirá os seguintes gráficos: temperatura X tempo, gasto energético (do aquecedor mais do resfriador) X tempo; e as segiuntes informações: temperatura atual do aquário, desempenho energético no período analisado, alertas de erro como temperatura fora da faixa ideal. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
