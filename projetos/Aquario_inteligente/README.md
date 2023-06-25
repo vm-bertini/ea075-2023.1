@@ -95,8 +95,8 @@ Finalmente são apresentados abaixo os componetes utilizados nesse projeto, no f
 <body>
 <!--StartFragment--><google-sheets-html-origin><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->
 
-Componentes | Quantidade [unidades] | Valor unitário [R$] | Valor total [R$] | Valor estimado para o projeto [R$]
--- | -- | -- | -- | --
+Componentes | Quantidade [unidades] | Valor unitário [R$] | Valor total [R$] |
+-- | -- | -- | -- |
 Sensores: |   |   |   | 
 DS18B20 (para o ar) | 1 | 10 | 10 |  
 DS18B20 (para a água) | 1 | 14 | 14 |  
