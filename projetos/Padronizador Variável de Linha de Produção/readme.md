@@ -12,6 +12,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 | Victor Mario Bertini  | 194761  | Eng. Elétrica|
 
 
+## Arquivos Importantes
+![PDF](pdf/Projeto final de EA075.pdf)
+
 ## Descrição do Projeto
 Este projeto surge como um otimizador de linhas de produção. Nesse contexto, 
 os produtos que serão manufaturados são transportados por uma esteira transportadora, distribuídos de forma a estarem equidistantes uns dos outros,
