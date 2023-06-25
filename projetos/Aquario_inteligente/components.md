@@ -9,7 +9,7 @@ Cabo USB - Micro USB | - | A princípio seria utilizado para se programar o SoC 
 Sistema aquecedor: |   |   | 
 Escolhido pelo próprio consumidor, dado restrições do aparelho de controle | - | Dependendo do aquário no qual o sistema será aplicado diferentes tipos de sistemas aquecedores podem ser requeridos, de forma com que a escolha deva ser tomada pelo próprio consumidor (considerando a operação do sistema de controle). | 
 Sistema resfriador: |   |   |
-Projetado à parte |   | Atualmente tem-se que os sistemas refrigeradores que apresentam maior eficiência correspondem à resfriadores termodinâmicos denominados de "Chillers", que por normalmente apresentarem um controle já embutido de temperatura acabariam por dificultar sua integração com o sistema projetado, desta forma tem-se que seu projeto seria realizado à parte e então integrado ao do sistema de controle. |
+Projetado à parte | - | Atualmente tem-se que os sistemas refrigeradores que apresentam maior eficiência correspondem à resfriadores termodinâmicos denominados de "Chillers", que por normalmente apresentarem um controle já embutido de temperatura acabariam por dificultar sua integração com o sistema projetado, desta forma tem-se que seu projeto seria realizado à parte e então integrado ao do sistema de controle. |
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |  
 Resistor filme metálico 1/4W 1% - 33 Ω | 1 | 0,15 |
 Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 |
@@ -18,7 +18,7 @@ Resistor 1/4W 5% - 240 Ω | 1 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 |
 Capacitor Cerâmico 33nF / 50V | 1 | 0,14 |
 TRIAC BTA41-600 | https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB | Utilizado para realizar o controle da potência do sistema aquecedor, através de sua operação em conjunto de um sistema específico que permite esse controle pelo método de modulação por lagura de pulso (PWM), utilizando para tanto também o controlador ESP8266. |
-MOC3020M | 1 | 3,53 |
+MOC3020M | https://pdf1.alldatasheet.com/datasheet-pdf/view/5039/MOTOROLA/MOC3021.html | Optoacoplador utilizado como parte do sistema para o controle da potênca entregue ao aquecedor, que possui como propósito majoritário isolar eletricamente o sistema de controle (de baixa potência) do composto pelos atuadores (de maior potência), evitando principalmente o sistema de controle passe a apresentar falhas devido a algum imprevisto relacionado a uma conexão elétrica existente com um sistema de maior potência. |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   | 
 LM7805 | 1 | 3 |
 Capacitor de 100nF | 2 | 0,2 |
