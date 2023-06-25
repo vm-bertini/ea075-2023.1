@@ -5,7 +5,7 @@
 > 
 > 3 - No menu que aparece, escolha a opção "Extrair aqui" ou "Extrair para [nome da pasta]" para descompactar o conteúdo da pasta ZIP.
 > 
-> 4 - Após a extração, você terá acesso aos arquivos contidos na pasta ZIP. Procure por arquivos com a extensão ".md".
+> 4 - Após a extração, você terá acesso aos arquivos contidos na pasta ZIP. 
 > 
 > 5 - Abra o software da plataforma EDA
 > 
