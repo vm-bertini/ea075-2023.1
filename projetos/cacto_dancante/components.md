@@ -1,6 +1,6 @@
 | Componente  | Quantidade | Função | Datasheet | Preço |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Microcontrolador PIC16C72A  | 1  | Unidade micro-controladora  | Content Cell  | [R$20,00](https://www.acheicomponentes.com.br/circuitos-integrados/dip-pth/dip-28/ci-microcontrolador-pic16c72a-04sp-dip-28) |
+| Microcontrolador PIC16C72A  | 1  | Unidade micro-controladora  | [datasheet](https://github.com/viniandrs/ea075-2023.1/tree/main/projetos/cacto_dancante/datasheets/microcontroller.pdf) | [R$20,00](https://www.acheicomponentes.com.br/circuitos-integrados/dip-pth/dip-28/ci-microcontrolador-pic16c72a-04sp-dip-28) |
 | Módulo driver de motor L9110S | 1 | Módulo de controle do motor  | Content Cell  | [R$12,60](https://www.soldafria.com.br/modulo-driver-de-motor-dc-l9110s) |
 | Terminal com conector parafuso  | 3 | Conexão a periféricos  | - | [R$0.62](https://www.digikey.com.br/en/products/detail/phoenix-contact/1984617/950849) |
 | Módulo cartão Micro-SD SMT MEM2067 | 1 | Interface micro-SD | Content Cell  | [R$6,12](https://curtocircuito.com.br/modulo-cartao-micro-sd.html)  |
