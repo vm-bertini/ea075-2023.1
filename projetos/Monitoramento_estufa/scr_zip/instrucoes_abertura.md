@@ -24,4 +24,4 @@
 > 
 > 5- Selecione o editor de texto que você possui instalado na lista de aplicativos disponíveis. Se o editor de texto desejado não estiver na lista, escolha a opção "Procurar" ou "Localizar" para navegar até o local onde o editor de texto está instalado em seu computador.
 > 
-> 6 - Após selecionar o editor de texto, o arquivo  será aberto e você poderá visualizar seu conteúdo. Os arquivos MD são escritos em um formato de texto simples com marcação, que é interpretado pelo editor de texto.
+> 6 - Após selecionar o editor de texto, o arquivo  será aberto e você poderá visualizar seu conteúdo. Os arquivos são escritos em um formato de texto simples com marcação, que é interpretado pelo editor de texto.
