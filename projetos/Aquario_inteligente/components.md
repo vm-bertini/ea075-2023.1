@@ -1,4 +1,4 @@
-Componentes | Justificativa da escolha | | Datasheet ou Ficha Técnica |
+Componentes | Justificativa da escolha | Datasheet ou Ficha Técnica |  |
 -- | -- | -- | -- |
 Sensores: |   |   | 
 DS18B20 (para o ar) | Realiza a medição da temperatura ambiente, permitindo uma otimização da potência consumida para a manutenção dos valores de temperatura desejados no interior do aquário, correspondendo a um sensor de baixa relação custo/benefício, que apresenta uma precisão programável, um protocolo de comunicação que é facilmente estabelecido através de sua conexão a um pino digital do microcontrolador (por ja possuir um conversor analógico-digital interno, caracterizando um protocolo de comunicação denominado de One Wire). | https://www.alldatasheet.com/datasheet-pdf/pdf/58557/DALLAS/DS18B20.html |
