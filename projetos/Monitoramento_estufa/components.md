@@ -69,6 +69,8 @@
 >No projeto em questão, é possível utilizar qualquer heating element de 5V para aquecer o ambiente. O heating element é um dispositivo projetado especificamente para converter energia elétrica em calor. Geralmente, é constituído por um fio ou uma fita resistiva feita de um material que apresenta alta resistência elétrica e baixa condutividade térmica. O princípio de funcionamento do heating element baseia-se na resistência do material quando uma corrente elétrica passa por ele. Essa resistência resulta na dissipação de energia na forma de calor. O calor gerado pelo heating element é transferido para o ambiente circundante ou para um objeto próximo, promovendo o aquecimento desejado.
 >
 >No projeto utilizado, o heating element será operado como um dispositivo digital. É importante ressaltar que a escolha adequada do heating element deve considerar a potência elétrica necessária para atingir a temperatura desejada, bem como a compatibilidade com a voltagem de 5V disponível no projeto. Além disso, é fundamental garantir a correta dissipação de calor e adotar medidas de segurança, como dispositivos de proteção térmica, para evitar superaquecimento e riscos associados.
+>
+>Especificações: https://core-electronics.com.au/ptc-heating-element-5v-100-c.html
 
 > ## Controle da Luminosidade.
 > No projeto para controlar a intensidade luminosa das lâmpadas utilizaremos um Dimmer MC-8A que pode ser tanto 127/220V,ou seja, feito para ser ligado na tomada. É um equipamento eletrônico que permite realizar o controle da quantidade de energia que é enviada para a lâmpada incandescente, consecutivamente proporcionando maior ou menor luminosidade, de forma a dimerizá-la.Ele possui as seguintes especificações relevantes ao nosso projeto:
