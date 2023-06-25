@@ -1,4 +1,4 @@
-![image](https://github.com/viniandrs/ea075-2023.1/assets/71352251/3107ba8b-86a3-4b2f-965a-61f0eb7baba0)![image](https://github.com/viniandrs/ea075-2023.1/assets/71352251/fde9b561-6cc5-4d23-be14-bc1c45ae9b92)# `Cacto dançante`
+`Cacto dançante`
 # `Dancing cactus`
 
 ## Apresentação
@@ -69,7 +69,8 @@ Lista de componentes utilizados:
 | Resistores | 13 | - | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
 | Botão TL2230EEF140 | 2 | On/Off | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
 | LM386N-3/NOPB | 1 | Amplificador da saída de áudio | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
-| Regulador de voltagem AMS1117 | 1 |  | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Regulador de voltagem AMS1117 | 1 | - | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
+| Cristal ECS-80-S-4X | 1 | Gerador de pulso de clock | Content Cell  | [R$8,90](https://www.makerhero.com/produto/modulo-cartao-micro-sd/)  |
 
 
 
@@ -79,7 +80,7 @@ Lista de componentes utilizados:
 | Auto-falante | 1 | Saída de áudio  | Content Cell  | [R$8,46](https://www.eletrogate.com/mini-alto-falante-0.5w-8ohms) |
 
 | Motor DC 1.5-3V | 1 | Atuador | Content Cell  | [R$6,90](https://www.eletrogate.com/mini-motor-dc-15-3v) |
-| LEDs | 1 | Indicadores de estado | Content Cell  | []() |
+| LEDs | 1 | Indicadores de estado | Content Cell  | ECS-80-S-4X[]() |
 | Botões | 1 | Interface com o usuário | Content Cell  | []() |
 | Suporte + 3 pilhas AAA | 1  | Alimentação | Content Cell  | [R$7,00](https://www.multcomercial.com.br/suporte-para-3-pilhas-aaa-com-tampa-e-rabicho-de-15cm-jd15-6039a-jinda.html) (pilhas não inclusas) |
 
