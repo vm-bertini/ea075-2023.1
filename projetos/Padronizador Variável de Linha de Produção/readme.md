@@ -13,7 +13,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Arquivos Importantes
-![PDF](pdf/Projeto final de EA075.pdf)
+![PDF](pdf/SCHEMATIC) <br>
+![PDF](pdf/PCB) <br>
+![components](components.md) <br>
 
 ## Descrição do Projeto
 Este projeto surge como um otimizador de linhas de produção. Nesse contexto, 
