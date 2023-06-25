@@ -1,8 +1,8 @@
 Componentes | Datasheet ou Ficha Técnica | Justificativa da escolha |
 -- | -- | -- |
 Sensores: |   |   | 
-DS18B20 (para o ar) | 1 | 10 |
-DS18B20 (para a água) | 1 | 14 | 
+DS18B20 (para o ar) | https://www.alldatasheet.com/datasheet-pdf/pdf/58557/DALLAS/DS18B20.html | Realiza a medição da temperatura ambiente, permitindo uma otimização da potência consumida para a manutenção dos valores de temperatura desejados no interior do aquário, correspondendo a um sensor de baixa relação custo/benefício, que apresenta uma precisão programável, um protocolo de comunicação que é facilmente estabelecido através de sua conexão a um pino digital do microcontrolador (por ja possuir um conversor analógico-digital interno, caracterizando um protocolo de comunicação denominado de One Wire). |
+DS18B20 (para a água) | https://www.alldatasheet.com/datasheet-pdf/pdf/58557/DALLAS/DS18B20.html | Indispensável para a realiização do controle da temperatura interna do ambiente marinho e para a transmissão de seus valores através do relatório gerado, sua única diferença ao sensor utilizado para o ar (a princípio) corresponde ao seu involucro que permite que seja utilizado dentro da água, possuindo um cabo que também apresenta maior extensão. | 
 System on a chip: |   |   |
 ESP8266 | https://pdf1.alldatasheet.com/datasheet-pdf/view/1132995/ESPRESSIF/ESP8266.html | O System on Chip ESP8266 foi escolhido para ser utilizado neste projeto por corresponder a um controlador relativamente simples que possui integrado um módulo que permite o estabelecimento de comunicação via Wi-fi, o que é crucial para a transmissão dos relatórios gerados para a nuvem (de acordo com a ideia central do projeto do aquário inteligente). Outro motivo corresponde à sua capacidade de estabelecer comunicação pelo protocolo I2C, utilizada para a operação de um sistema refrigerador (não projetado). |
 Cabo USB - Micro USB | - | A princípio seria utilizado para se programar o SoC empregado no projeto através de um computador com uma IDE (Ambiente de Desenvolvimento Integrado). |
