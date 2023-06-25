@@ -1,15 +1,15 @@
-Componentes | Datasheet | Justificativa da escolha |
+Componentes | Datasheet ou Ficha Técnica | Justificativa da escolha |
 -- | -- | -- |
 Sensores: |   |   | 
 DS18B20 (para o ar) | 1 | 10 |
 DS18B20 (para a água) | 1 | 14 | 
 System on a chip: |   |   |
-ESP8266 | 1 | 30 |
-Cabo USB - Micro USB | 1 | 12 |
+ESP8266 | https://pdf1.alldatasheet.com/datasheet-pdf/view/1132995/ESPRESSIF/ESP8266.html | O System on Chip ESP8266 foi escolhido para ser utilizado neste projeto por corresponder a um controlador relativamente simples que possui integrado um módulo que permite o estabelecimento de comunicação via Wi-fi, o que é crucial para a transmissão dos relatórios gerados para a nuvem (de acordo com a ideia central do projeto do aquário inteligente). Outro motivo corresponde à sua capacidade de estabelecer comunicação pelo protocolo I2C, utilizada para a operação de um sistema refrigerador (não projetado). |
+Cabo USB - Micro USB | - | A princípio seria utilizado para se programar o SoC empregado no projeto através de um computador com uma IDE (Ambiente de Desenvolvimento Integrado). |
 Sistema aquecedor: |   |   | 
-Escolhido pelo própio consumidor, dado restrições do aparelho de controle |   |   | 
+Escolhido pelo próprio consumidor, dado restrições do aparelho de controle | - | Dependendo do aquário no qual o sistema será aplicado diferentes tipos de sistemas aquecedores podem ser requeridos, de forma com que a escolha deva ser tomada pelo próprio consumidor (considerando a operação do sistema de controle). | 
 Sistema resfriador: |   |   |
-Projetado à parte |   |   |
+Projetado à parte |   | Atualmente tem-se que os sistemas refrigeradores que apresentam maior eficiência correspondem à resfriadores termodinâmicos denominados de "Chillers", que por normalmente apresentarem um controle já embutido de temperatura acabariam por dificultar sua integração com o sistema projetado, desta forma tem-se que seu projeto seria realizado à parte e então integrado ao do sistema de controle. |
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |  
 Resistor filme metálico 1/4W 1% - 33 Ω | 1 | 0,15 |
 Resistor filme metálico 1/4W 1% - 56 Ω | 1 | 0,1 |
@@ -24,7 +24,7 @@ LM7805 | 1 | 3 |
 Capacitor de 100nF | 2 | 0,2 |
 Diodo1N4007 | 5 | 0,2 |
 Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 
-Transformador de 220V para 12V | 1 | 74,49 | 
+Transformador de 220V para 12V | https://produto.mercadolivre.com.br/MLB-3276527293-conversor-de-tenso-220v-para-12v-transformador-eletrnico-i-_JM?matt_tool=54307261&matt_word=&matt_source=google&matt_campaign_id=14302215582&matt_ad_group_id=134553712308&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425529689&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=623194816&matt_product_id=MLB3276527293&matt_product_partition_id=1802672036537&matt_target_id=pla-1802672036537&gclid=CjwKCAjwgqejBhBAEiwAuWHioJUjP2nSSHbEiWERYT_BIw9dajKQbRiMtEKUTwAVvxpAHGNx5dkc4hoCR28QAvD_BwE | Aplicado para se reduzir a tensão da rede para uma que pode ser retificada facilmente para se estabelecer uma tensão adequada para a alimentação do sistema de controle (de forma com que sua alimentação possa ser realizada em conjunto com a dos sistemas atuadores, não requerendo um cabo adicional). | 
 Para a alimentação do aquecedor: |   |   |   
-Tomada com plugue fêmea 2P 250V 10A 57420952 Tramontina | 1 | 3,19 |
+Tomada com plugue fêmea 2P 250V 10A 57420952 Tramontina | https://www.dimensional.com.br/plugue-femea-2p-250v-10a-57420952-tramontina/p?idsku=192830&gclid=CjwKCAjwgqejBhBAEiwAuWHioKcka9j1v_gFVKNrZYaaJW1ZBMC7G3IKxYh_wfv3idYQUSwBucLkwxoCQvcQAvD_BwE | Utilizada para permitir uma fácil alimentação tanto do sistema de controle quanto dos sistemas atuadores (de aquecimento e resfriamento). |
 
