@@ -42,9 +42,9 @@ necessitando apenas de um sensor simples, um microcontrolador (MCU), um temporiz
 ## Descrição Funcional
 
 * Valores a serem considerados e pré configurados:
- * ´Frequência de produtos: produtos/segundo que devem chegar ao fim da esteira´
- * ´Tamanho da esteira´: para um controle básico e padrão
- * ´Tempo de inatividade´: tempo sem registro de novo produto em que a esteira continuaria funcionando
+ * `Frequência de produtos`: `produtos/segundo que devem chegar ao fim da esteira`
+ * `Tamanho da esteira`: para um controle básico e padrão
+ * `Tempo de inatividade`: tempo sem registro de novo produto em que a esteira continuaria funcionando
 
 (O processo como todo pode ser visto em forma de diagrama mais abaixo)
 
@@ -61,7 +61,7 @@ assim que este zerar o próximo produto se tornaria o produto principal
 Utilizando da velocidade que a esteira esteve rodando e da defasagem temporal registrada pelo primeiro temporizador (de entrada), 
 seria possível estabelcer a distância que o novo produto principal está do fim da esteira, 
 permitindo que seja calculada uma velocidade apropriada para a chegada desse produto, 
-visando mante a ´frequência de produtos´ configurada para essa esteira
+visando mante a `frequência de produtos` configurada para essa esteira
 
 Por exemplo, caso a necessidade de entrega de produto for de 1 produto/10 segundos, 
 e ele detecta um produto no momento t = 1 e outro no t = 9, com Δt = 8s, após a entrega do primeiro produto, 
@@ -71,12 +71,14 @@ O produto também é altamente customizavel, já que os valores usados para calc
 estabelecidas pelo próprio usuário, como a própria taxa de produto/sengundo (usada no parágrafo anterior)
 
 Para casos como o primeiro produto após uma inicialização (ou reset) a velocidade da esteira estaria configurada para um valor
-padrão visando suprir a necessidade de ´frequência de produto´ estabelecida. Esse valor só pode ser calculado através do valor
-de ´tamanho de esteira´ que junto da ´frequência de produto´ forneceria a velocidade de inicialização
+padrão visando suprir a necessidade de `frequência de produto` estabelecida. Esse valor só pode ser calculado através do valor
+de `tamanho de esteira` que junto da `frequência de produto` forneceria a velocidade de inicialização
 
-Por último para o caso de ausência de produtos detectados pelo sensor e visando economizar energia, 
-após um determinado período de tempo (´Tempo de inatividade´) o padronizador entraria em iddle ou reset, 
+Para o caso de ausência de produtos detectados pelo sensor e visando economizar energia, 
+após um determinado período de tempo (`Tempo de inatividade`) o padronizador entraria em iddle ou reset, 
 esperando o próximo produto ser captado pelo sensor, onde o motor funcionaria em seu nível mais baixo efetivamente parando uma esteira sem produtos
+
+Além o produto conta com uma fonte de alimentação única, possível devido ao seu regulador linear de tensão, que permite todos os componentes sejam alimentados com uma fonte única.
 
 ### Funcionalidades
 * Detecção de Produtos por meio do sensor infravermelho:
