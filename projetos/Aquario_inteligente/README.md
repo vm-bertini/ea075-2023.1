@@ -17,7 +17,7 @@ O principal objetivo deste projeto é de realizar o controle da temperatura nece
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório em um aplicativo e que possuirá os seguintes gráficos: temperatura X tempo, gasto energético (do aquecedor mais do resfriador) X tempo; e as segiuntes informações: temperatura atual do aquário, desempenho energético no período analisado, alertas de erro como temperatura fora da faixa ideal. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
 Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas ou em que os sensores falhem.  
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
-No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$165,83, correspondente aos materiais utilizados. 
+No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$161,83, correspondente aos materiais utilizados. 
 
 
 ## Descrição Funcional
@@ -121,7 +121,6 @@ LM7805 | 1 | 3 | 3 |  
 Capacitor de 100nF | 2 | 0,2 | 0,4 |  
 Diodo1N4007 | 5 | 0,2 | 1 |  
 Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 0,35 |  
-Conectores KRE de 2 vias | 2 | 2 | 4 |  
 Transformador de 220V para 12V | 1 | 74,49 | 74,49 |  
 Para a alimentação do aquecedor: |   |   |   |  
 Tomada com plugue fêmea 2P 250V 10A 57420952 Tramontina | 1 | 3,19 | 3,19 |  
