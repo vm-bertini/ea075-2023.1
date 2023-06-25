@@ -21,7 +21,7 @@ O principal objetivo deste projeto é de realizar o controle da temperatura nece
 O aquário inteligente é um sistema capaz de controlar a temperatura, por meio da habilitação regulada de sistemas de aquecimento e resfriamento externos (não projetados). As informações obtidas serão armazenadas para gerar um relatório em um aplicativo e que possuirá os seguintes gráficos: temperatura X tempo, gasto energético (do aquecedor mais do resfriador) X tempo; e as segiuntes informações: temperatura atual do aquário, desempenho energético no período analisado, alertas de erro como temperatura fora da faixa ideal. O relatório analisará os dados obtidos diariamente e semanalmente, podendo ser acessado quando o usuário quiser e sendo atualizado com um período configurável com padrão de a cada 10 minutos. 
 Dessa forma, usuários que desejam possuir aquários marinhos, ou que já o possuem, não precisarão se preocupar com as tarefas de tratamento rotineiras requeridas e podem verificar o estado em que o ecossistema se encontra através do relatório gerado, o sistema ainda armazenará parâmetros representativos do aquário em que está operando, que são obtidos durante a sua operação, de forma a permitir uma otimização da potência consumida pelos sistemas de aquecimento e resfriamento, assim como um controle preventivo para o caso em que o sensor de temperatura do aquário apresente medidas incertas ou em que os sensores falhem.  
 A ideia para o projeto foi desenvolvida por meio de uma reflexão sobre como seria possível de se automatizar um processo de manutenção das condições necessárias para a vida aquática visto que qualquer perturbação das condições os corais e os peixes podem ficar doentes e até morrer. Ademais, o projeto também foi desenvolvido a partir da necessidade real de um dos membros da dupla que possuía aquário marinho e que tinha a dificuldade de manter o ecossistema adequado a todo momento. 
-No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$174,84, correspondente aos materiais utilizados. 
+No momento atual de escrita dado a fase de desenvolvimento em que o projeto se encontra, se estabelece um valor de custo de aproximadamente R$176,03, correspondente aos materiais utilizados. 
 
 
 ## Descrição Funcional
@@ -114,7 +114,7 @@ Projetado à parte |   |   |   |  
 Sistema de interfaceamento entre o SoC e o aquecedor: |   |   |   |  
 Resistor de fio enrolado 5W 5% - 33 Ω | 1 | 6 | 6 |
 Resistor de fio enrolado 5W 5% - 56 Ω | 1 | 1,4 | 1,4 |  
-Resistor de fio enrolado 5W 5% - 100 Ω | 1 | 0,21 | 0,21 |  
+Resistor de fio enrolado 5W 5% - 100 Ω | 1 | 1,4 | 1,4 |  
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 | 0,1 |
 Capacitor Cerâmico 33nF / 310VAC | 1 | 6 | 6 |  
