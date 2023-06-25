@@ -17,7 +17,7 @@ Resistor filme metálico 1/4W 1% - 100 Ω | 1 | 0,21 | 
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 |
 Capacitor Cerâmico 33nF / 50V | 1 | 0,14 |
-TRIAC BTA41-600 | 1 | 13 |
+TRIAC BTA41-600 | https://www.baudaeletronica.com.br/triac-bta41-600.html?gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndPYXh0QL_n650W_XxhjM_BYkFvXZbdkZvSSor0seZzj2QmbDE0zwgaAmOREALw_wcB | Utilizado para realizar o controle da potência do sistema aquecedor, através de sua operação em conjunto de um sistema específico que permite esse controle pelo método de modulação por lagura de pulso (PWM), utilizando para tanto também o controlador ESP8266. |
 MOC3020M | 1 | 3,53 |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   | 
 LM7805 | 1 | 3 |
