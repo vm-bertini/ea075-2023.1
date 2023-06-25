@@ -51,7 +51,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > O sistema poderá : 
 > - Ligar e desligar os aspersores de água.
 >
-> - Ligar, desligar e controlar o sistema de aquecimento (por meio de PWM).
+> - Ligar, desligar e controlar o sistema de aquecimento .
 >
 > - Ligar, desligar e controlar o cooler (por meio de PWM).
 >
