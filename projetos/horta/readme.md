@@ -92,12 +92,11 @@ Os principais itens necessários para o projeto estão descritos na tabela abaix
 | Fonte de Alimentação para Arduino 5VDC 1A;    |          1 | Alimentar a unidade micro-controladora e demais componentes                   |
 | Botão                                         |          2 | Molhar e fertilizar manualmente e ativar/desativar a fertilização automática                           | 
 | Interruptor                                   |          1 | Definir se está em um lugar com iluminação natural ou não |           
-| LED                                           |          1 | avisar se está ativo o modo fertilização automática       | 
-|Resistor                                       |          6 | utilizado para circuito do LED e botão                    |
-Capacitor de 1 nF | 1| utilizado para o circuito do botão
-| Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
-| Sensor de luminosidade                        |          1 | conferir a luminosidade do local                          |                                           |       |                                                                                                                       |
-
+| LED                                           |          1 | Avisar se está ativo o modo fertilização automática       | 
+|Resistor                                       |          6 | Utilizado para circuito do LED e botão                    |
+|Capacitor de 1 nF | 1| Utilizado para o circuito do botão
+| Lâmpada                                       |          1 | Iluminação da planta                                      |          
+| Sensor de luminosidade                        |          1 | Conferir a luminosidade do local                          |                                 
 ## Especificação Estrutural
 
 O sistema é dividido em três módulos, responsáveis pelas funções de irrigação, fertilização e iluminação.
