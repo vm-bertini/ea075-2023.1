@@ -93,7 +93,7 @@ Os principais itens necessários para o projeto estão descritos na tabela abaix
 | Botão                                         |          2 | molhar e fertilizar manualmente                           | https://www.hdk.co.jp/pdf/eng/e291702.pdf |       |                                                                                                                       |
 | Interruptor                                   |          1 | definir se está em um lugar com iluminação natural ou não |                                           |       |                                                                                                                       |
 | LED                                           |          2| avisar se está ativo o modo fertilização e irrigação automatico                 |                                           |       |                                                                                                                       |
-|Resistor | 4 | utilizado para circuito do LED e botão
+|Resistor | 6 | utilizado para circuito do LED e botão
 Capacitor de 1 nF | 1| utilizado para o circuito do botão
 | Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
 | Sensor de luminosidade                        |          1 | conferir a luminosidade do local                          |                                           |       |                                                                                                                       |
