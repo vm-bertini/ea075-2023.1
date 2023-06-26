@@ -51,7 +51,7 @@ Com isso, os 4 modos configuráveis são:
 ### Eventos
 > Periódicos
 
-1. Verificação do sensor frontal (1000ms).
+1. Verificação do sensor frontal (500ms).
 2. Verificar status da locomoção (15000ms).
 
 > Não Periódicos (não ocorrem simultaneamente, portanto não preocupações com tempo mínimo)
