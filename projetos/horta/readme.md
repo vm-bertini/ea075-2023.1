@@ -36,7 +36,7 @@ Quanto as configurabilidades, é possivel que o(a) usuário(a) decida manualment
 
 ### Eventos
 
-O sistema deverá verificar a umidade do solo a cada 12h, decidir molhar ou não. Além de verificar interrupções provenientes dos botões, que não são periódicos, quanto à: a) molhar naquele momento; b) fertilizar naquele momento; c) ativar/desativar a fertilização automática e; d) ativar/desativar modo iluminação artificial.
+Quanto aos eventos síncronos, o sistema deverá a) verificar a umidade do solo a cada 12h, decidir molhar ou não; b) fertilizar a cada 30 dias, caso a função esteja ativa; c) executar a rotina de luminosidade a cada 12h. Além de verificar interrupções provenientes dos botões, que não são periódicos, quanto à: a) molhar naquele momento; b) fertilizar naquele momento; c) ativar/desativar a fertilização automática e; d) ativar/desativar modo iluminação artificial.
 
 Caso a função de fertilização esteja ativada, o sistema deverá periodicamente realizar a fertilização da planta. O mesmo se aplica para a função de iluminação artificial.
 
@@ -47,7 +47,7 @@ O sistema deverá tratar o pressionamento dos botões e do interruptor. Outro po
 
 Ao tratar o evento de "a) molhar naquele momento", o sistema deve realizar a irrigação e colocar a rotina de molhar automaticamente no estado de espera após uma irrigação.
 
-Já ao tratar o evento de "b) fertilizar naquele momento", o sistema deve realizar a fertilização e colocar a rotina de fetilização automática no início da espera para a nova fertilização, caso esta função esteja ativada.
+Já ao tratar o evento de "b) fertilizar naquele momento", o sistema deve realizar a fertilização e colocar a rotina de fertilização automática no início da espera para a nova fertilização, caso esta função esteja ativada.
 
 ## Descrição Estrutural do Sistema
 
@@ -73,7 +73,7 @@ Este processo pode ser acompanhado pelo fluxograma abaixo:
 
 ![Fluxograma de funcionamento do sistema de fertilização](https://github.com/marifmenezes/ea075-2023.1/blob/00f817132645def5ac477aeb62ce1dbcd82fcc9a/projetos/horta/diagrama_fertilizacao.png "Fluxograma de funcionamento do sistema de fertilização")
 
-Para a iluminação, caso o(a) usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, a lampada ficará acesa por 12horas e desligar. Em seguida, deve-se esperar 12 horas até que a lampada seja acessa executando novamente, simulando o ciclo de luminosidade do sol ao longo de um dia. 
+Para a iluminação, caso o(a) usuário(a) tenha definido que o sistema está em uma área sem iluminação natural, a lâmpada ficará acesa por 12 horas e desligar. Em seguida, deve-se esperar 12 horas até que a lâmpada seja acessa executando novamente, simulando o ciclo de luminosidade do sol ao longo de um dia. 
 
 Este processo pode ser acompanhado pelo fluxograma abaixo:
 
@@ -85,15 +85,14 @@ Os principais itens necessários para o projeto estão descritos na tabela abaix
 
 | Item                                          | Quantidade |               Funcionalidade para o Circuito     |
 |-----------------------------------------------|------------|:------------------------------------------------:|
-| ATtiny40;                    |          1 | Unidade micro-controladora                                |  
-| Sensor de Umidade de Solo para Arduino;       |          1 | conferir a umidade do solo                                |                                           |       |                                                                                                                       |
-| Vávula solenóide água 110V                    |          2 | controlar quando será molhado e fertilizado               |                                           |       |                                                                                                                       |
-| Módulo Relé 5V 10A 1 Canal com Optoacoplador; |          3 | ativar a lampada e as valvulas                            |                                           | 13,87 | https://www.usinainfo.com.br/rele-arduino/modulo-rele-5v-10a-1-canal-com-optoacoplador-para-esp32-e-arduino-2533.html |
-| Fonte de Alimentação para Arduino 5VDC 1A;    |          1 | alimentar a tesão                                         |                                           |       |                                                                                                                       |
-| Botão                                         |          2 | molhar e fertilizar manualmente                           | https://www.hdk.co.jp/pdf/eng/e291702.pdf |       |                                                                                                                       |
-| Interruptor                                   |          1 | definir se está em um lugar com iluminação natural ou não |                                           |       |                                                                                                                       |
-| LED                                           |          2| avisar se está ativo o modo fertilização e irrigação automatico                 |                                           |       |                                                                                                                       |
-|Resistor | 6 | utilizado para circuito do LED e botão
+| ATtiny40;                                     |          1 | Unidade micro-controladora                                |  
+| Sensor de Umidade de Solo;                    |          1 | Conferir a umidade do solo                                |
+| Válvula solenóide de água 110V                |          2 | Controlar quando será molhado e fertilizado               |
+| Módulo Relé 5V 10A 1 Canal com Optoacoplador; |          3 | Ativar a lâmpada e as válvulas                            |
+| Fonte de Alimentação para Arduino 5VDC 1A;    |          1 | Alimentar a unidade micro-controladora e demais componentes                   |
+| Botão                                         |          2 | Molhar e fertilizar manualmente e ativar/desativar a fertilização automática                           | 
+| Interruptor                                   |          1 | Definir se está em um lugar com iluminação natural ou não |           | LED                                           |          1 | avisar se está ativo o modo fertilização automática       | 
+|Resistor                                       |          6 | utilizado para circuito do LED e botão                    |
 Capacitor de 1 nF | 1| utilizado para o circuito do botão
 | Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
 | Sensor de luminosidade                        |          1 | conferir a luminosidade do local                          |                                           |       |                                                                                                                       |
