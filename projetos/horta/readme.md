@@ -91,7 +91,8 @@ Os principais itens necessários para o projeto estão descritos na tabela abaix
 | Módulo Relé 5V 10A 1 Canal com Optoacoplador; |          3 | Ativar a lâmpada e as válvulas                            |
 | Fonte de Alimentação para Arduino 5VDC 1A;    |          1 | Alimentar a unidade micro-controladora e demais componentes                   |
 | Botão                                         |          2 | Molhar e fertilizar manualmente e ativar/desativar a fertilização automática                           | 
-| Interruptor                                   |          1 | Definir se está em um lugar com iluminação natural ou não |           | LED                                           |          1 | avisar se está ativo o modo fertilização automática       | 
+| Interruptor                                   |          1 | Definir se está em um lugar com iluminação natural ou não |           
+| LED                                           |          1 | avisar se está ativo o modo fertilização automática       | 
 |Resistor                                       |          6 | utilizado para circuito do LED e botão                    |
 Capacitor de 1 nF | 1| utilizado para o circuito do botão
 | Lampada                                       |          1 | iluminação da planta                                      |                                           |       |                                                                                                                       |
