@@ -131,7 +131,7 @@ Resistor de fio enrolado 5W 5% - 56 Ω | 1 | 1,4 | 1,4 |  
 Resistor de fio enrolado 5W 5% - 100 Ω | 1 | 1,4 | 1,4 |  
 Resistor 1/4W 5% - 240 Ω | 1 | 0,05 | 0,05 |
 Resistor 1/4W 5% - 4,7 kΩ | 2 | 0,05 | 0,1 |
-Capacitor Cerâmico 33nF / 310VAC | 1 | 6 | 6 |  
+Capacitor de 33nF / 310VAC | 1 | 6 | 6 |  
 TRIAC BTA16-600B | 1 | 10 | 10 |  
 MOC3020M | 1 | 3,53 | 3,53 |
 Circuito retificador de onda completa para a alimentação do SoC: |   |   |   |  
@@ -139,7 +139,7 @@ Tomada com plugue macho 2P 250V 10A 57420901 Tramontina | 1 | 3,09 | 3,09 |
 LM7805-TO220 | 1 | 3 | 3 |  
 Capacitor de 100nF | 2 | 0,2 | 0,4 |  
 Diodo1N4007 | 5 | 0,2 | 1 |  
-Capacitor eletrolítico 220uF 25v | 1 | 0,35 | 0,35 |  
+Capacitor eletrolítico 220µF 25v | 1 | 0,35 | 0,35 |  
 Transformador de 220V para 12V | 1 | 74,49 | 74,49 |  
 Para a alimentação do aquecedor: |   |   |   |  
 Tomada com plugue fêmea 2P 250V 10A 57420952 Tramontina | 1 | 3,19 | 3,19 |
