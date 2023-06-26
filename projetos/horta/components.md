@@ -10,4 +10,4 @@ A seguir serão listados todos os componentes utilizados para o desenvolvimento 
 9. Resistor de 300 ohms, 200 ohms, 100 ohms, 10 kohms e 47 kohms
 10. Capacitor de 1 nF
 11. Lampada 
-12. Sensor de luminosidade 
+12. Sensor de luminosidade (https://pdf1.alldatasheet.com/datasheet-pdf/view/510782/ETC1/N5AC-50108.html)
