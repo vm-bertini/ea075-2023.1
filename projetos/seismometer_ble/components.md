@@ -1,0 +1,24 @@
+|   |   |   |   |
+|---|---|---|---|
+|Name|Description|Designator|Quantity|
+|VJ0603D1R5BXPAJ||C11|1|
+|ADXL345BCCZ-RL7|ACCEL 2-16G I2C/SPI 14LGA|U2|1|
+|1013|BATTERY HOLDER AA 2 CELL PC PIN|V1|1|
+|C0603C104K5RACTU|CAP CER 0.1UF 50V X7R 0603|C13|1|
+|C0402C105K8PACTU|CAP CER 1UF 10V X5R 0402|C4, C5|2|
+|GRM188R60J475KE19D|CAP CER 4.7UF 6.3V X5R 0603|C7|1|
+|F981E105MMA|CAP TANT 1UF 20% 25V 0603|C12|1|
+|GRM188R71H104KA93D|Chip Capacitor, 0.1 uF, +/- 10%, 50 V, -55 to 125 degC, 0603 (1608 Metric), RoHS, Tape and Reel|C2, C3|2|
+|GRM188R71H103KA01D|Chip Capacitor, 10 nF, +/- 10%, 50 V, -55 to 125 degC, 0603 (1608 Metric), RoHS, Tape and Reel|C8|1|
+|GRM188R71E224KA88D|Chip Multilayer Ceramic Capacitors for General Purpose, 0603, 0.22uF, X7R, 15%, 10%, 25V|C6, C10|2|
+|GRM188R60J106ME47D|Chip Multilayer Ceramic Capacitors for General Purpose, 0603, 10uF, X5R, 15%, 20%, 6.3V|C9|1|
+|ABS05-32.768KHZ-T|Crystal 32.768kHz ±20ppm (Tol) 12.5pF FUND 90kΩ 2-Pin SMD T/R|Y1|1|
+|ABM10-165-38.400MHZ-T3|CRYSTAL 38.4000MHZ 10PF SMD|Y2|1|
+|LQM18FN4R7M00D|FIXED IND 4.7UH 80MA 600 MOHM|L1|1|
+|C1608X5R1A106K080AC|Multilayer Ceramic Capacitors 10μF ±10% 10V X5R SMD 0603|C1|1|
+|LQG18HN22NJ00D|Multilayer type RF Inductor 22nH ±5% 0.5Ω 500mA 0603|L2|1|
+|EFR32BG13P632F512GM32-D|RF System on a Chip - SoC Blue Gecko BLE SoC QFN48 2.4 G 10 dB BLE/proprietary 512 kB 64 kB (RAM) 16GPIO|U1|1|
+|62000621821|THT Vertical Socket Header WR-PHD, Pitch 2.00 mm, Dual Row, 6 pins|J2|1|
+|61301021821|THT Vertical Socket Header WR-PHD, Pitch 2.54 mm, Dual Row, 10 pins|J1|1|
+|LQW03AW1N9C00D|Wire Wound RF Inductor 1.9nH ±0.2nH 620mA 0.08Ω 0201 (0603)|L3|1|
+		
