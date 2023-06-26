@@ -22,7 +22,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Funcional
-https://lh3.googleusercontent.com/fC0IpyfMusjBiv2cPaGizkHsz6THlQ7D1Wrn_8VQFXbeXM-SBUuwmMSCG1fEY0D2XlPK9xC2zFK4G4ikAx4hqPGKDdTxSjYu4amp8GY641PDLVqZuEAmB1MZTrWi-_QC_l9ZbEE7PjevJs6IXxQD2z2g9BEwbMv3r9O7B305E1y2lR8pC6B3BN7FTuD7OVgm8VwuqZ3IvhjsRHtPvI98S-G3C6cj_DYEZym01dceuEB7zdEHhr9PXJlbcuUuNSuVB5HMpStYzW9VFUgTCT-DMpK4gGs5bqlVMoCke8wRBYtYInnPWtl4NlM6Ddzg7cc2a8x3ZJqQwv2515hthywd8bLYEbdhcpp2ffgMz7VwOImNPqd-zZSCmOuWeRm4AITtqbrObtg7pt77O625w4HCB_FC2IcyaULZVO9VHXmaSLf8zeksF_-63DCLF0FL1HIV4E2WPkcxaXi6kl1_hNekKNlsbQDZUgyIyN1RG80WwgO7NuiHc8vZBbEgboGoLLtQaW2FdTMPR2mAeMxaLbAeS-mfKjHknB4OOLWSxKyzScwd6tg4-xRxuxh4v9FClXJtYtz9uTvFKEYlz5pX6ZXImImzs3S3tlLmnANfm1ngwUVLyA-q_0kMaR_XQlE-LIHXdr_v8XEQOk-pQrNtDqsbqSdwHtPg80LnMycO1QQ022XGx40iv9pIm4vUXeFySe20PNJnfTd4Ht_jmVV1ywpwpxqsHXDJMOomQ5tZVnmCWNWWzsBnvFKg2mZdCx44LjBHwPYqCnslqbM7p8Zj6MHfwDr_lJEDjGR5t2Co5hR0O_y8wR_ngWbKS3mt9iLYWpehw2fpst2fYdsqri-_RCTLrX2kGP0QA6ONSRTRurN1lZwo83xSSufu_HarCEza5e6qrlFlx6zf5jAam_YNlTgv0Wv5eL0zZWOt-98u2HNiSNK0T8SrKwqd84uZkBfrgu2xcB_3Nw9keFkaEdPlTgio=w1350-h929-s-no?authuser=0
+![Descrição Funcional](Diagrama1.png)
 
 ### Funcionalidades
 > O projeto possui uma série de funcionalidades para realizar a tarefa proposta, conforme as descrições a seguir.
@@ -51,45 +51,45 @@ Com isso, os 4 modos configuráveis são:
 ### Eventos
 > Periódicos
 
-1. Utilização dos sensores para varredura (500ms).
-2. Verificar a distância do ponto inicial (5000ms).
-3. Verificar status da locomoção (5000ms).
-4. Verificação de bateria (60000 ms).
-5. Mapeamento (5000ms).
+1. Verificação do sensor frontal (500ms).
+2. Verificar status da locomoção (15000ms).
 
 > Não Periódicos (não ocorrem simultaneamente, portanto não preocupações com tempo mínimo)
 
-1. Encontrou ramificação.
-2. Encontrou obstrução.
-3. Encontrou saída.
-4. Liga/desliga.
-5. Requisição de retorno (prioritário).
-6. Transferência do mapa para a memória externa.
+1. Mapeamento.
+2. Verificação de bateria.
+3. Requisição de retorno.
+4. Verificar a distância do ponto inicial.
+5. Controle de Navegação.
+6. Encontrou ramificação.
+7. Encontrou obstrução.
+8. Encontrou saída.
+9. Liga/desliga.
 
 
 ### Tratamento de Eventos
 > Periódicos:
 
-1. Verificação de ramificação, obstrução, saída (trigger para os eventos não periódicos 1, 2 e 3).
-2. Se a distância for maior que o raio de atuação, ou houver perda de sinal, voltar.
-3. Caso a locomoção seja comprometida, enviar sinal de ajuda e entrar em modo de segurança (economia de bateria, e LEDs ligados para facilitar localização).
-4. Caso a bateria esteja abaixo de um certo limite, voltar.
-5. Atualizar o mapa na memória RAM com uma reta entre a posição anterior e a atual. 
+1. Verifica se é necessário mapear uma nova posição com base na distância percorrida desde a última atualização.
+2. Caso a locomoção seja comprometida, enviar sinal de ajuda e a última posição registrada (localização atual).
 
 > Não Periódicos
 
-1. Sempre escolher o caminho mais a esquerda que ainda não tenha sido percorrido. Salvar ponto de ramificação no mapa.
-2. Salvar como obstrução e retornar até a última ramificação. Caso em modo de busca por obstrução única, salvar o mapa e retornar (tarefa concluída).
-3. Salvar como saída e retornar até a última ramificação. Caso em modo de busca por saída única, salvar o mapa e retornar (tarefa concluída).
-4. Ligar e desligar o sistema.
-5. Interromper o processamento normal e retornar ao ponto inicial pelo caminho mais curto.
-6. Atualizar o mapeamento salvo na memória externa a cada 10 pontos.
+1. Paraliza o motor, marca a nova posição, categoriza-a, e volta a ligar o motor quando todo o processamento necessário para prosseguir é realizado. É trigger dos eventos não periódicos de 2 a 5.
+2. Caso a bateria esteja abaixo de um certo limite, configura o carrinho para voltar ao ponto inicial.
+3. Interromper o processamento normal e configurar o carrinho para retornar ao ponto inicial.
+4. Se a distância for maior que o raio de atuação, dar meia volta.
+5. Com base no tipo de ponto (ramificação, obstrução, saída, etc) em que se está, corrige a orientação do carrinho para que este possa continuar se movimentando para frente. É trigger dos eventos não-periódicos de 6 a 8, dependendo do tipo de ponto.
+6. Salvar ponto de ramificação no mapa e escolher por qual caminho seguir a partir da posição atual.
+7. Salvar ponto como obstrução e dar meia volta. Caso em modo de busca por obstrução única, retornar ao ponto de início (tarefa concluída).
+8. Salvar ponto como saída e dar meia volta. Caso em modo de busca por saída única, retornar ao ponto de início (tarefa concluída).
+9. Ligar e desligar o sistema.
 
 
 ## Descrição Estrutural do Sistema
 A estrutura necessária ao desenvolvimento do projeto pode ser sintetizada por meio do diagrama de blocos abaixo:
 
-https://lh3.googleusercontent.com/dEtVDtnTXxLJs2YYxXNb0YExX45h7YhmmGbJCrGO4sbP2ZZwJrNeD3CY3kNnnNn1MOc_i2NYhD7OoQTKKm-OF_cWPBtkUW8biwlghvfG6UCvnFZPj2UeGYljBR-BsjQR0KA4t5QSpiZ1Jix3We95ZKLccMm8YyE3aOPf8G4DnTZotGIEM2rgNRHAiD76IM5BgzH0TtamWFA5DCAXd4-pcw4trpwiD-JUC33PNrmV1CWi9pT8C5I92LdoWfY1Ec3f6cZehMzdCzcqZf-5uIqZoQoZjLwkxHvmVgWe8-j4WIKPq7la2c3aOd5zIQWVE2AXV_EAUcg-z0WvHdTZJMw9N8tFOSOWJRKPhNHEFswCotGq_2gUgKjMR_n0wGdeixbLrn4nDEE07uq8pmKNOlksIx2X9_0paFxJMaYFt6npttZCa77iwNZRlALwv5dJbdZcSegy8CWIgomoQt4AF9Fa2MkYIMzbUhBROzZSqjilxc7-dHtrxTUGEOntlQkvR-ELTWRPeqz0nPbGutO7dZlrbudsggeqF1Rku95srSUsARWYBDHM6RPCwYlpBHLm5fve8Pxziw7pz1yMRHUMhR0xsQvAigK59uL--UEVNycbC4heRKmV4OdUifqym0w6EwuqS9nhm3d5hlTe8VTZAow9OVri6-WX2R50HzPvcExxrbtEpq2tUnpoY2wj4LuRpEPsQrf77MfZ1FskSxJk2BW4G6oe34vHrq1PgSrP9Qw8iKS7OcndvZkM5rkG3azaZevEZENrn9EPafDHcCPKIXD_9icAC9tufazBlWFSVTjDs5aLe2dWyNjiDEMXMykMnTB0zYDss4y2Sk3G8Ry9ohlHrENwtcikjsefNcAV0n1R9WFKxq1fEF4C3zWya820p0CL_6dbBmrJqltqvHi29xbmXpwQjUTYey81mp7qNv5JV0BfEfGq_w7mZNI6FKuMbwMfnvMomsnphSEHfYOlv3Qq=w1057-h541-s-no?authuser=0
+![Descrição Estrutural do Sistema](Diaframa2.png)
 
 ### Descrição dos blocos:
 #### SENSORES: 
@@ -154,6 +154,15 @@ https://lh3.googleusercontent.com/dEtVDtnTXxLJs2YYxXNb0YExX45h7YhmmGbJCrGO4sbP2Z
 > Relações com outros blocos:
 > > Apenas se comunica com o bloco SISTEMA Rx/Tx
 
+## Especificações
+
+### Especificação Estrutural
+
+https://docs.google.com/document/d/1n6RbynMdM-dFheosjJLS--sK0qMWMoK55iLZcWa1GU8/edit?usp=sharing
+
+### Especificação de Algoritmos
+
+https://docs.google.com/document/d/1WOtS1sczeaAlzp9vi0PXV7JNHWrlSyEX5yq-FA1AXzs/edit?usp=sharing
 
 ## Referências
 - https://www.youtube.com/playlist?list=PLifLftIJFUm-1iIAEPWvuSJTA50YKYD7J
